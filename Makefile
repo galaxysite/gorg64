@@ -1,4 +1,5 @@
 gorg64:
+	chmod =00755 ./compile_gorg64.sh postinst postrm
 	./compile_gorg64.sh
 
 spkplay:
