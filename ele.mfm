@@ -1,0 +1,87 @@
+object elefo: telefo
+  color = -1610612730
+  bounds_x = 256
+  bounds_y = 308
+  bounds_cx = 843
+  bounds_cy = 566
+  container.frame.localprops = []
+  container.frame.localprops1 = []
+  container.bounds = (
+    0
+    0
+    843
+    566
+  )
+  font.height = 39
+  font.style = [fs_bold]
+  font.name = 'stf_default'
+  font.localprops = [flp_style, flp_height]
+  fontempty.height = 39
+  fontempty.style = [fs_bold]
+  fontempty.name = 'stf_empty'
+  fontempty.localprops = [flp_style, flp_height]
+  options = [fo_freeonclose, fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
+  windowopacity = -Inf
+  oncreate = oncreate
+  onclose = onclose
+  onkeyup = keyup
+  moduleclassname = 'tmseform'
+  object tstringgrid1: tstringgrid
+    frame.localprops = []
+    frame.localprops1 = []
+    bounds_x = 0
+    bounds_y = 40
+    bounds_cx = 834
+    bounds_cy = 523
+    anchors = [an_left, an_top, an_right, an_bottom]
+    optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
+    datacols.count = 1
+    datacols.width = 5000
+    datacols.options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
+    datacols.items = <    
+      item
+        width = 5000
+        options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
+        valuefalse = '0'
+        valuetrue = '1'
+      end>
+    datarowheight = 56
+    reffontheight = 54
+  end
+  object tbutton1: tbutton
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 1
+    bounds_x = 0
+    bounds_y = 0
+    bounds_cx = 194
+    bounds_cy = 37
+    state = [as_localcaption, as_localonexecute]
+    caption = #1059#1076#1072#1083#1080#1090#1100' | Delete'
+    onexecute = butex
+  end
+  object tbutton2: tbutton
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 2
+    bounds_x = 232
+    bounds_y = 0
+    bounds_cx = 306
+    bounds_cy = 37
+    state = [as_localcaption, as_localonexecute]
+    caption = #1056#1077#1076#1072#1082#1090#1088#1086#1074#1072#1090#1100' | Edit'
+    onexecute = oneditbut
+  end
+  object trichstockglyphbutton1: trichstockglyphbutton
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 3
+    bounds_x = 560
+    bounds_y = 8
+    bounds_cx = 50
+    bounds_cy = 21
+    state = [as_localimagelist, as_localimagenr, as_localonexecute]
+    glyph = stg_dbcancel
+    onexecute = bclose
+  end
+end

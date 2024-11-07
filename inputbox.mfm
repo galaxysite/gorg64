@@ -1,0 +1,1871 @@
+object inputboxfo: tinputboxfo
+  color = -1610612730
+  bounds_x = 317
+  bounds_y = 301
+  bounds_cx = 798
+  bounds_cy = 663
+  container.frame.localprops = []
+  container.frame.localprops1 = []
+  container.bounds = (
+    0
+    0
+    798
+    663
+  )
+  font.height = 22
+  font.name = 'stf_default'
+  font.localprops = [flp_height]
+  options = [fo_freeonclose, fo_transientforcentered, fo_createmodal, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
+  caption = #1042#1074#1086#1076' | Input'
+  windowopacity = -Inf
+  oncreate = oncreate
+  onkeyup = keyup
+  moduleclassname = 'tmseform'
+  object ttextedit1: ttextedit
+    frame.localprops = []
+    frame.localprops1 = []
+    bounds_x = 8
+    bounds_y = 8
+    bounds_cx = 780
+    bounds_cy = 37
+    anchors = [an_left, an_top, an_right]
+    optionsedit = [oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_exitoncursor, oe_nofirstarrownavig, oe_focusrectonreadonly]
+    reffontheight = 31
+  end
+  object trichbutton1: trichbutton
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 1
+    bounds_x = 568
+    bounds_y = 56
+    bounds_cx = 218
+    bounds_cy = 29
+    anchors = [an_top, an_right]
+    state = [as_localcaption, as_localonexecute]
+    caption = 'Ok'
+    onexecute = onok
+    richcaption = 'Ok'
+  end
+  object trichbutton2: trichbutton
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 2
+    bounds_x = 8
+    bounds_y = 56
+    bounds_cx = 218
+    bounds_cy = 29
+    state = [as_localcaption, as_localonexecute]
+    caption = #1054#1090#1084#1077#1085#1072' | Cancel'
+    onexecute = oncancel
+    richcaption = #1054#1090#1084#1077#1085#1072' | Cancel'
+  end
+  object trichbutton3: trichbutton
+    taborder = 3
+    bounds_x = 8
+    bounds_y = 104
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '`'
+    onexecute = onscrkey
+    richcaption = '`'
+  end
+  object trichbutton4: trichbutton
+    taborder = 4
+    bounds_x = 64
+    bounds_y = 104
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '1'
+    onexecute = onscrkey
+    richcaption = '1'
+  end
+  object trichbutton5: trichbutton
+    taborder = 5
+    bounds_x = 120
+    bounds_y = 104
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '2'
+    onexecute = onscrkey
+    richcaption = '2'
+  end
+  object trichbutton6: trichbutton
+    taborder = 6
+    bounds_x = 176
+    bounds_y = 104
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '3'
+    onexecute = onscrkey
+    richcaption = '3'
+  end
+  object trichbutton7: trichbutton
+    taborder = 7
+    bounds_x = 232
+    bounds_y = 104
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '4'
+    onexecute = onscrkey
+    richcaption = '4'
+  end
+  object trichbutton8: trichbutton
+    taborder = 8
+    bounds_x = 288
+    bounds_y = 104
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '5'
+    onexecute = onscrkey
+    richcaption = '5'
+  end
+  object trichbutton9: trichbutton
+    taborder = 9
+    bounds_x = 344
+    bounds_y = 104
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '6'
+    onexecute = onscrkey
+    richcaption = '6'
+  end
+  object trichbutton10: trichbutton
+    taborder = 10
+    bounds_x = 400
+    bounds_y = 104
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '7'
+    onexecute = onscrkey
+    richcaption = '7'
+  end
+  object trichbutton11: trichbutton
+    taborder = 11
+    bounds_x = 456
+    bounds_y = 104
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '8'
+    onexecute = onscrkey
+    richcaption = '8'
+  end
+  object trichbutton12: trichbutton
+    taborder = 12
+    bounds_x = 512
+    bounds_y = 104
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '9'
+    onexecute = onscrkey
+    richcaption = '9'
+  end
+  object trichbutton13: trichbutton
+    taborder = 13
+    bounds_x = 568
+    bounds_y = 104
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '0'
+    onexecute = onscrkey
+    richcaption = '0'
+  end
+  object trichbutton14: trichbutton
+    taborder = 14
+    bounds_x = 624
+    bounds_y = 104
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '-'
+    onexecute = onscrkey
+    richcaption = '-'
+  end
+  object trichbutton15: trichbutton
+    taborder = 15
+    bounds_x = 680
+    bounds_y = 104
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '='
+    onexecute = onscrkey
+    richcaption = '='
+  end
+  object trichbutton16: trichbutton
+    taborder = 16
+    bounds_x = 736
+    bounds_y = 104
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '\'
+    onexecute = onscrkey
+    richcaption = '\'
+  end
+  object trichstockglyphbutton1: trichstockglyphbutton
+    taborder = 17
+    bounds_x = 704
+    bounds_y = 208
+    bounds_cx = 82
+    bounds_cy = 33
+    state = [as_localimagelist, as_localimagenr, as_localonexecute]
+    glyph = stg_arrowleft
+    onexecute = onback
+  end
+  object trichbutton17: trichbutton
+    taborder = 18
+    bounds_x = 8
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '~'
+    onexecute = onscrkey
+    richcaption = '~'
+  end
+  object trichbutton18: trichbutton
+    taborder = 19
+    bounds_x = 64
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '!'
+    onexecute = onscrkey
+    richcaption = '!'
+  end
+  object trichbutton19: trichbutton
+    taborder = 20
+    bounds_x = 120
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '@'
+    onexecute = onscrkey
+    richcaption = '@'
+  end
+  object trichbutton20: trichbutton
+    taborder = 21
+    bounds_x = 176
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '#'
+    onexecute = onscrkey
+    richcaption = '#'
+  end
+  object trichbutton21: trichbutton
+    taborder = 22
+    bounds_x = 232
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '$'
+    onexecute = onscrkey
+    richcaption = '$'
+  end
+  object trichbutton22: trichbutton
+    taborder = 23
+    bounds_x = 288
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '%'
+    onexecute = onscrkey
+    richcaption = '%'
+  end
+  object trichbutton23: trichbutton
+    taborder = 24
+    bounds_x = 344
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '^'
+    onexecute = onscrkey
+    richcaption = '^'
+  end
+  object trichbutton24: trichbutton
+    taborder = 25
+    hint = '&'
+    bounds_x = 400
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localhint, as_localonexecute]
+    caption = '&'
+    onexecute = onscrkey
+    richcaption = (
+      ''
+      (
+        (
+          0
+          [ni_underline]
+          0
+          0
+          [fs_underline]
+        )
+        (
+          1
+          [ni_underline]
+          0
+          0
+          []
+        )
+      )
+    )
+  end
+  object trichbutton25: trichbutton
+    taborder = 26
+    bounds_x = 456
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '*'
+    onexecute = onscrkey
+    richcaption = '*'
+  end
+  object trichbutton26: trichbutton
+    taborder = 27
+    bounds_x = 512
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '('
+    onexecute = onscrkey
+    richcaption = '('
+  end
+  object trichbutton27: trichbutton
+    taborder = 28
+    bounds_x = 568
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = ')'
+    onexecute = onscrkey
+    richcaption = ')'
+  end
+  object trichbutton28: trichbutton
+    taborder = 29
+    bounds_x = 624
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '_'
+    onexecute = onscrkey
+    richcaption = '_'
+  end
+  object trichbutton29: trichbutton
+    taborder = 30
+    bounds_x = 680
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '+'
+    onexecute = onscrkey
+    richcaption = '+'
+  end
+  object trichbutton30: trichbutton
+    taborder = 31
+    bounds_x = 736
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '|'
+    onexecute = onscrkey
+    richcaption = '|'
+  end
+  object trichbutton31: trichbutton
+    taborder = 32
+    bounds_x = 8
+    bounds_y = 184
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'q'
+    onexecute = onscrkey
+    richcaption = 'q'
+  end
+  object trichbutton32: trichbutton
+    taborder = 33
+    bounds_x = 64
+    bounds_y = 184
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'w'
+    onexecute = onscrkey
+    richcaption = 'w'
+  end
+  object trichbutton33: trichbutton
+    taborder = 34
+    bounds_x = 120
+    bounds_y = 184
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'e'
+    onexecute = onscrkey
+    richcaption = 'e'
+  end
+  object trichbutton34: trichbutton
+    taborder = 35
+    bounds_x = 176
+    bounds_y = 184
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'r'
+    onexecute = onscrkey
+    richcaption = 'r'
+  end
+  object trichbutton35: trichbutton
+    taborder = 36
+    bounds_x = 232
+    bounds_y = 184
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 't'
+    onexecute = onscrkey
+    richcaption = 't'
+  end
+  object trichbutton36: trichbutton
+    taborder = 37
+    bounds_x = 288
+    bounds_y = 184
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'y'
+    onexecute = onscrkey
+    richcaption = 'y'
+  end
+  object trichbutton37: trichbutton
+    taborder = 38
+    bounds_x = 344
+    bounds_y = 184
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'u'
+    onexecute = onscrkey
+    richcaption = 'u'
+  end
+  object trichbutton38: trichbutton
+    taborder = 39
+    bounds_x = 400
+    bounds_y = 184
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'i'
+    onexecute = onscrkey
+    richcaption = 'i'
+  end
+  object trichbutton39: trichbutton
+    taborder = 40
+    bounds_x = 456
+    bounds_y = 184
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'o'
+    onexecute = onscrkey
+    richcaption = 'o'
+  end
+  object trichbutton40: trichbutton
+    taborder = 41
+    bounds_x = 512
+    bounds_y = 184
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'p'
+    onexecute = onscrkey
+    richcaption = 'p'
+  end
+  object trichbutton41: trichbutton
+    taborder = 42
+    bounds_x = 568
+    bounds_y = 184
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '['
+    onexecute = onscrkey
+    richcaption = '['
+  end
+  object trichbutton42: trichbutton
+    taborder = 43
+    bounds_x = 624
+    bounds_y = 184
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = ']'
+    onexecute = onscrkey
+    richcaption = ']'
+  end
+  object trichbutton43: trichbutton
+    taborder = 44
+    bounds_x = 8
+    bounds_y = 224
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'Q'
+    onexecute = onscrkey
+    richcaption = 'Q'
+  end
+  object trichbutton44: trichbutton
+    taborder = 45
+    bounds_x = 64
+    bounds_y = 224
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'W'
+    onexecute = onscrkey
+    richcaption = 'W'
+  end
+  object trichbutton45: trichbutton
+    taborder = 46
+    bounds_x = 120
+    bounds_y = 224
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'E'
+    onexecute = onscrkey
+    richcaption = 'E'
+  end
+  object trichbutton46: trichbutton
+    taborder = 47
+    bounds_x = 176
+    bounds_y = 224
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'R'
+    onexecute = onscrkey
+    richcaption = 'R'
+  end
+  object trichbutton47: trichbutton
+    taborder = 48
+    bounds_x = 232
+    bounds_y = 224
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'T'
+    onexecute = onscrkey
+    richcaption = 'T'
+  end
+  object trichbutton48: trichbutton
+    taborder = 49
+    bounds_x = 288
+    bounds_y = 224
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'Y'
+    onexecute = onscrkey
+    richcaption = 'Y'
+  end
+  object trichbutton49: trichbutton
+    taborder = 50
+    bounds_x = 344
+    bounds_y = 224
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'U'
+    onexecute = onscrkey
+    richcaption = 'U'
+  end
+  object trichbutton50: trichbutton
+    taborder = 51
+    bounds_x = 400
+    bounds_y = 224
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'I'
+    onexecute = onscrkey
+    richcaption = 'I'
+  end
+  object trichbutton51: trichbutton
+    taborder = 52
+    bounds_x = 456
+    bounds_y = 224
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'O'
+    onexecute = onscrkey
+    richcaption = 'O'
+  end
+  object trichbutton52: trichbutton
+    taborder = 53
+    bounds_x = 512
+    bounds_y = 224
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'P'
+    onexecute = onscrkey
+    richcaption = 'P'
+  end
+  object trichbutton53: trichbutton
+    taborder = 54
+    bounds_x = 568
+    bounds_y = 224
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '{'
+    onexecute = onscrkey
+    richcaption = '{'
+  end
+  object trichbutton54: trichbutton
+    taborder = 55
+    bounds_x = 624
+    bounds_y = 224
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '}'
+    onexecute = onscrkey
+    richcaption = '}'
+  end
+  object trichbutton55: trichbutton
+    taborder = 56
+    bounds_x = 8
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1081
+    onexecute = onscrkey
+    richcaption = #1081
+  end
+  object trichbutton56: trichbutton
+    taborder = 57
+    bounds_x = 64
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1094
+    onexecute = onscrkey
+    richcaption = #1094
+  end
+  object trichbutton57: trichbutton
+    taborder = 58
+    bounds_x = 120
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1091
+    onexecute = onscrkey
+    richcaption = #1091
+  end
+  object trichbutton58: trichbutton
+    taborder = 59
+    bounds_x = 176
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1082
+    onexecute = onscrkey
+    richcaption = #1082
+  end
+  object trichbutton59: trichbutton
+    taborder = 60
+    bounds_x = 232
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1077
+    onexecute = onscrkey
+    richcaption = #1077
+  end
+  object trichbutton60: trichbutton
+    taborder = 61
+    bounds_x = 288
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1085
+    onexecute = onscrkey
+    richcaption = #1085
+  end
+  object trichbutton61: trichbutton
+    taborder = 62
+    bounds_x = 344
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1075
+    onexecute = onscrkey
+    richcaption = #1075
+  end
+  object trichbutton62: trichbutton
+    taborder = 63
+    bounds_x = 400
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1096
+    onexecute = onscrkey
+    richcaption = #1096
+  end
+  object trichbutton63: trichbutton
+    taborder = 64
+    bounds_x = 456
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1097
+    onexecute = onscrkey
+    richcaption = #1097
+  end
+  object trichbutton64: trichbutton
+    taborder = 65
+    bounds_x = 512
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1079
+    onexecute = onscrkey
+    richcaption = #1079
+  end
+  object trichbutton65: trichbutton
+    taborder = 66
+    bounds_x = 568
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1093
+    onexecute = onscrkey
+    richcaption = #1093
+  end
+  object trichbutton66: trichbutton
+    taborder = 67
+    bounds_x = 624
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1098
+    onexecute = onscrkey
+    richcaption = #1098
+  end
+  object trichbutton67: trichbutton
+    taborder = 68
+    bounds_x = 680
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1105
+    onexecute = onscrkey
+    richcaption = #1105
+  end
+  object trichbutton68: trichbutton
+    taborder = 69
+    bounds_x = 736
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #8470
+    onexecute = onscrkey
+    richcaption = #8470
+  end
+  object trichbutton69: trichbutton
+    taborder = 70
+    bounds_x = 8
+    bounds_y = 304
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1049
+    onexecute = onscrkey
+    richcaption = #1049
+  end
+  object trichbutton70: trichbutton
+    taborder = 71
+    bounds_x = 64
+    bounds_y = 304
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1062
+    onexecute = onscrkey
+    richcaption = #1062
+  end
+  object trichbutton71: trichbutton
+    taborder = 72
+    bounds_x = 120
+    bounds_y = 304
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1059
+    onexecute = onscrkey
+    richcaption = #1059
+  end
+  object trichbutton72: trichbutton
+    taborder = 73
+    bounds_x = 176
+    bounds_y = 304
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1050
+    onexecute = onscrkey
+    richcaption = #1050
+  end
+  object trichbutton73: trichbutton
+    taborder = 74
+    bounds_x = 232
+    bounds_y = 304
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1045
+    onexecute = onscrkey
+    richcaption = #1045
+  end
+  object trichbutton74: trichbutton
+    taborder = 75
+    bounds_x = 288
+    bounds_y = 304
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1053
+    onexecute = onscrkey
+    richcaption = #1053
+  end
+  object trichbutton75: trichbutton
+    taborder = 76
+    bounds_x = 344
+    bounds_y = 304
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1043
+    onexecute = onscrkey
+    richcaption = #1043
+  end
+  object trichbutton76: trichbutton
+    taborder = 77
+    bounds_x = 400
+    bounds_y = 304
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1064
+    onexecute = onscrkey
+    richcaption = #1064
+  end
+  object trichbutton77: trichbutton
+    taborder = 78
+    bounds_x = 456
+    bounds_y = 304
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1065
+    onexecute = onscrkey
+    richcaption = #1065
+  end
+  object trichbutton78: trichbutton
+    taborder = 79
+    bounds_x = 512
+    bounds_y = 304
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1047
+    onexecute = onscrkey
+    richcaption = #1047
+  end
+  object trichbutton79: trichbutton
+    taborder = 80
+    bounds_x = 568
+    bounds_y = 304
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1061
+    onexecute = onscrkey
+    richcaption = #1061
+  end
+  object trichbutton80: trichbutton
+    taborder = 81
+    bounds_x = 624
+    bounds_y = 304
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1066
+    onexecute = onscrkey
+    richcaption = #1066
+  end
+  object trichbutton81: trichbutton
+    taborder = 82
+    bounds_x = 8
+    bounds_y = 344
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'a'
+    onexecute = onscrkey
+    richcaption = 'a'
+  end
+  object trichbutton82: trichbutton
+    taborder = 83
+    bounds_x = 64
+    bounds_y = 344
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 's'
+    onexecute = onscrkey
+    richcaption = 's'
+  end
+  object trichbutton83: trichbutton
+    taborder = 84
+    bounds_x = 120
+    bounds_y = 344
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'd'
+    onexecute = onscrkey
+    richcaption = 'd'
+  end
+  object trichbutton84: trichbutton
+    taborder = 85
+    bounds_x = 176
+    bounds_y = 344
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'f'
+    onexecute = onscrkey
+    richcaption = 'f'
+  end
+  object trichbutton85: trichbutton
+    taborder = 86
+    bounds_x = 232
+    bounds_y = 344
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'g'
+    onexecute = onscrkey
+    richcaption = 'g'
+  end
+  object trichbutton86: trichbutton
+    taborder = 87
+    bounds_x = 288
+    bounds_y = 344
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'h'
+    onexecute = onscrkey
+    richcaption = 'h'
+  end
+  object trichbutton87: trichbutton
+    taborder = 88
+    bounds_x = 344
+    bounds_y = 344
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'j'
+    onexecute = onscrkey
+    richcaption = 'j'
+  end
+  object trichbutton88: trichbutton
+    taborder = 89
+    bounds_x = 400
+    bounds_y = 344
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'k'
+    onexecute = onscrkey
+    richcaption = 'k'
+  end
+  object trichbutton89: trichbutton
+    taborder = 90
+    bounds_x = 456
+    bounds_y = 344
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'l'
+    onexecute = onscrkey
+    richcaption = 'l'
+  end
+  object trichbutton90: trichbutton
+    taborder = 91
+    bounds_x = 512
+    bounds_y = 344
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = ';'
+    onexecute = onscrkey
+    richcaption = ';'
+  end
+  object trichbutton91: trichbutton
+    taborder = 92
+    bounds_x = 568
+    bounds_y = 344
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = ''''
+    onexecute = onscrkey
+    richcaption = ''''
+  end
+  object trichbutton92: trichbutton
+    taborder = 93
+    bounds_x = 8
+    bounds_y = 384
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'A'
+    onexecute = onscrkey
+    richcaption = 'A'
+  end
+  object trichbutton93: trichbutton
+    taborder = 94
+    bounds_x = 64
+    bounds_y = 384
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'S'
+    onexecute = onscrkey
+    richcaption = 'S'
+  end
+  object trichbutton94: trichbutton
+    taborder = 95
+    bounds_x = 120
+    bounds_y = 384
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'D'
+    onexecute = onscrkey
+    richcaption = 'D'
+  end
+  object trichbutton95: trichbutton
+    taborder = 96
+    bounds_x = 176
+    bounds_y = 384
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'F'
+    onexecute = onscrkey
+    richcaption = 'F'
+  end
+  object trichbutton96: trichbutton
+    taborder = 97
+    bounds_x = 232
+    bounds_y = 384
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'G'
+    onexecute = onscrkey
+    richcaption = 'G'
+  end
+  object trichbutton97: trichbutton
+    taborder = 98
+    bounds_x = 288
+    bounds_y = 384
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'H'
+    onexecute = onscrkey
+    richcaption = 'H'
+  end
+  object trichbutton98: trichbutton
+    taborder = 99
+    bounds_x = 344
+    bounds_y = 384
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'J'
+    onexecute = onscrkey
+    richcaption = 'J'
+  end
+  object trichbutton99: trichbutton
+    taborder = 100
+    bounds_x = 400
+    bounds_y = 384
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'K'
+    onexecute = onscrkey
+    richcaption = 'K'
+  end
+  object trichbutton100: trichbutton
+    taborder = 101
+    bounds_x = 456
+    bounds_y = 384
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'L'
+    onexecute = onscrkey
+    richcaption = 'L'
+  end
+  object trichbutton101: trichbutton
+    taborder = 102
+    bounds_x = 512
+    bounds_y = 384
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = ':'
+    onexecute = onscrkey
+    richcaption = ':'
+  end
+  object trichbutton102: trichbutton
+    taborder = 103
+    bounds_x = 568
+    bounds_y = 384
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '"'
+    onexecute = onscrkey
+    richcaption = '"'
+  end
+  object trichbutton103: trichbutton
+    taborder = 104
+    bounds_x = 8
+    bounds_y = 424
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1092
+    onexecute = onscrkey
+    richcaption = #1092
+  end
+  object trichbutton104: trichbutton
+    taborder = 105
+    bounds_x = 64
+    bounds_y = 424
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1099
+    onexecute = onscrkey
+    richcaption = #1099
+  end
+  object trichbutton105: trichbutton
+    taborder = 106
+    bounds_x = 120
+    bounds_y = 424
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1074
+    onexecute = onscrkey
+    richcaption = #1074
+  end
+  object trichbutton106: trichbutton
+    taborder = 107
+    bounds_x = 176
+    bounds_y = 424
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1072
+    onexecute = onscrkey
+    richcaption = #1072
+  end
+  object trichbutton107: trichbutton
+    taborder = 108
+    bounds_x = 232
+    bounds_y = 424
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1087
+    onexecute = onscrkey
+    richcaption = #1087
+  end
+  object trichbutton108: trichbutton
+    taborder = 109
+    bounds_x = 288
+    bounds_y = 424
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1088
+    onexecute = onscrkey
+    richcaption = #1088
+  end
+  object trichbutton109: trichbutton
+    taborder = 110
+    bounds_x = 344
+    bounds_y = 424
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1086
+    onexecute = onscrkey
+    richcaption = #1086
+  end
+  object trichbutton110: trichbutton
+    taborder = 111
+    bounds_x = 400
+    bounds_y = 424
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1083
+    onexecute = onscrkey
+    richcaption = #1083
+  end
+  object trichbutton111: trichbutton
+    taborder = 112
+    bounds_x = 456
+    bounds_y = 424
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1076
+    onexecute = onscrkey
+    richcaption = #1076
+  end
+  object trichbutton112: trichbutton
+    taborder = 113
+    bounds_x = 512
+    bounds_y = 424
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1078
+    onexecute = onscrkey
+    richcaption = #1078
+  end
+  object trichbutton113: trichbutton
+    taborder = 114
+    bounds_x = 568
+    bounds_y = 424
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1101
+    onexecute = onscrkey
+    richcaption = #1101
+  end
+  object trichbutton114: trichbutton
+    taborder = 115
+    bounds_x = 8
+    bounds_y = 464
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1060
+    onexecute = onscrkey
+    richcaption = #1060
+  end
+  object trichbutton115: trichbutton
+    taborder = 116
+    bounds_x = 64
+    bounds_y = 464
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1067
+    onexecute = onscrkey
+    richcaption = #1067
+  end
+  object trichbutton116: trichbutton
+    taborder = 117
+    bounds_x = 120
+    bounds_y = 464
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1042
+    onexecute = onscrkey
+    richcaption = #1042
+  end
+  object trichbutton117: trichbutton
+    taborder = 118
+    bounds_x = 176
+    bounds_y = 464
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1040
+    onexecute = onscrkey
+    richcaption = #1040
+  end
+  object trichbutton118: trichbutton
+    taborder = 119
+    bounds_x = 232
+    bounds_y = 464
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1055
+    onexecute = onscrkey
+    richcaption = #1055
+  end
+  object trichbutton119: trichbutton
+    taborder = 120
+    bounds_x = 288
+    bounds_y = 464
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1056
+    onexecute = onscrkey
+    richcaption = #1056
+  end
+  object trichbutton120: trichbutton
+    taborder = 121
+    bounds_x = 344
+    bounds_y = 464
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1054
+    onexecute = onscrkey
+    richcaption = #1054
+  end
+  object trichbutton121: trichbutton
+    taborder = 122
+    bounds_x = 400
+    bounds_y = 464
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1051
+    onexecute = onscrkey
+    richcaption = #1051
+  end
+  object trichbutton122: trichbutton
+    taborder = 123
+    bounds_x = 456
+    bounds_y = 464
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1044
+    onexecute = onscrkey
+    richcaption = #1044
+  end
+  object trichbutton123: trichbutton
+    taborder = 124
+    bounds_x = 512
+    bounds_y = 464
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1046
+    onexecute = onscrkey
+    richcaption = #1046
+  end
+  object trichbutton124: trichbutton
+    taborder = 125
+    bounds_x = 568
+    bounds_y = 464
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1069
+    onexecute = onscrkey
+    richcaption = #1069
+  end
+  object trichbutton125: trichbutton
+    taborder = 126
+    bounds_x = 8
+    bounds_y = 504
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'z'
+    onexecute = onscrkey
+    richcaption = 'z'
+  end
+  object trichbutton126: trichbutton
+    taborder = 127
+    bounds_x = 64
+    bounds_y = 504
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'x'
+    onexecute = onscrkey
+    richcaption = 'x'
+  end
+  object trichbutton127: trichbutton
+    taborder = 128
+    bounds_x = 120
+    bounds_y = 504
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'c'
+    onexecute = onscrkey
+    richcaption = 'c'
+  end
+  object trichbutton128: trichbutton
+    taborder = 129
+    bounds_x = 176
+    bounds_y = 504
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'v'
+    onexecute = onscrkey
+    richcaption = 'v'
+  end
+  object trichbutton129: trichbutton
+    taborder = 130
+    bounds_x = 232
+    bounds_y = 504
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'b'
+    onexecute = onscrkey
+    richcaption = 'b'
+  end
+  object trichbutton130: trichbutton
+    taborder = 131
+    bounds_x = 288
+    bounds_y = 504
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'n'
+    onexecute = onscrkey
+    richcaption = 'n'
+  end
+  object trichbutton131: trichbutton
+    taborder = 132
+    bounds_x = 344
+    bounds_y = 504
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'm'
+    onexecute = onscrkey
+    richcaption = 'm'
+  end
+  object trichbutton132: trichbutton
+    taborder = 133
+    bounds_x = 400
+    bounds_y = 504
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = ','
+    onexecute = onscrkey
+    richcaption = ','
+  end
+  object trichbutton133: trichbutton
+    taborder = 134
+    bounds_x = 456
+    bounds_y = 504
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '.'
+    onexecute = onscrkey
+    richcaption = '.'
+  end
+  object trichbutton134: trichbutton
+    taborder = 135
+    bounds_x = 512
+    bounds_y = 504
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '/'
+    onexecute = onscrkey
+    richcaption = '/'
+  end
+  object trichbutton135: trichbutton
+    taborder = 136
+    bounds_x = 8
+    bounds_y = 544
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'Z'
+    onexecute = onscrkey
+    richcaption = 'Z'
+  end
+  object trichbutton136: trichbutton
+    taborder = 137
+    bounds_x = 64
+    bounds_y = 544
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'X'
+    onexecute = onscrkey
+    richcaption = 'X'
+  end
+  object trichbutton137: trichbutton
+    taborder = 138
+    bounds_x = 120
+    bounds_y = 544
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'C'
+    onexecute = onscrkey
+    richcaption = 'C'
+  end
+  object trichbutton138: trichbutton
+    taborder = 139
+    bounds_x = 176
+    bounds_y = 544
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'V'
+    onexecute = onscrkey
+    richcaption = 'V'
+  end
+  object trichbutton139: trichbutton
+    taborder = 140
+    bounds_x = 232
+    bounds_y = 544
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'B'
+    onexecute = onscrkey
+    richcaption = 'B'
+  end
+  object trichbutton140: trichbutton
+    taborder = 141
+    bounds_x = 288
+    bounds_y = 544
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'N'
+    onexecute = onscrkey
+    richcaption = 'N'
+  end
+  object trichbutton141: trichbutton
+    taborder = 142
+    bounds_x = 344
+    bounds_y = 544
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = 'M'
+    onexecute = onscrkey
+    richcaption = 'M'
+  end
+  object trichbutton142: trichbutton
+    taborder = 143
+    bounds_x = 400
+    bounds_y = 544
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '<'
+    onexecute = onscrkey
+    richcaption = '<'
+  end
+  object trichbutton143: trichbutton
+    taborder = 144
+    bounds_x = 456
+    bounds_y = 544
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '>'
+    onexecute = onscrkey
+    richcaption = '>'
+  end
+  object trichbutton144: trichbutton
+    taborder = 145
+    bounds_x = 512
+    bounds_y = 544
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = '?'
+    onexecute = onscrkey
+    richcaption = '?'
+  end
+  object trichbutton145: trichbutton
+    taborder = 146
+    bounds_x = 8
+    bounds_y = 584
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1103
+    onexecute = onscrkey
+    richcaption = #1103
+  end
+  object trichbutton146: trichbutton
+    taborder = 147
+    bounds_x = 64
+    bounds_y = 584
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1095
+    onexecute = onscrkey
+    richcaption = #1095
+  end
+  object trichbutton147: trichbutton
+    taborder = 148
+    bounds_x = 120
+    bounds_y = 584
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1089
+    onexecute = onscrkey
+    richcaption = #1089
+  end
+  object trichbutton148: trichbutton
+    taborder = 149
+    bounds_x = 176
+    bounds_y = 584
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1084
+    onexecute = onscrkey
+    richcaption = #1084
+  end
+  object trichbutton149: trichbutton
+    taborder = 150
+    bounds_x = 232
+    bounds_y = 584
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1080
+    onexecute = onscrkey
+    richcaption = #1080
+  end
+  object trichbutton150: trichbutton
+    taborder = 151
+    bounds_x = 288
+    bounds_y = 584
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1090
+    onexecute = onscrkey
+    richcaption = #1090
+  end
+  object trichbutton151: trichbutton
+    taborder = 152
+    bounds_x = 344
+    bounds_y = 584
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1100
+    onexecute = onscrkey
+    richcaption = #1100
+  end
+  object trichbutton152: trichbutton
+    taborder = 153
+    bounds_x = 400
+    bounds_y = 584
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1073
+    onexecute = onscrkey
+    richcaption = #1073
+  end
+  object trichbutton153: trichbutton
+    taborder = 154
+    bounds_x = 456
+    bounds_y = 584
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1102
+    onexecute = onscrkey
+    richcaption = #1102
+  end
+  object trichbutton154: trichbutton
+    taborder = 155
+    bounds_x = 8
+    bounds_y = 624
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1071
+    onexecute = onscrkey
+    richcaption = #1071
+  end
+  object trichbutton155: trichbutton
+    taborder = 156
+    bounds_x = 64
+    bounds_y = 624
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1063
+    onexecute = onscrkey
+    richcaption = #1063
+  end
+  object trichbutton156: trichbutton
+    taborder = 157
+    bounds_x = 120
+    bounds_y = 624
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption]
+    caption = #1057
+    richcaption = #1057
+  end
+  object trichbutton157: trichbutton
+    taborder = 158
+    bounds_x = 176
+    bounds_y = 624
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1052
+    onexecute = onscrkey
+    richcaption = #1052
+  end
+  object trichbutton158: trichbutton
+    taborder = 159
+    bounds_x = 232
+    bounds_y = 624
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1048
+    onexecute = onscrkey
+    richcaption = #1048
+  end
+  object trichbutton159: trichbutton
+    taborder = 160
+    bounds_x = 288
+    bounds_y = 624
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1058
+    onexecute = onscrkey
+    richcaption = #1058
+  end
+  object trichbutton160: trichbutton
+    taborder = 161
+    bounds_x = 344
+    bounds_y = 624
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1068
+    onexecute = onscrkey
+    richcaption = #1068
+  end
+  object trichbutton161: trichbutton
+    taborder = 162
+    bounds_x = 400
+    bounds_y = 624
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1041
+    onexecute = onscrkey
+    richcaption = #1041
+  end
+  object trichbutton162: trichbutton
+    taborder = 163
+    bounds_x = 456
+    bounds_y = 624
+    bounds_cx = 50
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = #1070
+    onexecute = onscrkey
+    richcaption = #1070
+  end
+  object trichbutton163: trichbutton
+    taborder = 164
+    bounds_x = 520
+    bounds_y = 624
+    bounds_cx = 266
+    bounds_cy = 33
+    state = [as_localcaption, as_localonexecute]
+    caption = ' '
+    onexecute = onscrkey
+    richcaption = ' '
+  end
+  object tlabel1: tlabel
+    taborder = 165
+    enabled = False
+    bounds_x = 416
+    bounds_y = 144
+    bounds_cx = 16
+    bounds_cy = 31
+    caption = '&&'
+    reffontheight = 31
+  end
+end

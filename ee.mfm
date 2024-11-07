@@ -1,0 +1,2150 @@
+object eefo: teefo
+  color = 15790320
+  frame.localprops = []
+  frame.localprops1 = []
+  frame.template = tframecomp2
+  bounds_x = 202
+  bounds_y = 204
+  bounds_cx = 1070
+  bounds_cy = 673
+  container.frame.localprops = []
+  container.frame.localprops1 = []
+  container.bounds = (
+    4
+    2
+    1062
+    669
+  )
+  font.height = 26
+  font.style = [fs_bold]
+  font.name = 'stf_default'
+  font.localprops = [flp_style, flp_height, flp_options]
+  fontempty.height = 39
+  fontempty.style = [fs_bold]
+  fontempty.name = 'stf_empty'
+  fontempty.localprops = [flp_style, flp_height]
+  options = [fo_freeonclose, fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
+  caption = #1057#1086#1073#1099#1090#1080#1077' | Event'
+  windowopacity = -Inf
+  oncreate = oncr
+  onclose = onclose
+  onkeydown = keydown
+  onkeyup = keyup
+  moduleclassname = 'tmseform'
+  object tfilelistview1: tfilelistview
+    frame.sbhorz.framebutton.localprops = []
+    frame.sbhorz.framebutton.localprops1 = []
+    frame.sbhorz.framebutton.template = tframecomp2
+    frame.sbhorz.frameendbutton1.localprops = []
+    frame.sbhorz.frameendbutton1.localprops1 = []
+    frame.sbhorz.frameendbutton1.template = tframecomp2
+    frame.sbhorz.frameendbutton2.localprops = []
+    frame.sbhorz.frameendbutton2.localprops1 = []
+    frame.sbhorz.frameendbutton2.template = tframecomp2
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 1
+    popupmenu = tpopupmenu1
+    bounds_x = 272
+    bounds_y = 384
+    bounds_cx = 320
+    bounds_cy = 162
+    anchors = [an_left, an_top, an_right, an_bottom]
+    cellwidth = 320
+    cellheight = 44
+    optionsgrid = [og_colsizing, og_focuscellonenter, og_colchangeontabkey, og_wraprow, og_wrapcol, og_autopopup, og_mousescrollcol]
+    options = [lvo_readonly, lvo_drawfocus, lvo_leftbuttonfocusonly, lvo_focusselect, lvo_mouseselect, lvo_multiselect, lvo_locate]
+    gridframecolor = -2147483640
+    onselectionchanged = onsndch
+    reffontheight = 36
+  end
+  object tlabel1: tlabel
+    taborder = 2
+    bounds_x = 691
+    bounds_y = 193
+    bounds_cx = 58
+    bounds_cy = 50
+    caption = '--:--'
+    font.color = -1610612721
+    font.height = 36
+    font.style = [fs_bold]
+    font.name = 'stf_default'
+    font.localprops = [flp_color, flp_height, flp_options]
+    reffontheight = 50
+  end
+  object tbutton5: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 3
+    bounds_x = 672
+    bounds_y = 0
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '0'
+    onexecute = h0
+  end
+  object tbutton6: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 4
+    bounds_x = 728
+    bounds_y = 0
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '1'
+    onexecute = h1
+  end
+  object tbutton7: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 5
+    bounds_x = 784
+    bounds_y = 0
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '2'
+    onexecute = h2
+  end
+  object tbutton8: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 6
+    bounds_x = 840
+    bounds_y = 0
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '3'
+    onexecute = h3
+  end
+  object tbutton9: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 7
+    bounds_x = 896
+    bounds_y = 0
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '4'
+    onexecute = h4
+  end
+  object tbutton10: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 8
+    bounds_x = 952
+    bounds_y = 0
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '5'
+    onexecute = h5
+  end
+  object tbutton11: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 9
+    bounds_x = 1008
+    bounds_y = 0
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '6'
+    onexecute = h6
+  end
+  object tbutton12: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 10
+    bounds_x = 672
+    bounds_y = 48
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '7'
+    onexecute = h7
+  end
+  object tbutton13: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 11
+    bounds_x = 728
+    bounds_y = 48
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '8'
+    onexecute = h8
+  end
+  object tbutton14: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 12
+    bounds_x = 784
+    bounds_y = 48
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '9'
+    onexecute = h9
+  end
+  object tbutton15: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 13
+    bounds_x = 840
+    bounds_y = 48
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '10'
+    onexecute = h10
+  end
+  object tbutton16: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 14
+    bounds_x = 896
+    bounds_y = 48
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '11'
+    onexecute = h11
+  end
+  object tbutton17: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 15
+    bounds_x = 952
+    bounds_y = 48
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '12'
+    onexecute = h12
+  end
+  object tbutton18: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 16
+    bounds_x = 1008
+    bounds_y = 48
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '13'
+    onexecute = h13
+  end
+  object tbutton19: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 17
+    bounds_x = 672
+    bounds_y = 96
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '14'
+    onexecute = h14
+  end
+  object tbutton20: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 18
+    bounds_x = 728
+    bounds_y = 96
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '15'
+    onexecute = h15
+  end
+  object tbutton21: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 19
+    bounds_x = 784
+    bounds_y = 96
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '16'
+    onexecute = h16
+  end
+  object tbutton22: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 20
+    bounds_x = 840
+    bounds_y = 96
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '17'
+    onexecute = h17
+  end
+  object tbutton23: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 21
+    bounds_x = 896
+    bounds_y = 96
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '18'
+    onexecute = h18
+  end
+  object tbutton24: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 22
+    bounds_x = 952
+    bounds_y = 96
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '19'
+    onexecute = h19
+  end
+  object tbutton25: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 23
+    bounds_x = 1008
+    bounds_y = 96
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '20'
+    onexecute = h20
+  end
+  object tbutton26: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 24
+    bounds_x = 672
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '21'
+    onexecute = h21
+  end
+  object tbutton27: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 25
+    bounds_x = 728
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '22'
+    onexecute = h22
+  end
+  object tbutton28: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 26
+    bounds_x = 784
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '23'
+    onexecute = h23
+  end
+  object tbutton29: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 27
+    bounds_x = 784
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '10'
+    onexecute = m10
+  end
+  object tbutton30: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 28
+    bounds_x = 840
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '20'
+    onexecute = m20
+  end
+  object tbutton31: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 29
+    bounds_x = 896
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '30'
+    onexecute = m30
+  end
+  object tbutton32: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 30
+    bounds_x = 952
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '40'
+    onexecute = m40
+  end
+  object tbutton33: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 31
+    bounds_x = 1008
+    bounds_y = 264
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '50'
+    onexecute = m50
+  end
+  object tbutton34: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 32
+    bounds_x = 864
+    bounds_y = 168
+    bounds_cx = 34
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '1'
+    onexecute = m1
+  end
+  object tbutton35: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 33
+    bounds_x = 904
+    bounds_y = 168
+    bounds_cx = 34
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '2'
+    onexecute = m2
+  end
+  object tbutton36: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 34
+    bounds_x = 944
+    bounds_y = 168
+    bounds_cx = 34
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '3'
+    onexecute = m3
+  end
+  object tbutton37: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 35
+    bounds_x = 984
+    bounds_y = 168
+    bounds_cx = 34
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '4'
+    onexecute = m4
+  end
+  object tbutton38: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 36
+    bounds_x = 1024
+    bounds_y = 168
+    bounds_cx = 34
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '5'
+    onexecute = m5
+  end
+  object tbutton39: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 37
+    bounds_x = 864
+    bounds_y = 216
+    bounds_cx = 34
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '6'
+    onexecute = m6
+  end
+  object tbutton40: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 38
+    bounds_x = 904
+    bounds_y = 216
+    bounds_cx = 34
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '7'
+    onexecute = m7
+  end
+  object tbutton41: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 39
+    bounds_x = 944
+    bounds_y = 216
+    bounds_cx = 34
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '8'
+    onexecute = m8
+  end
+  object tbutton42: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 40
+    bounds_x = 984
+    bounds_y = 216
+    bounds_cx = 34
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '9'
+    onexecute = m9
+  end
+  object tbutton43: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 41
+    bounds_x = 1024
+    bounds_y = 216
+    bounds_cx = 34
+    bounds_cy = 44
+    state = [as_localcaption, as_localcolor, as_localonexecute]
+    caption = '0'
+    onexecute = m0
+  end
+  object tdropdownlistedit1: tdropdownlistedit
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    frame.button.face.localprops = []
+    frame.button.face.template = mainfo.tfacecomp1
+    frame.button.frame.localprops = []
+    frame.button.frame.localprops1 = []
+    frame.button.frame.template = tframecomp2
+    frame.buttons.count = 1
+    frame.buttons.items = <    
+      item
+        face.localprops = []
+        face.template = mainfo.tfacecomp1
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = tframecomp2
+      end>
+    bounds_x = 8
+    bounds_y = 619
+    bounds_cx = 793
+    bounds_cy = 42
+    anchors = [an_left, an_right, an_bottom]
+    ontextedited = ontextedited
+    dropdown.cols.count = 1
+    dropdown.cols.items = <    
+      item
+      end>
+    onafterclosedropdown = onafterclosedropdown
+    reffontheight = 36
+  end
+  object trichbutton4: trichbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 42
+    bounds_x = 88
+    bounds_y = 574
+    bounds_cx = 34
+    bounds_cy = 34
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    imagelist = timagelist2
+    imagenr = 1
+    onexecute = play
+    richcaption = ''
+  end
+  object trichbutton5: trichbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 43
+    bounds_x = 48
+    bounds_y = 574
+    bounds_cx = 34
+    bounds_cy = 34
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    imagelist = timagelist2
+    imagenr = 0
+    onexecute = stop
+    richcaption = ''
+  end
+  object trichbutton6: trichbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 44
+    bounds_x = 8
+    bounds_y = 574
+    bounds_cx = 34
+    bounds_cy = 34
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    imagelist = timagelist1
+    imagenr = 0
+    onexecute = brec
+    richcaption = ''
+  end
+  object tbooleanedit8: tbooleanedit
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 45
+    hint = #1059#1076#1072#1083#1080#1090#1100
+    bounds_x = 272
+    bounds_y = 560
+    bounds_cx = 26
+    bounds_cy = 26
+    anchors = [an_left, an_bottom]
+    onchange = ondelete
+  end
+  object beDisable: tbooleanedit
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 46
+    hint = #1042#1099#1082#1083#1102#1095#1080#1090#1100
+    bounds_x = 336
+    bounds_y = 560
+    bounds_cx = 26
+    bounds_cy = 26
+    anchors = [an_left, an_bottom]
+    onchange = ondisable
+  end
+  object beRealTime: tbooleanedit
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 47
+    hint = #1058#1086#1083#1100#1082#1086' '#1089#1077#1081#1095#1072#1089
+    bounds_x = 368
+    bounds_y = 560
+    bounds_cx = 26
+    bounds_cy = 26
+    anchors = [an_left, an_bottom]
+    onchange = onrealtime
+  end
+  object tbooleanedit12: tbooleanedit
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 48
+    hint = #1055#1086#1082#1072#1079#1072#1090#1100' '#1089#1086#1086#1073#1097#1077#1085#1080#1077
+    bounds_x = 304
+    bounds_y = 560
+    bounds_cx = 26
+    bounds_cy = 26
+    anchors = [an_left, an_bottom]
+    onchange = onshowmessage
+  end
+  object tbutton1: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 49
+    bounds_x = 448
+    bounds_y = 344
+    bounds_cx = 34
+    bounds_cy = 30
+    state = [as_localcaption, as_localonexecute]
+    caption = '+'
+    onexecute = plusyear
+  end
+  object tbutton2: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 50
+    bounds_x = 408
+    bounds_y = 344
+    bounds_cx = 34
+    bounds_cy = 30
+    state = [as_localcaption, as_localonexecute]
+    caption = '-'
+    onexecute = minusyear
+  end
+  object trichbutton7: trichbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 51
+    bounds_x = 640
+    bounds_y = 248
+    bounds_cx = 114
+    bounds_cy = 37
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
+    imagelist = timagelist4
+    imagenr = 0
+    onexecute = eye
+  end
+  object trichbutton8: trichbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 52
+    bounds_x = 712
+    bounds_y = 288
+    bounds_cx = 42
+    bounds_cy = 44
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
+    imagelist = timagelist3
+    imagenr = 0
+    onexecute = onplusday
+  end
+  object tfilelistview2: tfilelistview
+    frame.sbhorz.framebutton.localprops = []
+    frame.sbhorz.framebutton.localprops1 = []
+    frame.sbhorz.framebutton.template = tframecomp2
+    frame.sbhorz.frameendbutton1.localprops = []
+    frame.sbhorz.frameendbutton1.localprops1 = []
+    frame.sbhorz.frameendbutton1.template = tframecomp2
+    frame.sbhorz.frameendbutton2.localprops = []
+    frame.sbhorz.frameendbutton2.localprops1 = []
+    frame.sbhorz.frameendbutton2.template = tframecomp2
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 53
+    popupmenu = tpopupmenu2
+    bounds_x = 594
+    bounds_y = 384
+    bounds_cx = 190
+    bounds_cy = 162
+    anchors = [an_left, an_top, an_right, an_bottom]
+    cellwidth = 320
+    cellheight = 44
+    optionsgrid = [og_colsizing, og_focuscellonenter, og_colchangeontabkey, og_wraprow, og_wrapcol, og_autopopup, og_mousescrollcol]
+    options = [lvo_readonly, lvo_drawfocus, lvo_leftbuttonfocusonly, lvo_focusselect, lvo_mouseselect, lvo_multiselect, lvo_locate]
+    gridframecolor = -2147483640
+    onselectionchanged = onmusch
+    reffontheight = 36
+  end
+  object mo1: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 54
+    bounds_x = 0
+    bounds_y = 0
+    bounds_cx = 266
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = mo1e
+  end
+  object mo2: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 55
+    bounds_x = 0
+    bounds_y = 48
+    bounds_cx = 266
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = mo2e
+  end
+  object mo3: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 56
+    bounds_x = 0
+    bounds_y = 96
+    bounds_cx = 266
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = mo3e
+  end
+  object mo4: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 57
+    bounds_x = 0
+    bounds_y = 144
+    bounds_cx = 266
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = mo4e
+  end
+  object mo5: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 58
+    bounds_x = 0
+    bounds_y = 192
+    bounds_cx = 266
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = mo5e
+  end
+  object mo6: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 59
+    bounds_x = 0
+    bounds_y = 240
+    bounds_cx = 266
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = mo6e
+  end
+  object mo7: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 60
+    bounds_x = 0
+    bounds_y = 288
+    bounds_cx = 266
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = mo7e
+  end
+  object mo8: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 61
+    bounds_x = 0
+    bounds_y = 336
+    bounds_cx = 266
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = mo8e
+  end
+  object mo9: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 62
+    bounds_x = 0
+    bounds_y = 384
+    bounds_cx = 266
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = mo9e
+  end
+  object mo10: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 63
+    bounds_x = 0
+    bounds_y = 432
+    bounds_cx = 266
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = mo10e
+  end
+  object mo11: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 64
+    bounds_x = 0
+    bounds_y = 480
+    bounds_cx = 266
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = mo11e
+  end
+  object mo12: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 65
+    bounds_x = 0
+    bounds_y = 528
+    bounds_cx = 266
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = mo12e
+  end
+  object tfilelistview3: tfilelistview
+    frame.sbhorz.framebutton.localprops = []
+    frame.sbhorz.framebutton.localprops1 = []
+    frame.sbhorz.framebutton.template = tframecomp2
+    frame.sbhorz.frameendbutton1.localprops = []
+    frame.sbhorz.frameendbutton1.localprops1 = []
+    frame.sbhorz.frameendbutton1.template = tframecomp2
+    frame.sbhorz.frameendbutton2.localprops = []
+    frame.sbhorz.frameendbutton2.localprops1 = []
+    frame.sbhorz.frameendbutton2.template = tframecomp2
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 66
+    popupmenu = tpopupmenu3
+    bounds_x = 786
+    bounds_y = 384
+    bounds_cx = 264
+    bounds_cy = 162
+    anchors = [an_top, an_right, an_bottom]
+    cellwidth = 320
+    cellheight = 44
+    optionsgrid = [og_colsizing, og_focuscellonenter, og_colchangeontabkey, og_wraprow, og_wrapcol, og_autopopup, og_mousescrollcol]
+    options = [lvo_readonly, lvo_drawfocus, lvo_leftbuttonfocusonly, lvo_focusselect, lvo_mouseselect, lvo_multiselect, lvo_locate]
+    gridframecolor = -2147483640
+    onselectionchanged = onshch
+    reffontheight = 36
+  end
+  object tbutton3: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 67
+    bounds_x = 736
+    bounds_y = 552
+    bounds_cx = 312
+    bounds_cy = 44
+    anchors = [an_right, an_bottom]
+    state = [as_localonexecute]
+    onexecute = bclockpanel
+  end
+  object wd1: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 68
+    bounds_x = 272
+    bounds_y = 0
+    bounds_cx = 90
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = bwd1
+  end
+  object wd2: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 69
+    bounds_x = 272
+    bounds_y = 48
+    bounds_cx = 90
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = bwd2
+  end
+  object wd3: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 70
+    bounds_x = 272
+    bounds_y = 96
+    bounds_cx = 90
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = bwd3
+  end
+  object wd4: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 71
+    bounds_x = 272
+    bounds_y = 144
+    bounds_cx = 90
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = bwd4
+  end
+  object wd5: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 72
+    bounds_x = 272
+    bounds_y = 192
+    bounds_cx = 90
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = bwd5
+  end
+  object wd6: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 73
+    bounds_x = 272
+    bounds_y = 240
+    bounds_cx = 90
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = bwd6
+  end
+  object wd7: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 74
+    bounds_x = 272
+    bounds_y = 288
+    bounds_cx = 90
+    bounds_cy = 44
+    state = [as_localonexecute]
+    onexecute = bwd7
+  end
+  object md1: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 75
+    bounds_x = 368
+    bounds_y = 0
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '1'
+    onexecute = d1
+  end
+  object md2: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 76
+    bounds_x = 368
+    bounds_y = 48
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '2'
+    onexecute = d2
+  end
+  object md3: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 77
+    bounds_x = 368
+    bounds_y = 96
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '3'
+    onexecute = d3
+  end
+  object md4: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 78
+    bounds_x = 368
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '4'
+    onexecute = d4
+  end
+  object md5: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 79
+    bounds_x = 368
+    bounds_y = 192
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '5'
+    onexecute = d5
+  end
+  object md6: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 80
+    bounds_x = 368
+    bounds_y = 240
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '6'
+    onexecute = d6
+  end
+  object md7: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 81
+    bounds_x = 368
+    bounds_y = 288
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '7'
+    onexecute = d7
+  end
+  object md8: tbutton
+    frame.localprops = [frl_optionsskin]
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 82
+    bounds_x = 424
+    bounds_y = 0
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '8'
+    onexecute = d8
+  end
+  object md9: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 83
+    bounds_x = 424
+    bounds_y = 48
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '9'
+    onexecute = d9
+  end
+  object md10: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 84
+    bounds_x = 424
+    bounds_y = 96
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '10'
+    onexecute = d10
+  end
+  object md11: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 85
+    bounds_x = 424
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '11'
+    onexecute = d11
+  end
+  object md12: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 86
+    bounds_x = 424
+    bounds_y = 192
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '12'
+    onexecute = d12
+  end
+  object md13: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 87
+    bounds_x = 424
+    bounds_y = 240
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '13'
+    onexecute = d13
+  end
+  object md14: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 88
+    bounds_x = 424
+    bounds_y = 288
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '14'
+    onexecute = d14
+  end
+  object md15: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 89
+    bounds_x = 480
+    bounds_y = 0
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '15'
+    onexecute = d15
+  end
+  object md16: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 90
+    bounds_x = 480
+    bounds_y = 48
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '16'
+    onexecute = d16
+  end
+  object md17: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 91
+    bounds_x = 480
+    bounds_y = 96
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '17'
+    onexecute = d17
+  end
+  object md18: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 92
+    bounds_x = 480
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '18'
+    onexecute = d18
+  end
+  object md19: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 93
+    bounds_x = 480
+    bounds_y = 192
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '19'
+    onexecute = d19
+  end
+  object md20: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 94
+    bounds_x = 480
+    bounds_y = 240
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '20'
+    onexecute = d20
+  end
+  object md21: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 95
+    bounds_x = 480
+    bounds_y = 288
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '21'
+    onexecute = d21
+  end
+  object md22: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 96
+    bounds_x = 536
+    bounds_y = 0
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '22'
+    onexecute = d22
+  end
+  object md23: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 97
+    bounds_x = 536
+    bounds_y = 48
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '23'
+    onexecute = d23
+  end
+  object md24: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 98
+    bounds_x = 536
+    bounds_y = 96
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '24'
+    onexecute = d24
+  end
+  object md25: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 99
+    bounds_x = 536
+    bounds_y = 144
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '25'
+    onexecute = d25
+  end
+  object md26: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 100
+    bounds_x = 536
+    bounds_y = 192
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '26'
+    onexecute = d26
+  end
+  object md27: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 101
+    bounds_x = 536
+    bounds_y = 240
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '27'
+    onexecute = d27
+  end
+  object md28: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 102
+    bounds_x = 536
+    bounds_y = 288
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '28'
+    onexecute = d28
+  end
+  object md29: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 103
+    bounds_x = 592
+    bounds_y = 0
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '29'
+    onexecute = d29
+  end
+  object md30: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 104
+    bounds_x = 592
+    bounds_y = 48
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '30'
+    onexecute = d30
+  end
+  object md31: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 105
+    bounds_x = 592
+    bounds_y = 96
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    caption = '31'
+    onexecute = d31
+  end
+  object tbutton4: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 106
+    bounds_x = 600
+    bounds_y = 336
+    bounds_cx = 450
+    bounds_cy = 44
+    state = [as_localcaption, as_localonexecute]
+    onexecute = onperiod
+  end
+  object trichstockglyphbutton1: trichstockglyphbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 107
+    bounds_x = 861
+    bounds_y = 608
+    bounds_cx = 50
+    bounds_cy = 52
+    anchors = [an_right, an_bottom]
+    state = [as_localimagelist, as_localimagenr, as_localonexecute]
+    glyph = stg_dbcancel
+    onexecute = can
+  end
+  object trichstockglyphbutton2: trichstockglyphbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 108
+    bounds_x = 933
+    bounds_y = 608
+    bounds_cx = 50
+    bounds_cy = 52
+    anchors = [an_right, an_bottom]
+    state = [as_localimagelist, as_localimagenr, as_localonexecute]
+    glyph = stg_dbinsert
+    onexecute = add
+  end
+  object trichstockglyphbutton3: trichstockglyphbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 109
+    bounds_x = 997
+    bounds_y = 608
+    bounds_cx = 50
+    bounds_cy = 52
+    anchors = [an_right, an_bottom]
+    state = [as_localimagelist, as_localimagenr, as_localonexecute]
+    glyph = stg_dbpost
+    onexecute = ok
+  end
+  object trichstockglyphbutton4: trichstockglyphbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 110
+    bounds_x = 811
+    bounds_y = 634
+    bounds_cx = 33
+    bounds_cy = 24
+    anchors = [an_right, an_bottom]
+    state = [as_localimagelist, as_localimagenr, as_localonexecute]
+    glyph = stg_save
+    onexecute = onsavehotlist
+  end
+  object tbutton44: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 111
+    bounds_x = 406
+    bounds_y = 552
+    bounds_cx = 320
+    bounds_cy = 44
+    anchors = [an_right, an_bottom]
+    state = [as_localonexecute]
+    onexecute = bshutdown
+  end
+  object cyc: tintegeredit
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 112
+    bounds_x = 496
+    bounds_y = 340
+    bounds_cx = 92
+    bounds_cy = 42
+    onchange = onchangecyc
+    value = 2
+    valuedefault = 2
+    valuemin = 2
+    reffontheight = 36
+  end
+  object tsplitter1: tsplitter
+    taborder = 113
+    bounds_x = 592
+    bounds_y = 384
+    bounds_cx = 2
+    bounds_cy = 106
+    options = [spo_hmove, spo_dockleft, spo_docktop, spo_dockright, spo_dockbottom]
+    linkleft = tfilelistview1
+    linkright = tfilelistview2
+  end
+  object tsplitter2: tsplitter
+    taborder = 114
+    bounds_x = 784
+    bounds_y = 384
+    bounds_cx = 2
+    bounds_cy = 106
+    options = [spo_hmove, spo_dockleft, spo_docktop, spo_dockright, spo_dockbottom]
+    linkleft = tfilelistview2
+    linkright = tfilelistview3
+  end
+  object trichstockglyphbutton5: trichstockglyphbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 115
+    bounds_x = 811
+    bounds_y = 608
+    bounds_cx = 33
+    bounds_cy = 22
+    anchors = [an_right, an_bottom]
+    state = [as_localimagelist, as_localimagenr, as_localonexecute]
+    glyph = stg_ellipsesmall
+    onexecute = onskreenkeyboard
+  end
+  object trichstockglyphbutton6: trichstockglyphbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 116
+    bounds_x = 810
+    bounds_y = 200
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolorglyph, as_localcolor, as_localonexecute]
+    caption = '+'
+    font.color = -1610612723
+    font.height = 39
+    font.style = [fs_bold]
+    font.name = 'stf_default'
+    font.localprops = [flp_color]
+    colorglyph = -1610612723
+    onexecute = onplusminutes
+    richcaption = '+'
+  end
+  object trichstockglyphbutton7: trichstockglyphbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 117
+    bounds_x = 640
+    bounds_y = 200
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolorglyph, as_localcolor, as_localonexecute]
+    caption = '+'
+    font.color = -1610612723
+    font.height = 39
+    font.style = [fs_bold]
+    font.name = 'stf_default'
+    font.localprops = [flp_color]
+    colorglyph = -1610612723
+    onexecute = onplushours
+    richcaption = '+'
+  end
+  object trichstockglyphbutton8: trichstockglyphbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 118
+    bounds_x = 640
+    bounds_y = 288
+    bounds_cx = 50
+    bounds_cy = 44
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolorglyph, as_localcolor, as_localonexecute]
+    caption = '+'
+    font.color = -1610612723
+    font.height = 39
+    font.style = [fs_bold]
+    font.name = 'stf_default'
+    font.localprops = [flp_color]
+    colorglyph = -1610612723
+    onexecute = onplusdays
+    richcaption = '+'
+  end
+  object byear: tbutton
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 119
+    bounds_x = 272
+    bounds_y = 336
+    bounds_cx = 130
+    bounds_cy = 42
+    state = [as_localcolor, as_localonexecute]
+    onexecute = onyearclick
+  end
+  object tpopupmenu1: tpopupmenu
+    menu.submenu.count = 3
+    menu.submenu.items = <    
+      item
+        caption = #1054#1090#1084#1077#1085#1080#1090#1100' '#1074#1099#1073#1086#1088' | Deselect all'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = ondeselectsound
+      end    
+      item
+        caption = #1059#1076#1072#1083#1080#1090#1100' | Delete'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = ondelwav
+      end    
+      item
+        caption = #1055#1077#1088#1077#1080#1084#1077#1085#1086#1074#1072#1090#1100' | Rename'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = onrename
+      end>
+    menu.font.height = 39
+    menu.font.style = [fs_bold]
+    menu.font.name = 'stf_menu'
+    menu.font.localprops = [flp_style, flp_height]
+    left = 352
+    top = 448
+  end
+  object tpopupmenu2: tpopupmenu
+    menu.submenu.count = 3
+    menu.submenu.items = <    
+      item
+        caption = #1054#1090#1084#1077#1085#1080#1090#1100' '#1074#1099#1073#1086#1088' | Deselect all'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = ondeselectmusic
+      end    
+      item
+      end    
+      item
+      end>
+    menu.font.height = 39
+    menu.font.style = [fs_bold]
+    menu.font.name = 'stf_menu'
+    menu.font.localprops = [flp_style, flp_height]
+    left = 624
+    top = 448
+  end
+  object tpopupmenu3: tpopupmenu
+    menu.submenu.count = 5
+    menu.submenu.items = <    
+      item
+        caption = #1054#1090#1084#1077#1085#1080#1090#1100' '#1074#1099#1073#1086#1088' | Deselect all'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = ondeselectscript
+      end    
+      item
+        caption = #1059#1076#1072#1083#1080#1090#1100' | Delete'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = ondeletescript
+      end    
+      item
+        caption = #1044#1086#1073#1072#1074#1080#1090#1100' | Add'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = onaddscript
+      end    
+      item
+        caption = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1090#1100' | Edit'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = onscriptedit
+      end    
+      item
+        caption = #1055#1077#1088#1077#1080#1084#1077#1085#1086#1074#1072#1090#1100' | Rename'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = onshrename
+      end>
+    menu.font.height = 39
+    menu.font.style = [fs_bold]
+    menu.font.name = 'stf_menu'
+    menu.font.localprops = [flp_style, flp_height]
+    left = 832
+    top = 448
+  end
+  object timagelist1: timagelist
+    width = 10
+    height = 10
+    count = 1
+    left = 264
+    top = 104
+    image = {
+      00000000020000000A0000000A000000A4000000000000000000000000000000
+      0000000000000000000000000000000000000000DDDDE601CECEE6019C9CDE01
+      5258DE011921DE025258DE019C9CDE01CECEE601DDDDE601CECEE6017B7FDE01
+      1921DE067B7FDE01CECEE6019C9CDE011921DE089C9CDE015258DE011921DE08
+      5258DE011921DE145258DE011921DE085258DE019C9CDE011921DE089C9CDE01
+      CECEE6017B7FDE011921DE067B7FDE01CECEE601DDDDE601CECEE6019C9CDE01
+      5258DE011921DE025258DE019C9CDE01CECEE601DDDDE601FE010000FF030000
+      FF030000FF030000FF030000FF030000FF030000FF030000FF030000FE010000
+    }
+  end
+  object timagelist2: timagelist
+    width = 9
+    height = 15
+    count = 2
+    left = 264
+    top = 152
+    image = {
+      0000000002000000120000001E0000004C030000000000000000000000000000
+      0000000000000000000000000000000000000000FFFFFF1C00000002FFFFFF10
+      00000003FFFFFF0500000009FFFFFF0100000004FFFFFF0400000009FFFFFF01
+      00000005FFFFFF0300000009FFFFFF0100000006FFFFFF0200000009FFFFFF01
+      00000007FFFFFF0100000009FFFFFF0100000011FFFFFF0100000007FFFFFF01
+      00000009FFFFFF0100000006FFFFFF0200000009FFFFFF0100000005FFFFFF03
+      00000009FFFFFF0100000004FFFFFF0E00000003FFFFFF0F00000002FFFFFF18
+      01010001100A050136211101623D1C0177522001645D1B014F761601509A1801
+      49931601366D120126480F0118260D01070B0401000100010000000505030201
+      1D150B014234150154531901456912014798110162D11B015CC6180144990E01
+      37750D012A4E110114210A010305020100000005010100010E0E06012A341101
+      395E1301377C0B014FB210016EE921016ADC20014FB30F013F900A0135700E01
+      264112010C120701020301010000000400010001090D050122381001376B1201
+      3D8D0A0150B90C0162DC150161D5170151BB0E0146A20A01387D0B0132591701
+      121D0A01040502010000000400010001090D050122391001376F130142980B01
+      50BB0C0159CF0D0159D10E0154C60C014BAE0B013B840B01355E1801111C0901
+      0304020100000005050803011B2D0D013466120143970D0151BD0C015AD40D01
+      5CD80D0157CC0D014BAF0B013B800D012E5115010E1608010203010100000005
+      020201010D16070126460F013D8110014DB00E0158CD0D015AD20E0154C20E01
+      489F0E01366A12011B2E0E01050903010000000703040201111C08012B511101
+      438B13014EAD110151B411014B9F12013B74140122391101080C040100010001
+      0000000802040101101A09012C4B160142721E014578200139621B011E321001
+      05090301000100010000000902040101101A09012D4B160142731F0145782001
+      39621B01203310010C0C05010705030104020101020201010100000100000014
+      2525250212121202050505020000000225252502121212020505050200000002
+      252525021B1B1B020A0A0A02000000041B1B1B020A0A0A02000000041B1B1B02
+      2525250212121202050505020000000225252502121212020505050200000002
+      252525021B1B1B020A0A0A02000000041B1B1B020A0A0A02000000041B1B1B02
+      00000000000C0000001C0000FF3D0000FF7D0000FFFD0000FFFD0100FFFD0300
+      FFFD0100FFFD0000FF7D0000FF3D0000001C0000000C000000000000FFFF0300
+      FFFF0300FFFF0300FFFF0300FFFF0300FFFF0300FFFF0300FFFF0300FFFF0300
+      FFFF0300FFFF0300FFFF0300FFFF0300FFFF0300FFFF0300
+    }
+  end
+  object timagelist3: timagelist
+    width = 32
+    height = 32
+    options = [bmo_masked, bmo_graymask]
+    count = 1
+    left = 264
+    top = 56
+    image = {
+      00000000120000002000000020000000680A0000000000000000000000000000
+      00000000000000000000000000000000000000000000000F00BBFF0100000019
+      00BBFF01002F43010000000300BBFF0106D5FE0100BBFF010000000300BBFF02
+      0000001303C7FF0104CAFE010000000309CDFE011AFDFC010CD2FE0100000002
+      00BBFF010AD9FE0106D3FE01000000130CDAFE0118F6FD010FD5FE0100000002
+      1FECFE0127FFFD0121F0FE010000000216DDFE011EFCFD0110DCFE0100000013
+      0DD1FE0125FFFD0128F9FD0121E1FE0100B2FF013DF6FD0165FEFE014AFBFD01
+      21DDFE0124E4FE012CFBFD012AFFFD011BE4FE010000000300BBFF0200000009
+      00BBFF0101BEFF0100BBFF01000000020ECBFF013CFEFD0165FEFE0155FBFD01
+      35F1FE016CFEFE0182FEFE017BFEFE013EF9FD0158FCFD0178FEFE015EFEFD01
+      29EFFD010000000100BAFF010FD7FE0111E7FD0101BEFF010000000900BBFF01
+      11E7FD011AEDFD011CE3FE0100BBFF0106C4FF0160FEFD017EFEFE0180FEFE01
+      6DFEFE0182FEFE0185FEFE0277FEFE0182FEFE0181FEFE0176FEFE0137F7FD01
+      2CEBFE012AF3FD0127FFFD011AEDFD0100BBFF010000000A10D7FE0128FFFD01
+      35FEFD0149F9FD013FF8FD0165FEFD0181FEFE0184FEFE0187FEFE0188FEFE01
+      87FDFE0288FEFE0187FEFE0184FEFE017DFEFE0159FDFD0168FEFE0165FEFE01
+      35FEFD011CE3FE010000000B00BBFF012BF3FD0163FEFE0176FEFE0178FEFE01
+      7EFEFE0184FEFE017BF5FE015DDBFE013DC7FE0127BEFE023DC7FE015DDBFE01
+      7BF5FE0184FEFE0180FEFE017BFEFE0176FEFE0149F9FD0100BBFF010000000C
+      2DEBFE0163FEFE0178FEFE017EFEFE0181FCFE015ADBFE018ACDFE01D9EBFF01
+      F8FCFF01FDFFFF01F0F9FF01C7E6FF016BC4FE0112B7FE015ADCFE0181FCFE01
+      7EFEFE0175FEFE0140F8FD0107C4FF0110CAFF010FD1FE010FDAFE0104C7FF01
+      00BBFF010000000200BBFF0109D3FE0113DCFE011FE4FE012CEFFD013AF7FD01
+      56FDFD0179FEFD017DFCFD0149CFFE01C2E1FF01F7FDFF01F2FCFF01EBFAFF01
+      E4F9FF01DCF7FF01D5F5FF01CDF2FF0185D4FE0101B5FE0148D0FE017DFCFD01
+      77FEFD015EFEFD0157FEFD013BFEFD012AFFFD011DF6FD0105CAFE01002D4101
+      0000000200BBFF010ED9FE0124FCFD012FFFFD0150FEFD0165FEFD0170FEFD01
+      7AFEFD0156DAFE01A6D8FF01DEF6FF01D7F5FF01CFF5FF01C8F4FF01C1F4FF01
+      BAF2FF01B3F0FF01ACEDFF01A4EAFF015ECBFE0101B4FE0156DBFE017AFEFD01
+      73FEFD016BFEFD0155FEFD012DF9FD0113D5FE010000000500BCFF011ADDFE01
+      31FAFD015FFEFD016BFEFD0173FEFD0170F5FD014CBDFE01C1EDFF01BBEEFF01
+      B4EFFF01ADF0FF01A6F1FF019FF1FF0197F0FF0190EEFF0189EAFF0182E6FF01
+      74DDFE0100BAFE0111B6FE0170F5FD0173FEFD016AFEFD014BFBFD0125E1FE01
+      0000000829E4FE014DFCFD0169FEFD0173FEFD0152DAFE0176CCFE01A0E6FF01
+      99E8FF0191EAFF018AEDFF0183F0FF017CF1FE0175F1FE016EEEFE0166E9FE01
+      5FE3FE0157DBFE0100BFFE0100B5FE0152DBFE0173FEFD015CFEFD013AF1FE01
+      00B1FF010000000826DDFE0142F9FD0161FEFD0171FEFD0133C4FE0166CCFE01
+      7DDEFE0176E2FE016FE7FE0168EBFE0161F0FE0159F4FE0152F4FE014BF0FE01
+      44E9FE013DE1FE012CD4FE0100C2FE0100B8FE0132C6FE0166FEFD014FFEFD01
+      44FEFD0135F6FD0125EBFE010DCDFF0100BBFF010000000200BBFF0111D2FE01
+      27EFFE013EFBFD0158FEFD0165FEFD016DFDFD011FBAFE0132BDFE015BD6FE01
+      54DCFE014DE2FE0145E9FE013EF0FE0137F8FE0130F9FE0129F1FE0121E7FE01
+      16DCFE0102CFFE0100C4FE0100B9FE0119BCFE015AFDFD0150FEFD0145FEFD01
+      39FEFD012EFFFD0122FDFD010BD5FE0100BBFF020BD5FE0122FDFD012EFFFD01
+      45FEFD0156FEFD0161FEFD0169FDFD011EBAFE0100B5FE0122C5FE012DD3FE01
+      28DBFE0121E4FE011AECFE0113F4FE010AF6FE0102EEFE0100E4FE0100D9FE01
+      00CEFE0100C3FE0100B9FE0119BCFE015AFDFD0150FEFD0145FEFD0138FBFD01
+      27EFFE0111D2FE0100BBFF010000000200BBFF010DCCFF0125EBFE0137F6FD01
+      4CFEFD015BFEFD0165FEFD012EC4FE0100B3FE0100BEFE0100C8FE0100D2FE01
+      00DCFE0100E5FE0100EBFE0100ECFE0100E7FE0100DFFE0100D6FE0100CCFE01
+      00C1FE0100B7FE0129C6FE015AFEFD014FFEFD0142F9FD0126DDFE0100000008
+      00BBFF013AF1FE0150FEFD015FFEFD0144D9FE0100B0FE0100BAFE0100C4FE01
+      00CDFE0100D5FE0100DCFE0100E1FE0200DEFE0100D8FE0100D0FE0100C7FE01
+      00BDFE0100B3FE013FDBFE0157FEFD014CFEFD0140FCFD0129E4FE0100000008
+      25E1FE013CFBFD0149FEFD0155FEFD0156F5FD010BB2FE0100B5FE0100BEFE01
+      00C6FE0100CDFE0100D3FE0100D6FE0100D7FE0100D4FE0100CFFE0100C9FE01
+      00C1FE0100B8FE010BB5FE0154F5FD0153FEFD0148FEFD013EFEFD0131FAFD01
+      1ADDFE0100BCFF010000000513D5FE012DF9FD0139FEFD0144FEFD014EFEFD01
+      57FEFD013EDAFE0101AFFE0100B7FE0100BEFE0100C4FE0100C9FE0100CCFE02
+      00CAFE0100C6FE0100C0FE0100B9FE0101B2FE013EDBFE0157FEFD014EFEFD01
+      44FEFD0139FEFD012FFFFD0123FCFD010ED9FE0100BBFF0100000002002E4201
+      05CAFE011DF6FD012AFFFD0134FEFD013EFEFD0147FEFD0151FEFD0157FCFD01
+      32CEFE0101B0FE0100B6FE0100BBFE0100BFFE0100C1FE0200C0FE0100BCFE01
+      00B7FE0100B2FE0132CFFE0157FCFD0151FEFD0147FDFD013AF7FD012DEFFD01
+      1FE4FE0113DCFE0109D3FE0100BBFF010000000200BBFF0104C7FF010FDAFE01
+      0FD2FE0110CAFF0107C4FF013EF8FD0149FEFD0151FEFD0156FCFD013DDAFE01
+      0BB3FE0100B1FE0100B5FE0100B7FE0200B5FE0100B2FE010BB4FE013DDBFE01
+      56FCFD0151FEFD0149FEFD0140FEFD012EEBFE010000000C00BBFF0136F9FD01
+      41FEFD0148FEFD014FFEFD0155FEFD0151F5FD013DDAFE0127C4FE0118BBFE02
+      27C5FE013CDAFE0151F5FD0155FEFD014FFEFD0148FEFD0141FEFD0138FEFD01
+      2BF3FD0100BBFF010000000B1CE3FE0130FEFD0138FEFD013FFEFD0144FDFD01
+      4BFEFD014FFEFD0153FEFD0155FEFD0155FDFD0255FEFD0153FEFD014FFEFD01
+      4BFEFD0145FEFD013DF8FD0135F9FD0130FEFD0128FFFD0110D7FE010000000A
+      00BAFF011AEDFD0127FFFD012AF3FD012CEBFE0137F7FD0140FEFD0144FEFD01
+      47FEFD0149FEFD014BFEFD0249FEFD0147FEFD0144FEFD0140FEFD013BFEFD01
+      06C4FF0100BBFF011CE2FE011AEDFD0111E7FD0100BBFF010000000901BEFF01
+      11E7FD010FD7FE0100BBFF010000000129EFFD0135FEFD0139FEFD013BFCFD01
+      3CF9FD013FFEFD023EFEFD0135F1FE0137FBFD0135FEFD0130FEFD010ECBFF01
+      0000000200BBFF0101BEFF0100BBFF010000000900BBFF02000000031BE4FE01
+      2AFFFD012CFBFD0124E4FE0121DDFE0131FBFD0133FEFD012EF6FD0100B9FF01
+      21E2FE0128F9FD0125FFFD010DD1FE010000001310DCFE011EFCFD0116DDFE01
+      0000000221F0FE0127FFFD011FECFE010000000210D5FE0118F6FD010CDAFE01
+      0000001306D3FE010AD9FE0100BBFF01000000020CD2FE011AFDFC0109CDFE01
+      0000000304CAFE0103C7FF010000001300BBFF020000000300BBFF0106D5FE01
+      00BBFF0100000003002C410100BBFF010000001900BBFF010000000F00040000
+      0000000000000000000000000000005C00000000000000000000000000000000
+      00000000000000000021000000000DEF0B000000096300000000000000000000
+      000000000000000000915E00000050FF5C000000A29100000000000000000000
+      0000000000000000006EFA4A00009AFFBA00006EFF8700000000000000000000
+      00000000000000000058FFF53B00E4FFFE1A3EFAFF740000000D540000000000
+      00000000545F04000035FFFFF05FFFFFFF97E8FFFF66000369EA5F0000000000
+      000000000EEAE2700C19FFFFFFFFFFFFFFFFFFFFFF664ED7FFE2040000000000
+      00000000006AFFFFED87FFFFFFFFFFFFFFFFFFFFFFECFFFFFF70000000000000
+      000000000003D7FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFED0C000000000000
+      0000000000004EFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF871835576E912100
+      00639187746666ECFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA5E0000
+      0009A2FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF54A000000
+      0000006DFAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF03C00000000
+      000000003EE8FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF600000000000
+      000000001A97FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE49B500E00
+      000B5CBAFEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF05C
+      5CEFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEBB5D0C00
+      000D509AE3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF981B00000000
+      00000000005FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFE83E00000000
+      000000003BF0FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA6E000000
+      0000004AF5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFA20900
+      00005DFAFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFEC66667487916300
+      0021926E58351A87FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF4E000000000000
+      0000000000000CEDFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD7030000000000
+      00000000000070FFFFFFEDFFFFFFFFFFFFFFFFFFFFFF87EDFFFF690000000000
+      000000000004E2FFD74E66FFFFFFFFFFFFFFFFFFFFFF190B70E2EA0E00000000
+      00000000005FEA69030066FFFFE897FFFFFF5FF0FFFF350000045F5400000000
+      0000000000540E00000074FFFA3E1BFEFFE4003BF5FF57000000000000000000
+      0000000000000000000087FF6E0000BAFF9A00004AFA6E000000000000000000
+      0000000000000000000091A20000005DFF500000005E91000000000000000000
+      0000000000000000000063090000000BEF0D0000000021000000000000000000
+      000000000000000000000000000000005C000000000000000000000000000000
+    }
+  end
+  object timagelist4: timagelist
+    width = 121
+    height = 32
+    count = 1
+    left = 264
+    top = 8
+    image = {
+      0000000002000000790000002000000040000000000000000000000000000000
+      0000000000000000000000000000000000000000000000FF000000FF000000FF
+      000000FF000000FF000000FF000000FF000000FF000000FF000000FF000000FF
+      000000FF000000FF000000FF000000FF0000002F000000000000000000000000
+      00000000000F0000000000000000000000E0010080FF0F000000000000000000
+      E0FF0300F0FFFF000000000000000000FEFF1F00F8FFFF0700000000000000C0
+      FFFF3F00FEFFFF3F00000000000000F8FFFFFF00007CC1FF00000000000000FE
+      077D0000000000FE070000000000C0FF00000000000000C0FF0000000000FE07
+      0000000000000080FF0100000000FF030000000000000000B400000000005A00
+      000000000000000000000000000000000000000000F8FF1F00000000000000F0
+      FF3F000000FEFFFF01000000000000FFFFFF000080FFFFFF070000000000C0FF
+      FFFF030080FFFFFF1F0000000000F0FFFFFF030000FFFFFF3F0000000000F8FF
+      FFFF0100007FFCFFFF0000000000FEFF7FFC0100C01F1CFFFF0100000000FFF7
+      7FF00700C01F1CFF7907000000C03DE37FF00700001E38FFF100000000001EC7
+      3FF00000001E78FFE001000000000FC63FF00000003EF07FE003000000800FEC
+      1FF8000000F8E03FF007000000001FF80F3E000000F8811FF80F000000003FF0
+      033F000000F00700FF0F00000000FE01C01F000000F03FE0FF0700000000FC0F
+      F81F00000000F8FF3F0000000000F8FF3F0000000000E8FF070000000000C0FF
+      2F000000000090F9030000000000803F13000000000080F8000000000000003E
+      0200000000000000000000000000000000000000
+    }
+  end
+  object tpopupmenu4: tpopupmenu
+    itemfacetemplateactive = mainfo.tfacecomp1
+    menu.submenu.count = 13
+    menu.submenu.items = <    
+      item
+        caption = #1054#1076#1085#1086#1082#1088#1072#1090#1085#1086' | One-shot'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = pm0
+      end    
+      item
+        caption = #1045#1078#1077#1095#1072#1089#1085#1086' | Hourly'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = pm1
+      end    
+      item
+        caption = #1045#1078#1077#1076#1085#1077#1074#1085#1086' | Daily'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = pm2
+      end    
+      item
+        caption = #1044#1085#1080' '#1085#1077#1076#1077#1083#1080' | Weekdays'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = pm3
+      end    
+      item
+        caption = #1063#1080#1089#1083#1086' '#1084#1077#1089#1103#1094#1072' | Day of month'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = pm4
+      end    
+      item
+        caption = #1055#1086' '#1095#1105#1090#1085#1099#1084' | On even'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = pm5
+      end    
+      item
+        caption = #1055#1086' '#1085#1077#1095#1105#1090#1085#1099#1084' | On uneven'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = pm6
+      end    
+      item
+        caption = #1045#1078#1077#1075#1086#1076#1085#1086' | Annually'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = pm7
+      end    
+      item
+        caption = #1070#1073#1080#1083#1077#1080' | Jubilee'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = pm8
+      end    
+      item
+        caption = #1055#1077#1088#1080#1086#1076' '#1076#1085#1080' | Period days'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = pm9
+      end    
+      item
+        caption = #1055#1077#1088#1080#1086#1076' '#1095#1072#1089#1099' | Period hours'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = pm10
+      end    
+      item
+        caption = #1055#1077#1088#1080#1086#1076' '#1084#1080#1085#1091#1090#1099' | Period minutes'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = pm11
+      end    
+      item
+        caption = #1045#1078#1077#1084#1080#1085#1091#1090#1085#1086' | Monthly'
+        state = [as_localcaption, as_localonexecute]
+        onexecute = pm12
+      end>
+    menu.font.height = 39
+    menu.font.style = [fs_bold]
+    menu.font.name = 'stf_menu'
+    menu.font.localprops = [flp_style, flp_height]
+    left = 792
+    top = 352
+  end
+  object timagelist5: timagelist
+    width = 4
+    height = 4
+    count = 8
+    cornermask_topleft = #2#1
+    cornermask_bottomleft = #2#1
+    cornermask_bottomright = #2#1
+    cornermask_topright = #2#1
+    left = 261
+    top = 244
+    image = {
+      00000000020000000C0000000C000000E8000000000000000000000000000000
+      0000000000000000000000000000000000000000FFFFFF028B8B8B02A5A5A501
+      000000038B8B8B01FFFFFF048B8B8B01FFFFFF02A5A5A501000000038B8B8B01
+      FFFFFF038B8B8B01FFFFFF03A5A5A50100000003FFFFFF018B8B8B01FFFFFF02
+      8B8B8B01FFFFFF03A5A5A50100000003FFFFFF028B8B8B03FFFFFF068B8B8B01
+      FFFFFF038B8B8B02FFFFFF068B8B8B01FFFFFF038B8B8B01FFFFFF018B8B8B01
+      FFFFFF048B8B8B01FFFFFF048B8B8B07FFFFFF04D6D6D6018B8B8B03FFFFFF02
+      8B8B8B0400000004FFFFFF028B8B8B01FFFFFF04D6D6D60100000004FFFFFF03
+      8B8B8B01FFFFFF0400000004FFFFFF038B8B8B01FFFFFF04000000041C010000
+      1201000011020000110C00008008000080080000400800003F080000F3000000
+      040000000800000008000000
+    }
+  end
+  object tframecomp2: tframecomp
+    template.framei_left = 4
+    template.framei_top = 2
+    template.framei_right = 4
+    template.framei_bottom = 2
+    template.frameimage_list = timagelist5
+    template.frameimage_left = -4
+    template.frameimage_top = -4
+    template.frameimage_right = -4
+    template.frameimage_bottom = -4
+    left = 272
+    top = 291
+  end
+end

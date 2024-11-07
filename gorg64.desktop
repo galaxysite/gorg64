@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=GALAXY ORGANIZER
+Name[ru]=GORG64
+Comment=Organizer
+Exec=/usr/bin/gorg64
+Terminal=false
+Type=Application
+Icon=/usr/share/pixmaps/gorg64.png
+Categories=Office;

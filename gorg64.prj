@@ -1,0 +1,2058 @@
+[componentpalette]
+order0=0
+order1=0
+order2=0
+order3=0
+order4=0
+order5=0
+order6=0
+order7=0
+order8=0
+order9=0
+order10=0
+order11=0
+order12=0
+order13=0
+order14=0
+order15=0
+order16=0
+order17=0
+[projectoptions]
+projectdir=/home/first/src/Fredvs/N_GORG
+projectfilename=/home/first/src/Fredvs/N_GORG/gorg64.prj
+findinfiledialog=60
+ [findinfileadialogfo.subdirs]
+ value=1
+ [findinfileadialogfo.incurrentfile]
+ value=0
+ [findinfileadialogfo.inopenfiles]
+ value=0
+ [findinfileadialogfo.wholeword]
+ value=0
+ [findinfileadialogfo.indirectories]
+ value=1
+ [findinfileadialogfo.inprojectdir]
+ value=0
+ [findinfileadialogfo.casesensitive]
+ value=0
+ [findinfileadialogfo.mask]
+ value="*.pas" "*.pp" "*.inc"
+ history=1
+  "*.pas" "*.pp" "*.inc"
+ [findinfileadialogfo.dir]
+ filenames=1
+  /home/fred/mseide-msegui/
+ filecolwidth=174
+ x=0
+ y=0
+ cx=0
+ cy=0
+ filehistory=2
+  /home/fred/mseide-msegui/
+  /home/fred/freepascal-ootb_320/
+ filefilterindex=0
+ filefilter="*.pas" "*.pp" "*.inc"
+ [findinfileadialogfo.findtext]
+ value=cursor :=
+ history=20
+  cursor :=
+  cr_default
+  xext
+  XShapeCombineMask
+  xgcv
+  XCreateGC
+  XCreatePixmap
+  xshape
+  _NET_WM_STATE_FULLSCREEN
+  net_wm_state_fullscreen
+  wo_popup
+  netatomnames
+  _NET_WM_STATE
+  _MOTIF_WM_INFO
+  net_wm_window_type_utility
+  wo_utility
+  MWM_HINTS_DECORATIONS
+  _NET_WM_STATE_ABOVE
+  wo_notaskbar
+  ws_popup
+ [findinfileadialogfo]
+ stackedunder=
+ x=707
+ y=43
+ cx=234
+ cy=308
+finddialog=8
+ [finddialogfo.selectedonly]
+ value=0
+ [finddialogfo]
+ stackedunder=
+ x=803
+ y=339
+ cx=376
+ cy=309
+replacedialog=25
+ [replacedialogfo.promptonreplace]
+ value=1
+ [replacedialogfo.selectedonly]
+ value=0
+ [replacedialogfo.replacetext]
+ value=breaksound
+ history=12
+  breaksound
+  uStrToInt
+  ShowClockPanel
+  TGORG64DT
+  TGORG64Event
+  TGORG64Date
+  cl_ltred
+  GORG64Stat
+  GORG64Event
+  GORG64DT
+  GORG64Date
+  
+ [replacedialogfo]
+ stackedunder=
+ x=142
+ y=302
+ cx=427
+ cy=163
+options=135
+ [projectoptionsfo.toolshortcuts]
+ dropdowncolwidths=3
+  70
+  70
+  70
+ [projectoptionsfo.twidgetgrid3]
+ propcolwidthref=841
+ sortdescend0=0
+ sortdescend1=0
+ sortdescend2=0
+ sortdescend3=0
+ width4=307
+ sortdescend4=0
+ width5=138
+ sortdescend5=0
+ width6=343
+ sortdescend6=0
+ width7=59
+ sortdescend7=0
+ width8=1
+ sortdescend8=0
+ width9=344
+ sortdescend9=0
+ [projectoptionsfo.twidgetgrid4]
+ propcolwidthref=611
+ width_newfonames=96
+ sortdescend_newfonames=0
+ sortdescend_newinheritedforms=0
+ width_newfonamebases=73
+ sortdescend_newfonamebases=0
+ width_newfoformsuffix=69
+ sortdescend_newfoformsuffix=0
+ width_newfosources=322
+ sortdescend_newfosources=0
+ width_mewfoforms=279
+ sortdescend_mewfoforms=0
+ sorted=0
+ col=-1073741823
+ row=-1073741823
+ rowheight=19
+ [projectoptionsfo.newfile]
+ firsttab=0
+ index=2
+ [projectoptionsfo.fontaliasgrid]
+ propcolwidthref=524
+ width0=98
+ sortdescend0=0
+ width1=513
+ sortdescend1=0
+ width2=30
+ sortdescend2=0
+ width3=50
+ sortdescend3=0
+ width4=50
+ sortdescend4=0
+ width5=50
+ sortdescend5=0
+ width6=70
+ sortdescend6=0
+ [projectoptionsfo.macrosplitter]
+ x=0
+ y=174
+ xprop=1
+ yprop=0.34368932038835
+ [projectoptionsfo.macrogrid]
+ propcolwidthref=648
+ sortdescend0=0
+ sortdescend1=0
+ sortdescend2=0
+ sortdescend3=0
+ sortdescend4=0
+ sortdescend5=0
+ width6=146
+ sortdescend6=0
+ width7=636
+ sortdescend7=0
+ [projectoptionsfo.makeoptionsgrid]
+ propcolwidthref=781
+ values0=6
+  Define Object Pascal
+  Debug infos
+  Re-build all
+  Optimizations
+  Verbosity
+  Output to /units
+ width0=57
+ sortdescend0=0
+ sortdescend1=0
+ sortdescend2=0
+ sortdescend3=0
+ sortdescend4=0
+ sortdescend5=0
+ sortdescend6=0
+ sortdescend7=0
+ values8=6
+  -Mobjfpc -Sh -Fcutf8
+  -gl -O-
+  -B
+  -O1 -XX -Xs -CX
+  -vewinh
+  -FUunits
+ sortdescend8=0
+ [projectoptionsfo.makegroupbox]
+ firsttab=0
+ index=1
+ [projectoptionsfo.exceptionsgrid]
+ propcolwidthref=825
+ width0=47
+ sortdescend0=0
+ width1=819
+ sortdescend1=0
+ [projectoptionsfo.ttabwidget1]
+ firsttab=0
+ index=0
+ [projectoptionsfo.filefiltergrid]
+ propcolwidthref=733
+ width0=112
+ sortdescend0=0
+ width1=726
+ sortdescend1=0
+ [projectoptionsfo.ttabwidget2]
+ firsttab=0
+ index=0
+ [projectoptionsfo.ttabwidget3]
+ firsttab=0
+ index=0
+ [projectoptionsfo.tabwidget]
+ firsttab=0
+ index=2
+ [projectoptionsfo]
+ stackedunder=
+ x=510
+ y=358
+ cx=874
+ cy=572
+settings=14
+ [settingsfo.macrogrid]
+ propcolwidthref=302
+ width0=151
+ sortdescend0=0
+ width1=144
+ sortdescend1=0
+ [settingsfo]
+ x=528
+ y=128
+ cx=348
+ cy=613
+ wsize=0
+ active=1
+ visible=1
+imageselector=9
+ [imageselectorfo]
+ stackedunder=
+ x=800
+ y=419
+ cx=320
+ cy=329
+ wsize=0
+ active=1
+ visible=1
+stringlisteditor=5
+ [stringlisteditor]
+ x=177
+ y=203
+ cx=275
+ cy=237
+imagelisteditor=43
+ [imagelisteditorfo.statfile1]
+ currentversion=0
+ [imagelisteditorfo.filedialog]
+ filenames=1
+  /home/first/mysites/smfg/soft/GORG64/diz/gorg_yearlist.png
+ filecolwidth=174
+ x=0
+ y=0
+ cx=0
+ cy=0
+ lastdir=/home/first/mysites/smfg/soft/GORG64/diz/
+ filehistory=17
+  /home/first/mysites/smfg/soft/GORG64/diz/gorg_yearlist.png
+  /home/first/mysites/smfg/soft/GORG64/diz/1356913799_1.png
+  /home/first/mysites/smfg/soft/GORG64/diz/Ed1.png
+  /home/first/mysites/smfg/soft/GORG64/diz/boton-mail-1-remix.png
+  /home/first/mysites/smfg/soft/GORG64/diz/rodentia-icons_document-add.png
+  /home/first/mysites/smfg/soft/GORG64/diz/ttreasure-map.png
+  /home/first/mysites/smfg/soft/GORG64/diz/iinternet-web-browser.png
+  /home/first/mysites/smfg/soft/GORG64/diz/tttrash.png
+  /home/first/mysites/smfg/soft/GORG64/diz/nb_trash.png
+  /home/first/mysites/smfg/soft/GORG64/diz/gorg_help.png
+  /home/first/mysites/smfg/soft/GORG64/diz/gorg_edit.png
+  /home/first/mysites/smfg/soft/GORG64/ufo_PNG71635.png
+  /home/first/Загрузки/856_sm.png
+  /home/first/Загрузки/18891_sm.png
+  /home/first/mysites/smfg/soft/GORG64/RO/diz/ar02.bmp
+  /home/first/mysites/smfg/soft/GORG64/RO/diz/sqr.bmp
+  /home/first/mysites/smfg/soft/GORG64/RO/diz/rec001.bmp
+ filefilterindex=0
+ filefilter="*.jpg" "*.jpeg" "*.bmp" "*.ico" "*.png" "*.pnm" "*.pgm" "*.pbm" "*.tga" "*.tif" "*.tiff" "*.xpm"
+ [imagelisteditorfo.transparentcolor]
+ value=-2147483647
+ [imagelisteditorfo.stretch]
+ value=0
+ [imagelisteditorfo]
+ x=809
+ y=458
+ cx=508
+ cy=355
+ wsize=0
+ active=1
+ visible=1
+colordialog=5
+ [colordialogfo]
+ x=140
+ y=234
+ cx=338
+ cy=298
+compnamedialog=5
+ [compnametreefo]
+ x=534
+ y=268
+ cx=300
+ cy=203
+bmpfiledialog=18
+ [filedialog]
+ filenames=1
+  /home/first/mysites/smfg/soft/GORG64/msegui_48.png
+ filecolwidth=174
+ x=0
+ y=0
+ cx=0
+ cy=0
+ lastdir=/home/first/mysites/smfg/soft/GORG64/
+ filehistory=6
+  /home/first/mysites/smfg/soft/GORG64/msegui_48.png
+  /home/first/mysites/smfg/soft/GORG64/agplv3-88x31.png
+  /home/first/mysites/smfg/soft/GORG64/fl214461.png
+  /home/first/mysites/smfg/soft/GORG64/gorgico.png
+  /home/first/mysites/smfg/soft/GORG64/ufo_PNG71635_320221.png
+  /home/first/mysites/smfg/soft/GORG64/ufo_PNG71635.png
+ filefilterindex=0
+ filefilter="*.jpg" "*.jpeg" "*.bmp" "*.ico" "*.png" "*.pnm" "*.pgm" "*.pbm" "*.tga" "*.tif" "*.tiff" "*.xpm"
+memodialog=8
+ [msememodialogfo]
+ x=755
+ y=392
+ cx=409
+ cy=297
+ wsize=0
+ active=1
+ visible=1
+sourcefilemasks=3
+ "*.pas" "*.dpr" "*.lpr" "*.pp" "*.inc"
+ "*.c" "*.cc" "*.h"
+ "*.mfm"
+syntaxdeffiles=3
+ ${SYNTAXDEFDIR}pascal.sdef
+ ${SYNTAXDEFDIR}cpp.sdef
+ ${SYNTAXDEFDIR}objecttext.sdef
+filemasknames=3
+ Source
+ Forms
+ All Files
+filemasks=3
+ "*.pp" "*.pas" "*.inc" "*.dpr" "*.lpr"
+ *.mfm
+ *
+codetemplatedirs=1
+ ${TEMPLATEDIR}
+showgrid=1
+snaptogrid=1
+moveonfirstclick=1
+noformdesignerdocking=0
+componenthints=1
+gridsizex=8
+gridsizey=8
+autoindent=1
+blockindent=1
+linenumberson=1
+rightmarginon=1
+rightmarginchars=80
+scrollheight=0
+tabstops=4
+spacetabs=0
+showtabs=0
+tabindent=0
+editfontname=helvetica
+editfontheight=20
+editfontwidth=0
+editfontextraspace=0
+editfontcolor=-1879048183
+editbkcolor=-1879048186
+statementcolor=14745599
+pairmarkcolor=-1610612712
+pairmaxrowcount=100
+editfontantialiased=1
+editmarkbrackets=1
+editmarkpairwords=1
+backupfilecount=2
+encoding=1
+eolstyle=1
+trimtrailingwhitespace=0
+debugcommand=${DEBUGGER}
+debugoptions=
+debugtarget=
+runcommand=
+xtermcommand=xterm -S${PTSN}/${PTSH}
+remoteconnection=
+uploadcommand=
+gdbprocessor=Auto
+gdbservercommand=
+gdbservercommandattach=
+beforeconnect=
+afterconnect=
+beforeload=
+afterload=
+beforerun=
+sourcebase=
+sourcedirs=8
+ ${FPCSRCDIR}/
+ ${FPCSRCDIR}/*/
+ ${FPCSRCDIR}/*/*/
+ ${FPCSRCDIR}/*/*/*/
+ ${MSEDIR}lib/addon/*/
+ ${MSEDIR}lib/common/kernel/$TARGETOSDIR/
+ ${MSEDIR}lib/common/*/
+ ./
+defines=0
+progparameters=
+progworkingdirectory=
+envvarnames=0
+envvarvalues=0
+defineson=0
+stoponexception=0
+valuehints=1
+activateonbreak=1
+raiseonbreak=1
+showconsole=1
+externalconsole=0
+settty=1
+gdbdownload=0
+downloadalways=0
+restartgdbbeforeload=0
+startupbkpt=0
+startupbkpton=0
+gdbsimulator=0
+gdbserverstartonce=0
+gdbloadtimeout=
+gdbserverwait=0
+nogdbserverexit=0
+gdbservertty=0
+exceptclassnames=1
+ EconvertError
+exceptignore=1
+ 0
+nodebugbeginend=0
+fpcgdbworkaround=1
+mainfile=${PROJECTNAME}.pas
+targetfile=${PROJECTNAME}${EXEEXT}
+makecommand=fpc
+makedir=/home/first/src/Fredvs/N_GORG/
+unitdirs=4
+ ${MSEDIR}lib/addon/*/
+ ${MSELIBDIR}kernel/linux
+ ${MSELIBDIR}kernel/$TARGETOSDIR/
+ ${MSELIBDIR}*/
+unitpref=-Fu
+incpref=-Fi
+libpref=-Fl
+objpref=-Fo
+targpref=-o
+befcommand=0
+aftcommand=0
+makeoptions=6
+ -Mobjfpc -Sh -Fcutf8
+ -gl -O-
+ -B
+ -O1 -XX -Xs -CX
+ -vewinh
+ -FUunits
+reversepathorder=0
+makeoptpurpose=6
+ Define Object Pascal
+ Debug infos
+ Re-build all
+ Optimizations
+ Verbosity
+ Output to /units
+befcommandon=0
+makeoptionson=6
+ 63
+ 17
+ 42
+ 44
+ 63
+ 63
+aftcommandon=0
+unitdirson=4
+ 196671
+ 983096
+ 65591
+ 65599
+uid=0
+macroon=0
+macronames=0
+macrovalues=0
+groupcomments=6
+ 
+ 
+ 
+ 
+ 
+ 
+fontalias=0
+fontnames=0
+fontancestors=0
+fontoptions=0
+fontheights=0
+fontwidths=0
+fontxscales=0
+usercolors=30
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+usercolorcomment=30
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+formatmacronames=0
+formatmacrovalues=0
+scriptbeforecopy=
+scriptaftercopy=
+newprojectfiles=4
+ ${TEMPLATEDIR}fpc_mse/default/project.pas
+ ${TEMPLATEDIR}fpc_mse/default/main.pas
+ ${TEMPLATEDIR}fpc_mse/default/main.mfm
+ ${TEMPLATEDIR}fpc_mse/default/main_mfm.pas
+newprojectfilesdest=4
+ ${%PROJECTNAME%}.pas
+ main.pas
+ main.mfm
+ main_mfm.pas
+newfinames=3
+ Program
+ Unit
+ Textfile
+newfifilters=3
+ "*.pas" "*.pp"
+ "*.pas" "*.pp"
+ 
+newfiexts=3
+ pas
+ pas
+ 
+newfisources=3
+ ${TEMPLATEDIR}fpc_mse/default/program.pas
+ ${TEMPLATEDIR}fpc_mse/default/unit.pas
+ 
+newfonames=11
+ Mainform
+ Simple Form
+ Docking Form
+ Datamodule
+ Subform
+ Scrollboxform
+ Tabform
+ Dockpanel
+ Report
+ Scriptform
+ Inherited Form
+newfonamebases=11
+ form
+ form
+ form
+ module
+ form
+ form
+ form
+ form
+ report
+ script
+ form
+newfoformsuffixes=11
+ fo
+ fo
+ fo
+ mo
+ fo
+ fo
+ fo
+ fo
+ re
+ sc
+ fo
+newfosources=11
+ ${TEMPLATEDIR}default/mainform.pas
+ ${TEMPLATEDIR}default/simpleform.pas
+ ${TEMPLATEDIR}default/dockingform.pas
+ ${TEMPLATEDIR}default/datamodule.pas
+ ${TEMPLATEDIR}default/subform.pas
+ ${TEMPLATEDIR}default/scrollboxform.pas
+ ${TEMPLATEDIR}default/tabform.pas
+ ${TEMPLATEDIR}default/dockpanelform.pas
+ ${TEMPLATEDIR}default/report.pas
+ ${TEMPLATEDIR}default/pascform.pas
+ ${TEMPLATEDIR}default/inheritedform.pas
+newfoforms=11
+ ${TEMPLATEDIR}default/mainform.mfm
+ ${TEMPLATEDIR}default/simpleform.mfm
+ ${TEMPLATEDIR}default/dockingform.mfm
+ ${TEMPLATEDIR}default/datamodule.mfm
+ ${TEMPLATEDIR}default/subform.mfm
+ ${TEMPLATEDIR}default/scrollboxform.mfm
+ ${TEMPLATEDIR}default/tabform.mfm
+ ${TEMPLATEDIR}default/dockpanelform.mfm
+ ${TEMPLATEDIR}default/report.mfm
+ ${TEMPLATEDIR}default/pascform.mfm
+ ${TEMPLATEDIR}default/inheritedform.mfm
+expandprojectfilemacros=4
+ 1
+ 1
+ 1
+ 0
+loadprojectfile=4
+ 1
+ 1
+ 1
+ 0
+newinheritedforms=11
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 1
+toolmenus=0
+toolfiles=0
+toolparams=0
+toolsave=0
+toolhide=0
+toolparse=0
+toolmessages=0
+toolshortcuts=0
+settingsfile=
+settingsautoload=0
+settingsautosave=0
+settingseditor=0
+settingsdebugger=0
+settingsmake=1
+settingsmacros=0
+settingsfontalias=0
+settingsusercolors=0
+settingsformatmacros=0
+settingstemplates=0
+settingstools=0
+settingsstorage=0
+settingscomponentstore=0
+settingsprojecttree=0
+settingslayout=0
+messageoutputfile=
+modulenames=14
+ CLOCKPANELFO
+ DAYELFO
+ EEFO
+ ELEFO
+ FLASHFO
+ INPUTBOXFO
+ MAINFO
+ MSGFO
+ NOTEBOOKFO
+ ORGANIZATIONFO
+ PEOPLEFO
+ SETTINGSFO
+ SHUTDOWNFO
+ YEARLISTFO
+moduletypes=14
+ TCLOCKPANELFO
+ TDAYELFO
+ TEEFO
+ TELEFO
+ TFLASHFO
+ TINPUTBOXFO
+ TMAINFO
+ TMSGFO
+ TNOTEBOOKFO
+ TORGANIZATIONFO
+ TPEOPLEFO
+ TSETTINGSFO
+ TSHUTDOWNFO
+ TYEARLISTFO
+modulefiles=14
+ /home/first/mysites/smfg/soft/GORG64/clockpanel.mfm
+ /home/first/mysites/smfg/soft/GORG64/dayel.mfm
+ /home/first/mysites/smfg/soft/GORG64/ee.mfm
+ /home/first/mysites/smfg/soft/GORG64/ele.mfm
+ /home/first/mysites/smfg/soft/GORG64/flash.mfm
+ /home/first/mysites/smfg/soft/GORG64/inputbox.mfm
+ /home/first/mysites/smfg/soft/GORG64/main.mfm
+ /home/first/mysites/smfg/soft/GORG64/msg.mfm
+ /home/first/mysites/smfg/soft/GORG64/notebook.mfm
+ /home/first/mysites/smfg/soft/GORG64/organization.mfm
+ /home/first/mysites/smfg/soft/GORG64/people.mfm
+ /home/first/mysites/smfg/soft/GORG64/settings.mfm
+ /home/first/mysites/smfg/soft/GORG64/shutdown.mfm
+ /home/first/mysites/smfg/soft/GORG64/yearlist.mfm
+macrogroup=0
+forcezorder=0
+stripmessageesc=0
+copymessages=0
+closemessages=0
+checkmethods=1
+colorerror=-1610612717
+colorwarning=-1610612712
+colornote=-1610612716
+sigsettings=27
+ 1,1,T,F
+ 3,3,T,F
+ 4,4,T,F
+ 6,6,T,F
+ 7,7,T,F
+ 8,8,T,F
+ 9,9,T,F
+ 10,10,T,F
+ 11,11,T,F
+ 12,12,T,F
+ 13,13,T,F
+ 15,15,T,F
+ 16,16,T,F
+ 17,17,F,F
+ 18,18,T,F
+ 19,19,T,F
+ 20,20,T,F
+ 21,21,T,F
+ 22,22,T,F
+ 23,23,T,F
+ 24,24,T,F
+ 25,25,T,F
+ 26,26,T,F
+ 27,27,T,F
+ 28,28,T,F
+ 29,29,F,F
+ 30,30,T,F
+defaultmake=1
+units=
+ (
+ a=0,8228,6,Pascal Units
+ )
+cmodules=
+ (
+ a=0,8228,6,C Modules
+ )
+files=
+ (
+ a=0,8228,6,Text Files
+ )
+[breakpoints]
+on=2
+ 0
+ 0
+path=2
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/widgets/msegrids.pas
+ /home/first/mysites/smfg/soft/GORG64/main.pas
+line=2
+ 6323
+ 425
+address=2
+ 6018448
+ 4411932
+addbkpt=2
+ 0
+ 0
+ignore=2
+ 0
+ 0
+condition=2
+ 
+ 
+panels=1
+ panel1
+[componentstore]
+storedir=/home/first/src/Fredvs/N_GORG/mseide-msegui/apps/ide/compstore/
+filename=
+[components]
+[selecteditpage]
+colwidth=100
+x=0
+y=0
+cx=0
+cy=0
+[progparams]
+progparamhistory=0
+workdirparamhistory=0
+envvarons=0
+[edit]
+hintwidth=0
+hintheight=0
+finddtext=ruenv
+findhistory=20
+ ruenv
+ tintegerdisp
+ tintegeredit
+ cx
+ width
+ oncr
+ espk
+ evspk
+ sf_queue
+ playsoundstate
+ h12
+ key_T
+ plusdays
+ plusminutes
+ PlusDay
+ click
+ onbutton
+ tmainfo.oncreate
+ tmainfo.Create
+ tmainfo.create
+findoptions=1
+editpos=52
+ 0,0
+ 0,4
+ 0,0
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+ 0,-1073741823
+bookmarks0=0
+bookmarks1=0
+bookmarks2=0
+bookmarks3=0
+bookmarks4=0
+bookmarks5=0
+bookmarks6=0
+bookmarks7=0
+bookmarks8=0
+bookmarks9=0
+bookmarks10=0
+bookmarks11=0
+bookmarks12=0
+bookmarks13=0
+bookmarks14=0
+bookmarks15=0
+bookmarks16=0
+bookmarks17=0
+bookmarks18=0
+bookmarks19=0
+bookmarks20=0
+bookmarks21=0
+bookmarks22=0
+bookmarks23=0
+bookmarks24=0
+bookmarks25=0
+bookmarks26=0
+bookmarks27=0
+bookmarks28=0
+bookmarks29=0
+bookmarks30=0
+bookmarks31=0
+bookmarks32=0
+bookmarks33=0
+bookmarks34=0
+bookmarks35=0
+bookmarks36=0
+bookmarks37=0
+bookmarks38=0
+bookmarks39=0
+bookmarks40=0
+bookmarks41=0
+bookmarks42=0
+bookmarks43=0
+bookmarks44=0
+bookmarks45=0
+bookmarks46=0
+bookmarks47=0
+bookmarks48=0
+bookmarks49=0
+bookmarks50=0
+bookmarks51=0
+sourcefiles=52
+ /home/first/src/Fredvs/N_GORG/gorg64.pas
+ /home/first/src/Fredvs/N_GORG/ee.pas
+ /home/first/src/Fredvs/N_GORG/mseide-msegui/lib/common/editwidgets/msecalendardatetimeedit.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/widgets/msegrids.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/dialogs/msefiledialog.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/dialogs/msefiledialog.mfm
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/msetypes.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/msethreadcomp.pas
+ /home/first/src/Fredvs/N_GORG/ele.pas
+ /home/first/mysites/smfg/soft/GORG64/algor.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/mseglob.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/editwidgets/msedataedits.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/editwidgets/mseedit.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/mseguiglob.pas
+ /home/first/src/Fredvs/N_GORG/flash.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/editwidgets/msewidgetgrid.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/container/msedatalist.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/editwidgets/msedropdownlist.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/msemenus.pas
+ /home/first/src/Fredvs/N_GORG/clockpanel.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/msethread.pas
+ /home/first/src/Fredvs/N_GORG/msg.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/widgets/msewidgets.pas
+ /home/first/src/Fredvs/N_GORG/shutdown.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/linux/msesysintf1.pas
+ /home/first/src/Fredvs/N_GORG/settings.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/msepipestream.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/widgets/mseforms.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/mseapplication.pas
+ /home/first/src/Fredvs/N_GORG/notebook.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/mseformatstr.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/ifi/mseificomp.pas
+ /home/first/src/Fredvs/N_GORG/inputbox.pas
+ /home/first/src/Fredvs/N_GORG/organization.pas
+ /home/first/src/Fredvs/N_GORG/people.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/graphics/msebitmap.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/image/msegraphicstream.pas
+ /home/first/mysites/smfg/soft/GORG64/time.pas
+ /home/first/mysites/smfg/soft/GORG64/ddateprimitives.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/editwidgets/msetextedit.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/msestream.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/msearrayprops.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/editwidgets/msegraphedits.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/mseact.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/graphics/msedrawtext.pas
+ /home/first/mysites/smfg/soft/GORG64/gorg64_spkplay_syscalls.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/msegui.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/mseclasses.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/mseevent.pas
+ /home/first/mysites/smfg/soft/GORG64/mseide-msegui/lib/common/kernel/linux/mseguiintf.pas
+ /home/first/src/Fredvs/N_GORG/dayel.pas
+ /home/first/src/Fredvs/N_GORG/yearlist.pas
+relpaths=52
+ gorg64.pas
+ ee.pas
+ mseide-msegui/lib/common/editwidgets/msecalendardatetimeedit.pas
+ mseide-msegui/lib/common/widgets/msegrids.pas
+ mseide-msegui/lib/common/dialogs/msefiledialog.pas
+ mseide-msegui/lib/common/dialogs/msefiledialog.mfm
+ mseide-msegui/lib/common/kernel/msetypes.pas
+ mseide-msegui/lib/common/kernel/msethreadcomp.pas
+ ele.pas
+ algor.pas
+ mseide-msegui/lib/common/kernel/mseglob.pas
+ mseide-msegui/lib/common/editwidgets/msedataedits.pas
+ mseide-msegui/lib/common/editwidgets/mseedit.pas
+ mseide-msegui/lib/common/kernel/mseguiglob.pas
+ flash.pas
+ mseide-msegui/lib/common/editwidgets/msewidgetgrid.pas
+ mseide-msegui/lib/common/container/msedatalist.pas
+ mseide-msegui/lib/common/editwidgets/msedropdownlist.pas
+ mseide-msegui/lib/common/kernel/msemenus.pas
+ clockpanel.pas
+ mseide-msegui/lib/common/kernel/msethread.pas
+ msg.pas
+ mseide-msegui/lib/common/widgets/msewidgets.pas
+ shutdown.pas
+ mseide-msegui/lib/common/kernel/linux/msesysintf1.pas
+ settings.pas
+ mseide-msegui/lib/common/kernel/msepipestream.pas
+ mseide-msegui/lib/common/widgets/mseforms.pas
+ mseide-msegui/lib/common/kernel/mseapplication.pas
+ notebook.pas
+ mseide-msegui/lib/common/kernel/mseformatstr.pas
+ mseide-msegui/lib/common/ifi/mseificomp.pas
+ inputbox.pas
+ organization.pas
+ people.pas
+ mseide-msegui/lib/common/graphics/msebitmap.pas
+ mseide-msegui/lib/common/image/msegraphicstream.pas
+ time.pas
+ ddateprimitives.pas
+ mseide-msegui/lib/common/editwidgets/msetextedit.pas
+ mseide-msegui/lib/common/kernel/msestream.pas
+ mseide-msegui/lib/common/kernel/msearrayprops.pas
+ mseide-msegui/lib/common/editwidgets/msegraphedits.pas
+ mseide-msegui/lib/common/kernel/mseact.pas
+ mseide-msegui/lib/common/graphics/msedrawtext.pas
+ gorg64_spkplay_syscalls.pas
+ mseide-msegui/lib/common/kernel/msegui.pas
+ mseide-msegui/lib/common/kernel/mseclasses.pas
+ mseide-msegui/lib/common/kernel/mseevent.pas
+ mseide-msegui/lib/common/kernel/linux/mseguiintf.pas
+ dayel.pas
+ yearlist.pas
+ismoduletexts=52
+ 0
+ 0
+ 0
+ 0
+ 0
+ -1
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+modules=14
+ /home/first/mysites/smfg/soft/GORG64/ee.mfm
+ /home/first/mysites/smfg/soft/GORG64/main.mfm
+ /home/first/mysites/smfg/soft/GORG64/clockpanel.mfm
+ /home/first/mysites/smfg/soft/GORG64/msg.mfm
+ /home/first/mysites/smfg/soft/GORG64/ele.mfm
+ /home/first/mysites/smfg/soft/GORG64/shutdown.mfm
+ /home/first/mysites/smfg/soft/GORG64/settings.mfm
+ /home/first/mysites/smfg/soft/GORG64/notebook.mfm
+ /home/first/mysites/smfg/soft/GORG64/flash.mfm
+ /home/first/mysites/smfg/soft/GORG64/inputbox.mfm
+ /home/first/mysites/smfg/soft/GORG64/organization.mfm
+ /home/first/mysites/smfg/soft/GORG64/people.mfm
+ /home/first/mysites/smfg/soft/GORG64/dayel.mfm
+ /home/first/mysites/smfg/soft/GORG64/yearlist.mfm
+moduleoptions=14
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+visiblemodules=14
+ -1
+ -1
+ -1
+ -1
+ -1
+ 0
+ -1
+ -1
+ -1
+ -1
+ -1
+ -1
+ -1
+ -1
+nomenumodules=14
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+[sourcefo.tabwidget]
+tabsize=134
+firsttab=0
+index=2
+[layout]
+windowlayout=828
+ [mainfo.openform]
+ filenames=1
+  /home/first/src/mse/mseide-msegui/apps/ide/objectinspector.mfm
+ filecolwidth=174
+ x=0
+ y=0
+ cx=0
+ cy=0
+ filehistory=4
+  /home/first/src/mse/mseide-msegui/apps/ide/objectinspector.mfm
+  /home/fred/mseide-msegui/apps/ide/sourceform.mfm
+  /home/fred/mseide-msegui/apps/ide/actionsmodule.mfm
+  /home/fred/mseide-msegui/apps/ide/main.mfm
+ filefilterindex=0
+ filefilter=*.mfm
+ [mainfo.projectfiledia]
+ filecolwidth=174
+ x=0
+ y=0
+ cx=0
+ cy=0
+ [mainfo.openfile]
+ filenames=1
+  /home/first/src/Fredvs/N_GORG/main.pas
+ filecolwidth=174
+ x=0
+ y=0
+ cx=0
+ cy=0
+ filehistory=20
+  /home/first/src/Fredvs/N_GORG/main.pas
+  /home/first/src/Fredvs/N_GORG/main_mfm.pas
+  /home/first/mysites/smfg/soft/GORG64/inputbox.pas
+  /home/first/mysites/smfg/soft/GORG64/dr.pas
+  /home/first/mysites/smfg/soft/GORG64/queue.pas
+  /home/first/mysites/smfg/soft/GORG64/clockpblack4/clockpanel.pas
+  /home/first/mysites/smfg/soft/GORG64/gorg64_spkplay_syscalls.pas
+  /home/first/mysites/smfg/soft/GORG64/ddateprimitives.pas
+  /home/first/mysites/smfg/soft/GORG64/finddnd.pas
+  /home/first/mysites/smfg/soft/GORG64/time.pas
+  /home/first/mysites/smfg/soft/GORG64/msg.pas
+  /home/first/mysites/smfg/soft/GORG64/alarm.pas
+  /home/first/mysites/smfg/soft/GORG64/clockpanel.pas
+  /home/first/mysites/smfg/soft/GORG64/application.pas
+  /home/first/mysites/smfg/soft/GORG64/algor.pas
+  /home/first/mysites/smfg/soft/GORG64/main.pas
+  /home/first/src/mse/ovale/ovaleform/ovaleform.pas
+  /usr/src/mseide/lib/common/widgets/msegrids.pas
+  /home/mse/proj/msegui/testcase/jean-pierre/Demo/main.pas
+  /D:/MSE/Livre/DemoMSE/Demo.pas
+ filefilterindex=0
+ filefilter="*.pp" "*.pas" "*.inc" "*.dpr" "*.lpr"
+ [mainfo.basedock]
+ splitdir=2
+ useroptions=268450944
+ [mainfo]
+ splitdir=0
+ useroptions=301990011
+ stackedunder=
+ parent=
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=567
+ y=267
+ cx=1224
+ cy=729
+ rcx=0
+ rcy=0
+ wsize=0
+ active=1
+ visible=1
+ [targetconsolefo]
+ splitdir=0
+ useroptions=268451945
+ parent=
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=52
+ y=336
+ cx=488
+ cy=314
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [threadsfo]
+ splitdir=0
+ useroptions=268451945
+ parent=
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=444
+ y=431
+ cx=418
+ cy=126
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=0
+ [memoryfo]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=breakpointsfo
+ parent=
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=100
+ y=100
+ cx=453
+ cy=354
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=0
+ [memoryfo.add]
+ value=0
+ [memoryfo.memon]
+ value=0
+ [memoryfo.bitwidth]
+ value=0
+ [memoryfo.cnt]
+ value=0
+ [disassfo]
+ splitdir=0
+ useroptions=268451947
+ stackedunder=cpuc86_64fo
+ parent=
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=162
+ y=502
+ cx=564
+ cy=210
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=0
+ [findmessagefo.findtext]
+ value=
+ history=0
+ [findmessagefo.casesensitive]
+ value=0
+ [findmessagefo.copytoclip]
+ value=0
+ [findinfilefo]
+ splitdir=0
+ useroptions=268451947
+ stackedunder=componentstorefo
+ parent=
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=239
+ y=115
+ cx=1020
+ cy=414
+ rcx=0
+ rcy=0
+ [projecttreefo]
+ splitdir=0
+ useroptions=268484715
+ parent=mainfo.panel1.container
+ visible=1
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=0
+ y=0
+ cx=205
+ cy=434
+ rcx=0
+ rcy=0
+ [projecttreefo.grid]
+ propcolwidthref=88
+ width0=117
+ sortdescend0=0
+ width1=82
+ sortdescend1=0
+ sorted=0
+ col=1
+ row=0
+ rowheight=19
+ [stackfo]
+ splitdir=0
+ useroptions=268460137
+ parent=
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=0
+ y=0
+ cx=0
+ cy=0
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=0
+ [watchpointsfo]
+ splitdir=0
+ useroptions=268451945
+ parent=
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=537
+ y=26
+ cx=483
+ cy=210
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=0
+ [watchpointsfo.grid]
+ propcolwidthref=332
+ sortdescend0=0
+ values1=1
+  0
+ values1_ci=-1
+ width1=33
+ sortdescend1=0
+ values2=1
+  pinteger(0x126c6b4)^
+ width2=149
+ sortdescend2=0
+ width4=34
+ sortdescend4=0
+ values5=1
+  0
+ values5_ci=-1
+ width5=38
+ sortdescend5=0
+ values6=1
+  
+ width6=172
+ sortdescend6=0
+ [breakpointsfo]
+ splitdir=0
+ useroptions=268451947
+ stackedunder=findinfilefo
+ parent=
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=107
+ y=404
+ cx=477
+ cy=128
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=0
+ [breakpointsfo.bkptson]
+ value=1
+ [objectinspectorfo]
+ splitdir=0
+ useroptions=268451947
+ stackedunder=_mse_yearlistfo_mse_
+ parent=
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=628
+ y=420
+ cx=1288
+ cy=607
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [objectinspectorfo.grid]
+ propcolwidthref=1278
+ width0=567
+ sortdescend0=0
+ width1=705
+ sortdescend1=0
+ [symbolfo]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=
+ parent=
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=142
+ y=257
+ cx=361
+ cy=137
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=0
+ [symbolfo.grid]
+ propcolwidthref=207
+ values0=18
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ width0=111
+ sortdescend0=0
+ width1=125
+ sortdescend1=0
+ [symbolfo.symbol]
+ [watchfo]
+ splitdir=0
+ useroptions=268460137
+ parent=mainfo.basedock
+ visible=0
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=53
+ y=0
+ cx=247
+ cy=44
+ rcx=1262
+ rcy=583
+ [watchfo.grid]
+ propcolwidthref=121
+ values0=0
+ values0_ci=-1
+ sortdescend0=0
+ values1=0
+ width1=66
+ sortdescend1=0
+ values3=0
+ values3_ci=-1
+ sortdescend3=0
+ values4=0
+ values4_ci=-1
+ width4=13
+ sortdescend4=0
+ [watchfo.watchon]
+ [watchfo.expression]
+ [watchfo.watcheson]
+ value=1
+ [messagefo]
+ splitdir=0
+ useroptions=268517483
+ parent=mainfo.basedock
+ visible=1
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=0
+ y=490
+ cx=1214
+ cy=197
+ rcx=0
+ rcy=0
+ [componentstorefo]
+ splitdir=0
+ useroptions=268460155
+ stackedunder=_mse_shutdownfo_mse_
+ parent=
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=100
+ y=100
+ cx=445
+ cy=354
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=0
+ [componentstorefo.grid]
+ propcolwidthref=435
+ width0=111
+ sortdescend0=0
+ sortdescend1=0
+ width2=103
+ sortdescend2=0
+ width3=185
+ sortdescend3=0
+ [componentstorefo.storefiledialog]
+ filenames=1
+  /home/mse/test/msegui/apps/ide/compstore/
+ filecolwidth=0
+ x=0
+ y=0
+ cx=0
+ cy=0
+ lastdir=/home/mse/test/msegui/apps/ide/compstore/
+ filehistory=0
+ filefilterindex=0
+ filefilter=
+ [componentstorefo.groupfiledialog]
+ filenames=1
+  /home/mse/test/msegui/apps/ide/compstore/
+ filecolwidth=0
+ x=0
+ y=0
+ cx=0
+ cy=0
+ lastdir=/home/mse/test/msegui/apps/ide/compstore/
+ filehistory=0
+ filefilterindex=0
+ filefilter=
+ [componentstorefo.compfiledialog]
+ filenames=0
+ filecolwidth=0
+ x=0
+ y=0
+ cx=0
+ cy=0
+ lastdir=
+ filehistory=0
+ filefilterindex=0
+ filefilter=
+ [componentpalettefo]
+ splitdir=0
+ useroptions=268460139
+ stackedunder=objectinspectorfo
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=798
+ y=112
+ cx=956
+ cy=77
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [componentpalettefo.componentpages]
+ activetab=0
+ [debuggerfo]
+ splitdir=0
+ useroptions=268460139
+ parent=mainfo.basedock
+ visible=1
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=0
+ y=0
+ cx=1214
+ cy=50
+ rcx=0
+ rcy=0
+ [sourcefo]
+ splitdir=0
+ useroptions=268451945
+ parent=mainfo.panel1.container
+ visible=1
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=208
+ y=0
+ cx=1006
+ cy=434
+ rcx=0
+ rcy=0
+ [actionsmo.watchesonact]
+ checked=1
+ [actionsmo.bluedotsonact]
+ checked=1
+ [cpuc86_64fo]
+ irqoff=0
+ splitdir=0
+ useroptions=268451947
+ stackedunder=memoryfo
+ parent=
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=183
+ y=113
+ cx=352
+ cy=277
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=0
+ [mainfo.panel1]
+ splitdir=1
+ useroptions=302087659
+ parent=mainfo.basedock
+ visible=1
+ mdistate=0
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=0
+ y=53
+ cx=1214
+ cy=434
+ rcx=0
+ rcy=0
+ [_mse_eefo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=mainfo
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=202
+ y=204
+ cx=1080
+ cy=673
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_mainfo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=_mse_clockpanelfo_mse_
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=227
+ y=489
+ cx=760
+ cy=56
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_clockpanelfo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=_mse_msgfo_mse_
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=4
+ y=54
+ cx=825
+ cy=989
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_msgfo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=_mse_elefo_mse_
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=513
+ y=370
+ cx=951
+ cy=451
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_elefo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=_mse_settingsfo_mse_
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=256
+ y=308
+ cx=853
+ cy=566
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_shutdownfo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=84
+ y=327
+ cx=430
+ cy=400
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=0
+ [_mse_settingsfo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=_mse_notebookfo_mse_
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=145
+ y=473
+ cx=873
+ cy=476
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_notebookfo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=_mse_flashfo_mse_
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=196
+ y=412
+ cx=1022
+ cy=528
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_flashfo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=_mse_inputboxfo_mse_
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=122
+ y=112
+ cx=845
+ cy=476
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_inputboxfo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=_mse_organizationfo_mse_
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=317
+ y=301
+ cx=808
+ cy=663
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_organizationfo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=_mse_peoplefo_mse_
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=695
+ y=409
+ cx=761
+ cy=480
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_peoplefo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=_mse_dayelfo_mse_
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=84
+ y=321
+ cx=853
+ cy=451
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_dayelfo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=targetconsolefo
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=8
+ y=87
+ cx=1005
+ cy=492
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+ [_mse_yearlistfo_mse_]
+ splitdir=0
+ useroptions=268451963
+ stackedunder=_mse_eefo_mse_
+ parent=
+ mdistate=3
+ nx=0
+ ny=0
+ ncx=0
+ ncy=0
+ x=84
+ y=354
+ cx=789
+ cy=554
+ rcx=0
+ rcy=0
+ wsize=0
+ active=0
+ visible=1
+[targetconsole]
+finddtext=
+findhistory=0
+findoptions=1

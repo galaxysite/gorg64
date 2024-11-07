@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+if [ -e /etc/xdg/autostart/gorg64.desktop ]
+then
+rm /etc/xdg/autostart/gorg64.desktop
+fi

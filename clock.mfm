@@ -1,0 +1,75 @@
+object mainfo: tmainfo
+  color = -2147483645
+  bounds_x = 164
+  bounds_y = 208
+  bounds_cx = 440
+  bounds_cy = 119
+  container.optionsskin = [osk_noclientsize]
+  container.color = -2147483645
+  container.frame.framei_left = 0
+  container.frame.framei_top = 0
+  container.frame.framei_right = 0
+  container.frame.framei_bottom = 0
+  container.frame.optionsskin = [fso_flat]
+  container.frame.localprops = []
+  container.frame.localprops1 = []
+  container.bounds = (
+    0
+    0
+    440
+    119
+  )
+  optionswindow = [wo_noframe, wo_groupleader, wo_notaskbar, wo_alwaysontop, wo_rounded]
+  caption = 'MSEgui form'
+  windowopacity = -Inf
+  moduleclassname = 'tmainform'
+  object tlabel1: tlabel
+    bounds_x = 32
+    bounds_y = 56
+    bounds_cx = 392
+    bounds_cy = 17
+    caption = '2xClick on the form and maintain the button to move it.'
+    font.height = 14
+    font.name = 'stf_default'
+    font.localprops = [flp_height]
+    reffontheight = 17
+  end
+  object tpaintbox1: tpaintbox
+    optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_mousewheel, ow_destroywidgets]
+    frame.framei_left = 4
+    frame.framei_right = 4
+    frame.frameimage_left = -4
+    frame.frameimage_top = -4
+    frame.frameimage_right = -4
+    frame.frameimage_bottom = -4
+    frame.optionsskin = [fso_flat]
+    frame.localprops = []
+    frame.localprops1 = []
+    taborder = 2
+    bounds_x = 0
+    bounds_y = 0
+    bounds_cx = 440
+    bounds_cy = 119
+    anchors = []
+    object tlabel2: tlabel
+      bounds_x = 16
+      bounds_y = 24
+      bounds_cx = 346
+      bounds_cy = 17
+      caption = 'Hello I am a borderless always on top MSE-form  '
+      font.height = 14
+      font.name = 'stf_default'
+      font.localprops = [flp_height]
+      reffontheight = 17
+    end
+  end
+  object tbutton1: tbutton
+    taborder = 1
+    bounds_x = 344
+    bounds_y = 88
+    bounds_cx = 50
+    bounds_cy = 21
+    state = [as_localcaption, as_localonexecute]
+    caption = 'Quit'
+  end
+end

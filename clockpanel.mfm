@@ -1,0 +1,92 @@
+object clockpanelfo: tclockpanelfo
+  color = -1610612730
+  bounds_x = 4
+  bounds_y = 54
+  bounds_cx = 815
+  bounds_cy = 989
+  container.frame.localprops = []
+  container.frame.localprops1 = []
+  container.bounds = (
+    0
+    0
+    815
+    989
+  )
+  optionswindow = [wo_alwaysontop]
+  font.height = 220
+  font.style = [fs_bold]
+  font.name = 'stf_default'
+  font.localprops = [flp_style, flp_height]
+  options = [fo_freeonclose, fo_fullscreen, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
+  windowopacity = -Inf
+  oncreate = oncreate
+  onclose = onclose
+  onmouseevent = onmouseev
+  onkeyup = keyup
+  moduleclassname = 'tmseform'
+  object tpaintbox1: tpaintbox
+    optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_mousewheel, ow_destroywidgets]
+    frame.localprops = []
+    frame.localprops1 = []
+    taborder = 4
+    bounds_x = 0
+    bounds_y = 48
+    bounds_cx = 802
+    bounds_cy = 922
+    anchors = [an_left, an_top, an_right, an_bottom]
+  end
+  object tlabel1: tlabel
+    optionswidget1 = [ow1_fontglyphheight, ow1_autoscale, ow1_autoheight]
+    bounds_x = 1
+    bounds_y = 88
+    bounds_cx = 804
+    bounds_cy = 301
+    anchors = [an_left, an_top, an_right]
+    caption = '--:--'
+    textflags = [tf_right, tf_ycentered]
+    reffontheight = 301
+  end
+  object tlabel2: tlabel
+    optionswidget1 = [ow1_fontglyphheight, ow1_autoscale, ow1_autoheight]
+    taborder = 1
+    bounds_x = 0
+    bounds_y = 384
+    bounds_cx = 803
+    bounds_cy = 301
+    anchors = [an_left, an_top, an_right]
+    caption = '-'
+    textflags = [tf_right, tf_ycentered]
+    reffontheight = 301
+  end
+  object tlabel3: tlabel
+    optionswidget1 = [ow1_fontglyphheight, ow1_autoscale, ow1_autoheight]
+    taborder = 2
+    bounds_x = 0
+    bounds_y = 680
+    bounds_cx = 803
+    bounds_cy = 301
+    anchors = [an_left, an_top, an_right]
+    caption = '-'
+    textflags = [tf_right, tf_ycentered]
+    reffontheight = 301
+  end
+  object trichstockglyphbutton1: trichstockglyphbutton
+    taborder = 3
+    hint = #1055#1091#1090#1100' '#1074' Linux | Way to Linux'
+    bounds_x = 8
+    bounds_y = 8
+    bounds_cx = 234
+    bounds_cy = 220
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localhint, as_localonexecute]
+    caption = '/'
+    onexecute = bclose
+    richcaption = '/'
+  end
+  object ttimer1: ttimer
+    interval = 400000
+    ontimer = ontimer
+    enabled = True
+    left = 96
+    top = 120
+  end
+end

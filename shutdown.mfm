@@ -1,0 +1,66 @@
+object shutdownfo: tshutdownfo
+  color = -1610612729
+  bounds_x = 84
+  bounds_y = 327
+  bounds_cx = 420
+  bounds_cy = 400
+  container.frame.localprops = []
+  container.frame.localprops1 = []
+  container.bounds = (
+    0
+    0
+    420
+    400
+  )
+  optionswindow = [wo_alwaysontop]
+  options = [fo_freeonclose, fo_fullscreen, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
+  windowopacity = -Inf
+  oncreate = oncreate
+  onclose = onclose
+  moduleclassname = 'tmseform'
+  object tlabel1: tlabel
+    bounds_x = 136
+    bounds_y = 56
+    bounds_cx = 168
+    bounds_cy = 141
+    anchors = [an_left, an_top, an_right]
+    caption = '10'
+    font.height = 120
+    font.style = [fs_bold]
+    font.name = 'stf_default'
+    font.localprops = [flp_style, flp_height]
+    reffontheight = 141
+  end
+  object tlabel2: tlabel
+    taborder = 1
+    bounds_x = 8
+    bounds_y = 288
+    bounds_cx = 140
+    bounds_cy = 43
+    anchors = [an_left, an_bottom]
+    caption = 'tlabel2'
+    font.height = 36
+    font.style = [fs_bold]
+    font.name = 'stf_default'
+    font.localprops = [flp_style, flp_height]
+    reffontheight = 43
+  end
+  object trichstockglyphbutton1: trichstockglyphbutton
+    color = -1610612730
+    taborder = 2
+    bounds_x = 160
+    bounds_y = 216
+    bounds_cx = 130
+    bounds_cy = 53
+    anchors = [an_left, an_top, an_right]
+    state = [as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
+    glyph = stg_dbcancel
+    onexecute = bclose
+  end
+  object ttimer1: ttimer
+    ontimer = ontimer
+    enabled = True
+    left = 176
+    top = 24
+  end
+end

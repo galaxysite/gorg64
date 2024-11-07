@@ -1,0 +1,14 @@
+#!/bin/sh
+set -e
+if [ "$1" = "configure" ] && which update-desktop-database >/dev/null 2>&1 ; then
+	update-desktop-database -q
+fi
+command -v upx
+if [ "$?" = "0" ] ; then
+upx /usr/bin/gorg64
+fi
+cp /usr/share/applications/gorg64.desktop /etc/xdg/autostart/
+chmod =04755 /usr/bin/gorg64_spkplay
+chmod =04755 /usr/bin/gorg64_spktone
+chmod =04755 /usr/bin/gorg64_spkon
+chmod =04755 /usr/bin/gorg64_spkoff
