@@ -5,7 +5,7 @@ uses
  msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
  msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,mseforms,msedragglob,
  mseedit,mseeditglob,msegrids,msegridsglob,mserichstring,msestatfile,msestream,
- msetextedit,sysutils,msesimplewidgets,msekeyboard;
+ msetextedit,sysutils,msesimplewidgets,msekeyboard, msebitmap;
 type
  tinputboxfo = class(tmseform)
    ttextedit1: ttextedit;
@@ -174,6 +174,8 @@ type
    trichbutton162: trichbutton;
    trichbutton163: trichbutton;
    tlabel1: tlabel;
+   timagelist5: timagelist;
+   tframecomp2: tframecomp;
    procedure ok;
    procedure onok(const sender: TObject);
    procedure oncancel(const sender: TObject);
