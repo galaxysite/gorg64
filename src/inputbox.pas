@@ -174,7 +174,6 @@ type
    trichbutton162: trichbutton;
    trichbutton163: trichbutton;
    tlabel1: tlabel;
-   timagelist5: timagelist;
    tframecomp2: tframecomp;
    procedure ok;
    procedure onok(const sender: TObject);

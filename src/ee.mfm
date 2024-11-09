@@ -2344,8 +2344,8 @@ object eefo: teefo
     width = 121
     height = 32
     count = 1
-    left = 192
-    top = 16
+    left = 264
+    top = 8
     image = {
       0000000002000000790000002000000040000000000000000000000000000000
       0000000000000000000000000000000000000000000000FF000000FF000000FF
@@ -2446,42 +2446,18 @@ object eefo: teefo
     left = 880
     top = 352
   end
-  object timagelist5: timagelist
-    width = 4
-    height = 4
-    count = 8
-    cornermask_topleft = #2#1
-    cornermask_bottomleft = #2#1
-    cornermask_bottomright = #2#1
-    cornermask_topright = #2#1
-    left = 261
-    top = 244
-    image = {
-      00000000020000000C0000000C000000E8000000000000000000000000000000
-      0000000000000000000000000000000000000000FFFFFF028B8B8B02A5A5A501
-      000000038B8B8B01FFFFFF048B8B8B01FFFFFF02A5A5A501000000038B8B8B01
-      FFFFFF038B8B8B01FFFFFF03A5A5A50100000003FFFFFF018B8B8B01FFFFFF02
-      8B8B8B01FFFFFF03A5A5A50100000003FFFFFF028B8B8B03FFFFFF068B8B8B01
-      FFFFFF038B8B8B02FFFFFF068B8B8B01FFFFFF038B8B8B01FFFFFF018B8B8B01
-      FFFFFF048B8B8B01FFFFFF048B8B8B07FFFFFF04D6D6D6018B8B8B03FFFFFF02
-      8B8B8B0400000004FFFFFF028B8B8B01FFFFFF04D6D6D60100000004FFFFFF03
-      8B8B8B01FFFFFF0400000004FFFFFF038B8B8B01FFFFFF04000000041C010000
-      1201000011020000110C00008008000080080000400800003F080000F3000000
-      040000000800000008000000
-    }
-  end
   object tframecomp2: tframecomp
     template.framei_left = 4
     template.framei_top = 2
     template.framei_right = 4
     template.framei_bottom = 2
-    template.frameimage_list = timagelist5
+    template.frameimage_list = mainfo.timagelist5
     template.frameimage_left = -4
     template.frameimage_top = -4
     template.frameimage_right = -4
     template.frameimage_bottom = -4
-    left = 272
-    top = 291
+    left = 264
+    top = 195
   end
   object tfacecomp1: tfacecomp
     template.fade_pos.count = 2

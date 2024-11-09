@@ -162,7 +162,6 @@ type
    trichstockglyphbutton6: trichstockglyphbutton;
    trichstockglyphbutton7: trichstockglyphbutton;
    trichstockglyphbutton8: trichstockglyphbutton;
-   timagelist5: timagelist;
    tframecomp2: tframecomp;
    byear: tbutton;
    tstringdisp1: tstringdisp;
