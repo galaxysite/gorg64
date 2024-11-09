@@ -1,16 +1,18 @@
 object flashfo: tflashfo
-  color = -1610612730
+  color = 13948116
   bounds_x = 122
   bounds_y = 112
-  bounds_cx = 835
-  bounds_cy = 476
+  bounds_cx = 841
+  bounds_cy = 485
   container.frame.localprops = []
   container.frame.localprops1 = []
+  container.face.localprops = []
+  container.face.template = mainfo.tfacecomp3
   container.bounds = (
     0
     0
-    835
-    476
+    841
+    485
   )
   font.height = 18
   font.style = [fs_bold]
@@ -18,6 +20,74 @@ object flashfo: tflashfo
   font.localprops = [flp_style, flp_height]
   options = [fo_freeonclose, fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
   caption = #1052#1086#1083#1085#1080#1103' | Flash'
+  icon.options = [bmo_masked, bmo_graymask]
+  icon.origformat = 'png'
+  icon.image = {
+    00000000120000002000000020000000B0030000000000000000000000000000
+    00000000000000000000000000000000000000000000002E12A4E3010FA5E30D
+    0DA3E20160B2E60199D6F2010000000E56BEEA0107BEEA0106CAEE0D06B6E801
+    62BAE90198D6F2010000000DADDAF4014CB6E80100DEF50D00D7F2012CB4E701
+    0000000F50BCEA0100CEF00100D6F30C00D3F20148B3E701C4E4F6010000000E
+    97CDEE0109B5E90100CEF20C00CEF10139B8EA01AFDEF5010000000EACDCF401
+    3EB5E90100C6F00100C7F00B00C6F0010CB4E80157BCEC0189D0F0010000000E
+    72BBE90100B7EB0100BFEE0C00B7EB0187C3EB010000000F9DD3F10121AEE701
+    00B8ED0100B7ED0B00B3EA0173BBE901D7F1FA010000000E88DDF40144ACE601
+    00AEEA0100AFEB0B00AFEA0150B3E8019BD6F2010000000ECAEBF90182C4EB01
+    04A5E70100A8E90C00A4E4014CB9E8010000000F65BEEA0115A1E40100A0E80C
+    23A1E501C7E3F6010000000FD0EDFA0156AEE6010099E60C0099E30192CFF001
+    D2F0FA010000000F57B6E8010093E3010091E50C069AE20199C7EC01C2E5F701
+    0000000EC6E6F7011597E101008AE30E038BE301319CE30178C0EC016EBBEA01
+    A5DCF5010000000A7BC9EE0146ABE6010082E2010081E2100084E1012695E301
+    3EA6E4018ED2F2010000000949B5E80178BBE9013098E4010081E1010079E110
+    007EE101369DE40173BBE901ADDEF50100000009DFF3FC0197CCEF0173C1EC01
+    1D94E101027ADF010073DF010072DF0B0174DF01208BE00166B6E801C3E3F601
+    0000000EA8DFF6015FB3E8013C9CE3010379DE01006ADD090080DF0171B7E901
+    8BC8ED01FFFFFF0100000010A8DDF70161B9EA010074DD010063DC07006FDC01
+    549FE3017CC7ED01A6D6F20100000012ACD7F2011A79DD01005ADA06005FDB01
+    188DE001A7D1F001ACD6F201FFFFFF0100000012B5D9F2010080DD010055D901
+    0054D9040056D9010078DC0145A5E401AADCF501000000146BBFEB012F95E201
+    004DD701004BD703004DD7010364DA014EA5E301B7DAF3011CB8EA0100000014
+    AFE0F60155AAE5010050D7010043D5030054D7011E8ADE0181C4ED01D4EFFA01
+    00000015F3FCFF0197C5ED010051D601003BD401003AD4010046D501237EDC01
+    43A7E4018AD1F2010000001655B8EA015AAFE7010360D7010035D2010039D201
+    1565D80142A3E401C2E2F601000000187EC7ED01217BDB010028D0010053D501
+    55A1E30166B5E901D3F4FD0100000018B9E0F5013B8FDE01003FD1014082DD01
+    66BAE9010000001B5BA0E2011574D9018EC2EC0188C4EC01F5FFFF0100000019
+    69BDEC013BA6E4014AA9E4019BD4F2010000001C6ABDEC0140A6E4017BC8EE01
+    0000003C00040000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000E0E0E0E0E0E0E0E0E0E
+    0E0E0E0E0E0E01000000000000000000000000000079FFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFFFD6090000000000000000000000000036FFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFDC000000000000000000000000000000D4FFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFFF4B00000000000000000000000000008CFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFF86000000000000000000000000000022FDFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFF8E010000000000000000000000000000DCFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFB40000000000000000000000000000007CFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    F82E000000000000000000000000000003FEFFFFFFFFFFFFFFFFFFFFFFFFFFFD
+    25000000000000000000000000000007D6FFFFFFFFFFFFFFFFFFFFFFFFFFFF3B
+    00000000000000000000000000000038FFFFFFFFFFFFFFFFFFFFFFFFFFFFD700
+    000000000000000000000000000037FAFFFFFFFFFFFFFFFFFFFFFFFFFFE00A00
+    000000000000000000000000000097FFFFFFFFFFFFFFFFFFFFFFFFFFFFB96E00
+    0000000000000000000000000092FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF5
+    2808000000000000000000000BE3FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFC5690000000000000000000BE5FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFB10B0000000000000000001228DBF9FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    F25800000000000000000000000000003E94FFFFFFFFFFFFFFFFFFFFFFFFFF6F
+    01000000000000000000000000000000000BE2FFFFFFFFFFFFFFFFFFFFAE0200
+    0000000000000000000000000000000000D7FFFFFFFFFFFFFFFFFEF932010000
+    0000000000000000000000000000000094FFFFFFFFFFFFFFFFCC760000000000
+    00000000000000000000000000000025FDFFFFFFFFFFFFFA7905000000000000
+    00000000000000000000000000002DF8FFFFFFFFFFFFA6400000000000000000
+    0000000000000000000000000024FFFFFFFFFFFFB01C00000000000000000000
+    000000000000000000000000019DFFFFFFFFF37E000000000000000000000000
+    00000000000000000000000086FFFFFFFF710C00000000000000000000000000
+    000000000000000000000071FFFFFFC700000000000000000000000000000000
+    0000000000000000000000FFFFFF350500000000000000000000000000000000
+    00000000000000000009D6E18600000000000000000000000000000000000000
+    000000000000000000010E0A0000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000
+  }
   windowopacity = -Inf
   oncreate = oncreate
   onclose = onclose
@@ -27,12 +97,12 @@ object flashfo: tflashfo
   object trichbutton1: trichbutton
     frame.localprops = []
     frame.localprops1 = []
-    frame.template = eefo.tframecomp2
+    frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 1
-    bounds_x = 0
-    bounds_y = 0
+    bounds_x = 8
+    bounds_y = 8
     bounds_cx = 418
     bounds_cy = 29
     state = [as_localcaption, as_localonexecute]
@@ -43,12 +113,12 @@ object flashfo: tflashfo
   object tbutton1: tbutton
     frame.localprops = []
     frame.localprops1 = []
-    frame.template = eefo.tframecomp2
+    frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 2
-    bounds_x = 0
-    bounds_y = 32
+    bounds_x = 8
+    bounds_y = 40
     bounds_cx = 418
     bounds_cy = 29
     state = [as_localcaption, as_localonexecute]
@@ -58,12 +128,12 @@ object flashfo: tflashfo
   object tbutton2: tbutton
     frame.localprops = []
     frame.localprops1 = []
-    frame.template = eefo.tframecomp2
+    frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 3
-    bounds_x = 0
-    bounds_y = 64
+    bounds_x = 8
+    bounds_y = 72
     bounds_cx = 418
     bounds_cy = 29
     state = [as_localcaption, as_localonexecute]
@@ -73,12 +143,12 @@ object flashfo: tflashfo
   object tbutton3: tbutton
     frame.localprops = []
     frame.localprops1 = []
-    frame.template = eefo.tframecomp2
+    frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 4
-    bounds_x = 0
-    bounds_y = 96
+    bounds_x = 8
+    bounds_y = 104
     bounds_cx = 418
     bounds_cy = 29
     state = [as_localcaption, as_localonexecute]
@@ -88,12 +158,12 @@ object flashfo: tflashfo
   object tbutton5: tbutton
     frame.localprops = []
     frame.localprops1 = []
-    frame.template = eefo.tframecomp2
+    frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 5
-    bounds_x = 0
-    bounds_y = 136
+    bounds_x = 8
+    bounds_y = 144
     bounds_cx = 418
     bounds_cy = 29
     state = [as_localcaption, as_localonexecute]
@@ -103,60 +173,73 @@ object flashfo: tflashfo
   object tbooleanedit1: tbooleanedit
     frame.localprops = []
     frame.localprops1 = []
-    frame.template = eefo.tframecomp2
+    frame.template = mainfo.tframecomp2
     taborder = 6
-    bounds_x = 8
-    bounds_y = 216
+    bounds_x = 16
+    bounds_y = 228
     onchange = onacc
   end
   object tlabel1: tlabel
+    color = -2147483645
     taborder = 7
     bounds_x = 32
-    bounds_y = 216
-    bounds_cx = 291
-    bounds_cy = 26
+    bounds_y = 224
+    bounds_cx = 319
+    bounds_cy = 22
     caption = #1053#1072#1082#1072#1087#1083#1080#1074#1072#1090#1100' | Accumulate [F4]'
-    reffontheight = 26
+    reffontheight = 22
   end
   object tdropdownlistedit1: tdropdownlistedit
     frame.localprops = []
     frame.localprops1 = []
-    frame.template = eefo.tframecomp2
+    frame.template = mainfo.tframecomp2
+    frame.button.face.localprops = []
+    frame.button.face.template = mainfo.tfacecomp3
+    frame.button.frame.localprops = []
+    frame.button.frame.localprops1 = []
+    frame.button.frame.template = mainfo.tframecomp2
     frame.buttons.count = 1
     frame.buttons.items = <    
       item
+        face.localprops = []
+        face.template = mainfo.tfacecomp3
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
       end>
-    bounds_x = 0
-    bounds_y = 176
+    bounds_x = 8
+    bounds_y = 184
     bounds_cx = 380
-    bounds_cy = 32
+    bounds_cy = 28
     dropdown.cols.count = 1
+    dropdown.cols.facetemplate = mainfo.tfacecomp3
     dropdown.cols.items = <    
       item
       end>
-    reffontheight = 26
+    reffontheight = 22
   end
   object trichstockglyphbutton1: trichstockglyphbutton
     frame.localprops = []
     frame.localprops1 = []
-    frame.template = eefo.tframecomp2
+    frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 8
-    bounds_x = 384
-    bounds_y = 176
+    bounds_x = 392
+    bounds_y = 184
     bounds_cx = 34
-    bounds_cy = 29
+    bounds_cy = 28
     state = [as_localimagelist, as_localimagenr, as_localonexecute]
     glyph = stg_save
     onexecute = onsavehotlist
   end
   object timage1: timage
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     taborder = 9
     bounds_x = 96
-    bounds_y = 280
+    bounds_y = 288
     bounds_cx = 202
     bounds_cy = 194
     bitmap.options = [bmo_masked, bmo_graymask]
@@ -2857,12 +2940,14 @@ object flashfo: tflashfo
   object twidgetgrid1: twidgetgrid
     frame.localprops = []
     frame.localprops1 = []
-    frame.template = eefo.tframecomp2
+    frame.template = mainfo.tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp3
     taborder = 10
-    bounds_x = 427
-    bounds_y = 0
-    bounds_cx = 399
-    bounds_cy = 468
+    bounds_x = 435
+    bounds_y = 8
+    bounds_cx = 397
+    bounds_cy = 469
     anchors = [an_left, an_top, an_right, an_bottom]
     optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_colchangeontabkey, og_wrapcol, og_visiblerowpagestep, og_autopopup, og_mousescrollcol]
     gridframecolor = -2147483640
@@ -2873,44 +2958,50 @@ object flashfo: tflashfo
     datacols.options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autocolwidth, co1_autoheaderwidth]
     datacols.items = <    
       item[ttextedit2]
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         linewidth = 0
-        width = 391
+        colorselect = 16769174
+        colorfocused = 16769174
+        width = 389
         options = [co_fill, co_savevalue, co_savestate, co_mousescrollrow]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autocolwidth, co1_autoheaderwidth]
         widgetname = 'ttextedit2'
         dataclass = tgridrichstringdatalist
       end>
     datarowlinewidth = 0
-    datarowheight = 26
-    reffontheight = 26
+    datarowheight = 22
+    reffontheight = 22
     object ttextedit2: ttextedit
       optionsskin = [osk_framebuttononly]
       taborder = 1
       visible = False
       bounds_x = 0
       bounds_y = 0
-      bounds_cx = 391
-      bounds_cy = 26
+      bounds_cx = 389
+      bounds_cy = 22
       optionsedit1 = [oe1_multiline, oe1_autopopupmenu, oe1_keyexecute, oe1_savevalue, oe1_savestate, oe1_checkvalueafterstatread]
-      reffontheight = 26
+      reffontheight = 22
     end
   end
   object be_clip_mon: tbooleanedit
     frame.localprops = []
     frame.localprops1 = []
-    frame.template = eefo.tframecomp2
+    frame.template = mainfo.tframecomp2
     taborder = 11
-    bounds_x = 8
-    bounds_y = 256
+    bounds_x = 16
+    bounds_y = 260
     onchange = onlisten
   end
   object l_clip_mon: tlabel
+    color = -2147483645
     taborder = 12
     bounds_x = 32
-    bounds_y = 248
-    bounds_cx = 203
-    bounds_cy = 26
+    bounds_y = 256
+    bounds_cx = 217
+    bounds_cy = 22
     caption = #1054#1090#1089#1083#1077#1078#1080#1074#1072#1090#1100' | Listen'
-    reffontheight = 26
+    reffontheight = 22
   end
 end
