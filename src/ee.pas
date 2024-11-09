@@ -165,6 +165,8 @@ type
    timagelist5: timagelist;
    tframecomp2: tframecomp;
    byear: tbutton;
+   tstringdisp1: tstringdisp;
+   tstringdisp2: tstringdisp;
    procedure oncr(const sender: TObject);
    procedure play(const sender: TObject);
    procedure stop(const sender: TObject);

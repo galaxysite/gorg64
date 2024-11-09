@@ -3,16 +3,16 @@ object eefo: teefo
   frame.localprops = []
   frame.localprops1 = []
   frame.template = tframecomp2
-  bounds_x = 202
-  bounds_y = 204
-  bounds_cx = 1070
+  bounds_x = 262
+  bounds_y = 119
+  bounds_cx = 1074
   bounds_cy = 673
   container.frame.localprops = []
   container.frame.localprops1 = []
   container.bounds = (
     4
     2
-    1062
+    1066
     669
   )
   font.height = 26
@@ -25,12 +25,149 @@ object eefo: teefo
   fontempty.localprops = [flp_style, flp_height]
   options = [fo_freeonclose, fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
   caption = #1057#1086#1073#1099#1090#1080#1077' | Event'
+  icon.options = [bmo_masked, bmo_graymask]
+  icon.origformat = 'png'
+  icon.image = {
+    0000000012000000200000002000000068090000000000000000000000000000
+    00000000000000000000000000000000000000000000000DF3F3F30198989801
+    2323320123232C0198989801F2F2F2010000001A9393930122157C013D2ACF01
+    2406B101100654019393930100000019D9D9D9012A2843018A81DF01C1B9F701
+    381CE8011D019E0129283601D9D9D901000000188787870112112501302C5901
+    3F3C5B011B1559011713450111101C018787870100000017DBDBDB0140414201
+    AFB4B701B6BBBE01AEB5B901AEB4B902A9B0B40140414201DBDBDB0100000016
+    9A9A9A018D929601F1F4F601EDF0F201C8CFD401C7CFD401D9E1E701DCE3E901
+    8C9094019A9A9A01000000164D4E4E01C2C6CA01D6D7D7015C5D5D01312D2B01
+    2E2B290155585901BCC2C701B9C0C5014D4E4E0100000015DDDDDD0145464701
+    D5D9DC014E4B49019E733C01906936017F4E0F018C57130144434301C7CFD401
+    44464701DDDDDD0100000014C8C8C80155575901C0C3C601342B23016D4F2901
+    332A22012A1F1601613B0C012D241D01B2B8BD0153555801C8C8C80100000014
+    C3C3C30160636501C2C5C701242424017E7E7E01B1B1B101888888015D5D5D01
+    1D1E1F01B2B8BD015E626401C3C3C30100000014C2C2C20162656701C2C5C701
+    40404001C7C7C701CACACA019D9D9D01B8B8B80139393A01B2B8BD0160636601
+    C2C2C20100000014B2B2B20161646601C2C5C70143434301C8C8C801CACACA01
+    9F9F9F01D8D8D80142424301B2B8BD015F636501B2B2B20100000013D7D7D701
+    3737370160636501BFC2C50142424201C8C8C801CACACA019D9D9D01AEAEAE01
+    38393901B2B8BD015F62640136363601D6D6D60100000011E2E2E2014E4E4E01
+    585B5E015F636501B3B9BE0140414101C8C8C801CACACA01A0A0A001EFEFEF01
+    48484801B2B8BD015F6365015A5E60014E4E4F01E2E2E2010000000FEBEBEB01
+    646464018F949801A5AAAF0160636601B2B8BD0140414101C8C8C801CACACA01
+    A1A1A101F1F1F10148484901B2B8BD0160636601A5AAAF018F95990162626201
+    EAEAEA010000000DF4F4F4017D7D7D017E838601D9E1E701A8AEB30160636601
+    B2B8BD0140414101C8C8C801CACACA01A1A1A101F1F1F10148484901B2B8BD01
+    60636601A8AEB301D9E1E7017F8488017B7B7B01F4F4F4010000000C90909001
+    6E727501D5DCE201EEF2F501B1B5B8015B5E610191979A014A4A4A01C9C9C901
+    CACACA019E9E9E01CCCCCC014343430191979A015B5E6101A8AEB301DDE5EB01
+    D4DCE2016E727501909090010000000BA2A2A201595C5F01CDD4DA01E1E8ED01
+    F4F6F801AEB3B6012223240139393A01AEAEAE01CCCCCC01CACACA019C9C9C01
+    99999901838383012D2E2E0122232401A8AEB301DDE5EB02CDD4DA015B5F6101
+    A3A3A30100000009B9B9B901494B4D01C6CDD201EBEFF301E0E7ED01DEE5EB01
+    A8AEB3012D2D2D01AEAEAE01CCCCCC01CBCBCB01ADADAD018585850198989801
+    999999018383830122222201A8AEB301DDE5EB03C5CCD101484B4C01B8B8B801
+    00000007CCCCCC0143444501BDC3C801EDF1F401F9FAFB01E1E8ED01DDE5EB01
+    A8AEB20157575701C9C9C901CCCCCC01B9B9B9012F2F3201222124018B8B8B01
+    999999019797970141414101A8AEB201DDE5EB04BCC3C80143444501CDCDCD01
+    00000005DBDBDB0146474801AFB5BA01EAEFF201FAFBFC01E4EAEF01DDE5EB01
+    C4CBD00172767901343434019E9E9E01CACACA01A1A1A101161147010F093301
+    7878780197979701757575012626260172767901C4CBD101DDE5EB03DCE4EA01
+    AEB5BA0146474801DBDBDB0100000003E5E5E501545454019BA0A501C9CED701
+    EEEFF001CFD2DF01CBD1DD01CED5DB01484B4D01898E92019EA5AA013E414401
+    9C9C9C019696960118077B010F025901707070017373730144474801A1A7AB01
+    82888D01494C4E01CED6DC01CBD1DD01C5CAD901CED4E001BDC2D3019BA0A501
+    54545401E5E5E50100000001EFEFEF016C6C6C018A8F9201DFE5E9016E6E7301
+    A8ACB40176769101A3A9AE01A5ABAF0171727301E6EBEE01DCE4EA0196A0A701
+    4D4E4E01797979012107A80114017A015A5A5A013B3B3B01B8BBBD01E3E9EE01
+    D0DAE101565D6201A5ABAF01A3A9AE0176769101A2A7B3014E4C6D01D6DEE501
+    8A8F93016C6C6C01EEEEEE0183838301797D8001DDE4E801F8F9FA01B6BABE01
+    C2C9D101B3B9C501BFC6CC01696D7001B7B9BA01F3F6F801DDE5EB01C1CCD401
+    2C30330138373A012508B6011701840128282A0137383901EAECEC01E7EDF101
+    DBE3EA018E99A101696D7001BFC6CC01B3B9C501C2C9D101A9AEBA01DBE3E901
+    D8E0E601797D8001838383011A1B1B018B919401ABAFB201B6B7B801A3A9AE01
+    A2A8AD029FA5A901383A3C01D8DCDE01F3F6F801DDE5EB01D2DBE3015F676D01
+    03011F012A0BC8011A018F010100120173767901F5F7F801E7EDF101DDE5EB01
+    B6C1C901333639019FA5A901A2A8AD058B9194011A1B1B01150D03017F5D2F01
+    90795F01958B7F018B6637018A653402644824015D606301E2E8EC01EAEFF301
+    DDE5EB01D5DEE6018C98A1010B093401300DE3011D01A1010C0B2301A8AEB201
+    EDF1F401E3EAEF01DDE5EB01C6D1DA014C535901644824018B673A018B693E01
+    8B6738018C6B43018C6B440181623E01160E0601281A0701CB8F4201E3B37E01
+    EAC8A601DD9D4C01DD9B4801DC9B4801996A30018B939801D9E1E701DEE6EB01
+    D1DBE301CBD7E0019FADB7011C1C4301320DED011F01A7011E1F3401B4BDC301
+    E1E7EC01D7E0E701D1DBE301C2CFD9017B868E01996A3001E8C19801EFD3B601
+    E5B68001F8EDE101F9EFE301E5DCD2012F2D2A01342F2C01905A1501A3671B01
+    A3681E01A3661802A26618016F440E01636C7201A9B0B501B6BABD01929FA801
+    919EA7017E89910115153401270ABB011700830114142701808A9201BBBEC101
+    A2ABB101929EA701919DA701626B72016F440E01A9774001AC804E01A7733401
+    B18D6401B28E65019E7F5B0136333001C9C9C9016A6969015C5B5A055B5A5A01
+    54545401191A1B0112303A010D3A48010D151901404041015A5A5A015A5A5D01
+    5A5A5B015A5A5A0140414101141A1C010F3B49010D2E39011618190154545401
+    5B5A5A015C5B5A056A696901C9C9C90100000008C8C8C801171A1C0100485B01
+    00556C01001E27017E7E7E01000000047E7E7E01001E270100556C0100485B01
+    171A1C01C8C8C80100000010BCBCBC01094D5E0113839E0113849F010F6C8301
+    4A4C4D01000000044A4C4D010F6C830113849F0113839E01094D5E01BCBCBC01
+    00000010BFBFBF0107171C010226300102273001011E26015D5D5D0100000004
+    5C5D5D01011E2601022730010226300107171C01BFBFBF010000000800040000
+    0000000000000000000000000066FFFFFFFF9900000000000000000000000000
+    00000000000000000000000000FFFFFFFFFFFF00000000000000000000000000
+    000000000000000000000000FFFFFFFFFFFFFFFF000000000000000000000000
+    000000000000000000000000FFFFFFFFFFFFFFFF000000000000000000000000
+    0000000000000000000000FFFFFFFFFFFFFFFFFFFF0000000000000000000000
+    0000000000000000000000FFFFFFFFFFFFFFFFFFFF0000000000000000000000
+    0000000000000000000000FFFFFFFFFFFFFFFFFFFF0000000000000000000000
+    00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000
+    00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000
+    00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000
+    00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000
+    00000000000000000000FFFFFFFFFFFFFFFFFFFFFFFF00000000000000000000
+    000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000000000
+    0000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000000000
+    00000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000000000
+    00000000000033FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF33000000000000
+    000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000000000
+    0000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000000000
+    00000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00000000
+    000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF000000
+    0000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF0000
+    00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF00
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    0000000000000000FFFFFFFFFFFF00000000FFFFFFFFFFFF0000000000000000
+    0000000000000000FFFFFFFFFFFF00000000FFFFFFFFFFFF0000000000000000
+    0000000000000000FFFFFFFFFFFF00000000FFFFFFFFFFFF0000000000000000
+  }
   windowopacity = -Inf
   oncreate = oncr
   onclose = onclose
   onkeydown = keydown
   onkeyup = keyup
   moduleclassname = 'tmseform'
+  object tstringdisp2: tstringdisp
+    color = 12763842
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 121
+    bounds_x = 666
+    bounds_y = 195
+    bounds_cx = 398
+    bounds_cy = 102
+    reffontheight = 32
+  end
+  object tstringdisp1: tstringdisp
+    color = 14737632
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    taborder = 120
+    bounds_x = 666
+    bounds_y = 0
+    bounds_cx = 398
+    bounds_cy = 194
+    reffontheight = 32
+  end
   object tfilelistview1: tfilelistview
     frame.sbhorz.framebutton.localprops = []
     frame.sbhorz.framebutton.localprops1 = []
@@ -47,31 +184,38 @@ object eefo: teefo
     taborder = 1
     popupmenu = tpopupmenu1
     bounds_x = 272
-    bounds_y = 384
+    bounds_y = 390
     bounds_cx = 320
-    bounds_cy = 162
+    bounds_cy = 152
     anchors = [an_left, an_top, an_right, an_bottom]
+    colorselect = 16767651
     cellwidth = 320
-    cellheight = 44
+    cellheight = 42
     optionsgrid = [og_colsizing, og_focuscellonenter, og_colchangeontabkey, og_wraprow, og_wrapcol, og_autopopup, og_mousescrollcol]
     options = [lvo_readonly, lvo_drawfocus, lvo_leftbuttonfocusonly, lvo_focusselect, lvo_mouseselect, lvo_multiselect, lvo_locate]
     gridframecolor = -2147483640
     onselectionchanged = onsndch
-    reffontheight = 36
+    reffontheight = 32
   end
   object tlabel1: tlabel
+    optionswidget1 = [ow1_fontglyphheight]
+    color = 15724288
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
     taborder = 2
-    bounds_x = 691
-    bounds_y = 193
-    bounds_cx = 58
-    bounds_cy = 50
-    caption = '--:--'
+    bounds_x = 816
+    bounds_y = 302
+    bounds_cx = 108
+    bounds_cy = 44
+    caption = '88:88'
     font.color = -1610612721
-    font.height = 36
+    font.height = 30
     font.style = [fs_bold]
     font.name = 'stf_default'
     font.localprops = [flp_color, flp_height, flp_options]
-    reffontheight = 50
+    textflags = [tf_xcentered, tf_ycentered]
+    reffontheight = 36
   end
   object tbutton5: tbutton
     color = -1610612730
@@ -415,8 +559,8 @@ object eefo: teefo
     frame.localprops1 = []
     frame.template = tframecomp2
     taborder = 27
-    bounds_x = 784
-    bounds_y = 264
+    bounds_x = 672
+    bounds_y = 248
     bounds_cx = 50
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
@@ -429,8 +573,8 @@ object eefo: teefo
     frame.localprops1 = []
     frame.template = tframecomp2
     taborder = 28
-    bounds_x = 840
-    bounds_y = 264
+    bounds_x = 728
+    bounds_y = 248
     bounds_cx = 50
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
@@ -443,8 +587,8 @@ object eefo: teefo
     frame.localprops1 = []
     frame.template = tframecomp2
     taborder = 29
-    bounds_x = 896
-    bounds_y = 264
+    bounds_x = 784
+    bounds_y = 248
     bounds_cx = 50
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
@@ -457,8 +601,8 @@ object eefo: teefo
     frame.localprops1 = []
     frame.template = tframecomp2
     taborder = 30
-    bounds_x = 952
-    bounds_y = 264
+    bounds_x = 840
+    bounds_y = 248
     bounds_cx = 50
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
@@ -471,8 +615,8 @@ object eefo: teefo
     frame.localprops1 = []
     frame.template = tframecomp2
     taborder = 31
-    bounds_x = 1008
-    bounds_y = 264
+    bounds_x = 896
+    bounds_y = 248
     bounds_cx = 50
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
@@ -485,9 +629,9 @@ object eefo: teefo
     frame.localprops1 = []
     frame.template = tframecomp2
     taborder = 32
-    bounds_x = 864
-    bounds_y = 168
-    bounds_cx = 34
+    bounds_x = 672
+    bounds_y = 200
+    bounds_cx = 33
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
     caption = '1'
@@ -499,9 +643,9 @@ object eefo: teefo
     frame.localprops1 = []
     frame.template = tframecomp2
     taborder = 33
-    bounds_x = 904
-    bounds_y = 168
-    bounds_cx = 34
+    bounds_x = 710
+    bounds_y = 200
+    bounds_cx = 33
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
     caption = '2'
@@ -513,9 +657,9 @@ object eefo: teefo
     frame.localprops1 = []
     frame.template = tframecomp2
     taborder = 34
-    bounds_x = 944
-    bounds_y = 168
-    bounds_cx = 34
+    bounds_x = 749
+    bounds_y = 200
+    bounds_cx = 33
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
     caption = '3'
@@ -527,9 +671,9 @@ object eefo: teefo
     frame.localprops1 = []
     frame.template = tframecomp2
     taborder = 35
-    bounds_x = 984
-    bounds_y = 168
-    bounds_cx = 34
+    bounds_x = 787
+    bounds_y = 200
+    bounds_cx = 33
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
     caption = '4'
@@ -541,9 +685,9 @@ object eefo: teefo
     frame.localprops1 = []
     frame.template = tframecomp2
     taborder = 36
-    bounds_x = 1024
-    bounds_y = 168
-    bounds_cx = 34
+    bounds_x = 826
+    bounds_y = 200
+    bounds_cx = 33
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
     caption = '5'
@@ -556,8 +700,8 @@ object eefo: teefo
     frame.template = tframecomp2
     taborder = 37
     bounds_x = 864
-    bounds_y = 216
-    bounds_cx = 34
+    bounds_y = 200
+    bounds_cx = 33
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
     caption = '6'
@@ -570,8 +714,8 @@ object eefo: teefo
     frame.template = tframecomp2
     taborder = 38
     bounds_x = 904
-    bounds_y = 216
-    bounds_cx = 34
+    bounds_y = 200
+    bounds_cx = 33
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
     caption = '7'
@@ -584,8 +728,8 @@ object eefo: teefo
     frame.template = tframecomp2
     taborder = 39
     bounds_x = 944
-    bounds_y = 216
-    bounds_cx = 34
+    bounds_y = 200
+    bounds_cx = 33
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
     caption = '8'
@@ -598,8 +742,8 @@ object eefo: teefo
     frame.template = tframecomp2
     taborder = 40
     bounds_x = 984
-    bounds_y = 216
-    bounds_cx = 34
+    bounds_y = 200
+    bounds_cx = 33
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
     caption = '9'
@@ -612,8 +756,8 @@ object eefo: teefo
     frame.template = tframecomp2
     taborder = 41
     bounds_x = 1024
-    bounds_y = 216
-    bounds_cx = 34
+    bounds_y = 200
+    bounds_cx = 33
     bounds_cy = 44
     state = [as_localcaption, as_localcolor, as_localonexecute]
     caption = '0'
@@ -623,24 +767,44 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    frame.button.face.fade_pos.count = 2
+    frame.button.face.fade_pos.items = (
+      0
+      1
+    )
+    frame.button.face.fade_color.count = 2
+    frame.button.face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    frame.button.face.fade_direction = gd_down
     frame.button.face.localprops = []
-    frame.button.face.template = mainfo.tfacecomp1
     frame.button.frame.localprops = []
     frame.button.frame.localprops1 = []
     frame.button.frame.template = tframecomp2
     frame.buttons.count = 1
     frame.buttons.items = <    
       item
+        face.fade_pos.count = 2
+        face.fade_pos.items = (
+          0
+          1
+        )
+        face.fade_color.count = 2
+        face.fade_color.items = (
+          -1610612730
+          12895487
+        )
+        face.fade_direction = gd_down
         face.localprops = []
-        face.template = mainfo.tfacecomp1
         frame.localprops = []
         frame.localprops1 = []
         frame.template = tframecomp2
       end>
     bounds_x = 8
-    bounds_y = 619
-    bounds_cx = 793
-    bounds_cy = 42
+    bounds_y = 620
+    bounds_cx = 797
+    bounds_cy = 38
     anchors = [an_left, an_right, an_bottom]
     ontextedited = ontextedited
     dropdown.cols.count = 1
@@ -648,19 +812,29 @@ object eefo: teefo
       item
       end>
     onafterclosedropdown = onafterclosedropdown
-    reffontheight = 36
+    reffontheight = 32
   end
   object trichbutton4: trichbutton
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 42
-    bounds_x = 88
-    bounds_y = 574
+    bounds_x = 96
+    bounds_y = 582
     bounds_cx = 34
-    bounds_cy = 34
+    bounds_cy = 32
     state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
     imagelist = timagelist2
     imagenr = 1
@@ -671,13 +845,23 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 43
-    bounds_x = 48
-    bounds_y = 574
+    bounds_x = 56
+    bounds_y = 582
     bounds_cx = 34
-    bounds_cy = 34
+    bounds_cy = 32
     state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
     imagelist = timagelist2
     imagenr = 0
@@ -688,13 +872,23 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 44
-    bounds_x = 8
-    bounds_y = 574
+    bounds_x = 16
+    bounds_y = 582
     bounds_cx = 34
-    bounds_cy = 34
+    bounds_cy = 32
     state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
     imagelist = timagelist1
     imagenr = 0
@@ -705,9 +899,11 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 45
     hint = #1059#1076#1072#1083#1080#1090#1100
-    bounds_x = 272
+    bounds_x = 280
     bounds_y = 560
     bounds_cx = 26
     bounds_cy = 26
@@ -718,9 +914,11 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 46
     hint = #1042#1099#1082#1083#1102#1095#1080#1090#1100
-    bounds_x = 336
+    bounds_x = 344
     bounds_y = 560
     bounds_cx = 26
     bounds_cy = 26
@@ -731,9 +929,11 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 47
     hint = #1058#1086#1083#1100#1082#1086' '#1089#1077#1081#1095#1072#1089
-    bounds_x = 368
+    bounds_x = 376
     bounds_y = 560
     bounds_cx = 26
     bounds_cy = 26
@@ -744,9 +944,11 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 48
     hint = #1055#1086#1082#1072#1079#1072#1090#1100' '#1089#1086#1086#1073#1097#1077#1085#1080#1077
-    bounds_x = 304
+    bounds_x = 312
     bounds_y = 560
     bounds_cx = 26
     bounds_cy = 26
@@ -757,13 +959,23 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 49
     bounds_x = 448
-    bounds_y = 344
+    bounds_y = 342
     bounds_cx = 34
-    bounds_cy = 30
+    bounds_cy = 34
     state = [as_localcaption, as_localonexecute]
     caption = '+'
     onexecute = plusyear
@@ -772,13 +984,23 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 50
     bounds_x = 408
-    bounds_y = 344
+    bounds_y = 342
     bounds_cx = 34
-    bounds_cy = 30
+    bounds_cy = 34
     state = [as_localcaption, as_localonexecute]
     caption = '-'
     onexecute = minusyear
@@ -788,11 +1010,13 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 51
-    bounds_x = 640
-    bounds_y = 248
+    bounds_x = 672
+    bounds_y = 302
     bounds_cx = 114
-    bounds_cy = 37
+    bounds_cy = 44
     state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagelist = timagelist4
     imagenr = 0
@@ -803,9 +1027,11 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 52
-    bounds_x = 712
-    bounds_y = 288
+    bounds_x = 960
+    bounds_y = 302
     bounds_cx = 42
     bounds_cy = 44
     state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
@@ -828,18 +1054,19 @@ object eefo: teefo
     frame.template = tframecomp2
     taborder = 53
     popupmenu = tpopupmenu2
-    bounds_x = 594
-    bounds_y = 384
-    bounds_cx = 190
-    bounds_cy = 162
+    bounds_x = 596
+    bounds_y = 390
+    bounds_cx = 188
+    bounds_cy = 152
     anchors = [an_left, an_top, an_right, an_bottom]
+    colorselect = 16767651
     cellwidth = 320
-    cellheight = 44
+    cellheight = 42
     optionsgrid = [og_colsizing, og_focuscellonenter, og_colchangeontabkey, og_wraprow, og_wrapcol, og_autopopup, og_mousescrollcol]
     options = [lvo_readonly, lvo_drawfocus, lvo_leftbuttonfocusonly, lvo_focusselect, lvo_mouseselect, lvo_multiselect, lvo_locate]
     gridframecolor = -2147483640
     onselectionchanged = onmusch
-    reffontheight = 36
+    reffontheight = 32
   end
   object mo1: tbutton
     frame.localprops = []
@@ -1000,29 +1227,40 @@ object eefo: teefo
     frame.template = tframecomp2
     taborder = 66
     popupmenu = tpopupmenu3
-    bounds_x = 786
-    bounds_y = 384
-    bounds_cx = 264
-    bounds_cy = 162
+    bounds_x = 788
+    bounds_y = 390
+    bounds_cx = 274
+    bounds_cy = 152
     anchors = [an_top, an_right, an_bottom]
+    colorselect = 16767651
     cellwidth = 320
-    cellheight = 44
+    cellheight = 42
     optionsgrid = [og_colsizing, og_focuscellonenter, og_colchangeontabkey, og_wraprow, og_wrapcol, og_autopopup, og_mousescrollcol]
     options = [lvo_readonly, lvo_drawfocus, lvo_leftbuttonfocusonly, lvo_focusselect, lvo_mouseselect, lvo_multiselect, lvo_locate]
     gridframecolor = -2147483640
     onselectionchanged = onshch
-    reffontheight = 36
+    reffontheight = 32
   end
   object tbutton3: tbutton
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 67
-    bounds_x = 736
+    bounds_x = 742
     bounds_y = 552
-    bounds_cx = 312
+    bounds_cx = 320
     bounds_cy = 44
     anchors = [an_right, an_bottom]
     state = [as_localonexecute]
@@ -1519,13 +1757,23 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 106
-    bounds_x = 600
-    bounds_y = 336
-    bounds_cx = 450
-    bounds_cy = 44
+    bounds_x = 672
+    bounds_y = 351
+    bounds_cx = 386
+    bounds_cy = 32
     state = [as_localcaption, as_localonexecute]
     onexecute = onperiod
   end
@@ -1533,10 +1781,20 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 107
-    bounds_x = 861
+    bounds_x = 865
     bounds_y = 608
     bounds_cx = 50
     bounds_cy = 52
@@ -1549,10 +1807,20 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 108
-    bounds_x = 933
+    bounds_x = 937
     bounds_y = 608
     bounds_cx = 50
     bounds_cy = 52
@@ -1565,10 +1833,20 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 109
-    bounds_x = 997
+    bounds_x = 1001
     bounds_y = 608
     bounds_cx = 50
     bounds_cy = 52
@@ -1581,10 +1859,20 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 110
-    bounds_x = 811
+    bounds_x = 815
     bounds_y = 634
     bounds_cx = 33
     bounds_cy = 24
@@ -1597,10 +1885,20 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 111
-    bounds_x = 406
+    bounds_x = 412
     bounds_y = 552
     bounds_cx = 320
     bounds_cy = 44
@@ -1613,22 +1911,22 @@ object eefo: teefo
     frame.localprops1 = []
     frame.template = tframecomp2
     taborder = 112
-    bounds_x = 496
-    bounds_y = 340
-    bounds_cx = 92
-    bounds_cy = 42
+    bounds_x = 488
+    bounds_y = 342
+    bounds_cx = 96
+    bounds_cy = 34
     onchange = onchangecyc
     value = 2
     valuedefault = 2
     valuemin = 2
-    reffontheight = 36
+    reffontheight = 32
   end
   object tsplitter1: tsplitter
     taborder = 113
     bounds_x = 592
-    bounds_y = 384
-    bounds_cx = 2
-    bounds_cy = 106
+    bounds_y = 392
+    bounds_cx = 4
+    bounds_cy = 148
     options = [spo_hmove, spo_dockleft, spo_docktop, spo_dockright, spo_dockbottom]
     linkleft = tfilelistview1
     linkright = tfilelistview2
@@ -1636,9 +1934,9 @@ object eefo: teefo
   object tsplitter2: tsplitter
     taborder = 114
     bounds_x = 784
-    bounds_y = 384
-    bounds_cx = 2
-    bounds_cy = 106
+    bounds_y = 392
+    bounds_cx = 4
+    bounds_cy = 148
     options = [spo_hmove, spo_dockleft, spo_docktop, spo_dockright, spo_dockbottom]
     linkleft = tfilelistview2
     linkright = tfilelistview3
@@ -1647,10 +1945,20 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 115
-    bounds_x = 811
+    bounds_x = 815
     bounds_y = 608
     bounds_cx = 33
     bounds_cy = 22
@@ -1664,11 +1972,21 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 116
-    bounds_x = 810
-    bounds_y = 200
+    bounds_x = 1008
+    bounds_y = 248
     bounds_cx = 50
     bounds_cy = 44
     state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolorglyph, as_localcolor, as_localonexecute]
@@ -1687,11 +2005,21 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 117
-    bounds_x = 640
-    bounds_y = 200
+    bounds_x = 1008
+    bounds_y = 144
     bounds_cx = 50
     bounds_cy = 44
     state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolorglyph, as_localcolor, as_localonexecute]
@@ -1710,11 +2038,21 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
     face.localprops = []
-    face.template = mainfo.tfacecomp1
     taborder = 118
-    bounds_x = 640
-    bounds_y = 288
+    bounds_x = 1008
+    bounds_y = 302
     bounds_cx = 50
     bounds_cy = 44
     state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolorglyph, as_localcolor, as_localonexecute]
@@ -1735,9 +2073,9 @@ object eefo: teefo
     frame.template = tframecomp2
     taborder = 119
     bounds_x = 272
-    bounds_y = 336
+    bounds_y = 342
     bounds_cx = 130
-    bounds_cy = 42
+    bounds_cy = 34
     state = [as_localcolor, as_localonexecute]
     onexecute = onyearclick
   end
@@ -2035,7 +2373,6 @@ object eefo: teefo
     }
   end
   object tpopupmenu4: tpopupmenu
-    itemfacetemplateactive = mainfo.tfacecomp1
     menu.submenu.count = 13
     menu.submenu.items = <    
       item
@@ -2107,8 +2444,8 @@ object eefo: teefo
     menu.font.style = [fs_bold]
     menu.font.name = 'stf_menu'
     menu.font.localprops = [flp_style, flp_height]
-    left = 792
-    top = 352
+    left = 768
+    top = 416
   end
   object timagelist5: timagelist
     width = 4

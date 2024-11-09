@@ -271,16 +271,17 @@ object mainfo: tmainfo
       font.style = [fs_bold]
       font.name = 'stf_default'
       font.localprops = [flp_color, flp_grayed_color, flp_style, flp_height]
+      textflags = [tf_xcentered, tf_ycentered]
       reffontheight = 45
     end
   end
   object tbutton1: tbutton
-    color = -1610612731
+    color = 15263976
     frame.localprops = []
     frame.localprops1 = []
-    frame.template = eefo.tframecomp2
+    frame.template = tframecomp2
     taborder = 1
-    bounds_x = 3
+    bounds_x = 4
     bounds_y = 16
     bounds_cx = 20
     bounds_cy = 20
@@ -293,7 +294,7 @@ object mainfo: tmainfo
     color = -1610612715
     frame.localprops = []
     frame.localprops1 = []
-    frame.template = eefo.tframecomp2
+    frame.template = tframecomp2
     face.fade_pos.count = 2
     face.fade_pos.items = (
       0
@@ -306,10 +307,10 @@ object mainfo: tmainfo
     )
     face.fade_direction = gd_down
     face.localprops = [fal_fadirection]
-    bounds_x = 694
-    bounds_y = 4
-    bounds_cx = 46
-    bounds_cy = 46
+    bounds_x = 698
+    bounds_y = 7
+    bounds_cx = 40
+    bounds_cy = 40
     state = [as_localcaption, as_localcolor, as_localonexecute]
     onexecute = onbutton
   end
@@ -5949,5 +5950,42 @@ object mainfo: tmainfo
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFFFFFFFFFFFFFF
     }
+  end
+  object timagelist5: timagelist
+    width = 4
+    height = 4
+    count = 8
+    cornermask_topleft = #2#1
+    cornermask_bottomleft = #2#1
+    cornermask_bottomright = #2#1
+    cornermask_topright = #2#1
+    left = 557
+    top = 4
+    image = {
+      00000000020000000C0000000C000000E8000000000000000000000000000000
+      0000000000000000000000000000000000000000FFFFFF028B8B8B02A5A5A501
+      000000038B8B8B01FFFFFF048B8B8B01FFFFFF02A5A5A501000000038B8B8B01
+      FFFFFF038B8B8B01FFFFFF03A5A5A50100000003FFFFFF018B8B8B01FFFFFF02
+      8B8B8B01FFFFFF03A5A5A50100000003FFFFFF028B8B8B03FFFFFF068B8B8B01
+      FFFFFF038B8B8B02FFFFFF068B8B8B01FFFFFF038B8B8B01FFFFFF018B8B8B01
+      FFFFFF048B8B8B01FFFFFF048B8B8B07FFFFFF04D6D6D6018B8B8B03FFFFFF02
+      8B8B8B0400000004FFFFFF028B8B8B01FFFFFF04D6D6D60100000004FFFFFF03
+      8B8B8B01FFFFFF0400000004FFFFFF038B8B8B01FFFFFF04000000041C010000
+      1201000011020000110C00008008000080080000400800003F080000F3000000
+      040000000800000008000000
+    }
+  end
+  object tframecomp2: tframecomp
+    template.framei_left = 4
+    template.framei_top = 2
+    template.framei_right = 4
+    template.framei_bottom = 2
+    template.frameimage_list = timagelist5
+    template.frameimage_left = -4
+    template.frameimage_top = -4
+    template.frameimage_right = -4
+    template.frameimage_bottom = -4
+    left = 464
+    top = 19
   end
 end

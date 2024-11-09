@@ -55,6 +55,8 @@ type
    tfacecomp1: tfacecomp;
    timagelist1: timagelist;
    tbutton2: tbutton;
+   timagelist5: timagelist;
+   tframecomp2: tframecomp;
     procedure onquit(Const Sender: TObject);
     procedure oncreate(Const Sender: TObject);
     procedure onmouseev(Const Sender: twidget; Var ainfo: mouseeventinfoty);
