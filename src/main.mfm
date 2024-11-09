@@ -252,8 +252,8 @@ object mainfo: tmainfo
     onpaint = onpaintev
     bounds_x = 0
     bounds_y = 0
-    bounds_cx = 750
-    bounds_cy = 54
+    bounds_cx = 875
+    bounds_cy = 381
     anchors = []
     onmouseevent = onmouseev
     object tlabel2: tlabel
@@ -314,117 +314,6 @@ object mainfo: tmainfo
     state = [as_localcaption, as_localcolor, as_localonexecute]
     onexecute = onbutton
   end
-  object tpopupmenu1: tpopupmenu
-    itemfacetemplateactive = tfacecomp1
-    menu.submenu.count = 14
-    menu.submenu.items = <    
-      item
-        caption = #1042#1099#1082#1083#1102#1095#1080#1090#1100' '#1079#1074#1091#1082' | Mute'
-        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
-        imagelist = timagelist1
-        imagenr = 5
-        onexecute = onmute
-      end    
-      item
-        state = [as_localimagelist, as_localimagenr, as_localonexecute]
-        imagelist = timagelist1
-        imagenr = 6
-        onexecute = onnoact
-      end    
-      item
-        state = [as_localimagelist, as_localimagenr, as_localonexecute]
-        imagelist = timagelist1
-        imagenr = 3
-        onexecute = onfixation
-      end    
-      item
-        caption = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1090#1100' '#1089#1086#1073#1099#1090#1080#1103' | Edit events'
-        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
-        imagelist = timagelist1
-        imagenr = 9
-        onexecute = onele
-      end    
-      item
-        caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1089#1086#1073#1099#1090#1080#1077' | Add event'
-        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
-        imagelist = timagelist1
-        imagenr = 0
-        onexecute = onaddev
-      end    
-      item
-        caption = #1047#1072#1087#1080#1089#1085#1072#1103' '#1082#1085#1080#1078#1082#1072' | Notebook'
-        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
-        imagelist = timagelist1
-        imagenr = 7
-        onexecute = onnotebook
-      end    
-      item
-        caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1095#1077#1083#1086#1074#1077#1082#1072' | Add people'
-        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
-        imagelist = timagelist1
-        imagenr = 12
-        onexecute = onaddp
-      end    
-      item
-        caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1086#1088#1075#1072#1085#1080#1079#1072#1094#1080#1102' | Add organization'
-        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
-        imagelist = timagelist1
-        imagenr = 11
-        onexecute = onaddo
-      end    
-      item
-        caption = #1057#1087#1088#1072#1074#1082#1072' | Help'
-        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
-        imagelist = timagelist1
-        imagenr = 10
-        onexecute = onhelp
-      end    
-      item
-        caption = #1053#1072#1089#1090#1088#1086#1081#1082#1080' | Settings'
-        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
-        imagelist = timagelist1
-        imagenr = 8
-        onexecute = onsettings
-      end    
-      item
-        caption = #1052#1086#1083#1085#1080#1103' | Flash'
-        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
-        imagelist = timagelist1
-        imagenr = 4
-        onexecute = onflash
-      end    
-      item
-        caption = #1042#1099#1093#1086#1076' | Quit'
-        state = [as_localchecked, as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
-        imagelist = timagelist1
-        imagenr = 2
-        onexecute = menuexit
-      end    
-      item
-        caption = #1055#1072#1085#1077#1083#1100' '#1095#1072#1089#1086#1074' | Clock panel'
-        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
-        imagelist = timagelist1
-        imagenr = 1
-        onexecute = onclockpanel
-      end    
-      item
-        caption = #1043#1086#1076' | Year List'
-        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonafterexecute]
-        imagelist = timagelist1
-        imagenr = 13
-        onafterexecute = onyearlist
-      end>
-    menu.state = [as_localimagelist, as_localcolor, as_localonexecute]
-    menu.color = -1610612730
-    menu.coloractive = -1610612730
-    menu.font.height = 22
-    menu.font.style = [fs_bold]
-    menu.font.name = 'stf_menu'
-    menu.font.localprops = [flp_style, flp_height]
-    menu.onexecute = onmute
-    left = 144
-    top = 8
-  end
   object tthreadcomp3: tthreadcomp
     onexecute = soundplay
     left = 232
@@ -456,6 +345,44 @@ object mainfo: tmainfo
     )
     template.fade_direction = gd_down
     left = 176
+    top = 8
+  end
+  object timagelist5: timagelist
+    width = 4
+    height = 4
+    count = 8
+    cornermask_topleft = #2#1
+    cornermask_bottomleft = #2#1
+    cornermask_bottomright = #2#1
+    cornermask_topright = #2#1
+    left = 557
+    top = 4
+    image = {
+      00000000020000000C0000000C000000E8000000000000000000000000000000
+      0000000000000000000000000000000000000000FFFFFF028B8B8B02A5A5A501
+      000000038B8B8B01FFFFFF048B8B8B01FFFFFF02A5A5A501000000038B8B8B01
+      FFFFFF038B8B8B01FFFFFF03A5A5A50100000003FFFFFF018B8B8B01FFFFFF02
+      8B8B8B01FFFFFF03A5A5A50100000003FFFFFF028B8B8B03FFFFFF068B8B8B01
+      FFFFFF038B8B8B02FFFFFF068B8B8B01FFFFFF038B8B8B01FFFFFF018B8B8B01
+      FFFFFF048B8B8B01FFFFFF048B8B8B07FFFFFF04D6D6D6018B8B8B03FFFFFF02
+      8B8B8B0400000004FFFFFF028B8B8B01FFFFFF04D6D6D60100000004FFFFFF03
+      8B8B8B01FFFFFF0400000004FFFFFF038B8B8B01FFFFFF04000000041C010000
+      1201000011020000110C00008008000080080000400800003F080000F3000000
+      040000000800000008000000
+    }
+  end
+  object tframecomp2: tframecomp
+    template.framei_left = 4
+    template.framei_top = 2
+    template.framei_right = 4
+    template.framei_bottom = 2
+    template.frameimage_list = timagelist5
+    template.frameimage_left = -4
+    template.frameimage_top = -4
+    template.frameimage_right = -4
+    template.frameimage_bottom = -4
+    left = 464
+    top = 19
   end
   object timagelist1: timagelist
     width = 64
@@ -5951,41 +5878,131 @@ object mainfo: tmainfo
       FFFFFFFFFFFFFFFF
     }
   end
-  object timagelist5: timagelist
-    width = 4
-    height = 4
-    count = 8
-    cornermask_topleft = #2#1
-    cornermask_bottomleft = #2#1
-    cornermask_bottomright = #2#1
-    cornermask_topright = #2#1
-    left = 557
-    top = 4
-    image = {
-      00000000020000000C0000000C000000E8000000000000000000000000000000
-      0000000000000000000000000000000000000000FFFFFF028B8B8B02A5A5A501
-      000000038B8B8B01FFFFFF048B8B8B01FFFFFF02A5A5A501000000038B8B8B01
-      FFFFFF038B8B8B01FFFFFF03A5A5A50100000003FFFFFF018B8B8B01FFFFFF02
-      8B8B8B01FFFFFF03A5A5A50100000003FFFFFF028B8B8B03FFFFFF068B8B8B01
-      FFFFFF038B8B8B02FFFFFF068B8B8B01FFFFFF038B8B8B01FFFFFF018B8B8B01
-      FFFFFF048B8B8B01FFFFFF048B8B8B07FFFFFF04D6D6D6018B8B8B03FFFFFF02
-      8B8B8B0400000004FFFFFF028B8B8B01FFFFFF04D6D6D60100000004FFFFFF03
-      8B8B8B01FFFFFF0400000004FFFFFF038B8B8B01FFFFFF04000000041C010000
-      1201000011020000110C00008008000080080000400800003F080000F3000000
-      040000000800000008000000
-    }
+  object tpopupmenu1: tpopupmenu
+    frametemplate = tframecomp2
+    itemframetemplate = tframecomp2
+    itemfacetemplateactive = tfacecomp2
+    menu.submenu.count = 14
+    menu.submenu.items = <    
+      item
+        caption = #1042#1099#1082#1083#1102#1095#1080#1090#1100' '#1079#1074#1091#1082' | Mute'
+        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+        imagelist = timagelist1
+        imagenr = 5
+        onexecute = onmute
+      end    
+      item
+        state = [as_localimagelist, as_localimagenr, as_localonexecute]
+        imagelist = timagelist1
+        imagenr = 6
+        onexecute = onnoact
+      end    
+      item
+        state = [as_localimagelist, as_localimagenr, as_localonexecute]
+        imagelist = timagelist1
+        imagenr = 3
+        onexecute = onfixation
+      end    
+      item
+        caption = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1090#1100' '#1089#1086#1073#1099#1090#1080#1103' | Edit events'
+        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+        imagelist = timagelist1
+        imagenr = 9
+        onexecute = onele
+      end    
+      item
+        caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1089#1086#1073#1099#1090#1080#1077' | Add event'
+        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+        imagelist = timagelist1
+        imagenr = 0
+        onexecute = onaddev
+      end    
+      item
+        caption = #1047#1072#1087#1080#1089#1085#1072#1103' '#1082#1085#1080#1078#1082#1072' | Notebook'
+        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+        imagelist = timagelist1
+        imagenr = 7
+        onexecute = onnotebook
+      end    
+      item
+        caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1095#1077#1083#1086#1074#1077#1082#1072' | Add people'
+        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+        imagelist = timagelist1
+        imagenr = 12
+        onexecute = onaddp
+      end    
+      item
+        caption = #1044#1086#1073#1072#1074#1080#1090#1100' '#1086#1088#1075#1072#1085#1080#1079#1072#1094#1080#1102' | Add organization'
+        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+        imagelist = timagelist1
+        imagenr = 11
+        onexecute = onaddo
+      end    
+      item
+        caption = #1057#1087#1088#1072#1074#1082#1072' | Help'
+        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+        imagelist = timagelist1
+        imagenr = 10
+        onexecute = onhelp
+      end    
+      item
+        caption = #1053#1072#1089#1090#1088#1086#1081#1082#1080' | Settings'
+        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+        imagelist = timagelist1
+        imagenr = 8
+        onexecute = onsettings
+      end    
+      item
+        caption = #1052#1086#1083#1085#1080#1103' | Flash'
+        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+        imagelist = timagelist1
+        imagenr = 4
+        onexecute = onflash
+      end    
+      item
+        caption = #1042#1099#1093#1086#1076' | Quit'
+        state = [as_localchecked, as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+        imagelist = timagelist1
+        imagenr = 2
+        onexecute = menuexit
+      end    
+      item
+        caption = #1055#1072#1085#1077#1083#1100' '#1095#1072#1089#1086#1074' | Clock panel'
+        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+        imagelist = timagelist1
+        imagenr = 1
+        onexecute = onclockpanel
+      end    
+      item
+        caption = #1043#1086#1076' | Year List'
+        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonafterexecute]
+        imagelist = timagelist1
+        imagenr = 13
+        onafterexecute = onyearlist
+      end>
+    menu.state = [as_localimagelist, as_localcolor, as_localonexecute]
+    menu.color = 16119285
+    menu.coloractive = -1610612730
+    menu.font.height = 22
+    menu.font.style = [fs_bold]
+    menu.font.name = 'stf_menu'
+    menu.font.localprops = [flp_style, flp_height]
+    menu.onexecute = onmute
+    left = 56
   end
-  object tframecomp2: tframecomp
-    template.framei_left = 4
-    template.framei_top = 2
-    template.framei_right = 4
-    template.framei_bottom = 2
-    template.frameimage_list = timagelist5
-    template.frameimage_left = -4
-    template.frameimage_top = -4
-    template.frameimage_right = -4
-    template.frameimage_bottom = -4
-    left = 464
-    top = 19
+  object tfacecomp2: tfacecomp
+    template.fade_pos.count = 2
+    template.fade_pos.items = (
+      0
+      1
+    )
+    template.fade_color.count = 2
+    template.fade_color.items = (
+      16773859
+      16767147
+    )
+    template.fade_direction = gd_down
+    left = 768
+    top = 352
   end
 end

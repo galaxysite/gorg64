@@ -1083,13 +1083,13 @@ procedure teefo.DisplayWD;
     f : byte;
 begin
 for f := 0 to 6 do ListWD[f] := ((1 and (gev.wd shr f)) = 1);
-if ListWD[0] then wd1.color := cl_red else wd1.color := cl_white;
-if ListWD[1] then wd2.color := cl_red else wd2.color := cl_white;
-if ListWD[2] then wd3.color := cl_red else wd3.color := cl_white;
-if ListWD[3] then wd4.color := cl_red else wd4.color := cl_white;
-if ListWD[4] then wd5.color := cl_red else wd5.color := cl_white;
-if ListWD[5] then wd6.color := cl_red else wd6.color := cl_white;
-if ListWD[6] then wd7.color := cl_red else wd7.color := cl_white;
+if ListWD[0] then wd1.color := $FFA6A6 else wd1.color := cl_white;
+if ListWD[1] then wd2.color := $FFA6A6 else wd2.color := cl_white;
+if ListWD[2] then wd3.color := $FFA6A6 else wd3.color := cl_white;
+if ListWD[3] then wd4.color := $FFA6A6 else wd4.color := cl_white;
+if ListWD[4] then wd5.color := $FFA6A6 else wd5.color := cl_white;
+if ListWD[5] then wd6.color := $FFA6A6 else wd6.color := cl_white;
+if ListWD[6] then wd7.color := $FFA6A6 else wd7.color := cl_white;
 end;
 procedure teefo.MemWD;
   var

@@ -47,16 +47,17 @@ type
     tbutton1: TButton;
     tpaintbox1: tpaintbox;
     tlabel2: tlabel;
-   tpopupmenu1: tpopupmenu;
    tthreadcomp3: tthreadcomp;
    tthreadcomp4: tthreadcomp;
    tthreadcomp5: tthreadcomp;
    ttimer1: ttimer;
    tfacecomp1: tfacecomp;
-   timagelist1: timagelist;
    tbutton2: tbutton;
    timagelist5: timagelist;
    tframecomp2: tframecomp;
+   timagelist1: timagelist;
+   tpopupmenu1: tpopupmenu;
+   tfacecomp2: tfacecomp;
     procedure onquit(Const Sender: TObject);
     procedure oncreate(Const Sender: TObject);
     procedure onmouseev(Const Sender: twidget; Var ainfo: mouseeventinfoty);
@@ -486,7 +487,7 @@ end;
 
 procedure tmainfo.menuexit(const sender: TObject);
 begin
-if askyesno('Выйти ? | Exit ?', 'GALAXY ORGANIZER') then AppClose;
+if askyesno('        Выйти ? | Exit ?        ', 'GORG64') then AppClose;
 end;
 
 procedure tmainfo.onmute(const sender: TObject);

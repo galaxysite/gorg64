@@ -3,8 +3,8 @@ object eefo: teefo
   frame.localprops = []
   frame.localprops1 = []
   frame.template = tframecomp2
-  bounds_x = 262
-  bounds_y = 119
+  bounds_x = 230
+  bounds_y = 467
   bounds_cx = 1074
   bounds_cy = 673
   container.frame.localprops = []
@@ -209,7 +209,7 @@ object eefo: teefo
     bounds_cx = 108
     bounds_cy = 44
     caption = '88:88'
-    font.color = -1610612721
+    font.color = -1610612734
     font.height = 30
     font.style = [fs_bold]
     font.name = 'stf_default'
@@ -973,9 +973,9 @@ object eefo: teefo
     face.localprops = []
     taborder = 49
     bounds_x = 448
-    bounds_y = 342
+    bounds_y = 340
     bounds_cx = 34
-    bounds_cy = 34
+    bounds_cy = 42
     state = [as_localcaption, as_localonexecute]
     caption = '+'
     onexecute = plusyear
@@ -998,9 +998,9 @@ object eefo: teefo
     face.localprops = []
     taborder = 50
     bounds_x = 408
-    bounds_y = 342
+    bounds_y = 340
     bounds_cx = 34
-    bounds_cy = 34
+    bounds_cy = 42
     state = [as_localcaption, as_localonexecute]
     caption = '-'
     onexecute = minusyear
@@ -1881,7 +1881,7 @@ object eefo: teefo
     face.localprops = []
     taborder = 110
     bounds_x = 815
-    bounds_y = 634
+    bounds_y = 635
     bounds_cx = 33
     bounds_cy = 24
     anchors = [an_right, an_bottom]
@@ -1924,9 +1924,9 @@ object eefo: teefo
     frame.template = tframecomp2
     taborder = 112
     bounds_x = 488
-    bounds_y = 342
-    bounds_cx = 96
-    bounds_cy = 34
+    bounds_y = 340
+    bounds_cx = 97
+    bounds_cy = 42
     onchange = onchangecyc
     value = 2
     valuedefault = 2
@@ -2079,15 +2079,15 @@ object eefo: teefo
     richcaption = '+'
   end
   object byear: tbutton
-    color = -1610612730
+    color = 15724288
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
     taborder = 119
     bounds_x = 272
-    bounds_y = 342
+    bounds_y = 340
     bounds_cx = 130
-    bounds_cy = 34
+    bounds_cy = 42
     state = [as_localcolor, as_localonexecute]
     onexecute = onyearclick
   end
@@ -2365,8 +2365,8 @@ object eefo: teefo
     width = 121
     height = 32
     count = 1
-    left = 264
-    top = 8
+    left = 192
+    top = 16
     image = {
       0000000002000000790000002000000040000000000000000000000000000000
       0000000000000000000000000000000000000000000000FF000000FF000000FF
