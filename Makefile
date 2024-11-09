@@ -1,3 +1,5 @@
+PATH := $(PATH):/usr/local/sbin:/usr/sbin:/sbin
+
 gorg64:
 	cd src && $(MAKE)
 
@@ -14,6 +16,9 @@ archive:
 	-rm -f ver.o
 	-sstrip ver
 	./ver ar
+
+install:
+	dpkg -i gorg64_2.0.0-1_amd64.deb
 
 deb:
 	-rm -r -f usr
