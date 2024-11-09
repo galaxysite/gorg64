@@ -58,6 +58,7 @@ type
    timagelist1: timagelist;
    tpopupmenu1: tpopupmenu;
    tfacecomp2: tfacecomp;
+   tfacecomp3: tfacecomp;
     procedure onquit(Const Sender: TObject);
     procedure oncreate(Const Sender: TObject);
     procedure onmouseev(Const Sender: twidget; Var ainfo: mouseeventinfoty);
@@ -401,6 +402,8 @@ LoadClFile(rec_fn, rec_cl);
 LoadClFile(xmp_fn, xmp_cl);
 LoadClFile(mplayer_fn, mplayer_cl);
 
+// to be fixed
+{
 mainfo.tpopupmenu1.menu.items[3].caption := str_editevents;
 mainfo.tpopupmenu1.menu.items[4].caption := str_addevent;
 mainfo.tpopupmenu1.menu.items[5].caption := str_notebook;
@@ -409,10 +412,10 @@ mainfo.tpopupmenu1.menu.items[7].caption := str_addorganization;
 mainfo.tpopupmenu1.menu.items[8].caption := str_help;
 mainfo.tpopupmenu1.menu.items[9].caption := str_settings;
 mainfo.tpopupmenu1.menu.items[10].caption := str_flash;
-mainfo.tpopupmenu1.menu.items[11].caption := str_quit;
+mainfo.tpopupmenu1.menu.items[11].caption := str_yearlist;
 mainfo.tpopupmenu1.menu.items[12].caption := str_clockpanel;
-mainfo.tpopupmenu1.menu.items[13].caption := str_yearlist;
-
+mainfo.tpopupmenu1.menu.items[13].caption := str_quit;
+}
 //fpSystem('cp '+gorgfile+ ' '+gorgfile+'.begin');
 
 Tun.Load;
@@ -487,7 +490,8 @@ end;
 
 procedure tmainfo.menuexit(const sender: TObject);
 begin
-if askyesno('        Выйти ? | Exit ?        ', 'GORG64') then AppClose;
+// if askyesno('        Выйти ? | Exit ?        ', 'GORG64') then
+ AppClose;
 end;
 
 procedure tmainfo.onmute(const sender: TObject);

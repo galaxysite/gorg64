@@ -4,7 +4,7 @@ object mainfo: tmainfo
   bounds_x = 311
   bounds_y = 256
   bounds_cx = 750
-  bounds_cy = 54
+  bounds_cy = 53
   container.optionsskin = [osk_noclientsize]
   container.color = -2147483645
   container.frame.framei_left = 0
@@ -24,7 +24,7 @@ object mainfo: tmainfo
     0
     0
     750
-    54
+    53
   )
   optionswindow = [wo_noframe, wo_groupleader, wo_notaskbar, wo_alwaysontop, wo_rounded]
   caption = 'GORG64'
@@ -252,8 +252,8 @@ object mainfo: tmainfo
       12895487
     )
     template.fade_direction = gd_down
-    left = 176
-    top = 8
+    left = 144
+    top = 16
   end
   object timagelist5: timagelist
     width = 4
@@ -5868,13 +5868,6 @@ object mainfo: tmainfo
         onexecute = onflash
       end    
       item
-        caption = #1042#1099#1093#1086#1076' | Quit'
-        state = [as_localchecked, as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
-        imagelist = timagelist1
-        imagenr = 2
-        onexecute = menuexit
-      end    
-      item
         caption = #1055#1072#1085#1077#1083#1100' '#1095#1072#1089#1086#1074' | Clock panel'
         state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
         imagelist = timagelist1
@@ -5887,6 +5880,13 @@ object mainfo: tmainfo
         imagelist = timagelist1
         imagenr = 13
         onafterexecute = onyearlist
+      end    
+      item
+        caption = #1042#1099#1093#1086#1076' | Quit'
+        state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+        imagelist = timagelist1
+        imagenr = 2
+        onexecute = menuexit
       end>
     menu.state = [as_localimagelist, as_localcolor, as_localonexecute]
     menu.color = 16119285
@@ -5912,5 +5912,20 @@ object mainfo: tmainfo
     template.fade_direction = gd_down
     left = 768
     top = 352
+  end
+  object tfacecomp3: tfacecomp
+    template.fade_pos.count = 2
+    template.fade_pos.items = (
+      0
+      1
+    )
+    template.fade_color.count = 2
+    template.fade_color.items = (
+      -1610612730
+      -1610612731
+    )
+    template.fade_direction = gd_down
+    left = 256
+    top = 16
   end
 end

@@ -8,7 +8,6 @@ uses
 type
  tyearlistfo = class(tmseform)
    tstringgrid1: tstringgrid;
-   tfacecomp1: tfacecomp;
    tbutton1: tbutton;
    procedure keyup(const sender: twidget; var ainfo: keyeventinfoty);
    procedure onclose(const sender: TObject);
