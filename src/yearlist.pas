@@ -4,10 +4,12 @@ interface
 uses
  msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
  msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,mseforms,msedragglob,
- msegrids,msegridsglob,msekeyboard,sysutils,main,msestrings;
+ msegrids,msegridsglob,msekeyboard,sysutils,main,msestrings, msesimplewidgets;
 type
  tyearlistfo = class(tmseform)
    tstringgrid1: tstringgrid;
+   tfacecomp1: tfacecomp;
+   tbutton1: tbutton;
    procedure keyup(const sender: twidget; var ainfo: keyeventinfoty);
    procedure onclose(const sender: TObject);
    procedure olc(const sender: tcustomgrid);
@@ -17,6 +19,7 @@ type
 function Import : boolean;
 function Load : boolean;
 function Save : boolean;
+   procedure onnow(const sender: TObject);
  end;
 
 const
@@ -61,7 +64,7 @@ c := 0;
 for f := 1 to 12 do
     for ff := 1 to md[f] do begin
         tstringgrid1.fixcols[-1].captions[c] :=
-        {IntToStr(c+1) + '  ' +} IntToStr(ff) + ' ' + DefaultFormatSettings.ShortMonthNames[f] + '(' + IntToStr(f) + ')';
+        {IntToStr(c+1) + '  ' +} IntToStr(ff) + ' ' + DefaultFormatSettings.ShortMonthNames[f] + ' (' + IntToStr(f) + ')';
         Inc(c);
     end;
 {$WARNINGS ON}
@@ -78,7 +81,8 @@ procedure tyearlistfo.oact(const sender: TObject);
       f : LongInt;
       g : gridcoordty;
       YY,MM,DD : Word;
-begin if onetime then exit;
+begin
+if onetime then exit;
 g.row := 0;
 DeCodeDate(Date,YY,MM,DD); // Получаем текущую дату
 for f := 1 to MM - 1 do g.row := g.row + md[f];
@@ -147,6 +151,12 @@ for f := 0 to 365 do begin
 if f <> 365 then Writeln(yearlistfp, tstringgrid1[0].items[f]) else Write(yearlistfp, tstringgrid1[0].items[f]);
 end;
 CloseFile(yearlistfp);
+end;
+
+procedure tyearlistfo.onnow(const sender: TObject);
+begin
+onetime := false;
+oact(sender);
 end;
 
 end.
