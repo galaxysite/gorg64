@@ -1,7 +1,7 @@
 object organizationfo: torganizationfo
-  color = -1610612730
-  bounds_x = 695
-  bounds_y = 409
+  color = 14737632
+  bounds_x = 311
+  bounds_y = 235
   bounds_cx = 751
   bounds_cy = 480
   container.frame.localprops = []
@@ -21,6 +21,7 @@ object organizationfo: torganizationfo
   object displayas: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     bounds_x = 0
     bounds_y = 16
     bounds_cx = 428
@@ -30,6 +31,7 @@ object organizationfo: torganizationfo
   object nameo: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 1
     bounds_x = 0
     bounds_y = 56
@@ -38,11 +40,14 @@ object organizationfo: torganizationfo
     reffontheight = 15
   end
   object trichstockglyphbutton1: trichstockglyphbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 2
-    bounds_x = 690
-    bounds_y = 452
+    bounds_x = 602
+    bounds_y = 444
     bounds_cx = 50
     bounds_cy = 21
     anchors = [an_right, an_bottom]
@@ -51,11 +56,14 @@ object organizationfo: torganizationfo
     onexecute = onok
   end
   object trichstockglyphbutton2: trichstockglyphbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 3
-    bounds_x = 586
-    bounds_y = 452
+    bounds_x = 690
+    bounds_y = 444
     bounds_cx = 50
     bounds_cy = 21
     anchors = [an_right, an_bottom]
@@ -66,6 +74,7 @@ object organizationfo: torganizationfo
   object email: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 4
     bounds_x = 0
     bounds_y = 208
@@ -76,6 +85,7 @@ object organizationfo: torganizationfo
   object email1: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 5
     bounds_x = 0
     bounds_y = 232
@@ -86,6 +96,7 @@ object organizationfo: torganizationfo
   object email2: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 6
     bounds_x = 0
     bounds_y = 256
@@ -96,6 +107,7 @@ object organizationfo: torganizationfo
   object email3: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 7
     bounds_x = 0
     bounds_y = 280
@@ -106,6 +118,7 @@ object organizationfo: torganizationfo
   object site: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 8
     bounds_x = 0
     bounds_y = 96
@@ -116,6 +129,7 @@ object organizationfo: torganizationfo
   object site1: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 9
     bounds_x = 0
     bounds_y = 120
@@ -126,6 +140,7 @@ object organizationfo: torganizationfo
   object site2: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 10
     bounds_x = 0
     bounds_y = 144
@@ -136,6 +151,7 @@ object organizationfo: torganizationfo
   object site3: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 11
     bounds_x = 0
     bounds_y = 168
@@ -146,6 +162,7 @@ object organizationfo: torganizationfo
   object phone: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 12
     bounds_x = 208
     bounds_y = 208
@@ -156,6 +173,7 @@ object organizationfo: torganizationfo
   object phone1: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 13
     bounds_x = 208
     bounds_y = 232
@@ -166,6 +184,7 @@ object organizationfo: torganizationfo
   object phone2: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 14
     bounds_x = 208
     bounds_y = 256
@@ -176,6 +195,7 @@ object organizationfo: torganizationfo
   object phone3: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 15
     bounds_x = 208
     bounds_y = 280
@@ -186,6 +206,7 @@ object organizationfo: torganizationfo
   object address: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 16
     bounds_x = 0
     bounds_y = 320
@@ -196,6 +217,7 @@ object organizationfo: torganizationfo
   object address1: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 17
     bounds_x = 0
     bounds_y = 344
@@ -206,6 +228,7 @@ object organizationfo: torganizationfo
   object address2: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 18
     bounds_x = 0
     bounds_y = 368
@@ -216,6 +239,7 @@ object organizationfo: torganizationfo
   object address3: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 19
     bounds_x = 0
     bounds_y = 392
@@ -226,6 +250,7 @@ object organizationfo: torganizationfo
   object map: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 20
     bounds_x = 312
     bounds_y = 320
@@ -236,6 +261,7 @@ object organizationfo: torganizationfo
   object map1: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 21
     bounds_x = 312
     bounds_y = 344
@@ -246,6 +272,7 @@ object organizationfo: torganizationfo
   object map2: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 22
     bounds_x = 312
     bounds_y = 368
@@ -256,6 +283,7 @@ object organizationfo: torganizationfo
   object map3: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 23
     bounds_x = 312
     bounds_y = 392
@@ -266,6 +294,7 @@ object organizationfo: torganizationfo
   object postalindex: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 24
     bounds_x = 176
     bounds_y = 320
@@ -276,6 +305,7 @@ object organizationfo: torganizationfo
   object postalindex1: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 25
     bounds_x = 176
     bounds_y = 344
@@ -286,6 +316,7 @@ object organizationfo: torganizationfo
   object postalindex2: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 26
     bounds_x = 176
     bounds_y = 368
@@ -296,6 +327,7 @@ object organizationfo: torganizationfo
   object postalindex3: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 27
     bounds_x = 176
     bounds_y = 392
@@ -306,6 +338,7 @@ object organizationfo: torganizationfo
   object freearea: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 28
     bounds_x = 8
     bounds_y = 432
@@ -316,6 +349,7 @@ object organizationfo: torganizationfo
   object freearea1: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 29
     bounds_x = 144
     bounds_y = 432
@@ -326,6 +360,7 @@ object organizationfo: torganizationfo
   object freearea2: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 30
     bounds_x = 280
     bounds_y = 432
@@ -336,6 +371,7 @@ object organizationfo: torganizationfo
   object freearea3: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 31
     bounds_x = 416
     bounds_y = 432
@@ -346,6 +382,7 @@ object organizationfo: torganizationfo
   object hoursofoperation: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 32
     bounds_x = 600
     bounds_y = 408
@@ -356,6 +393,7 @@ object organizationfo: torganizationfo
   object account: tedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     taborder = 33
     bounds_x = 600
     bounds_y = 376
@@ -366,11 +404,22 @@ object organizationfo: torganizationfo
   object photo: tfilenameedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     frame.buttons.count = 1
     frame.buttons.items = <    
       item
+        face.localprops = []
+        face.template = mainfo.tfacecomp3
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         imagenr = 17
       end>
+    frame.button.face.localprops = []
+    frame.button.face.template = mainfo.tfacecomp3
+    frame.button.frame.localprops = []
+    frame.button.frame.localprops1 = []
+    frame.button.frame.template = mainfo.tframecomp2
     frame.button.imagenr = 17
     taborder = 34
     bounds_x = 536
@@ -383,9 +432,20 @@ object organizationfo: torganizationfo
   object group: tdropdownlistedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    frame.button.face.localprops = []
+    frame.button.face.template = mainfo.tfacecomp3
+    frame.button.frame.localprops = []
+    frame.button.frame.localprops1 = []
+    frame.button.frame.template = mainfo.tframecomp2
     frame.buttons.count = 1
     frame.buttons.items = <    
       item
+        face.localprops = []
+        face.template = mainfo.tfacecomp3
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
       end>
     taborder = 35
     bounds_x = 8
@@ -401,9 +461,20 @@ object organizationfo: torganizationfo
   object group1: tdropdownlistedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    frame.button.face.localprops = []
+    frame.button.face.template = mainfo.tfacecomp3
+    frame.button.frame.localprops = []
+    frame.button.frame.localprops1 = []
+    frame.button.frame.template = mainfo.tframecomp2
     frame.buttons.count = 1
     frame.buttons.items = <    
       item
+        face.localprops = []
+        face.template = mainfo.tfacecomp3
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
       end>
     taborder = 36
     bounds_x = 144
@@ -419,9 +490,20 @@ object organizationfo: torganizationfo
   object group2: tdropdownlistedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    frame.button.face.localprops = []
+    frame.button.face.template = mainfo.tfacecomp3
+    frame.button.frame.localprops = []
+    frame.button.frame.localprops1 = []
+    frame.button.frame.template = mainfo.tframecomp2
     frame.buttons.count = 1
     frame.buttons.items = <    
       item
+        face.localprops = []
+        face.template = mainfo.tfacecomp3
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
       end>
     taborder = 37
     bounds_x = 280
@@ -437,9 +519,20 @@ object organizationfo: torganizationfo
   object group3: tdropdownlistedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    frame.button.face.localprops = []
+    frame.button.face.template = mainfo.tfacecomp3
+    frame.button.frame.localprops = []
+    frame.button.frame.localprops1 = []
+    frame.button.frame.template = mainfo.tframecomp2
     frame.buttons.count = 1
     frame.buttons.items = <    
       item
+        face.localprops = []
+        face.template = mainfo.tfacecomp3
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
       end>
     taborder = 38
     bounds_x = 416
@@ -455,9 +548,20 @@ object organizationfo: torganizationfo
   object dir: tdirdropdownedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    frame.button.face.localprops = []
+    frame.button.face.template = mainfo.tfacecomp3
+    frame.button.frame.localprops = []
+    frame.button.frame.localprops1 = []
+    frame.button.frame.template = mainfo.tframecomp2
     frame.buttons.count = 1
     frame.buttons.items = <    
       item
+        face.localprops = []
+        face.template = mainfo.tfacecomp3
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
       end>
     taborder = 39
     bounds_x = 536
@@ -469,11 +573,22 @@ object organizationfo: torganizationfo
   object video: tfilenameedit
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     frame.buttons.count = 1
     frame.buttons.items = <    
       item
+        face.localprops = []
+        face.template = mainfo.tfacecomp3
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         imagenr = 17
       end>
+    frame.button.face.localprops = []
+    frame.button.face.template = mainfo.tfacecomp3
+    frame.button.frame.localprops = []
+    frame.button.frame.localprops1 = []
+    frame.button.frame.template = mainfo.tframecomp2
     frame.button.imagenr = 17
     taborder = 40
     bounds_x = 520
@@ -483,6 +598,11 @@ object organizationfo: torganizationfo
     reffontheight = 15
   end
   object trichstockglyphbutton3: trichstockglyphbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp3
     taborder = 41
     bounds_x = 712
     bounds_y = 304
