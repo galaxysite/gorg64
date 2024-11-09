@@ -167,6 +167,7 @@ type
    byear: tbutton;
    tstringdisp1: tstringdisp;
    tstringdisp2: tstringdisp;
+   tfacecomp1: tfacecomp;
    procedure oncr(const sender: TObject);
    procedure play(const sender: TObject);
    procedure stop(const sender: TObject);

@@ -1264,6 +1264,10 @@ object eefo: teefo
     bounds_cy = 44
     anchors = [an_right, an_bottom]
     state = [as_localonexecute]
+    font.height = 20
+    font.style = [fs_bold]
+    font.name = 'stf_default'
+    font.localprops = [flp_height]
     onexecute = bclockpanel
   end
   object wd1: tbutton
@@ -1770,11 +1774,15 @@ object eefo: teefo
     face.fade_direction = gd_down
     face.localprops = []
     taborder = 106
-    bounds_x = 672
+    bounds_x = 665
     bounds_y = 351
-    bounds_cx = 386
+    bounds_cx = 398
     bounds_cy = 32
     state = [as_localcaption, as_localonexecute]
+    font.height = 20
+    font.style = [fs_bold]
+    font.name = 'stf_default'
+    font.localprops = [flp_height]
     onexecute = onperiod
   end
   object trichstockglyphbutton1: trichstockglyphbutton
@@ -1904,6 +1912,10 @@ object eefo: teefo
     bounds_cy = 44
     anchors = [an_right, an_bottom]
     state = [as_localonexecute]
+    font.height = 20
+    font.style = [fs_bold]
+    font.name = 'stf_default'
+    font.localprops = [flp_height]
     onexecute = bshutdown
   end
   object cyc: tintegeredit
@@ -2080,6 +2092,8 @@ object eefo: teefo
     onexecute = onyearclick
   end
   object tpopupmenu1: tpopupmenu
+    frametemplate = tframecomp2
+    itemfacetemplateactive = tfacecomp1
     menu.submenu.count = 3
     menu.submenu.items = <    
       item
@@ -2097,7 +2111,7 @@ object eefo: teefo
         state = [as_localcaption, as_localonexecute]
         onexecute = onrename
       end>
-    menu.font.height = 39
+    menu.font.height = 20
     menu.font.style = [fs_bold]
     menu.font.name = 'stf_menu'
     menu.font.localprops = [flp_style, flp_height]
@@ -2105,6 +2119,8 @@ object eefo: teefo
     top = 448
   end
   object tpopupmenu2: tpopupmenu
+    frametemplate = tframecomp2
+    itemfacetemplateactive = tfacecomp1
     menu.submenu.count = 3
     menu.submenu.items = <    
       item
@@ -2116,7 +2132,7 @@ object eefo: teefo
       end    
       item
       end>
-    menu.font.height = 39
+    menu.font.height = 20
     menu.font.style = [fs_bold]
     menu.font.name = 'stf_menu'
     menu.font.localprops = [flp_style, flp_height]
@@ -2124,6 +2140,8 @@ object eefo: teefo
     top = 448
   end
   object tpopupmenu3: tpopupmenu
+    frametemplate = tframecomp2
+    itemfacetemplateactive = tfacecomp1
     menu.submenu.count = 5
     menu.submenu.items = <    
       item
@@ -2151,7 +2169,7 @@ object eefo: teefo
         state = [as_localcaption, as_localonexecute]
         onexecute = onshrename
       end>
-    menu.font.height = 39
+    menu.font.height = 20
     menu.font.style = [fs_bold]
     menu.font.name = 'stf_menu'
     menu.font.localprops = [flp_style, flp_height]
@@ -2373,6 +2391,8 @@ object eefo: teefo
     }
   end
   object tpopupmenu4: tpopupmenu
+    frametemplate = tframecomp2
+    itemfacetemplateactive = tfacecomp1
     menu.submenu.count = 13
     menu.submenu.items = <    
       item
@@ -2440,12 +2460,12 @@ object eefo: teefo
         state = [as_localcaption, as_localonexecute]
         onexecute = pm12
       end>
-    menu.font.height = 39
+    menu.font.height = 20
     menu.font.style = [fs_bold]
     menu.font.name = 'stf_menu'
-    menu.font.localprops = [flp_style, flp_height]
-    left = 768
-    top = 416
+    menu.font.localprops = [flp_colorselect, flp_style, flp_height]
+    left = 880
+    top = 352
   end
   object timagelist5: timagelist
     width = 4
@@ -2483,5 +2503,20 @@ object eefo: teefo
     template.frameimage_bottom = -4
     left = 272
     top = 291
+  end
+  object tfacecomp1: tfacecomp
+    template.fade_pos.count = 2
+    template.fade_pos.items = (
+      0
+      1
+    )
+    template.fade_color.count = 2
+    template.fade_color.items = (
+      16773859
+      16767147
+    )
+    template.fade_direction = gd_down
+    left = 768
+    top = 352
   end
 end
