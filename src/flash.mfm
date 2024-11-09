@@ -2938,6 +2938,43 @@ object flashfo: tflashfo
     }
   end
   object twidgetgrid1: twidgetgrid
+    frame.sbvert.face.localprops = []
+    frame.sbvert.face.template = mainfo.tfacecomp3
+    frame.sbvert.facebutton.localprops = []
+    frame.sbvert.facebutton.template = mainfo.tfacecomp3
+    frame.sbvert.faceendbutton.localprops = []
+    frame.sbvert.faceendbutton.template = mainfo.tfacecomp3
+    frame.sbvert.frame.localprops = []
+    frame.sbvert.frame.localprops1 = []
+    frame.sbvert.frame.template = mainfo.tframecomp2
+    frame.sbvert.framebutton.localprops = []
+    frame.sbvert.framebutton.localprops1 = []
+    frame.sbvert.framebutton.template = mainfo.tframecomp2
+    frame.sbvert.frameendbutton1.localprops = []
+    frame.sbvert.frameendbutton1.localprops1 = []
+    frame.sbvert.frameendbutton1.template = mainfo.tframecomp2
+    frame.sbvert.frameendbutton2.localprops = []
+    frame.sbvert.frameendbutton2.localprops1 = []
+    frame.sbvert.frameendbutton2.template = mainfo.tframecomp2
+    frame.sbhorz.width = 20
+    frame.sbhorz.face.localprops = []
+    frame.sbhorz.face.template = mainfo.tfacecomp3
+    frame.sbhorz.facebutton.localprops = []
+    frame.sbhorz.facebutton.template = mainfo.tfacecomp3
+    frame.sbhorz.faceendbutton.localprops = []
+    frame.sbhorz.faceendbutton.template = mainfo.tfacecomp3
+    frame.sbhorz.frame.localprops = []
+    frame.sbhorz.frame.localprops1 = []
+    frame.sbhorz.frame.template = mainfo.tframecomp2
+    frame.sbhorz.framebutton.localprops = []
+    frame.sbhorz.framebutton.localprops1 = []
+    frame.sbhorz.framebutton.template = mainfo.tframecomp2
+    frame.sbhorz.frameendbutton1.localprops = []
+    frame.sbhorz.frameendbutton1.localprops1 = []
+    frame.sbhorz.frameendbutton1.template = mainfo.tframecomp2
+    frame.sbhorz.frameendbutton2.localprops = []
+    frame.sbhorz.frameendbutton2.localprops1 = []
+    frame.sbhorz.frameendbutton2.template = mainfo.tframecomp2
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -2954,6 +2991,8 @@ object flashfo: tflashfo
     zebra_color = -1610612712
     datacols.count = 1
     datacols.linewidth = 0
+    datacols.colorselect = 16769953
+    datacols.colorfocused = 16769953
     datacols.options = [co_fill, co_savevalue, co_savestate, co_mousescrollrow]
     datacols.options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autocolwidth, co1_autoheaderwidth]
     datacols.items = <    
@@ -2962,8 +3001,8 @@ object flashfo: tflashfo
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
         linewidth = 0
-        colorselect = 16769174
-        colorfocused = 16769174
+        colorselect = 16769953
+        colorfocused = 16769953
         width = 389
         options = [co_fill, co_savevalue, co_savestate, co_mousescrollrow]
         options1 = [co1_rowfont, co1_rowcolor, co1_zebracolor, co1_rowcoloractive, co1_rowcolorfocused, co1_rowreadonly, co1_autocolwidth, co1_autoheaderwidth]
