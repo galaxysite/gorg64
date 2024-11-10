@@ -1,9 +1,9 @@
 object mainfo: tmainfo
   color = -2147483645
   bounds_x = 164
-  bounds_y = 208
+  bounds_y = 212
   bounds_cx = 440
-  bounds_cy = 119
+  bounds_cy = 115
   container.optionsskin = [osk_noclientsize]
   container.color = -2147483645
   container.frame.framei_left = 0
@@ -17,7 +17,7 @@ object mainfo: tmainfo
     0
     0
     440
-    119
+    115
   )
   optionswindow = [wo_noframe, wo_groupleader, wo_notaskbar, wo_alwaysontop, wo_rounded]
   caption = 'MSEgui form'
@@ -49,7 +49,7 @@ object mainfo: tmainfo
     bounds_x = 0
     bounds_y = 0
     bounds_cx = 440
-    bounds_cy = 119
+    bounds_cy = 115
     anchors = []
     object tlabel2: tlabel
       bounds_x = 16

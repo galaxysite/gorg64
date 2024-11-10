@@ -15,7 +15,6 @@ object flashfo: tflashfo
     485
   )
   font.height = 18
-  font.style = [fs_bold]
   font.name = 'stf_default'
   font.localprops = [flp_style, flp_height]
   options = [fo_freeonclose, fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
@@ -184,7 +183,7 @@ object flashfo: tflashfo
     taborder = 7
     bounds_x = 32
     bounds_y = 224
-    bounds_cx = 319
+    bounds_cx = 291
     bounds_cy = 22
     caption = #1053#1072#1082#1072#1087#1083#1080#1074#1072#1090#1100' | Accumulate [F4]'
     reffontheight = 22
@@ -3038,7 +3037,7 @@ object flashfo: tflashfo
     taborder = 12
     bounds_x = 32
     bounds_y = 256
-    bounds_cx = 217
+    bounds_cx = 199
     bounds_cy = 22
     caption = #1054#1090#1089#1083#1077#1078#1080#1074#1072#1090#1100' | Listen'
     reffontheight = 22

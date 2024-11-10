@@ -13,7 +13,6 @@ object notebookfo: tnotebookfo
     528
   )
   font.height = 20
-  font.style = [fs_bold]
   font.name = 'stf_default'
   font.localprops = [flp_style, flp_height]
   fontempty.height = 39
@@ -164,11 +163,18 @@ object notebookfo: tnotebookfo
         anchors = [an_left, an_top, an_right, an_bottom]
         optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
         datacols.count = 1
-        datacols.width = 650
+        datacols.colorselect = 16768150
+        datacols.colorfocused = 16768150
+        datacols.width = 984
         datacols.options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
         datacols.items = <        
           item
-            width = 650
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            colorselect = 16768150
+            colorfocused = 16768150
+            width = 984
             options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
             valuefalse = '0'
             valuetrue = '1'
@@ -202,11 +208,20 @@ object notebookfo: tnotebookfo
         anchors = [an_left, an_top, an_right, an_bottom]
         optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
         datacols.count = 1
-        datacols.width = 650
+        datacols.colorselect = 16767651
+        datacols.colorfocused = 16767651
+        datacols.width = 984
         datacols.options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
         datacols.items = <        
           item
-            width = 650
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            linecolor = -2147483645
+            linecolorfix = -2147483645
+            colorselect = 16767651
+            colorfocused = 16767651
+            width = 984
             options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
             valuefalse = '0'
             valuetrue = '1'
@@ -337,6 +352,9 @@ object notebookfo: tnotebookfo
     onexecute = ontel
   end
   object trichstockglyphbutton1: trichstockglyphbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 8
