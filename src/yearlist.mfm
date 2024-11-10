@@ -926,7 +926,7 @@ object yearlistfo: tyearlistfo
       end>
     rowcount = 366
     rowcountmax = 366
-    zebra_color = 13172680
+    zebra_color = 14350303
     zebra_start = 1
     zebra_height = 1
     datarowheight = 17
