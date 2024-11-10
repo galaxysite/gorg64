@@ -4,7 +4,7 @@ object mainfo: tmainfo
   bounds_x = 311
   bounds_y = 256
   bounds_cx = 750
-  bounds_cy = 53
+  bounds_cy = 54
   container.optionsskin = [osk_noclientsize]
   container.color = -2147483645
   container.frame.framei_left = 0
@@ -24,7 +24,7 @@ object mainfo: tmainfo
     0
     0
     750
-    53
+    54
   )
   optionswindow = [wo_noframe, wo_groupleader, wo_notaskbar, wo_alwaysontop, wo_rounded]
   caption = 'GORG64'
@@ -252,7 +252,7 @@ object mainfo: tmainfo
       12895487
     )
     template.fade_direction = gd_down
-    left = 144
+    left = 120
     top = 16
   end
   object timagelist5: timagelist
@@ -5921,11 +5921,11 @@ object mainfo: tmainfo
     )
     template.fade_color.count = 2
     template.fade_color.items = (
-      -1610612730
-      -1610612731
+      15790320
+      13224393
     )
     template.fade_direction = gd_down
-    left = 256
+    left = 216
     top = 16
   end
 end
