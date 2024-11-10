@@ -402,20 +402,18 @@ LoadClFile(rec_fn, rec_cl);
 LoadClFile(xmp_fn, xmp_cl);
 LoadClFile(mplayer_fn, mplayer_cl);
 
-// to be fixed
-{
-mainfo.tpopupmenu1.menu.items[3].caption := str_editevents;
-mainfo.tpopupmenu1.menu.items[4].caption := str_addevent;
-mainfo.tpopupmenu1.menu.items[5].caption := str_notebook;
-mainfo.tpopupmenu1.menu.items[6].caption := str_addpeople;
-mainfo.tpopupmenu1.menu.items[7].caption := str_addorganization;
-mainfo.tpopupmenu1.menu.items[8].caption := str_help;
-mainfo.tpopupmenu1.menu.items[9].caption := str_settings;
-mainfo.tpopupmenu1.menu.items[10].caption := str_flash;
-mainfo.tpopupmenu1.menu.items[11].caption := str_yearlist;
-mainfo.tpopupmenu1.menu.items[12].caption := str_clockpanel;
-mainfo.tpopupmenu1.menu.items[13].caption := str_quit;
-}
+if str_editevents <> '' then mainfo.tpopupmenu1.menu.items[3].caption := str_editevents;
+if str_addevent <> '' then mainfo.tpopupmenu1.menu.items[4].caption := str_addevent;
+if str_notebook <> '' then mainfo.tpopupmenu1.menu.items[5].caption := str_notebook;
+if str_addpeople <> '' then mainfo.tpopupmenu1.menu.items[6].caption := str_addpeople;
+if str_addorganization <> '' then mainfo.tpopupmenu1.menu.items[7].caption := str_addorganization;
+if str_help <> '' then mainfo.tpopupmenu1.menu.items[8].caption := str_help;
+if str_settings <> '' then mainfo.tpopupmenu1.menu.items[9].caption := str_settings;
+if str_flash <> '' then mainfo.tpopupmenu1.menu.items[10].caption := str_flash;
+if str_yearlist <> '' then mainfo.tpopupmenu1.menu.items[11].caption := str_yearlist;
+if str_clockpanel <> '' then mainfo.tpopupmenu1.menu.items[12].caption := str_clockpanel;
+if str_quit <> '' then mainfo.tpopupmenu1.menu.items[13].caption := str_quit;
+
 //fpSystem('cp '+gorgfile+ ' '+gorgfile+'.begin');
 
 Tun.Load;
