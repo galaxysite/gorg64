@@ -1,7 +1,7 @@
 object shutdownfo: tshutdownfo
   color = -1610612729
-  bounds_x = 84
-  bounds_y = 327
+  bounds_x = 312
+  bounds_y = 267
   bounds_cx = 420
   bounds_cy = 400
   container.frame.localprops = []
@@ -25,10 +25,11 @@ object shutdownfo: tshutdownfo
     bounds_cy = 141
     anchors = [an_left, an_top, an_right]
     caption = '10'
+    font.color = -1610612730
     font.height = 120
     font.style = [fs_bold]
     font.name = 'stf_default'
-    font.localprops = [flp_style, flp_height]
+    font.localprops = [flp_color, flp_style, flp_height]
     reffontheight = 141
   end
   object tlabel2: tlabel
@@ -39,14 +40,20 @@ object shutdownfo: tshutdownfo
     bounds_cy = 43
     anchors = [an_left, an_bottom]
     caption = 'tlabel2'
+    font.color = -1610612730
     font.height = 36
     font.style = [fs_bold]
     font.name = 'stf_default'
-    font.localprops = [flp_style, flp_height]
+    font.localprops = [flp_color, flp_style, flp_height]
     reffontheight = 43
   end
   object trichstockglyphbutton1: trichstockglyphbutton
     color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 2
     bounds_x = 160
     bounds_y = 216

@@ -27,7 +27,7 @@ interface
 uses
  msetypes,msekeyboard,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,
  msemenus,msegui,msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,
- mseforms,msesimplewidgets,sysutils,algor,time,msetimer;
+ mseforms,msesimplewidgets,sysutils,algor,time,msetimer, msebitmap;
 type
  tclockpanelfo = class(tmseform)
    tlabel1: tlabel;

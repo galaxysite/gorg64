@@ -1,7 +1,7 @@
 object notebookfo: tnotebookfo
-  color = -1610612730
-  bounds_x = 196
-  bounds_y = 412
+  color = 14277081
+  bounds_x = 228
+  bounds_y = 114
   bounds_cx = 1012
   bounds_cy = 528
   container.frame.localprops = []
@@ -12,8 +12,7 @@ object notebookfo: tnotebookfo
     1012
     528
   )
-  font.height = 39
-  font.style = [fs_bold]
+  font.height = 20
   font.name = 'stf_default'
   font.localprops = [flp_style, flp_height]
   fontempty.height = 39
@@ -22,6 +21,104 @@ object notebookfo: tnotebookfo
   fontempty.localprops = [flp_style, flp_height]
   options = [fo_freeonclose, fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
   caption = 'Notebook'
+  icon.options = [bmo_masked, bmo_graymask]
+  icon.origformat = 'png'
+  icon.image = {
+    00000000120000001E000000200000007C070000000000000000000000000000
+    00000000000000000000000000000000000000000000002CE2CCC001CFAA9701
+    E9D9D2010000001AE1CDC401BA887101B67F6501B9877001DABDAF0100000018
+    D8BAAA01B2765701B1755703BB88710100000018BB856B01B1755704B0725301
+    E3CFC40100000017C1927A01B1755601B1755703B0735401E6D2C80100000017
+    DABCAC01B67F6401B1755703C2968201D1AF9E0100000018E2CEC601CDAB9A01
+    BF8F7701D6BBAE01D6B6A50100000010AED6F901B5D9F90100000005F6EFEB01
+    D9C0B501C4998401B1765701B1745601B2755601C9A18F01C3978201EDDCD201
+    0000000490A4EA017C8EE301E4EAFB0100000006B7DFFB0144A8F30179B9F501
+    D8EDFD0100000003DEC5B801BF917C01B6806601CCA89801B98A6F01AE775801
+    CEAA9901C1947E01B57D6101C1927B01BB876C01000000036480E2010D3DD301
+    6B82E201EDF0FC010000000576BFF60136A3F20172B7F401C9E6FB0100000002
+    E5D2C801BB8A7301BB876E01CFB09F01BEE0CB014EAD6A014AAD690188A77A01
+    F4F6EF01D4B3A301B8846A01BC886E01000000035D7AE101133FD4016376DD01
+    A7B7EF0100000004D4EBFC0177B8F40138A4F2015DAEF301DAEFFC0100000002
+    C4988301B57D6301DCC3B90189D0A8011BB3690127B46B0222B46A0194D1AC01
+    BEFFFF01DFC8BC01B7816701D6BBB001000000028FA2EA010A3DD4013455D801
+    5472DF0100000004BAE0FB0178BAF50136A3F20175BFF50100000002E1CABE01
+    B1755601D7B8AA0178EBC50175C9990127B46B044FBF83016FCD9C0100000001
+    C3978201BC8B730100000002D4DCF7010D41D5011F46D5012A50D70100000004
+    C1E2FB017CBCF50138A5F201E4F2FD01C0E3FB01C6E5FB01CDADA001B9856C01
+    CBA4900199DCB9016BC6930127B46B0444B979015CC0890100000001F0E3DE01
+    B1785C01DFD6DC016682E20192A6EB017487E1012A4ED6014264DB0100000004
+    D9EDFC017ABFF6016FBCF60178B8F50166B2F40163B1F30175B2EC01C08E7301
+    DABDAF01BFE9D30160C0890126B46B0127B46B037EB27F01B2B3960100000002
+    9298DA015872DB015573DF014B64D9015C74DD0190A1E801CFD7F60100000005
+    96C8F70158B0F4017DC2F601E9F6FD0100000001D3EBFC0100000003D2C1B001
+    729961012AB26A0127B46B0166A06601AF836601BF8C740100000005D1DAF801
+    3B5FDA014462DA01738CE60100000004C8E6FB0181BDF50132A3F20100000006
+    DCF3E70198B48B01649D630152B77A0155C2890165B17B0186915F01A0D2B101
+    0000000691A6EC011A45D5010000C6010000000484C7F7015AB0F4018EC4F601
+    BDE0FB01000000046ACA97014EBC7E0143B36F015DAA6F012AB46C012CB56D01
+    83D0A60155B2730134B77101B6E2C901AFE5C901000000043F61DB01003AD301
+    D2D9F5010000000454B0F30143A8F20141A7F201DFEFFD010000000357C48C01
+    35B8730194D6B101AA825F018E9A6A0128B46B02BBE0CA01B2876C01AFC0A101
+    34B772019BD8B601000000035D7AE1013D5DD9010C3DD4019AACEC0100000004
+    D6EAFC0133A3F20144A9F30161B5F401CFE8FB0100000001D5F1E30149BC7E01
+    89D2A901D6F3E501B37356015AB77D0127B46B025EC48D01DFC0B501DABBAD01
+    63C8940128B66E01A6DDBE0100000001DDE3F8013A5EDA015A70DC01143FD401
+    637EE20100000004B3DBFA0133A3F2013CA6F2015EB9F50174BBF5017ABFF601
+    89D0B1014EBD7F0170CB9A0100000001B28E720125B66E0127B46B0224B46A01
+    BCF0D901E3CFC501BAE8D10164C38C018ECFA9016C82E1015D77DE01CFD6F401
+    6C80DF011741D4012C51D8010000000491CCF80135A3F2012CA2F201DCEFFD01
+    D0E8FC019CCFF80170C0B6018ECDA601E5F6ED01000000019FD9B80122B36901
+    27B46B0223B36A0188D6AD01F0E4DF01000000018BD7B00160C4960191A2E901
+    C6D0F4016E89E5014F6ADC011540D4012C4BD501EBF0FE010000000376C0F601
+    75BCF50167B6F501C5E4FB0100000002DCF3EC01D7F1E401000000025BC58E01
+    26B46A0127B46B0346BC7D01000000065373E0013B5DDA0196A5E8015367D901
+    CCD5F601000000035AB3F40161B6F5015EB5F501B3DCFA010000000624B56C01
+    26B46A0159C288016EC9970123B36A0192D0AA01D1EFE001000000054063DC01
+    8D9EE701CBD5F6015267D901A9B9EF01000000034BAAF301B3DDFA01C1E2FB01
+    A2D5F90100000005C5EBD8018ACEA50151BD810181CEA30178D6A9014FBF8201
+    6AC6920197DBB801000000054D6CDE014668DD01000000014D6ADC01879DE901
+    0000000343A6F201F3FCFF0100000001ADDAF901000000059FDDBD016FC79501
+    46BC7E01000000029DDDBC014BBE81016CCC9B01000000059CADEC019BADEC01
+    000000018096E701748DE50100000002ECF8FE016CB8F50100000002CBE7FC01
+    0000000584D4AB015AC28901B0E3C9010000000362C792014DC2850100000006
+    C1CDF30100000001B3C0F001627EE20100000002DFF1FD0198CFF80100000008
+    7CD1A50162C791010000000481CEA30146BF800100000008C4CDF2015776E001
+    00000002E2F2FD01C5E4FB01000000088AD7AF01A6DFC10100000004A8E0C202
+    0000000891A5EA0200000002E5F3FD01D6ECFC0100000009C2E9D40100000004
+    CEEEDD0100000009E4E8FA020000003D00040000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000027291E000000000000000000000000000000000000000000000000000000
+    00D8FEFFF5800000000000000000000000000000000000000000000000000000
+    5BFFFFFFFFFF0100000000000000000000000000000000000000000000000000
+    95FFFFFFFFFFCE00000000000000000000000000000000000000000000000000
+    95FFFFFFFFFFAB00000000000000000000000000000000000000000000000000
+    14FFFFFFFFFF0300000000000000000000000000000000000000000000000000
+    005AF9FFFF2F000000000000000000000000000000000000ABC600000000003C
+    BFFFFFFFFFFF6307000000004BFF3F00000000000000001AFFFF170000003DFD
+    FFFFFFFFFFE7FFEB09000000C4FFB30100000000000000AEFFFF1700003EFDF5
+    26FFFFFFFF1153FEE3000000C4FFFB0B00000000000007E3FFDB090000BCF51D
+    96FFFFFFFFDD015FFFD60000C4FFFF0C0000000000000CFFFFC400002EFF9302
+    FFFFFFFFFFFF0400B4FF00007BFFFF0C0000000000000CFFFFCD292997FF0F04
+    FFFFFFFFFFFF040098FFC1292AFFFF0C00000000000002BBFFFFFDF8FF280201
+    A6FFFFFFFFFF040000FCF7F8FEFFFF0C00000000000000ACFF61370064000000
+    95FFFFFFFFFF04000000000049B7E1070000000000000CFF880000000000004B
+    BDFFFFFFFFFF4E0000000000008CFF080000000000000CFFFF01000000003DFF
+    FFFFFFFFFFFFFDEA09000000008CFFD70000000000000CFFFF4700000043FDF5
+    A2FFFFFFFF7EFDFEE300000008F1FFDD0000000000008FFFFFF8960050FFF10F
+    95FFFFFFFF67C95EFF840093ECFFFFDD000000000000DDFFFF1FFA8AB2FF0C00
+    95FFFFFFFF2ECB09E5FF8AFA9FFFFFDD000000000000DDFFFFBE17D8FFEA0A00
+    95FFFFFFFF94060098D6D81702FFFFE3060000000000DDF9FBC400002A1D0000
+    95FFFFFFFF9800000000000002FFF9FF2E0000000000DD4F70C4000000000000
+    93FFFFFFFFFF04000000000002FF4DFF2E0000000000DE5375C4000000000004
+    FFFF0502E0FF040000000000027600F32E0000000000D61B00C3000000000004
+    FFA800008AFF040000000000027800F32E0000000017E300001F000000000004
+    FFA0000000FF040000000000001300F32E000000002EF4000000000000000004
+    FF00000000A9040000000000000000712E000000002EF8000000000000000004
+    FF0000000071040000000000000000222F000000000108000000000000000000
+    0800000000040000000000000000001D27000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000
+  }
   windowopacity = -Inf
   oncreate = oncreate
   onclose = onclose
@@ -36,39 +133,55 @@ object notebookfo: tnotebookfo
     activepageindex = 0
     tab_frame.localprops = []
     tab_frame.localprops1 = []
-    tab_size = 59
+    tab_frametab.localprops = []
+    tab_frametab.localprops1 = []
+    tab_frametab.template = mainfo.tframecomp2
+    tab_faceactivetab.localprops = []
+    tab_faceactivetab.template = mainfo.tfacecomp2
+    tab_size = 31
     object ttabpage1: ttabpage
       frame.localprops = []
       frame.localprops1 = []
       taborder = 1
       bounds_x = 0
-      bounds_y = 59
+      bounds_y = 31
       bounds_cx = 1001
-      bounds_cy = 377
+      bounds_cy = 405
       anchors = [an_left, an_top, an_right, an_bottom]
       caption = #1051#1102#1076#1080' | Peoples'
-      faceactivetab = mainfo.tfacecomp1
+      faceactivetab = mainfo.tfacecomp2
       object tstringgrid1: tstringgrid
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
+        face.localprops = []
+        face.template = mainfo.tfacecomp3
         bounds_x = 0
         bounds_y = 4
         bounds_cx = 993
-        bounds_cy = 365
+        bounds_cy = 393
         anchors = [an_left, an_top, an_right, an_bottom]
         optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
         datacols.count = 1
-        datacols.width = 650
+        datacols.colorselect = 16768150
+        datacols.colorfocused = 16768150
+        datacols.width = 984
         datacols.options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
         datacols.items = <        
           item
-            width = 650
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            colorselect = 16768150
+            colorfocused = 16768150
+            width = 984
             options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
             valuefalse = '0'
             valuetrue = '1'
           end>
-        datarowheight = 56
-        reffontheight = 54
+        gridframecolor = -2147483645
+        datarowheight = 26
+        reffontheight = 24
       end
     end
     object ttabpage2: ttabpage
@@ -76,39 +189,57 @@ object notebookfo: tnotebookfo
       frame.localprops1 = []
       taborder = 2
       bounds_x = 0
-      bounds_y = 59
+      bounds_y = 31
       bounds_cx = 1001
-      bounds_cy = 377
+      bounds_cy = 405
       anchors = [an_left, an_top, an_right, an_bottom]
       caption = #1054#1088#1075#1072#1085#1080#1079#1072#1094#1080#1080' | Organizations'
-      faceactivetab = mainfo.tfacecomp1
+      faceactivetab = mainfo.tfacecomp2
       object tstringgrid2: tstringgrid
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
+        face.localprops = []
+        face.template = mainfo.tfacecomp3
         bounds_x = 0
         bounds_y = 4
         bounds_cx = 993
-        bounds_cy = 365
+        bounds_cy = 393
         anchors = [an_left, an_top, an_right, an_bottom]
         optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
         datacols.count = 1
-        datacols.width = 650
+        datacols.colorselect = 16767651
+        datacols.colorfocused = 16767651
+        datacols.width = 984
         datacols.options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
         datacols.items = <        
           item
-            width = 650
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            linecolor = -2147483645
+            linecolorfix = -2147483645
+            colorselect = 16767651
+            colorfocused = 16767651
+            width = 984
             options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
             valuefalse = '0'
             valuetrue = '1'
           end>
-        datarowheight = 56
-        reffontheight = 54
+        gridframecolor = -2147483645
+        datarowheight = 26
+        reffontheight = 24
       end
     end
   end
   object trichbutton1: trichbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 1
-    bounds_x = 0
+    bounds_x = 8
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
@@ -119,8 +250,13 @@ object notebookfo: tnotebookfo
     richcaption = ''
   end
   object trichbutton2: trichbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 2
-    bounds_x = 80
+    bounds_x = 88
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
@@ -132,8 +268,13 @@ object notebookfo: tnotebookfo
     richcaption = ''
   end
   object trichbutton3: trichbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 3
-    bounds_x = 160
+    bounds_x = 168
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
@@ -144,8 +285,13 @@ object notebookfo: tnotebookfo
     richcaption = ''
   end
   object trichbutton4: trichbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 4
-    bounds_x = 240
+    bounds_x = 248
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
@@ -156,8 +302,13 @@ object notebookfo: tnotebookfo
     richcaption = ''
   end
   object trichbutton5: trichbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 5
-    bounds_x = 320
+    bounds_x = 328
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
@@ -168,8 +319,13 @@ object notebookfo: tnotebookfo
     richcaption = ''
   end
   object trichbutton6: trichbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 6
-    bounds_x = 400
+    bounds_x = 408
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
@@ -180,8 +336,13 @@ object notebookfo: tnotebookfo
     richcaption = ''
   end
   object trichbutton7: trichbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 7
-    bounds_x = 480
+    bounds_x = 488
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
@@ -191,6 +352,9 @@ object notebookfo: tnotebookfo
     onexecute = ontel
   end
   object trichstockglyphbutton1: trichstockglyphbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 8
@@ -208,7 +372,8 @@ object notebookfo: tnotebookfo
     height = 64
     options = [bmo_masked, bmo_graymask]
     count = 7
-    left = 144
+    left = 568
+    top = 32
     image = {
       0000000012000000C0000000C000000098E70000000000000000000000000000
       0000000000000000000000000000000000000000000000174C4C570139394101

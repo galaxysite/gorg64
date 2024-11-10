@@ -1,16 +1,17 @@
 object msgfo: tmsgfo
-  color = -1610612729
-  bounds_x = 513
-  bounds_y = 370
+  bounds_x = 219
+  bounds_y = 236
   bounds_cx = 941
-  bounds_cy = 451
+  bounds_cy = 434
   container.frame.localprops = []
   container.frame.localprops1 = []
+  container.face.localprops = []
+  container.face.template = tfacecomp1
   container.bounds = (
     0
     0
     941
-    451
+    434
   )
   optionswindow = [wo_alwaysontop]
   font.height = 39
@@ -25,26 +26,65 @@ object msgfo: tmsgfo
   onresize = onresize
   moduleclassname = 'tmseform'
   object tstringgrid1: tstringgrid
+    color = -2147483645
+    frame.sbhorz.width = 20
+    frame.sbhorz.face.localprops = []
+    frame.sbhorz.face.template = tfacecomp1
+    frame.sbhorz.facebutton.localprops = []
+    frame.sbhorz.facebutton.template = tfacecomp2
+    frame.sbhorz.faceendbutton.localprops = []
+    frame.sbhorz.faceendbutton.template = tfacecomp2
+    frame.sbhorz.frame.localprops = []
+    frame.sbhorz.frame.localprops1 = []
+    frame.sbhorz.frame.template = mainfo.tframecomp2
+    frame.sbhorz.framebutton.localprops = []
+    frame.sbhorz.framebutton.localprops1 = []
+    frame.sbhorz.framebutton.template = mainfo.tframecomp2
+    frame.sbhorz.frameendbutton1.localprops = []
+    frame.sbhorz.frameendbutton1.localprops1 = []
+    frame.sbhorz.frameendbutton1.template = mainfo.tframecomp2
+    frame.sbhorz.frameendbutton2.localprops = []
+    frame.sbhorz.frameendbutton2.localprops1 = []
+    frame.sbhorz.frameendbutton2.template = mainfo.tframecomp2
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    face.fade_direction = gd_down
+    face.localprops = [fal_fadirection]
+    face.template = tfacecomp1
     bounds_x = 8
     bounds_y = 8
     bounds_cx = 610
-    bounds_cy = 402
+    bounds_cy = 377
     anchors = [an_left, an_top, an_right, an_bottom]
     optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
     datacols.count = 1
+    datacols.color = 15461355
+    datacols.colorselect = 16759439
+    datacols.colorfocused = 16759439
     datacols.width = 2000
     datacols.items = <    
       item
+        color = 15461355
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
+        colorselect = 16759439
+        colorfocused = 16759439
         width = 2000
+        datalist.data = (
+          ''
+        )
         valuefalse = '0'
         valuetrue = '1'
       end>
-    datarowheight = 56
-    reffontheight = 54
+    rowcount = 1
+    gridframecolor = -2147483645
+    datarowheight = 49
+    reffontheight = 47
   end
   object timage1: timage
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     taborder = 1
@@ -9304,9 +9344,14 @@ object msgfo: tmsgfo
   end
   object trichstockglyphbutton1: trichstockglyphbutton
     color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 2
-    bounds_x = 528
-    bounds_y = 416
+    bounds_x = 520
+    bounds_y = 391
     bounds_cx = 90
     bounds_cy = 33
     anchors = [an_right, an_bottom]
@@ -9316,9 +9361,14 @@ object msgfo: tmsgfo
   end
   object trichstockglyphbutton2: trichstockglyphbutton
     color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
     taborder = 3
     bounds_x = 16
-    bounds_y = 416
+    bounds_y = 391
     bounds_cx = 90
     bounds_cy = 33
     anchors = [an_left, an_bottom]
@@ -9331,5 +9381,35 @@ object msgfo: tmsgfo
     enabled = True
     left = 168
     top = 400
+  end
+  object tfacecomp1: tfacecomp
+    template.fade_pos.count = 2
+    template.fade_pos.items = (
+      0
+      1
+    )
+    template.fade_color.count = 2
+    template.fade_color.items = (
+      16756398
+      16711680
+    )
+    template.fade_direction = gd_down
+    left = 264
+    top = 40
+  end
+  object tfacecomp2: tfacecomp
+    template.fade_pos.count = 2
+    template.fade_pos.items = (
+      0
+      1
+    )
+    template.fade_color.count = 2
+    template.fade_color.items = (
+      16756398
+      16711680
+    )
+    template.fade_direction = gd_up
+    left = 264
+    top = 80
   end
 end
