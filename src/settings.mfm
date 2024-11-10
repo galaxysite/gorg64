@@ -1,22 +1,105 @@
 object settingsfo: tsettingsfo
   color = -1610612730
-  bounds_x = 145
-  bounds_y = 473
-  bounds_cx = 863
-  bounds_cy = 476
+  bounds_x = 222
+  bounds_y = 296
+  bounds_cx = 868
+  bounds_cy = 449
   container.frame.localprops = []
   container.frame.localprops1 = []
+  container.face.localprops = []
+  container.face.template = mainfo.tfacecomp3
   container.bounds = (
     0
     0
-    863
-    476
+    868
+    449
   )
   font.height = 15
-  font.style = [fs_bold]
   font.name = 'stf_default'
   font.localprops = [flp_style, flp_height]
   options = [fo_freeonclose, fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
+  icon.options = [bmo_masked, bmo_graymask]
+  icon.origformat = 'png'
+  icon.image = {
+    000000001200000020000000200000006C050000000000000000000000000000
+    00000000000000000000000000000000000000000000002AC2C2C201C4C4C401
+    BCBCBC01C5C5C501CCCCCC01D7D7D7010000001ABDBDBD01B6B6B601B5B5B501
+    BDBDBD01CCCCCC02C9C9C901CBCBCB0100000018A7A7A7019C9C9C01A7A7A701
+    B5B5B501BEBEBE01BABABA01C1C1C101C6C6C601C1C1C10100000016B4B4B401
+    727272017B7B7B018888880197979701A7A7A701AFAFAF01BEBEBE01C1C1C101
+    C5C5C501CECECE0100000014A8A8A8017676760169696901737373017F7F7F01
+    8C8C8C0198989801A2A2A201B8B8B801BDBDBD01C2C2C201C6C6C601D3D3D301
+    F7F7F70100000010DBDBDB01ACACAC016161610159595901616161016B6B6B01
+    76767601828282018F8F8F019B9B9B01A5A5A501B3B3B301BBBBBB01CBCBCB01
+    D1D1D101D8D8D80100000010AEAEAE0193939301707070015B5B5B0164646401
+    656565016D6D6D017878780186868601929292019D9D9D01A7A7A701C1C1C101
+    D0D0D001D3D3D301D8D8D801E9E9E9010000000EE4E4E401ADADAD01A3A3A301
+    86868601696969015F5F5F016363630166666601696969017070700189898901
+    838383018181810193939301B4B4B401D6D6D601DBDBDB01DEDEDE010000000E
+    C4C4C401AFAFAF01A7A7A7019E9E9E017F7F7F0162626201585858016D6D6D01
+    89898901848484018A8A8A0185858501C4C4C40100000002E1E1E101DEDEDE01
+    E0E0E0010000000DE8E8E801DADADA01CBCBCB01A8A8A801A7A7A70195959501
+    7F7F7F01878787019D9D9D016363630182828201CECECE0100000014E4E4E401
+    C4C4C401CACACA01BABABA01A1A1A101B8B8B801A9A9A9017979790168686801
+    5A5A5A018080800100000015DDDDDD01BEBEBE01AAAAAA01BDBDBD01A8A8A801
+    9B9B9B01717171016D6D6D01444444014B4B4B018D8D8D0100000015DADADA01
+    C6C6C601B1B1B101A1A1A101BEBEBE0171717101ACACAC01CBCBCB0191919101
+    4C4C4C0173737301A9A9A90100000014E6E6E601CFCFCF01BCBCBC01ADADAD01
+    B7B7B70166666601ABABAB01D0D0D001BDBDBD018E8E8E014F4F4F01A0A0A001
+    00000015D8D8D801C8C8C801B8B8B801B9B9B9017777770198989801D3D3D301
+    D9D9D901B1B1B101787878015E5E5E01D9D9D90100000014E0E0E001D4D4D401
+    C6C6C601A8A8A8017E7E7E0100000002DADADA01C2C2C201A2A2A2015F5F5F01
+    7D7D7D0100000015E1E1E101D8D8D80187878701B8B8B80100000003DFDFDF01
+    BEBEBE017878780176767601B1B1B10100000014F0F0F001CFCFCF019A9A9A01
+    00000005D4D4D4019F9F9F01646464017C7C7C0100000015D0D0D001AEAEAE01
+    00000005CECECE0183838001201E1B0123221F014C4B4901D6D6D4010000001A
+    85837F01524E4801272622011D1B190146454201797774010000001A98969201
+    504C450144413A011918160125232001393734010000001A9B9792016C696301
+    49463F012726220119181501706F6C010000001AE1E0DE0185837E01504D4601
+    3E3A35011817150122201D01B3B3B1010000001AB0ADA90156534B014D494201
+    2F2D28011C1A180134322E014E4B4601E6E6E50100000018DBDBD80178746E01
+    4C48410145423B0126242101201E1B012B2A26016B6B6801797774019D9B9801
+    00000017A2A09B015B58500144413B0147443D0123211E0124221F012B2A2501
+    373530015F5D59017D7B780100000016DFDDDB0194928D014A46400137353001
+    413E360135332E01282622012F2E29013734300139373101575651019B9B9701
+    00000016898884013F3C36012D2B27012C2A25014C48410146433C013D3C3501
+    373530013F3D380153504A0100000016DBDAD9018E8C8A0136342F013E3B3501
+    524E46014A463F01423F39013B3833017C7B7A01E4E4E40100000017D9D8D601
+    B4B3B1015D584F01565149014F4B430146433C01A2A2A0018683800100000025
+    0004000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000032323232320C000000000000000000000000
+    0000000000000000000000000000FFFFFFFFFFEAAC0D00000000000000000000
+    0000000000000000000000000000FFFFFFFFFFFFFFFF89000000000000000000
+    0000000000000000000000000060FFFFFFFFFFFFFFFFFFA50000000000000000
+    0000000000000000000000007CFFFFFFFFFFFFFFFFFFFFFFC605000000000000
+    0000000000000000000006BCFFFFFFFFFFFFFFFFFFFFFFFFFF59000000000000
+    0000000000000000000048FFFFFFFFFFFFFFFFFFFFFFFFFFFFFF020000000000
+    00000000000000000078FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF950000000000
+    000000000000000000BCFFFFFFFFFFFFFFFFFFFF9523000093936D0000000000
+    000000000000000017D6FFFFFFFFFFFFFFFFF235000000000000000000000000
+    000000000000000042FFFFFFFFFFFFFFFFFFBD00000000000000000000000000
+    000000000000000042FFFFFFFFFFFFFFFFFFBD00000000000000000000000000
+    000000000000000042FFFFFFFFFFFFFFFFFFFF40000000000000000000000000
+    00000000000000002CEBFFFFFFFFFFFFFFFFFFFF000000000000000000000000
+    000000000000000000BDFFFFFFFFDB40E3FFFFFF780000000000000000000000
+    0000000000000000001CFEFFFF5F000007C7FFFFBD0000000000000000000000
+    0000000000000000000074FFD3140000003FFFFFF03000000000000000000000
+    000000000000000000000CCFC00000000000AAFFFF3F00000000000000000000
+    00000000000000000000000101000000000042FFFFFECD0E0000000000000000
+    00000000000000000000000000000000000054FFFFFFFF420000000000000000
+    0000000000000000000000000000000000006DFFFFFFFF440000000000000000
+    00000000000000000000000000000000000042FFFFFFFFFF0000000000000000
+    00000000000000000000000000000000000029E9FFFFFFFFBE00000000000000
+    00000000000000000000000000000000000000BDFFFFFFFFFF61200000000000
+    0000000000000000000000000000000000000018FFFFFFFFFFFFF94309000000
+    00000000000000000000000000000000000000007BFFFFFFFFFFFFFFEDB10000
+    000000000000000000000000000000000000000021E4FFFFFFFFFFFFFFFFE21F
+    00000000000000000000000000000000000000000000F6FFFFFFFFFFFFFFFF43
+    0000000000000000000000000000000000000000000044FAFFFFFFFFFFFFEF2F
+    000000000000000000000000000000000000000000000024FAFAFAFAFAFA2500
+    0000000000000000000000000000000000000000000000000000000000000000
+    00000000
+  }
   windowopacity = -Inf
   oncreate = oncreate
   onclose = onclose
@@ -27,27 +110,40 @@ object settingsfo: tsettingsfo
     bounds_y = 8
     bounds_cx = 850
     bounds_cy = 434
+    color = 15921906
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     activepageindex = 0
     tab_frame.localprops = []
     tab_frame.localprops1 = []
+    tab_frametab.localprops = []
+    tab_frametab.localprops1 = []
+    tab_frametab.template = mainfo.tframecomp2
     tab_faceactivetab.localprops = []
     tab_faceactivetab.template = mainfo.tfacecomp1
-    tab_size = 27
+    tab_size = 25
     object ttabpage1: ttabpage
       frame.localprops = []
       frame.localprops1 = []
+      frame.template = mainfo.tframecomp2
+      face.localprops = []
+      face.template = mainfo.tfacecomp3
       taborder = 1
-      bounds_x = 0
+      bounds_x = 4
       bounds_y = 27
-      bounds_cx = 850
-      bounds_cy = 407
+      bounds_cx = 842
+      bounds_cy = 405
       anchors = [an_left, an_top, an_right, an_bottom]
       caption = #1054' '#1087#1088#1086#1075#1088#1072#1084#1084#1077' | About'
+      facetab = mainfo.tfacecomp3
+      faceactivetab = mainfo.tfacecomp2
       object tlabel5: tlabel
-        bounds_x = 224
+        color = -2147483645
+        bounds_x = 184
         bounds_y = 124
-        bounds_cx = 415
-        bounds_cy = 53
+        bounds_cx = 472
+        bounds_cy = 45
         caption = 'GALAXY ORGANIZER 2'
         font.color = -1610612729
         font.shadow_color = -1610612733
@@ -57,39 +153,46 @@ object settingsfo: tsettingsfo
         font.style = [fs_bold]
         font.name = 'stf_default'
         font.localprops = [flp_color, flp_shadow_color, flp_shadow_shiftx, flp_shadow_shifty, flp_style, flp_height]
-        reffontheight = 53
+        reffontheight = 45
       end
       object trichbutton1: trichbutton
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         face.localprops = []
         face.template = mainfo.tfacecomp1
         taborder = 1
-        bounds_x = 120
-        bounds_y = 292
-        bounds_cx = 650
-        bounds_cy = 21
+        bounds_x = 128
+        bounds_y = 284
+        bounds_cx = 630
+        bounds_cy = 30
         state = [as_localcaption, as_localonexecute]
         caption = #1053#1072#1087#1080#1089#1072#1090#1100' '#1087#1080#1089#1100#1084#1086' '#1072#1074#1090#1086#1088#1091' | Email to Author'
         onexecute = onemail
         richcaption = #1053#1072#1087#1080#1089#1072#1090#1100' '#1087#1080#1089#1100#1084#1086' '#1072#1074#1090#1086#1088#1091' | Email to Author'
       end
       object trichbutton2: trichbutton
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         face.localprops = []
         face.template = mainfo.tfacecomp1
         taborder = 2
-        bounds_x = 120
+        bounds_x = 128
         bounds_y = 324
-        bounds_cx = 650
-        bounds_cy = 21
+        bounds_cx = 630
+        bounds_cy = 30
         state = [as_localcaption, as_localonexecute]
         caption = #1055#1086#1089#1077#1090#1080#1090#1100' '#1076#1086#1084#1072#1096#1085#1102#1102' '#1089#1090#1088#1072#1085#1080#1094#1091' | Visit to Homepage'
         onexecute = onhomepage
         richcaption = #1055#1086#1089#1077#1090#1080#1090#1100' '#1076#1086#1084#1072#1096#1085#1102#1102' '#1089#1090#1088#1072#1085#1080#1094#1091' | Visit to Homepage'
       end
       object timage2: timage
+        color = -2147483645
         frame.localprops = []
         frame.localprops1 = []
         taborder = 3
-        bounds_x = 16
+        bounds_x = 24
         bounds_y = 300
         bounds_cx = 90
         bounds_cy = 34
@@ -227,11 +330,12 @@ object settingsfo: tsettingsfo
         }
       end
       object timage3: timage
+        color = -2147483645
         frame.localprops = []
         frame.localprops1 = []
         taborder = 4
-        bounds_x = 784
-        bounds_y = 292
+        bounds_x = 770
+        bounds_y = 294
         bounds_cx = 50
         bounds_cy = 50
         bitmap.options = [bmo_masked, bmo_graymask]
@@ -510,15 +614,18 @@ object settingsfo: tsettingsfo
       frame.localprops = []
       frame.localprops1 = []
       taborder = 2
-      bounds_x = 0
+      bounds_x = 4
       bounds_y = 27
-      bounds_cx = 850
-      bounds_cy = 407
+      bounds_cx = 842
+      bounds_cy = 405
       anchors = [an_left, an_top, an_right, an_bottom]
       caption = #1043#1083#1072#1074#1085#1072#1103' '#1087#1072#1085#1077#1083#1100' | Main panel'
+      facetab = mainfo.tfacecomp3
+      faceactivetab = mainfo.tfacecomp2
       object tbooleanedit1: tbooleanedit
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         bounds_x = 8
         bounds_y = 12
         onchange = onwdbs
@@ -526,15 +633,16 @@ object settingsfo: tsettingsfo
       object tlabel1: tlabel
         taborder = 1
         bounds_x = 24
-        bounds_y = 4
-        bounds_cx = 452
-        bounds_cy = 22
+        bounds_y = 12
+        bounds_cx = 455
+        bounds_cy = 18
         caption = #1053#1077#1076#1077#1083#1103' '#1085#1072#1095#1080#1085#1072#1077#1090#1089#1103' '#1089' '#1074#1086#1089#1082#1088#1077#1089#1077#1085#1100#1103' | First weekday Sunday'
-        reffontheight = 22
+        reffontheight = 18
       end
       object tbooleanedit2: tbooleanedit
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         taborder = 2
         bounds_x = 8
         bounds_y = 36
@@ -543,59 +651,64 @@ object settingsfo: tsettingsfo
       object tlabel2: tlabel
         taborder = 3
         bounds_x = 24
-        bounds_y = 28
-        bounds_cx = 290
-        bounds_cy = 22
+        bounds_y = 36
+        bounds_cx = 292
+        bounds_cy = 18
         caption = '12 '#1095#1072#1089#1086#1074#1086#1081' '#1092#1086#1088#1084#1072#1090' | 12 hours format'
-        reffontheight = 22
+        reffontheight = 18
       end
       object tedit1: tedit
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         taborder = 4
         bounds_x = 8
-        bounds_y = 60
-        bounds_cy = 28
+        bounds_y = 68
+        bounds_cy = 24
         maxlength = 255
         ontextedited = onamtextedited
-        reffontheight = 22
+        reffontheight = 18
       end
       object tedit2: tedit
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         taborder = 5
         bounds_x = 288
-        bounds_y = 60
-        bounds_cy = 28
+        bounds_y = 68
+        bounds_cy = 24
         maxlength = 255
         ontextedited = onpmtextedited
-        reffontheight = 22
+        reffontheight = 18
       end
       object tlabel3: tlabel
         taborder = 6
         bounds_x = 120
         bounds_y = 68
         bounds_cx = 76
-        bounds_cy = 22
+        bounds_cy = 18
         caption = #1091#1090#1088#1086' | am'
-        reffontheight = 22
+        reffontheight = 18
       end
       object tlabel4: tlabel
         taborder = 7
         bounds_x = 408
         bounds_y = 68
-        bounds_cx = 88
-        bounds_cy = 22
+        bounds_cx = 86
+        bounds_cy = 18
         caption = #1074#1077#1095#1077#1088' | pm'
-        reffontheight = 22
+        reffontheight = 18
       end
       object tbutton1: tbutton
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         face.localprops = []
         face.template = mainfo.tfacecomp1
         taborder = 8
         bounds_x = 8
-        bounds_y = 124
-        bounds_cx = 834
+        bounds_y = 132
+        bounds_cx = 826
         bounds_cy = 21
         state = [as_localonexecute]
         onexecute = onactionchange
@@ -604,14 +717,15 @@ object settingsfo: tsettingsfo
         taborder = 9
         bounds_x = 8
         bounds_y = 100
-        bounds_cx = 466
-        bounds_cy = 22
+        bounds_cx = 457
+        bounds_cy = 18
         caption = #1044#1077#1081#1089#1090#1074#1080#1077' '#1087#1086' '#1076#1074#1086#1081#1085#1086#1084#1091' '#1097#1077#1083#1095#1082#1091' '#1084#1099#1096#1080' | Double click action'
-        reffontheight = 22
+        reffontheight = 18
       end
       object tbooleanedit5: tbooleanedit
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         taborder = 10
         bounds_x = 8
         bounds_y = 165
@@ -620,26 +734,29 @@ object settingsfo: tsettingsfo
       object tlabel18: tlabel
         taborder = 11
         bounds_x = 32
-        bounds_y = 157
-        bounds_cx = 450
-        bounds_cy = 22
+        bounds_y = 165
+        bounds_cx = 445
+        bounds_cy = 18
         caption = #1044#1085#1080' '#1085#1077#1076#1077#1083#1080' '#1089#1083#1077#1074#1072' '#1085#1072#1087#1088#1072#1074#1086' | Left-to-right weekdays order'
-        reffontheight = 22
+        reffontheight = 18
       end
     end
     object ttabpage3: ttabpage
       frame.localprops = []
       frame.localprops1 = []
       taborder = 3
-      bounds_x = 0
+      bounds_x = 4
       bounds_y = 27
-      bounds_cx = 850
-      bounds_cy = 407
+      bounds_cx = 842
+      bounds_cy = 405
       anchors = [an_left, an_top, an_right, an_bottom]
       caption = #1047#1074#1091#1082' | Sound'
+      facetab = mainfo.tfacecomp3
+      faceactivetab = mainfo.tfacecomp2
       object tbooleanedit4: tbooleanedit
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         bounds_x = 8
         bounds_y = 4
         onchange = onvolumeon
@@ -648,26 +765,32 @@ object settingsfo: tsettingsfo
         taborder = 1
         bounds_x = 24
         bounds_y = 4
-        bounds_cx = 629
-        bounds_cy = 22
+        bounds_cx = 621
+        bounds_cy = 18
         caption = #1042#1082#1083#1102#1095#1080#1090#1100' '#1088#1077#1075#1091#1083#1080#1088#1086#1074#1082#1091' '#1075#1088#1086#1084#1082#1086#1089#1090#1080' Mplayer | Turn on volume control for Mplayer'
-        reffontheight = 22
+        reffontheight = 18
       end
       object tintegeredit1: tintegeredit
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         taborder = 2
         bounds_x = 8
         bounds_y = 28
         bounds_cx = 68
-        bounds_cy = 28
+        bounds_cy = 24
         onchange = onvolchange
         value = 60
         valuedefault = 60
         valuemax = 100
-        reffontheight = 22
+        reffontheight = 18
       end
       object tbutton2: tbutton
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
+        face.localprops = []
+        face.template = mainfo.tfacecomp1
         taborder = 3
         bounds_x = 24
         bounds_y = 321
@@ -680,104 +803,112 @@ object settingsfo: tsettingsfo
       object arecordcl: tedit
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         taborder = 4
         hint = 'arecord command line'
         bounds_x = 216
         bounds_y = 121
         bounds_cx = 484
-        bounds_cy = 28
-        reffontheight = 22
+        bounds_cy = 24
+        reffontheight = 18
       end
       object xmpcl: tedit
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         taborder = 5
         hint = 'xmp command line'
         bounds_x = 216
         bounds_y = 153
         bounds_cx = 484
-        bounds_cy = 28
-        reffontheight = 22
+        bounds_cy = 24
+        reffontheight = 18
       end
       object mplayercl: tedit
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         taborder = 6
         hint = 'mplayer command line'
         bounds_x = 216
         bounds_y = 185
         bounds_cx = 484
-        bounds_cy = 28
-        reffontheight = 22
+        bounds_cy = 24
+        reffontheight = 18
       end
       object tlabel9: tlabel
         taborder = 7
         bounds_x = 80
         bounds_y = 121
-        bounds_cx = 110
-        bounds_cy = 22
+        bounds_cx = 108
+        bounds_cy = 18
         caption = 'arecord -t wav'
-        reffontheight = 22
+        reffontheight = 18
       end
       object tlabel10: tlabel
         taborder = 8
         bounds_x = 160
         bounds_y = 153
         bounds_cx = 34
-        bounds_cy = 22
+        bounds_cy = 18
         caption = 'xmp'
-        reffontheight = 22
+        reffontheight = 18
       end
       object tlabel11: tlabel
         taborder = 9
         bounds_x = 32
         bounds_y = 185
-        bounds_cx = 154
-        bounds_cy = 22
+        bounds_cx = 153
+        bounds_cy = 18
         caption = 'mplayer -volume XX'
-        reffontheight = 22
+        reffontheight = 18
       end
       object tlabel12: tlabel
         taborder = 10
         bounds_x = 720
         bounds_y = 121
-        bounds_cx = 103
-        bounds_cy = 22
+        bounds_cy = 18
         caption = 'filename.wav'
-        reffontheight = 22
+        reffontheight = 18
       end
       object tlabel13: tlabel
         taborder = 11
         bounds_x = 720
         bounds_y = 153
-        bounds_cx = 97
-        bounds_cy = 22
+        bounds_cx = 94
+        bounds_cy = 18
         caption = 'filename.ext'
-        reffontheight = 22
+        reffontheight = 18
       end
       object tlabel14: tlabel
         taborder = 12
         bounds_x = 720
         bounds_y = 185
-        bounds_cx = 97
-        bounds_cy = 22
+        bounds_cx = 94
+        bounds_cy = 18
         caption = 'filename.ext'
-        reffontheight = 22
+        reffontheight = 18
       end
       object tintegeredit2: tintegeredit
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         taborder = 13
         bounds_x = 16
         bounds_y = 249
-        bounds_cy = 28
+        bounds_cy = 24
         value = 1
         valuedefault = 1
         valuemin = 1
         valuemax = 65534
-        reffontheight = 22
+        reffontheight = 18
       end
       object tbutton3: tbutton
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
+        face.localprops = []
+        face.template = mainfo.tfacecomp1
         taborder = 14
         bounds_x = 128
         bounds_y = 249
@@ -788,6 +919,11 @@ object settingsfo: tsettingsfo
         onexecute = oninhz
       end
       object tbutton4: tbutton
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
+        face.localprops = []
+        face.template = mainfo.tfacecomp1
         taborder = 15
         bounds_x = 320
         bounds_y = 249
@@ -798,6 +934,11 @@ object settingsfo: tsettingsfo
         onexecute = oninspk
       end
       object tbutton5: tbutton
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
+        face.localprops = []
+        face.template = mainfo.tfacecomp1
         taborder = 16
         bounds_x = 448
         bounds_y = 281
@@ -808,6 +949,11 @@ object settingsfo: tsettingsfo
         onexecute = onspkoff
       end
       object tbutton6: tbutton
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
+        face.localprops = []
+        face.template = mainfo.tfacecomp1
         taborder = 17
         bounds_x = 128
         bounds_y = 281
@@ -821,42 +967,43 @@ object settingsfo: tsettingsfo
         taborder = 18
         bounds_x = 16
         bounds_y = 225
-        bounds_cx = 304
-        bounds_cy = 22
+        bounds_cx = 305
+        bounds_cy = 18
         caption = #1047#1074#1091#1082#1086#1074#1086#1081' '#1075#1077#1085#1077#1088#1072#1090#1086#1088' | Sound generator'
-        reffontheight = 22
+        reffontheight = 18
       end
       object reccl: tedit
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         taborder = 19
         bounds_x = 216
         bounds_y = 85
         bounds_cx = 484
-        bounds_cy = 28
-        reffontheight = 22
+        bounds_cy = 24
+        reffontheight = 18
       end
       object tlabel16: tlabel
         taborder = 20
         bounds_x = 168
         bounds_y = 85
-        bounds_cx = 24
-        bounds_cy = 22
+        bounds_cx = 23
+        bounds_cy = 18
         caption = 'rec'
-        reffontheight = 22
+        reffontheight = 18
       end
       object tlabel17: tlabel
         taborder = 21
         bounds_x = 720
         bounds_y = 85
-        bounds_cx = 103
-        bounds_cy = 22
+        bounds_cy = 18
         caption = 'filename.wav'
-        reffontheight = 22
+        reffontheight = 18
       end
       object userec: tbooleaneditradio
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         taborder = 22
         bounds_x = 48
         bounds_y = 85
@@ -865,6 +1012,7 @@ object settingsfo: tsettingsfo
       object usearec: tbooleaneditradio
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         taborder = 23
         bounds_x = 48
         bounds_y = 125
@@ -876,15 +1024,18 @@ object settingsfo: tsettingsfo
       frame.localprops = []
       frame.localprops1 = []
       taborder = 4
-      bounds_x = 0
+      bounds_x = 4
       bounds_y = 27
-      bounds_cx = 850
-      bounds_cy = 407
+      bounds_cx = 842
+      bounds_cy = 405
       anchors = [an_left, an_top, an_right, an_bottom]
       caption = #1055#1072#1085#1077#1083#1100' '#1095#1072#1089#1086#1074' | Clock panel'
+      facetab = mainfo.tfacecomp3
+      faceactivetab = mainfo.tfacecomp2
       object tbooleanedit3: tbooleanedit
         frame.localprops = []
         frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
         bounds_x = 8
         bounds_y = 4
         onchange = onsmallscreen
@@ -893,19 +1044,22 @@ object settingsfo: tsettingsfo
         taborder = 1
         bounds_x = 32
         bounds_y = 4
-        bounds_cx = 219
-        bounds_cy = 22
+        bounds_cx = 217
+        bounds_cy = 18
         caption = #1052#1072#1083#1099#1081' '#1101#1082#1088#1072#1085' | Small screen'
-        reffontheight = 22
+        reffontheight = 18
       end
     end
   end
   object trichstockglyphbutton1: trichstockglyphbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 1
-    bounds_x = 800
-    bounds_y = 448
+    bounds_x = 804
+    bounds_y = 10
     bounds_cx = 50
     bounds_cy = 21
     state = [as_localimagelist, as_localimagenr, as_localonexecute]
