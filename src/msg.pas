@@ -36,6 +36,8 @@ type
    ttimer1: ttimer;
    trichstockglyphbutton1: trichstockglyphbutton;
    trichstockglyphbutton2: trichstockglyphbutton;
+   tfacecomp1: tfacecomp;
+   tfacecomp2: tfacecomp;
    procedure ontimer(const sender: TObject);
    procedure bclose(const sender: TObject);
    procedure bok(const sender: TObject);

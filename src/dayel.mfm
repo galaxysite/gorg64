@@ -1,18 +1,20 @@
 object dayelfo: tdayelfo
-  color = -1610612712
-  bounds_x = 8
-  bounds_y = 87
+  color = -1610612731
+  bounds_x = 142
+  bounds_y = 132
   bounds_cx = 995
   bounds_cy = 492
   container.frame.localprops = []
   container.frame.localprops1 = []
+  container.face.localprops = []
+  container.face.template = mainfo.tfacecomp2
   container.bounds = (
     0
     0
     995
     492
   )
-  font.height = 39
+  font.height = 20
   font.style = [fs_bold]
   font.name = 'stf_default'
   font.localprops = [flp_style, flp_height]
@@ -27,8 +29,28 @@ object dayelfo: tdayelfo
   onkeyup = keyup
   moduleclassname = 'tmseform'
   object tstringgrid1: tstringgrid
+    frame.sbhorz.width = 20
+    frame.sbhorz.face.localprops = []
+    frame.sbhorz.face.template = mainfo.tfacecomp3
+    frame.sbhorz.facebutton.localprops = []
+    frame.sbhorz.facebutton.template = mainfo.tfacecomp3
+    frame.sbhorz.faceendbutton.localprops = []
+    frame.sbhorz.faceendbutton.template = mainfo.tfacecomp3
+    frame.sbhorz.frame.localprops = []
+    frame.sbhorz.frame.localprops1 = []
+    frame.sbhorz.frame.template = mainfo.tframecomp2
+    frame.sbhorz.framebutton.localprops = []
+    frame.sbhorz.framebutton.localprops1 = []
+    frame.sbhorz.framebutton.template = mainfo.tframecomp2
+    frame.sbhorz.frameendbutton1.localprops = []
+    frame.sbhorz.frameendbutton1.localprops1 = []
+    frame.sbhorz.frameendbutton1.template = mainfo.tframecomp2
+    frame.sbhorz.frameendbutton2.localprops = []
+    frame.sbhorz.frameendbutton2.localprops1 = []
+    frame.sbhorz.frameendbutton2.template = mainfo.tframecomp2
     frame.localprops = []
     frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
     bounds_x = 8
     bounds_y = 8
     bounds_cx = 977
@@ -36,14 +58,35 @@ object dayelfo: tdayelfo
     anchors = [an_left, an_top, an_right, an_bottom]
     optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
     datacols.count = 1
+    datacols.colorselect = 16768668
+    datacols.colorfocused = 16768668
     datacols.width = 5000
     datacols.items = <    
       item
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
+        colorselect = 16768668
+        colorfocused = 16768668
         width = 5000
         valuefalse = '0'
         valuetrue = '1'
       end>
-    datarowheight = 56
-    reffontheight = 54
+    gridframecolor = -2147483645
+    rowcolors.count = 10
+    rowcolors.items = (
+      -2147483642
+      -2147483642
+      -2147483642
+      -2147483642
+      -2147483642
+      -2147483642
+      -2147483642
+      -2147483642
+      -2147483642
+      -2147483642
+    )
+    datarowheight = 26
+    reffontheight = 24
   end
 end
