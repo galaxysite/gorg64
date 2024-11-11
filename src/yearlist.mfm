@@ -169,6 +169,7 @@ object yearlistfo: tyearlistfo
     bounds_cx = 774
     bounds_cy = 554
     anchors = [an_left, an_top, an_right, an_bottom]
+    optionsgrid = [og_rowsizing, og_focuscellonenter, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
     datacols.count = 1
     datacols.colorselect = 16769446
     datacols.colorfocused = 16769446
