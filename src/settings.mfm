@@ -966,45 +966,47 @@ object settingsfo: tsettingsfo
       facetab = mainfo.tfacecomp3
       faceactivetab = mainfo.tfacecomp2
       object tbooleanedit1: tbooleanedit
+        frame.caption = #1053#1077#1076#1077#1083#1103' '#1085#1072#1095#1080#1085#1072#1077#1090#1089#1103' '#1089' '#1074#1086#1089#1082#1088#1077#1089#1077#1085#1100#1103' | First weekday Sunday'
+        frame.captiondist = 2
         frame.localprops = []
-        frame.localprops1 = []
+        frame.localprops1 = [frl1_captiondist]
         frame.template = mainfo.tframecomp2
+        frame.outerframe = (
+          0
+          3
+          459
+          4
+        )
         bounds_x = 8
-        bounds_y = 12
+        bounds_y = 9
+        bounds_cx = 472
+        bounds_cy = 20
         onchange = onwdbs
       end
-      object tlabel1: tlabel
-        taborder = 1
-        bounds_x = 24
-        bounds_y = 12
-        bounds_cx = 455
-        bounds_cy = 18
-        caption = #1053#1077#1076#1077#1083#1103' '#1085#1072#1095#1080#1085#1072#1077#1090#1089#1103' '#1089' '#1074#1086#1089#1082#1088#1077#1089#1077#1085#1100#1103' | First weekday Sunday'
-        reffontheight = 18
-      end
       object tbooleanedit2: tbooleanedit
+        frame.caption = '12 '#1095#1072#1089#1086#1074#1086#1081' '#1092#1086#1088#1084#1072#1090' | 12 hours format'
+        frame.captiondist = 2
         frame.localprops = []
-        frame.localprops1 = []
+        frame.localprops1 = [frl1_captiondist]
         frame.template = mainfo.tframecomp2
-        taborder = 2
+        frame.outerframe = (
+          0
+          3
+          296
+          4
+        )
+        taborder = 1
         bounds_x = 8
-        bounds_y = 36
+        bounds_y = 33
+        bounds_cx = 309
+        bounds_cy = 20
         onchange = h12
-      end
-      object tlabel2: tlabel
-        taborder = 3
-        bounds_x = 24
-        bounds_y = 36
-        bounds_cx = 292
-        bounds_cy = 18
-        caption = '12 '#1095#1072#1089#1086#1074#1086#1081' '#1092#1086#1088#1084#1072#1090' | 12 hours format'
-        reffontheight = 18
       end
       object tedit1: tedit
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
-        taborder = 4
+        taborder = 2
         bounds_x = 8
         bounds_y = 68
         bounds_cy = 24
@@ -1016,7 +1018,7 @@ object settingsfo: tsettingsfo
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
-        taborder = 5
+        taborder = 3
         bounds_x = 288
         bounds_y = 68
         bounds_cy = 24
@@ -1025,7 +1027,7 @@ object settingsfo: tsettingsfo
         reffontheight = 18
       end
       object tlabel3: tlabel
-        taborder = 6
+        taborder = 4
         bounds_x = 120
         bounds_y = 68
         bounds_cx = 76
@@ -1034,7 +1036,7 @@ object settingsfo: tsettingsfo
         reffontheight = 18
       end
       object tlabel4: tlabel
-        taborder = 7
+        taborder = 5
         bounds_x = 408
         bounds_y = 68
         bounds_cx = 86
@@ -1048,7 +1050,7 @@ object settingsfo: tsettingsfo
         frame.template = mainfo.tframecomp2
         face.localprops = []
         face.template = mainfo.tfacecomp1
-        taborder = 8
+        taborder = 6
         bounds_x = 8
         bounds_y = 132
         bounds_cx = 826
@@ -1057,7 +1059,7 @@ object settingsfo: tsettingsfo
         onexecute = onactionchange
       end
       object tlabel8: tlabel
-        taborder = 9
+        taborder = 7
         bounds_x = 8
         bounds_y = 100
         bounds_cx = 457
@@ -1066,22 +1068,23 @@ object settingsfo: tsettingsfo
         reffontheight = 18
       end
       object tbooleanedit5: tbooleanedit
+        frame.caption = #1044#1085#1080' '#1085#1077#1076#1077#1083#1080' '#1089#1083#1077#1074#1072' '#1085#1072#1087#1088#1072#1074#1086' | Left-to-right weekdays order'
+        frame.captiondist = 2
         frame.localprops = []
-        frame.localprops1 = []
+        frame.localprops1 = [frl1_captiondist]
         frame.template = mainfo.tframecomp2
-        taborder = 10
+        frame.outerframe = (
+          0
+          3
+          449
+          4
+        )
+        taborder = 8
         bounds_x = 8
-        bounds_y = 165
+        bounds_y = 162
+        bounds_cx = 462
+        bounds_cy = 20
         onchange = wlr
-      end
-      object tlabel18: tlabel
-        taborder = 11
-        bounds_x = 32
-        bounds_y = 165
-        bounds_cx = 445
-        bounds_cy = 18
-        caption = #1044#1085#1080' '#1085#1077#1076#1077#1083#1080' '#1089#1083#1077#1074#1072' '#1085#1072#1087#1088#1072#1074#1086' | Left-to-right weekdays order'
-        reffontheight = 18
       end
     end
     object ttabpage3: ttabpage
@@ -1097,29 +1100,30 @@ object settingsfo: tsettingsfo
       facetab = mainfo.tfacecomp3
       faceactivetab = mainfo.tfacecomp2
       object tbooleanedit4: tbooleanedit
+        frame.caption = #1042#1082#1083#1102#1095#1080#1090#1100' '#1088#1077#1075#1091#1083#1080#1088#1086#1074#1082#1091' '#1075#1088#1086#1084#1082#1086#1089#1090#1080' Mplayer | Turn on volume control for Mplayer'
+        frame.captiondist = 2
         frame.localprops = []
-        frame.localprops1 = []
+        frame.localprops1 = [frl1_captiondist]
         frame.template = mainfo.tframecomp2
+        frame.outerframe = (
+          0
+          3
+          625
+          4
+        )
         bounds_x = 8
-        bounds_y = 4
+        bounds_y = 9
+        bounds_cx = 638
+        bounds_cy = 20
         onchange = onvolumeon
-      end
-      object tlabel7: tlabel
-        taborder = 1
-        bounds_x = 24
-        bounds_y = 4
-        bounds_cx = 621
-        bounds_cy = 18
-        caption = #1042#1082#1083#1102#1095#1080#1090#1100' '#1088#1077#1075#1091#1083#1080#1088#1086#1074#1082#1091' '#1075#1088#1086#1084#1082#1086#1089#1090#1080' Mplayer | Turn on volume control for Mplayer'
-        reffontheight = 18
       end
       object tintegeredit1: tintegeredit
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
-        taborder = 2
+        taborder = 1
         bounds_x = 8
-        bounds_y = 28
+        bounds_y = 36
         bounds_cx = 68
         bounds_cy = 24
         onchange = onvolchange
@@ -1134,7 +1138,7 @@ object settingsfo: tsettingsfo
         frame.template = mainfo.tframecomp2
         face.localprops = []
         face.template = mainfo.tfacecomp1
-        taborder = 3
+        taborder = 2
         bounds_x = 24
         bounds_y = 321
         bounds_cx = 810
@@ -1147,7 +1151,7 @@ object settingsfo: tsettingsfo
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
-        taborder = 4
+        taborder = 3
         hint = 'arecord command line'
         bounds_x = 216
         bounds_y = 121
@@ -1159,7 +1163,7 @@ object settingsfo: tsettingsfo
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
-        taborder = 5
+        taborder = 4
         hint = 'xmp command line'
         bounds_x = 216
         bounds_y = 153
@@ -1171,7 +1175,7 @@ object settingsfo: tsettingsfo
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
-        taborder = 6
+        taborder = 5
         hint = 'mplayer command line'
         bounds_x = 216
         bounds_y = 185
@@ -1180,7 +1184,7 @@ object settingsfo: tsettingsfo
         reffontheight = 18
       end
       object tlabel9: tlabel
-        taborder = 7
+        taborder = 6
         bounds_x = 80
         bounds_y = 121
         bounds_cx = 108
@@ -1189,7 +1193,7 @@ object settingsfo: tsettingsfo
         reffontheight = 18
       end
       object tlabel10: tlabel
-        taborder = 8
+        taborder = 7
         bounds_x = 160
         bounds_y = 153
         bounds_cx = 34
@@ -1198,7 +1202,7 @@ object settingsfo: tsettingsfo
         reffontheight = 18
       end
       object tlabel11: tlabel
-        taborder = 9
+        taborder = 8
         bounds_x = 32
         bounds_y = 185
         bounds_cx = 153
@@ -1207,7 +1211,7 @@ object settingsfo: tsettingsfo
         reffontheight = 18
       end
       object tlabel12: tlabel
-        taborder = 10
+        taborder = 9
         bounds_x = 720
         bounds_y = 121
         bounds_cy = 18
@@ -1215,7 +1219,7 @@ object settingsfo: tsettingsfo
         reffontheight = 18
       end
       object tlabel13: tlabel
-        taborder = 11
+        taborder = 10
         bounds_x = 720
         bounds_y = 153
         bounds_cx = 94
@@ -1224,7 +1228,7 @@ object settingsfo: tsettingsfo
         reffontheight = 18
       end
       object tlabel14: tlabel
-        taborder = 12
+        taborder = 11
         bounds_x = 720
         bounds_y = 185
         bounds_cx = 94
@@ -1236,7 +1240,7 @@ object settingsfo: tsettingsfo
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
-        taborder = 13
+        taborder = 12
         bounds_x = 16
         bounds_y = 249
         bounds_cy = 24
@@ -1252,7 +1256,7 @@ object settingsfo: tsettingsfo
         frame.template = mainfo.tframecomp2
         face.localprops = []
         face.template = mainfo.tfacecomp1
-        taborder = 14
+        taborder = 13
         bounds_x = 128
         bounds_y = 249
         bounds_cx = 178
@@ -1267,7 +1271,7 @@ object settingsfo: tsettingsfo
         frame.template = mainfo.tframecomp2
         face.localprops = []
         face.template = mainfo.tfacecomp1
-        taborder = 15
+        taborder = 14
         bounds_x = 320
         bounds_y = 249
         bounds_cx = 490
@@ -1282,7 +1286,7 @@ object settingsfo: tsettingsfo
         frame.template = mainfo.tframecomp2
         face.localprops = []
         face.template = mainfo.tfacecomp1
-        taborder = 16
+        taborder = 15
         bounds_x = 448
         bounds_y = 281
         bounds_cx = 362
@@ -1297,7 +1301,7 @@ object settingsfo: tsettingsfo
         frame.template = mainfo.tframecomp2
         face.localprops = []
         face.template = mainfo.tfacecomp1
-        taborder = 17
+        taborder = 16
         bounds_x = 128
         bounds_y = 281
         bounds_cx = 306
@@ -1307,7 +1311,7 @@ object settingsfo: tsettingsfo
         onexecute = onspkon
       end
       object tlabel15: tlabel
-        taborder = 18
+        taborder = 17
         bounds_x = 16
         bounds_y = 225
         bounds_cx = 305
@@ -1319,7 +1323,7 @@ object settingsfo: tsettingsfo
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
-        taborder = 19
+        taborder = 18
         bounds_x = 216
         bounds_y = 85
         bounds_cx = 484
@@ -1327,7 +1331,7 @@ object settingsfo: tsettingsfo
         reffontheight = 18
       end
       object tlabel16: tlabel
-        taborder = 20
+        taborder = 19
         bounds_x = 168
         bounds_y = 85
         bounds_cx = 23
@@ -1336,7 +1340,7 @@ object settingsfo: tsettingsfo
         reffontheight = 18
       end
       object tlabel17: tlabel
-        taborder = 21
+        taborder = 20
         bounds_x = 720
         bounds_y = 85
         bounds_cy = 18
@@ -1347,7 +1351,7 @@ object settingsfo: tsettingsfo
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
-        taborder = 22
+        taborder = 21
         bounds_x = 48
         bounds_y = 85
         group = 1
@@ -1356,7 +1360,7 @@ object settingsfo: tsettingsfo
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
-        taborder = 23
+        taborder = 22
         bounds_x = 48
         bounds_y = 125
         value = True
@@ -1376,17 +1380,28 @@ object settingsfo: tsettingsfo
       facetab = mainfo.tfacecomp3
       faceactivetab = mainfo.tfacecomp2
       object tbooleanedit3: tbooleanedit
+        frame.caption = #1052#1072#1083#1099#1081' '#1101#1082#1088#1072#1085' | Small screen'
+        frame.captiondist = 2
         frame.localprops = []
-        frame.localprops1 = []
+        frame.localprops1 = [frl1_captiondist]
         frame.template = mainfo.tframecomp2
-        bounds_x = 8
-        bounds_y = 4
+        frame.outerframe = (
+          0
+          3
+          221
+          4
+        )
+        bounds_x = 16
+        bounds_y = 17
+        bounds_cx = 234
+        bounds_cy = 20
         onchange = onsmallscreen
       end
       object tlabel6: tlabel
         taborder = 1
-        bounds_x = 32
-        bounds_y = 4
+        visible = False
+        bounds_x = 40
+        bounds_y = 76
         bounds_cx = 217
         bounds_cy = 18
         caption = #1052#1072#1083#1099#1081' '#1101#1082#1088#1072#1085' | Small screen'
@@ -1456,7 +1471,7 @@ object settingsfo: tsettingsfo
     menu.font.style = [fs_bold]
     menu.font.name = 'stf_menu'
     menu.font.localprops = [flp_style, flp_height]
-    left = 456
+    left = 536
     top = 48
   end
 end

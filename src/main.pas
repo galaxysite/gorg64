@@ -365,11 +365,9 @@ break;
 end;
 end;
 if lang = 'ru_RU' then begin ruenv := true; tbutton2.left := tbutton2.left - 50; tbutton2.width := tbutton2.width + 50; for f := 1 to 12 do case f of 1: mon_names[f] := 'ЯНВАРЬ'; 2: mon_names[f] := 'ФЕВРАЛЬ'; 3: mon_names[f] := 'МАРТ'; 4: mon_names[f] := 'АПРЕЛЬ'; 5: mon_names[f] := 'МАЙ'; 6: mon_names[f] := 'ИЮНЬ'; 7 : mon_names[f] := 'ИЮЛЬ'; 8: mon_names[f] := 'АВГУСТ'; 9: mon_names[f] := 'СЕНТЯБРЬ'; 10: mon_names[f] := 'ОКТЯБРЬ'; 11: mon_names[f] := 'НОЯБРЬ'; 12 : mon_names[f] := 'ДЕКАБРЬ'; end; end;
-lang := '/home/fred/gorg64-main/lang_s/' + lang + '.txt';
-// lang := '/usr/share/doc/gorg64/' + lang + '.txt';
+lang := '/usr/share/doc/gorg64/' + lang + '.txt';
 //lang := './lang_s/ru_RU.txt';
 LoadLng(lang);
-//WriteLn(lang);
 homedir := GetEnvironmentVariable('HOME') + '/';
 workdir := homedir + workdir + '/';
 musicdir := workdir + musicdir + '/';
@@ -411,8 +409,8 @@ if str_addorganization <> '' then mainfo.tpopupmenu1.menu.items[7].caption := st
 if str_help <> '' then mainfo.tpopupmenu1.menu.items[8].caption := str_help;
 if str_settings <> '' then mainfo.tpopupmenu1.menu.items[9].caption := str_settings;
 if str_flash <> '' then mainfo.tpopupmenu1.menu.items[10].caption := str_flash;
-if str_yearlist <> '' then mainfo.tpopupmenu1.menu.items[11].caption := str_yearlist;
-if str_clockpanel <> '' then mainfo.tpopupmenu1.menu.items[12].caption := str_clockpanel;
+if str_clockpanel <> '' then mainfo.tpopupmenu1.menu.items[11].caption := str_clockpanel;
+if str_yearlist <> '' then mainfo.tpopupmenu1.menu.items[12].caption := str_yearlist;
 if str_quit <> '' then mainfo.tpopupmenu1.menu.items[13].caption := str_quit;
 
 //fpSystem('cp '+gorgfile+ ' '+gorgfile+'.begin');

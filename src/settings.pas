@@ -41,9 +41,7 @@ type
    ttabpage3: ttabpage;
    trichstockglyphbutton1: trichstockglyphbutton;
    tbooleanedit1: tbooleanedit;
-   tlabel1: tlabel;
    tbooleanedit2: tbooleanedit;
-   tlabel2: tlabel;
    tedit1: tedit;
    tedit2: tedit;
    tlabel3: tlabel;
@@ -59,7 +57,6 @@ type
    tbutton1: tbutton;
    tpopupmenu1: tpopupmenu;
    tbooleanedit4: tbooleanedit;
-   tlabel7: tlabel;
    tintegeredit1: tintegeredit;
    tlabel8: tlabel;
    tbutton2: tbutton;
@@ -84,7 +81,6 @@ type
    userec: tbooleaneditradio;
    usearec: tbooleaneditradio;
    tbooleanedit5: tbooleanedit;
-   tlabel18: tlabel;
    timage4: timage;
    procedure onwdbs(const sender: TObject);
    procedure oncreate(const sender: TObject);

@@ -51,7 +51,7 @@ w := tstringgrid1.clientwidth;
 dec(w, 28);
 if w < 1 + tstringgrid1.fixcols[-1].width then w := 1 + tstringgrid1.fixcols[-1].width;
 if tstringgrid1.datacols[0].width + tstringgrid1.fixcols[-1].width <> w then
-tstringgrid1.datacols[0].width := w - tstringgrid1.fixcols[-1].width;
+tstringgrid1.datacols[0].width := w - tstringgrid1.fixcols[-1].width + 25;
 end;
 
 procedure tyearlistfo.onl(const sender: TObject);

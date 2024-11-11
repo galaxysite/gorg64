@@ -3,8 +3,8 @@ object eefo: teefo
   frame.localprops = []
   frame.localprops1 = []
   frame.template = tframecomp2
-  bounds_x = 211
-  bounds_y = 140
+  bounds_x = 206
+  bounds_y = 189
   bounds_cx = 1074
   bounds_cy = 673
   container.frame.localprops = []
@@ -1468,8 +1468,8 @@ object eefo: teefo
     frame.localprops1 = []
     frame.template = tframecomp2
     taborder = 85
-    bounds_x = 424
-    bounds_y = 144
+    bounds_x = 488
+    bounds_y = 264
     bounds_cx = 50
     bounds_cy = 44
     state = [as_localcaption, as_localonexecute]
@@ -1901,10 +1901,19 @@ object eefo: teefo
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.fade_pos.count = 1
+    face.fade_pos.items = (
+      0
+    )
+    face.fade_color.count = 1
+    face.fade_color.items = (
+      15724288
+    )
+    face.localprops = []
     taborder = 112
-    bounds_x = 488
+    bounds_x = 568
     bounds_y = 340
-    bounds_cx = 97
+    bounds_cx = 89
     bounds_cy = 42
     onchange = onchangecyc
     value = 2
