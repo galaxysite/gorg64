@@ -409,8 +409,8 @@ if str_addorganization <> '' then mainfo.tpopupmenu1.menu.items[7].caption := st
 if str_help <> '' then mainfo.tpopupmenu1.menu.items[8].caption := str_help;
 if str_settings <> '' then mainfo.tpopupmenu1.menu.items[9].caption := str_settings;
 if str_flash <> '' then mainfo.tpopupmenu1.menu.items[10].caption := str_flash;
-if str_yearlist <> '' then mainfo.tpopupmenu1.menu.items[11].caption := str_yearlist;
-if str_clockpanel <> '' then mainfo.tpopupmenu1.menu.items[12].caption := str_clockpanel;
+if str_clockpanel <> '' then mainfo.tpopupmenu1.menu.items[11].caption := str_clockpanel;
+if str_yearlist <> '' then mainfo.tpopupmenu1.menu.items[12].caption := str_yearlist;
 if str_quit <> '' then mainfo.tpopupmenu1.menu.items[13].caption := str_quit;
 
 //fpSystem('cp '+gorgfile+ ' '+gorgfile+'.begin');
