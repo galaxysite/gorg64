@@ -141,7 +141,7 @@ object settingsfo: tsettingsfo
       object tlabel5: tlabel
         color = -2147483645
         bounds_x = 184
-        bounds_y = 164
+        bounds_y = 148
         bounds_cx = 472
         bounds_cy = 45
         caption = 'GALAXY ORGANIZER 2'
@@ -162,10 +162,10 @@ object settingsfo: tsettingsfo
         face.localprops = []
         face.template = mainfo.tfacecomp1
         taborder = 1
-        bounds_x = 128
-        bounds_y = 284
+        bounds_x = 104
+        bounds_y = 228
         bounds_cx = 630
-        bounds_cy = 30
+        bounds_cy = 46
         state = [as_localcaption, as_localonexecute]
         caption = #1053#1072#1087#1080#1089#1072#1090#1100' '#1087#1080#1089#1100#1084#1086' '#1072#1074#1090#1086#1088#1091' | Email to Author'
         onexecute = onemail
@@ -178,10 +178,10 @@ object settingsfo: tsettingsfo
         face.localprops = []
         face.template = mainfo.tfacecomp1
         taborder = 2
-        bounds_x = 128
-        bounds_y = 324
+        bounds_x = 104
+        bounds_y = 284
         bounds_cx = 630
-        bounds_cy = 30
+        bounds_cy = 46
         state = [as_localcaption, as_localonexecute]
         caption = #1055#1086#1089#1077#1090#1080#1090#1100' '#1076#1086#1084#1072#1096#1085#1102#1102' '#1089#1090#1088#1072#1085#1080#1094#1091' | Visit to Homepage'
         onexecute = onhomepage
@@ -192,8 +192,8 @@ object settingsfo: tsettingsfo
         frame.localprops = []
         frame.localprops1 = []
         taborder = 3
-        bounds_x = 24
-        bounds_y = 300
+        bounds_x = 312
+        bounds_y = 348
         bounds_cx = 90
         bounds_cy = 34
         bitmap.options = [bmo_masked, bmo_graymask]
@@ -334,8 +334,8 @@ object settingsfo: tsettingsfo
         frame.localprops = []
         frame.localprops1 = []
         taborder = 4
-        bounds_x = 770
-        bounds_y = 294
+        bounds_x = 418
+        bounds_y = 342
         bounds_cx = 50
         bounds_cy = 50
         bitmap.options = [bmo_masked, bmo_graymask]
@@ -614,8 +614,8 @@ object settingsfo: tsettingsfo
         frame.localprops = []
         frame.localprops1 = []
         taborder = 5
-        bounds_x = 394
-        bounds_y = 78
+        bounds_x = 386
+        bounds_y = 54
         bounds_cx = 66
         bounds_cy = 74
         bitmap.options = [bmo_masked, bmo_graymask]
@@ -952,17 +952,6 @@ object settingsfo: tsettingsfo
           000000000000000000000000
         }
       end
-      object tbutton7: tbutton
-        face.localprops = []
-        face.template = mainfo.tfacecomp1
-        taborder = 5
-        bounds_x = 120
-        bounds_y = 365
-        bounds_cx = 650
-        bounds_cy = 28
-        state = [as_localonexecute]
-        onexecute = onlangchange
-      end
     end
     object ttabpage2: ttabpage
       frame.localprops = []
@@ -1063,9 +1052,9 @@ object settingsfo: tsettingsfo
         face.template = mainfo.tfacecomp1
         taborder = 6
         bounds_x = 8
-        bounds_y = 132
+        bounds_y = 124
         bounds_cx = 826
-        bounds_cy = 21
+        bounds_cy = 29
         state = [as_localonexecute]
         onexecute = onactionchange
       end
@@ -1096,6 +1085,27 @@ object settingsfo: tsettingsfo
         bounds_cx = 462
         bounds_cy = 20
         onchange = wlr
+      end
+      object tbutton7: tbutton
+        frame.caption = #1071#1079#1099#1082' | Language'
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = mainfo.tframecomp2
+        frame.outerframe = (
+          0
+          21
+          0
+          0
+        )
+        face.localprops = []
+        face.template = mainfo.tfacecomp1
+        taborder = 9
+        bounds_x = 536
+        bounds_y = 40
+        bounds_cx = 266
+        bounds_cy = 65
+        state = [as_localonexecute]
+        onexecute = onlangchange
       end
     end
     object ttabpage3: ttabpage
@@ -1482,12 +1492,18 @@ object settingsfo: tsettingsfo
     menu.font.style = [fs_bold]
     menu.font.name = 'stf_menu'
     menu.font.localprops = [flp_style, flp_height]
-    left = 536
+    left = 480
     top = 48
   end
   object tpopupmenu2: tpopupmenu
+    frametemplate = mainfo.tframecomp2
+    itemframetemplate = mainfo.tframecomp2
+    itemfacetemplateactive = mainfo.tfacecomp2
     menu.state = [as_localonexecute, as_localonafterexecute]
-    left = 456
-    top = 80
+    menu.font.height = 14
+    menu.font.name = 'stf_menu'
+    menu.font.localprops = [flp_height]
+    left = 472
+    top = 88
   end
 end

@@ -82,8 +82,8 @@ type
    usearec: tbooleaneditradio;
    tbooleanedit5: tbooleanedit;
    timage4: timage;
-   tbutton7: tbutton;
    tpopupmenu2: tpopupmenu;
+   tbutton7: tbutton;
    procedure onwdbs(const sender: TObject);
    procedure oncreate(const sender: TObject);
    procedure onclose(const sender: TObject);
