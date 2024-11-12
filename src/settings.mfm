@@ -1003,69 +1003,63 @@ object settingsfo: tsettingsfo
         onchange = h12
       end
       object tedit1: tedit
+        frame.caption = #1091#1090#1088#1086' | am'
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
+        frame.outerframe = (
+          0
+          21
+          0
+          0
+        )
         taborder = 2
-        bounds_x = 8
-        bounds_y = 68
-        bounds_cy = 24
+        bounds_x = 40
+        bounds_y = 63
+        bounds_cy = 45
         maxlength = 255
         ontextedited = onamtextedited
         reffontheight = 18
       end
       object tedit2: tedit
+        frame.caption = #1074#1077#1095#1077#1088' | pm'
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
+        frame.outerframe = (
+          0
+          21
+          0
+          0
+        )
         taborder = 3
-        bounds_x = 288
-        bounds_y = 68
-        bounds_cy = 24
+        bounds_x = 168
+        bounds_y = 63
+        bounds_cy = 45
         maxlength = 255
         ontextedited = onpmtextedited
         reffontheight = 18
       end
-      object tlabel3: tlabel
-        taborder = 4
-        bounds_x = 120
-        bounds_y = 68
-        bounds_cx = 76
-        bounds_cy = 18
-        caption = #1091#1090#1088#1086' | am'
-        reffontheight = 18
-      end
-      object tlabel4: tlabel
-        taborder = 5
-        bounds_x = 408
-        bounds_y = 68
-        bounds_cx = 86
-        bounds_cy = 18
-        caption = #1074#1077#1095#1077#1088' | pm'
-        reffontheight = 18
-      end
       object tbutton1: tbutton
+        frame.caption = #1044#1077#1081#1089#1090#1074#1080#1077' '#1087#1086' '#1076#1074#1086#1081#1085#1086#1084#1091' '#1097#1077#1083#1095#1082#1091' '#1084#1099#1096#1080' | Double click action'
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
+        frame.outerframe = (
+          0
+          21
+          0
+          0
+        )
         face.localprops = []
         face.template = mainfo.tfacecomp1
-        taborder = 6
-        bounds_x = 8
-        bounds_y = 124
-        bounds_cx = 826
-        bounds_cy = 29
-        state = [as_localonexecute]
+        taborder = 4
+        bounds_x = 48
+        bounds_y = 119
+        bounds_cx = 474
+        bounds_cy = 66
+        state = [as_localcaption, as_localonexecute]
         onexecute = onactionchange
-      end
-      object tlabel8: tlabel
-        taborder = 7
-        bounds_x = 8
-        bounds_y = 100
-        bounds_cx = 457
-        bounds_cy = 18
-        caption = #1044#1077#1081#1089#1090#1074#1080#1077' '#1087#1086' '#1076#1074#1086#1081#1085#1086#1084#1091' '#1097#1077#1083#1095#1082#1091' '#1084#1099#1096#1080' | Double click action'
-        reffontheight = 18
       end
       object tbooleanedit5: tbooleanedit
         frame.caption = #1044#1085#1080' '#1085#1077#1076#1077#1083#1080' '#1089#1083#1077#1074#1072' '#1085#1072#1087#1088#1072#1074#1086' | Left-to-right weekdays order'
@@ -1079,9 +1073,9 @@ object settingsfo: tsettingsfo
           449
           4
         )
-        taborder = 8
-        bounds_x = 8
-        bounds_y = 162
+        taborder = 5
+        bounds_x = 48
+        bounds_y = 210
         bounds_cx = 462
         bounds_cy = 20
         onchange = wlr
@@ -1099,9 +1093,9 @@ object settingsfo: tsettingsfo
         )
         face.localprops = []
         face.template = mainfo.tfacecomp1
-        taborder = 9
+        taborder = 6
         bounds_x = 536
-        bounds_y = 40
+        bounds_y = 32
         bounds_cx = 266
         bounds_cy = 65
         state = [as_localonexecute]
@@ -1446,6 +1440,9 @@ object settingsfo: tsettingsfo
     onexecute = bclose
   end
   object tpopupmenu1: tpopupmenu
+    frametemplate = mainfo.tframecomp2
+    itemframetemplateactive = mainfo.tframecomp2
+    itemfacetemplateactive = mainfo.tfacecomp2
     menu.submenu.count = 8
     menu.submenu.items = <    
       item
@@ -1488,8 +1485,7 @@ object settingsfo: tsettingsfo
         state = [as_localcaption, as_localonexecute]
         onexecute = onexitprg
       end>
-    menu.font.height = 22
-    menu.font.style = [fs_bold]
+    menu.font.height = 16
     menu.font.name = 'stf_menu'
     menu.font.localprops = [flp_style, flp_height]
     left = 480

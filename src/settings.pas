@@ -44,8 +44,6 @@ type
    tbooleanedit2: tbooleanedit;
    tedit1: tedit;
    tedit2: tedit;
-   tlabel3: tlabel;
-   tlabel4: tlabel;
    tlabel5: tlabel;
    trichbutton1: trichbutton;
    trichbutton2: trichbutton;
@@ -58,7 +56,6 @@ type
    tpopupmenu1: tpopupmenu;
    tbooleanedit4: tbooleanedit;
    tintegeredit1: tintegeredit;
-   tlabel8: tlabel;
    tbutton2: tbutton;
    arecordcl: tedit;
    xmpcl: tedit;
@@ -234,41 +231,49 @@ end;
 procedure tsettingsfo.onaddevent(const sender: TObject);
 begin
 tun.p^.main_doubleclick_action := 0;
+mainfo.tbutton2.imagenr := 0;
 DisplayDblA;
 end;
 procedure tsettingsfo.onstopplaying(const sender: TObject);
 begin
 tun.p^.main_doubleclick_action := 1;
+mainfo.tbutton2.imagenr := 5;
 DisplayDblA;
 end;
 procedure tsettingsfo.onoffsound(const sender: TObject);
 begin
 tun.p^.main_doubleclick_action := 2;
+mainfo.tbutton2.imagenr := 5;
 DisplayDblA;
 end;
 procedure tsettingsfo.onoffactions(const sender: TObject);
 begin
 tun.p^.main_doubleclick_action := 3;
+mainfo.tbutton2.imagenr := 6;
 DisplayDblA;
 end;
 procedure tsettingsfo.onediteventlist(const sender: TObject);
 begin
 tun.p^.main_doubleclick_action := 4;
+mainfo.tbutton2.imagenr := 9;
 DisplayDblA;
 end;
 procedure tsettingsfo.onflash(const sender: TObject);
 begin
 tun.p^.main_doubleclick_action := 5;
+mainfo.tbutton2.imagenr := 4;
 DisplayDblA;
 end;
 procedure tsettingsfo.onshowclockpanel(const sender: TObject);
 begin
 tun.p^.main_doubleclick_action := 6;
+mainfo.tbutton2.imagenr := 1;
 DisplayDblA;
 end;
 procedure tsettingsfo.onexitprg(const sender: TObject);
 begin
 tun.p^.main_doubleclick_action := 7;
+mainfo.tbutton2.imagenr := 2;
 DisplayDblA;
 end;
 

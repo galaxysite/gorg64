@@ -1,16 +1,16 @@
 object elefo: telefo
   color = 15790320
-  bounds_x = 132
-  bounds_y = 180
+  bounds_x = 140
+  bounds_y = 126
   bounds_cx = 1077
-  bounds_cy = 566
+  bounds_cy = 576
   container.frame.localprops = []
   container.frame.localprops1 = []
   container.bounds = (
     0
     0
     1077
-    566
+    576
   )
   font.height = 20
   font.name = 'stf_default'
@@ -170,9 +170,9 @@ object elefo: telefo
     face.localprops = []
     face.template = mainfo.tfacecomp3
     bounds_x = 4
-    bounds_y = 48
+    bounds_y = 46
     bounds_cx = 1068
-    bounds_cy = 515
+    bounds_cy = 520
     anchors = [an_left, an_top, an_right, an_bottom]
     font.height = 30
     font.name = 'stf_default'
@@ -190,7 +190,7 @@ object elefo: telefo
       item
         colorselect = 16767393
         colorfocused = 16767393
-        width = 23
+        width = 32
         options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
         datalist.data = (
           ''
@@ -220,7 +220,7 @@ object elefo: telefo
       item
         colorselect = 16767393
         colorfocused = 16767393
-        width = 167
+        width = 166
         options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
         datalist.data = (
           ''
@@ -490,7 +490,7 @@ object elefo: telefo
       item
         colorselect = 16767393
         colorfocused = 16767393
-        width = 175
+        width = 167
         options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
         datalist.data = (
           ''
