@@ -339,6 +339,7 @@ end;
 procedure tsettingsfo.onm2execute(const sender: TObject);
 begin
 tun.p^.lang_numb := tmenuitem(sender).Tag;
+DisplayLang;
 end;
 
 end.
