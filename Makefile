@@ -12,7 +12,7 @@ source:
 	dpkg-source -b .
 
 archive:
-	fpc -Cg -O4 -CX -XX ver.pas
+	fpc -Cg -k-pie -k-znow -O4 -CX -XX ver.pas
 	-rm -f ver.o
 	-sstrip ver
 	./ver ar
