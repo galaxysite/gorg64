@@ -250,20 +250,12 @@ object msgfo: tmsgfo
     fixcols.count = 1
     fixcols.items = <    
       item
-        frame.localprops = []
-        frame.localprops1 = []
-        frame.template = mainfo.tframecomp2
         face.localprops = []
         face.template = tfacecomp5
         linecolor = -2147483645
         linecolorfix = -2147483645
         colorselect = -1610612733
         width = 149
-        fontselect.color = 16772566
-        fontselect.height = 16
-        fontselect.style = [fs_italic]
-        fontselect.name = 'stf_default'
-        fontselect.localprops = [flp_color, flp_style]
         font.color = -1610612730
         font.height = 16
         font.name = 'stf_default'

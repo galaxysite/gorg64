@@ -90,7 +90,6 @@ procedure tmsgfo.list;
 var
    f : Int64;
    i: integer;
-   str, str2: msestring;
 begin
 tstringgrid1.rowcount := Length(org.hst);
 tstringgrid1.fixcols[-1].captions.Count := tstringgrid1.rowCount;
