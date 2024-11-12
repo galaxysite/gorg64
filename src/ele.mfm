@@ -13,7 +13,6 @@ object elefo: telefo
     566
   )
   font.height = 20
-  font.style = [fs_bold]
   font.name = 'stf_default'
   font.localprops = [flp_style, flp_height]
   fontempty.height = 39
@@ -174,22 +173,28 @@ object elefo: telefo
     bounds_cx = 834
     bounds_cy = 515
     anchors = [an_left, an_top, an_right, an_bottom]
+    font.height = 30
+    font.name = 'stf_default'
+    font.localprops = [flp_style, flp_height]
     optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
     datacols.count = 1
     datacols.colorselect = 16767393
+    datacols.colorfocused = 16767393
     datacols.width = 5000
-    datacols.options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
+    datacols.options = [co_readonly, co_nofocus, co_savevalue, co_savestate, co_mousescrollrow]
     datacols.items = <    
       item
         colorselect = 16767393
+        colorfocused = 16767393
         width = 5000
-        options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
+        options = [co_readonly, co_nofocus, co_savevalue, co_savestate, co_mousescrollrow]
         valuefalse = '0'
         valuetrue = '1'
       end>
     gridframecolor = -2147483645
-    datarowheight = 26
-    reffontheight = 24
+    datarowheight = 40
+    oncellevent = oncelev
+    reffontheight = 36
   end
   object tbutton1: tbutton
     frame.localprops = []

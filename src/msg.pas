@@ -39,6 +39,8 @@ type
    tfacecomp1: tfacecomp;
    tfacecomp2: tfacecomp;
    tfacecomp3: tfacecomp;
+   tfacecomp4: tfacecomp;
+   tfacecomp5: tfacecomp;
    procedure ontimer(const sender: TObject);
    procedure bclose(const sender: TObject);
    procedure bok(const sender: TObject);
@@ -87,11 +89,16 @@ end;
 procedure tmsgfo.list;
 var
    f : Int64;
+   i: integer;
 begin
 tstringgrid1.rowcount := Length(org.hst);
+tstringgrid1.fixcols[-1].captions.Count := tstringgrid1.rowCount;
 for f := 0 to High(org.hst) do begin
-tstringgrid1[0].items[f] := org.hst[f];
+i := system.pos('|',org.hst[f]);
+tstringgrid1.fixcols[-1].captions[f] := system.copy(org.hst[f], 1, i -1);
+tstringgrid1[0].items[f] := system.copy(org.hst[f], i + 1 , length(org.hst[f]));
 end;
+invalidatewidget;
 end;
 
 procedure tmsgfo.oncreate(const sender: TObject);

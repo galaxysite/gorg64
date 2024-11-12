@@ -1,12 +1,12 @@
 object msgfo: tmsgfo
-  bounds_x = 240
-  bounds_y = 247
+  bounds_x = 228
+  bounds_y = 260
   bounds_cx = 941
   bounds_cy = 469
   container.frame.localprops = []
   container.frame.localprops1 = []
   container.face.localprops = []
-  container.face.template = tfacecomp1
+  container.face.template = tfacecomp5
   container.bounds = (
     0
     0
@@ -14,7 +14,7 @@ object msgfo: tmsgfo
     469
   )
   optionswindow = [wo_alwaysontop]
-  font.height = 39
+  font.height = 30
   font.name = 'stf_default'
   font.localprops = [flp_height]
   options = [fo_freeonclose, fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
@@ -148,7 +148,7 @@ object msgfo: tmsgfo
     frame.sbvert.face.localprops = []
     frame.sbvert.face.template = tfacecomp3
     frame.sbvert.facebutton.localprops = []
-    frame.sbvert.facebutton.template = tfacecomp1
+    frame.sbvert.facebutton.template = tfacecomp4
     frame.sbvert.faceendbutton.localprops = []
     frame.sbvert.faceendbutton.template = tfacecomp1
     frame.sbvert.frame.localprops = []
@@ -189,18 +189,19 @@ object msgfo: tmsgfo
     frame.template = mainfo.tframecomp2
     face.fade_direction = gd_down
     face.localprops = [fal_fadirection]
-    face.template = tfacecomp1
+    face.template = tfacecomp5
     bounds_x = 8
     bounds_y = 8
     bounds_cx = 610
     bounds_cy = 452
     anchors = [an_left, an_top, an_right, an_bottom]
-    optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
+    optionsgrid = [og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
     datacols.count = 1
     datacols.color = 16772075
     datacols.colorselect = 16759439
     datacols.colorfocused = 16759439
     datacols.width = 2000
+    datacols.options = [co_readonly, co_nofocus, co_savevalue, co_savestate, co_mousescrollrow]
     datacols.items = <    
       item
         color = 16772075
@@ -210,6 +211,7 @@ object msgfo: tmsgfo
         colorselect = 16759439
         colorfocused = 16759439
         width = 2000
+        options = [co_readonly, co_nofocus, co_savevalue, co_savestate, co_mousescrollrow]
         datalist.data = (
           ''
           ''
@@ -245,10 +247,24 @@ object msgfo: tmsgfo
         valuefalse = '0'
         valuetrue = '1'
       end>
+    fixcols.count = 1
+    fixcols.items = <    
+      item
+        face.localprops = []
+        face.template = tfacecomp5
+        linecolor = -2147483645
+        linecolorfix = -2147483645
+        colorselect = -1610612733
+        width = 149
+        font.color = -1610612730
+        font.height = 16
+        font.name = 'stf_default'
+        font.localprops = [flp_color, flp_height]
+      end>
     rowcount = 30
     gridframecolor = -2147483645
-    datarowheight = 49
-    reffontheight = 47
+    datarowheight = 40
+    reffontheight = 36
   end
   object timage1: timage
     color = -2147483645
@@ -9539,7 +9555,7 @@ object msgfo: tmsgfo
     bounds_y = 426
     bounds_cx = 90
     bounds_cy = 33
-    anchors = [an_left, an_bottom]
+    anchors = [an_right, an_bottom]
     state = [as_localimagelist, as_localimagenr, as_localcolorglyph, as_localcolor, as_localonexecute]
     glyph = stg_dbcancel
     colorglyph = -1610612730
@@ -9559,7 +9575,7 @@ object msgfo: tmsgfo
     )
     template.fade_color.count = 2
     template.fade_color.items = (
-      16756398
+      16767963
       16711680
     )
     template.fade_direction = gd_down
@@ -9589,10 +9605,40 @@ object msgfo: tmsgfo
     )
     template.fade_color.count = 2
     template.fade_color.items = (
-      16742520
+      16764879
       16711680
     )
     left = 392
     top = 40
+  end
+  object tfacecomp4: tfacecomp
+    template.fade_pos.count = 2
+    template.fade_pos.items = (
+      0
+      1
+    )
+    template.fade_color.count = 2
+    template.fade_color.items = (
+      16764879
+      16711680
+    )
+    template.fade_direction = gd_left
+    left = 392
+    top = 80
+  end
+  object tfacecomp5: tfacecomp
+    template.fade_pos.count = 2
+    template.fade_pos.items = (
+      0
+      1
+    )
+    template.fade_color.count = 2
+    template.fade_color.items = (
+      15109774
+      16711680
+    )
+    template.fade_direction = gd_down
+    left = 264
+    top = 112
   end
 end

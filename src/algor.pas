@@ -787,10 +787,10 @@ procedure TOrg.AddHistory(s : msestring);
 begin
 SetLength(hst, Length(hst) + 1);
 for f := High(hst) downto 1 do hst[f] := hst[f - 1];
-hst[0] := inttostr(year) + ' / '
- + inttostr(month) + ' / ' +
-  inttofix2str(day) + ' - '
-   + IntToHour(hour) + ':' + inttofix2str(minute) + ' ' + s;
+hst[0] := inttostr(year) + '/'
+ + inttostr(month) + '/' +
+  inttofix2str(day) + ' '
+   + IntToHour(hour) + ':' + inttofix2str(minute) + ' | ' + s;
 org.WorkHistoryFile(true);
 needalarm := true;
 end;

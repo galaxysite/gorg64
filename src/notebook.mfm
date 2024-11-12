@@ -130,6 +130,7 @@ object notebookfo: tnotebookfo
     bounds_cx = 1001
     bounds_cy = 436
     anchors = [an_left, an_top, an_right, an_bottom]
+    taborder = 1
     activepageindex = 0
     tab_frame.localprops = []
     tab_frame.localprops1 = []
@@ -181,6 +182,7 @@ object notebookfo: tnotebookfo
           end>
         gridframecolor = -2147483645
         datarowheight = 26
+        oncellevent = oncelev
         reffontheight = 24
       end
     end
@@ -228,6 +230,7 @@ object notebookfo: tnotebookfo
           end>
         gridframecolor = -2147483645
         datarowheight = 26
+        oncellevent = oncelev
         reffontheight = 24
       end
     end
@@ -238,7 +241,6 @@ object notebookfo: tnotebookfo
     frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 1
     bounds_x = 8
     bounds_y = 8
     bounds_cx = 74

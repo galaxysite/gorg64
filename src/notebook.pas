@@ -39,6 +39,7 @@ type
    procedure onopensite(const sender: TObject);
    procedure onemail(const sender: TObject);
    procedure ontel(const sender: TObject);
+   procedure oncelev(const sender: TObject; var info: celleventinfoty);
  end;
  
  tnbcommon = object
@@ -512,6 +513,12 @@ end;
  organizations.a[foc].Tel(0);
 end;
 end;
+end;
+
+procedure tnotebookfo.oncelev(const sender: TObject; var info: celleventinfoty);
+begin
+ if (info.eventkind = cek_buttonrelease) and
+     (ss_double in info.mouseeventinfopo^.shiftstate) then edit;
 end;
 
 procedure tnbcommon.ReSet;
