@@ -40,6 +40,7 @@ type
    procedure oneditbut(const sender: TObject);
    procedure keyup(const sender: twidget; var ainfo: keyeventinfoty);
    procedure bclose(const sender: TObject);
+   procedure oncelev(const sender: TObject; var info: celleventinfoty);
  public
    procedure Display;
    function Focus : Int64;
@@ -106,6 +107,12 @@ end;
 procedure telefo.bclose(const sender: TObject);
 begin
 Close;
+end;
+
+procedure telefo.oncelev(const sender: TObject; var info: celleventinfoty);
+begin
+  if (info.eventkind = cek_buttonrelease) and
+     (ss_double in info.mouseeventinfopo^.shiftstate) then oneditbut(nil);
 end;
 
 end.

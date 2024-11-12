@@ -40,14 +40,12 @@ type
    tbutton3: tbutton;
    tbutton5: tbutton;
    tbooleanedit1: tbooleanedit;
-   tlabel1: tlabel;
    tdropdownlistedit1: tdropdownlistedit;
    trichstockglyphbutton1: trichstockglyphbutton;
    timage1: timage;
    twidgetgrid1: twidgetgrid;
    ttextedit2: ttextedit;
    be_clip_mon: tbooleanedit;
-   l_clip_mon: tlabel;
    procedure oncreate(const sender: TObject);
    procedure onclose(const sender: TObject);
    procedure keyup(const sender: twidget; var ainfo: keyeventinfoty);

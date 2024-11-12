@@ -170,23 +170,24 @@ object flashfo: tflashfo
     onexecute = bclose
   end
   object tbooleanedit1: tbooleanedit
+    color = -2147483645
+    frame.caption = #1053#1072#1082#1072#1087#1083#1080#1074#1072#1090#1100' | Accumulate [F4]'
+    frame.captiondist = 2
     frame.localprops = []
-    frame.localprops1 = []
+    frame.localprops1 = [frl1_captiondist]
     frame.template = mainfo.tframecomp2
+    frame.outerframe = (
+      0
+      5
+      295
+      6
+    )
     taborder = 6
     bounds_x = 16
-    bounds_y = 228
+    bounds_y = 223
+    bounds_cx = 308
+    bounds_cy = 24
     onchange = onacc
-  end
-  object tlabel1: tlabel
-    color = -2147483645
-    taborder = 7
-    bounds_x = 32
-    bounds_y = 224
-    bounds_cx = 291
-    bounds_cy = 22
-    caption = #1053#1072#1082#1072#1087#1083#1080#1074#1072#1090#1100' | Accumulate [F4]'
-    reffontheight = 22
   end
   object tdropdownlistedit1: tdropdownlistedit
     frame.localprops = []
@@ -223,7 +224,7 @@ object flashfo: tflashfo
     frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 8
+    taborder = 7
     bounds_x = 392
     bounds_y = 184
     bounds_cx = 34
@@ -236,7 +237,7 @@ object flashfo: tflashfo
     color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
-    taborder = 9
+    taborder = 8
     bounds_x = 96
     bounds_y = 288
     bounds_cx = 202
@@ -2979,7 +2980,7 @@ object flashfo: tflashfo
     frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp3
-    taborder = 10
+    taborder = 9
     bounds_x = 435
     bounds_y = 8
     bounds_cx = 397
@@ -3024,22 +3025,23 @@ object flashfo: tflashfo
     end
   end
   object be_clip_mon: tbooleanedit
-    frame.localprops = []
-    frame.localprops1 = []
-    frame.template = mainfo.tframecomp2
-    taborder = 11
-    bounds_x = 16
-    bounds_y = 260
-    onchange = onlisten
-  end
-  object l_clip_mon: tlabel
     color = -2147483645
-    taborder = 12
-    bounds_x = 32
-    bounds_y = 256
-    bounds_cx = 199
-    bounds_cy = 22
-    caption = #1054#1090#1089#1083#1077#1078#1080#1074#1072#1090#1100' | Listen'
-    reffontheight = 22
+    frame.caption = #1054#1090#1089#1083#1077#1078#1080#1074#1072#1090#1100' | Listen'
+    frame.captiondist = 2
+    frame.localprops = [frl_colorclient]
+    frame.localprops1 = [frl1_captiondist]
+    frame.template = mainfo.tframecomp2
+    frame.outerframe = (
+      0
+      5
+      203
+      6
+    )
+    taborder = 10
+    bounds_x = 16
+    bounds_y = 255
+    bounds_cx = 216
+    bounds_cy = 24
+    onchange = onlisten
   end
 end
