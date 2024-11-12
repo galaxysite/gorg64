@@ -324,7 +324,7 @@ end;
 
 procedure tsettingsfo.DisplayLang;
 begin
-tbutton7.caption := locales_n[tun.p^.lang_numb];
+tbutton7.caption := locales_n[tun.LangNumb];
 end;
 
 procedure tsettingsfo.onlangchange(const sender: TObject);
@@ -338,7 +338,7 @@ end;
 
 procedure tsettingsfo.onm2execute(const sender: TObject);
 begin
-tun.p^.lang_numb := tmenuitem(sender).Tag;
+tun.LangNumb := tmenuitem(sender).Tag;
 DisplayLang;
 end;
 

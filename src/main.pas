@@ -139,20 +139,23 @@ PTu = ^TTu;
   fFileName: utf8string;
   fs : Int64;
     protected
-	procedure   SetMute(Value : bytebool);
-	procedure   SetNoAct(Value : bytebool);
-	procedure   SetFixation(Value : bytebool);
+	procedure SetMute(Value : bytebool);
+	procedure SetNoAct(Value : bytebool);
+	procedure SetFixation(Value : bytebool);
+	procedure SetLangNumb(Value : byte);
+	function GetLangNumb : byte;
 function r_m : bytebool;
 function r_n : bytebool;
 function r_f : bytebool;
     private
     public
-  function map : boolean;
-  function unmap : boolean;
-function Load : boolean;
-         property    Mute : bytebool read r_m write SetMute;
-         property    NoAct : bytebool read r_n write SetNoAct;
-         property    Fixation : bytebool read r_f write SetFixation;
+	function map : boolean;
+	function unmap : boolean;
+	function Load : boolean;
+	property Mute : bytebool read r_m write SetMute;
+	property NoAct : bytebool read r_n write SetNoAct;
+	property Fixation : bytebool read r_f write SetFixation;
+	property LangNumb : byte read GetLangNumb write SetLangNumb;
     end;  
   
 var
@@ -173,8 +176,8 @@ var
   sf_queue : tqueue;
   shfiles : filenamearty;
   homedir : msestring;
-lang : msestring;
-ruenv : bytebool = false;
+  lang : msestring;
+  ruenv : bytebool = false;
   workdir : msestring = '.gorg64';
   musicdir : msestring = 'music';
   sounddir : msestring = 'sound';
@@ -371,7 +374,7 @@ end;
 procedure tmainfo.ChangeLang;
 var f : Int64;
 begin
-lang := locales_s[tun.p^.lang_numb];
+lang := locales_s[tun.LangNumb];
 if lang = 'ru_RU' then begin ruenv := true; tbutton2.left := tbutton2.left - 50; tbutton2.width := tbutton2.width + 50; for f := 1 to 12 do case f of 1: mon_names[f] := 'ЯНВАРЬ'; 2: mon_names[f] := 'ФЕВРАЛЬ'; 3: mon_names[f] := 'МАРТ'; 4: mon_names[f] := 'АПРЕЛЬ'; 5: mon_names[f] := 'МАЙ'; 6: mon_names[f] := 'ИЮНЬ'; 7 : mon_names[f] := 'ИЮЛЬ'; 8: mon_names[f] := 'АВГУСТ'; 9: mon_names[f] := 'СЕНТЯБРЬ'; 10: mon_names[f] := 'ОКТЯБРЬ'; 11: mon_names[f] := 'НОЯБРЬ'; 12 : mon_names[f] := 'ДЕКАБРЬ'; end; end else ruenv := false;
 lang := '/usr/share/doc/gorg64/' + lang + '.txt';
 LoadLng(lang);
@@ -842,6 +845,16 @@ begin
 ShowYearList;
 end;
 
+procedure TTun.SetLangNumb(Value : byte);
+begin
+if Value <= MAX_LANGS then p^.lang_numb := Value else p^.lang_numb := 0;
+end;
+
+function TTun.GetLangNumb : byte;
+begin
+if p^.lang_numb <= MAX_LANGS then Exit(p^.lang_numb) else Exit(0);
+end;
+
 function TTun.map : boolean;
 var h : Int64;
 begin
@@ -879,7 +892,7 @@ with t do begin
  engtrue_hour_fmt    := false;
  engtrue_calend_fmt := Byte(PChar(nl_langinfo(_NL_TIME_FIRST_WEEKDAY))^) <> 2; // false;
  engtrue_calend_layout := false;
- lang_numb := DetectLang;
+ LangNumb := DetectLang;
  flash_accmulate := false;
  main_doubleclick_action := 0;
  am_pm[true] := am_hour_pm[true];
