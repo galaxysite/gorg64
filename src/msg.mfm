@@ -1,19 +1,22 @@
 object msgfo: tmsgfo
-  bounds_x = 228
-  bounds_y = 260
-  bounds_cx = 941
-  bounds_cy = 469
+  onpaint = onpaintev
+  bounds_x = 326
+  bounds_y = 301
+  bounds_cx = 940
+  bounds_cy = 518
+  bounds_cxmax = 940
   container.frame.localprops = []
   container.frame.localprops1 = []
   container.face.localprops = []
   container.face.template = tfacecomp5
+  container.onpaint = onpaintev
   container.bounds = (
     0
     0
-    941
-    469
+    940
+    518
   )
-  optionswindow = [wo_alwaysontop]
+  optionswindow = [wo_alwaysontop, wo_rounded]
   font.height = 30
   font.name = 'stf_default'
   font.localprops = [flp_height]
@@ -191,9 +194,9 @@ object msgfo: tmsgfo
     face.localprops = [fal_fadirection]
     face.template = tfacecomp5
     bounds_x = 8
-    bounds_y = 8
-    bounds_cx = 610
-    bounds_cy = 452
+    bounds_y = 40
+    bounds_cx = 609
+    bounds_cy = 469
     anchors = [an_left, an_top, an_right, an_bottom]
     optionsgrid = [og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
     datacols.count = 1
@@ -271,8 +274,8 @@ object msgfo: tmsgfo
     frame.localprops = []
     frame.localprops1 = []
     taborder = 1
-    bounds_x = 628
-    bounds_y = 8
+    bounds_x = 627
+    bounds_y = 80
     bounds_cx = 306
     bounds_cy = 410
     anchors = [an_top, an_right]
@@ -9525,41 +9528,91 @@ object msgfo: tmsgfo
       0000000000000000000000000000000000000000000000000000000000000000
     }
   end
-  object trichstockglyphbutton1: trichstockglyphbutton
-    color = -2147483645
+  object tstringdisp1: tstringdisp
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
     face.localprops = []
-    face.template = tfacecomp1
+    face.template = mainfo.tfacecomp3
     taborder = 2
-    bounds_x = 656
-    bounds_y = 426
-    bounds_cx = 90
-    bounds_cy = 33
-    anchors = [an_right, an_bottom]
-    state = [as_localimagelist, as_localimagenr, as_localcolorglyph, as_localcolor, as_localonexecute]
-    glyph = stg_dbpost
-    colorglyph = -1610612730
-    onexecute = bok
-  end
-  object trichstockglyphbutton2: trichstockglyphbutton
-    color = -2147483645
-    frame.localprops = []
-    frame.localprops1 = []
-    frame.template = mainfo.tframecomp2
-    face.localprops = []
-    face.template = tfacecomp1
-    taborder = 3
-    bounds_x = 816
-    bounds_y = 426
-    bounds_cx = 90
-    bounds_cy = 33
-    anchors = [an_right, an_bottom]
-    state = [as_localimagelist, as_localimagenr, as_localcolorglyph, as_localcolor, as_localonexecute]
-    glyph = stg_dbcancel
-    colorglyph = -1610612730
-    onexecute = bclose
+    bounds_x = 0
+    bounds_y = 0
+    bounds_cx = 940
+    bounds_cy = 34
+    anchors = [an_top]
+    text = #1057#1086#1086#1073#1097#1077#1085#1080#1103' '#1073#1091#1076#1080#1083#1100#1085#1080#1082#1072' | Alarm messages'
+    font.height = 20
+    font.name = 'stf_default'
+    font.localprops = [flp_height]
+    textflags = [tf_xcentered, tf_ycentered]
+    reffontheight = 24
+    object tpaintbox1: tpaintbox
+      optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_mousewheel, ow_destroywidgets]
+      color = -2147483645
+      frame.localprops = []
+      frame.localprops1 = []
+      taborder = 3
+      onpaint = onpaintev
+      bounds_x = 0
+      bounds_y = 0
+      bounds_cx = 940
+      bounds_cy = 34
+      anchors = []
+      onmouseevent = onmouseev
+    end
+    object trichstockglyphbutton2: trichstockglyphbutton
+      color = -2147483645
+      frame.localprops = []
+      frame.localprops1 = []
+      frame.template = mainfo.tframecomp2
+      face.localprops = []
+      face.template = mainfo.tfacecomp3
+      bounds_x = 902
+      bounds_y = 4
+      bounds_cx = 26
+      bounds_cy = 26
+      anchors = [an_right, an_bottom]
+      state = [as_localimagelist, as_localimagenr, as_localcolorglyph, as_localcolor, as_localonexecute]
+      glyph = stg_dbcancel
+      colorglyph = -1610612734
+      onexecute = bclose
+    end
+    object trichstockglyphbutton1: trichstockglyphbutton
+      color = -2147483645
+      frame.localprops = []
+      frame.localprops1 = []
+      frame.template = mainfo.tframecomp2
+      face.localprops = []
+      face.template = mainfo.tfacecomp3
+      taborder = 1
+      bounds_x = 777
+      bounds_y = 4
+      bounds_cx = 74
+      bounds_cy = 26
+      anchors = [an_right, an_bottom]
+      state = [as_localimagelist, as_localimagenr, as_localcolorglyph, as_localcolor, as_localonexecute]
+      glyph = stg_dbpost
+      colorglyph = 47616
+      onexecute = bok
+    end
+    object trichstockglyphbutton3: trichstockglyphbutton
+      color = -2147483645
+      frame.localprops = []
+      frame.localprops1 = []
+      frame.template = mainfo.tframecomp2
+      face.localprops = []
+      face.template = mainfo.tfacecomp3
+      taborder = 2
+      bounds_x = 872
+      bounds_y = 4
+      bounds_cx = 26
+      bounds_cy = 26
+      anchors = [an_right, an_bottom]
+      state = [as_localimagelist, as_localimagenr, as_localcolorglyph, as_localcolor, as_localonexecute]
+      glyph = stg_dbdelete
+      colorglyph = -1610612734
+      onexecute = onminimize
+    end
   end
   object ttimer1: ttimer
     ontimer = ontimer

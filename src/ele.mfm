@@ -1,15 +1,15 @@
 object elefo: telefo
   color = 15790320
-  bounds_x = 272
-  bounds_y = 235
-  bounds_cx = 843
+  bounds_x = 132
+  bounds_y = 180
+  bounds_cx = 1077
   bounds_cy = 566
   container.frame.localprops = []
   container.frame.localprops1 = []
   container.bounds = (
     0
     0
-    843
+    1077
     566
   )
   font.height = 20
@@ -20,6 +20,7 @@ object elefo: telefo
   fontempty.name = 'stf_empty'
   fontempty.localprops = [flp_style, flp_height]
   options = [fo_freeonclose, fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
+  caption = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1090#1100' '#1089#1086#1073#1099#1090#1080#1077' | Edit event'
   icon.options = [bmo_masked, bmo_graymask]
   icon.origformat = 'png'
   icon.image = {
@@ -170,27 +171,521 @@ object elefo: telefo
     face.template = mainfo.tfacecomp3
     bounds_x = 4
     bounds_y = 48
-    bounds_cx = 834
+    bounds_cx = 1068
     bounds_cy = 515
     anchors = [an_left, an_top, an_right, an_bottom]
     font.height = 30
     font.name = 'stf_default'
     font.localprops = [flp_style, flp_height]
     optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
-    datacols.count = 1
+    datacols.count = 12
     datacols.colorselect = 16767393
     datacols.colorfocused = 16767393
-    datacols.width = 5000
-    datacols.options = [co_readonly, co_nofocus, co_savevalue, co_savestate, co_mousescrollrow]
+    datacols.width = 72
+    datacols.options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+    datacols.font.height = 16
+    datacols.font.name = 'stf_default'
+    datacols.font.localprops = [flp_height]
     datacols.items = <    
       item
         colorselect = 16767393
         colorfocused = 16767393
-        width = 5000
-        options = [co_readonly, co_nofocus, co_savevalue, co_savestate, co_mousescrollrow]
+        width = 23
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 167
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 105
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 56
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 33
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 31
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 30
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 169
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 33
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 32
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 175
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 178
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+          ''
+        )
         valuefalse = '0'
         valuetrue = '1'
       end>
+    fixrows.count = 1
+    fixrows.linecolor = -2147483645
+    fixrows.linecolorfix = -2147483645
+    fixrows.items = <    
+      item
+        linecolor = -2147483645
+        linecolorfix = -2147483645
+        height = 40
+        captions.count = 12
+        captions.items = <        
+          item
+            caption = 'N'
+            font.height = 16
+            font.name = 'stf_default'
+            font.localprops = [flp_height]
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            face.localprops = []
+            face.template = mainfo.tfacecomp3
+          end        
+          item
+            caption = #1057#1086#1086#1073#1097#1077#1085#1080#1077
+            font.height = 16
+            font.name = 'stf_default'
+            font.localprops = [flp_height]
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            face.localprops = []
+            face.template = mainfo.tfacecomp3
+          end        
+          item
+            caption = #1046#1091#1088
+            font.height = 16
+            font.name = 'stf_default'
+            font.localprops = [flp_height]
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            face.localprops = []
+            face.template = mainfo.tfacecomp3
+          end        
+          item
+            caption = #1061#1077#1091#1088#1077
+            font.height = 16
+            font.name = 'stf_default'
+            font.localprops = [flp_height]
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            face.localprops = []
+            face.template = mainfo.tfacecomp3
+          end        
+          item
+            font.height = 16
+            font.name = 'stf_default'
+            font.localprops = [flp_height]
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            face.localprops = []
+            face.template = mainfo.tfacecomp3
+          end        
+          item
+            font.height = 16
+            font.name = 'stf_default'
+            font.localprops = [flp_height]
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            face.localprops = []
+            face.template = mainfo.tfacecomp3
+          end        
+          item
+            font.height = 16
+            font.name = 'stf_default'
+            font.localprops = [flp_height]
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            face.localprops = []
+            face.template = mainfo.tfacecomp3
+          end        
+          item
+            caption = #1044#1053#1048' '#1053#1045#1044#1045#1051#1048
+            font.height = 16
+            font.name = 'stf_default'
+            font.localprops = [flp_height]
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            face.localprops = []
+            face.template = mainfo.tfacecomp3
+          end        
+          item
+            font.height = 16
+            font.name = 'stf_default'
+            font.localprops = [flp_height]
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            face.localprops = []
+            face.template = mainfo.tfacecomp3
+          end        
+          item
+            font.height = 16
+            font.name = 'stf_default'
+            font.localprops = [flp_height]
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            face.localprops = []
+            face.template = mainfo.tfacecomp3
+          end        
+          item
+            caption = #1063#1072#1089#1099
+            font.height = 16
+            font.name = 'stf_default'
+            font.localprops = [flp_height]
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            face.localprops = []
+            face.template = mainfo.tfacecomp3
+          end        
+          item
+            caption = #1044#1077#1081#1089#1090#1074#1080#1077
+            font.height = 16
+            font.name = 'stf_default'
+            font.localprops = [flp_height]
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+            face.localprops = []
+            face.template = mainfo.tfacecomp3
+          end>
+      end>
+    rowcount = 20
     gridframecolor = -2147483645
     datarowheight = 40
     oncellevent = oncelev
@@ -203,7 +698,7 @@ object elefo: telefo
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 1
-    bounds_x = 448
+    bounds_x = 544
     bounds_y = 4
     bounds_cx = 258
     bounds_cy = 37
@@ -218,7 +713,7 @@ object elefo: telefo
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 2
-    bounds_x = 88
+    bounds_x = 184
     bounds_y = 4
     bounds_cx = 282
     bounds_cy = 37
@@ -233,10 +728,10 @@ object elefo: telefo
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 3
-    bounds_x = 776
+    bounds_x = 1016
     bounds_y = 8
     bounds_cx = 42
-    bounds_cy = 21
+    bounds_cy = 29
     state = [as_localimagelist, as_localimagenr, as_localonexecute]
     glyph = stg_dbcancel
     onexecute = bclose
