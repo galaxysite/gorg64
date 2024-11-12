@@ -32,7 +32,7 @@ uses
  msesimplewidgets,msedragglob,msescrollbar,msetabs,msegraphedits,mseificomp,
  mseificompglob,mseifiglob,msekeyboard,mseedit,msestatfile,msestream,sysutils,
  msebitmap,mseimage,unix,mseact,msedataedits,msedatanodes,msedropdownlist,
- msegrids,msegridsglob,mselistbrowser,baseunix,version;
+ msegrids,msegridsglob,mselistbrowser,baseunix,version,lnglist;
 type
  tsettingsfo = class(tmseform)
    ttabwidget1: ttabwidget;
@@ -82,6 +82,8 @@ type
    usearec: tbooleaneditradio;
    tbooleanedit5: tbooleanedit;
    timage4: timage;
+   tbutton7: tbutton;
+   tpopupmenu2: tpopupmenu;
    procedure onwdbs(const sender: TObject);
    procedure oncreate(const sender: TObject);
    procedure onclose(const sender: TObject);
@@ -101,6 +103,7 @@ type
    procedure onshowclockpanel(const sender: TObject);
    procedure onexitprg(const sender: TObject);
    procedure DisplayDblA;
+   procedure DisplayLang;
    procedure dispvolume;
    procedure onaddevent(const sender: TObject);
    procedure onactionchange(const sender: TObject);
@@ -112,6 +115,8 @@ type
    procedure onspkon(const sender: TObject);
    procedure onspkoff(const sender: TObject);
    procedure wlr(const sender: TObject);
+   procedure onlangchange(const sender: TObject);
+   procedure onm2execute(const sender: TObject);
  end;
 var
  settingsfo: tsettingsfo;
@@ -141,6 +146,7 @@ mainfo.Display; if efclockpanel then clockpanelfo.Display;
 end;
 
 procedure tsettingsfo.oncreate(const sender: TObject);
+var f : Int64;
 begin
 mplayercl.text := mplayer_cl;
 arecordcl.text := arecord_cl;
@@ -158,6 +164,13 @@ tbooleanedit3.value := tun.p^.small_screen;
 DisplayDblA;
 dispvolume;
 tlabel5.caption  := tlabel5.caption + ' A'  + inttostr(archive_version);
+tpopupmenu2.menu.submenu.count := MAX_LANGS + 1;
+for f := 0 to MAX_LANGS do begin
+ tpopupmenu2.menu.submenu[f].Caption := locales_n[f];
+ tpopupmenu2.menu.submenu[f].Tag := f;
+ tpopupmenu2.menu.submenu[f].onexecute := @onm2execute;
+end;
+DisplayLang;
 end;
 
 procedure tsettingsfo.onclose(const sender: TObject);
@@ -307,6 +320,25 @@ end;
 procedure tsettingsfo.wlr(const sender: TObject);
 begin
 tun.p^.engtrue_calend_layout := tbooleanedit5.value;
+end;
+
+procedure tsettingsfo.DisplayLang;
+begin
+tbutton7.caption := locales_n[tun.p^.lang_numb];
+end;
+
+procedure tsettingsfo.onlangchange(const sender: TObject);
+var
+po: pointty;
+begin
+po.x := tbutton7.left;
+po.y := tbutton7.top;
+tpopupmenu2.show(self, po);
+end;
+
+procedure tsettingsfo.onm2execute(const sender: TObject);
+begin
+tun.p^.lang_numb := tmenuitem(sender).Tag;
 end;
 
 end.

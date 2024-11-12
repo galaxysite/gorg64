@@ -952,6 +952,17 @@ object settingsfo: tsettingsfo
           000000000000000000000000
         }
       end
+      object tbutton7: tbutton
+        face.localprops = []
+        face.template = mainfo.tfacecomp1
+        taborder = 5
+        bounds_x = 120
+        bounds_y = 365
+        bounds_cx = 650
+        bounds_cy = 28
+        state = [as_localonexecute]
+        onexecute = onlangchange
+      end
     end
     object ttabpage2: ttabpage
       frame.localprops = []
@@ -1473,5 +1484,10 @@ object settingsfo: tsettingsfo
     menu.font.localprops = [flp_style, flp_height]
     left = 536
     top = 48
+  end
+  object tpopupmenu2: tpopupmenu
+    menu.state = [as_localonexecute, as_localonafterexecute]
+    left = 456
+    top = 80
   end
 end
