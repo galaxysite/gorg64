@@ -3,7 +3,7 @@ Version: 2.0
 Architecture: amd64
 Maintainer: Alexander <aralni@mail.ru>
 Installed-Size: 60000
-Depends: libc6 (>= 2.31), sox (>= 14.4.2), mplayer|mplayer+gui, psmisc, tar (>= 1.34), alsa-utils, xmp, upx, timidity, elfkickers, ruby, libyaml-0-2
+Depends: libc6 (>= 2.31), sox (>= 14.4.2), mplayer|mplayer+gui, psmisc, tar (>= 1.34), alsa-utils, xmp, upx, timidity, ruby, libyaml-0-2
 Section: text
 Priority: optional
 Provides: mseide, ttaenc, dclockpanel, wavfix

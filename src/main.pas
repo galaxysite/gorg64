@@ -38,7 +38,7 @@ uses
  msesimplewidgets, msewidgets, msebitmap,msegraphics,time,msemenus,
  msethreadcomp, msestrings, msetypes, mseact,unix,baseunix,linux,msetimer,
  msedock,msedragglob,msewidgetgrid,msesyntaxedit,x,xlib,keysym,queue,
- ttafunctions,syscall,lng;
+ ttafunctions,syscall,lng,lnglist;
 
 procedure clipmon;
 
@@ -84,6 +84,7 @@ type
    procedure soundrec(const sender: tthreadcomp);
    procedure DisplayMuteNoact;
    procedure Display;
+   procedure ChangeLang;
    procedure doubleclick_action;
    procedure onclockpanel(const sender: TObject);
    procedure onneeds(const sender: TObject);
@@ -119,7 +120,8 @@ TTu = packed record
     ee_maximize : bytebool;
     book_left, book_top, book_width, book_height : integer;
     book_maximize : bytebool;
-    f_force_reboot, f_force_off, engtrue_calend_layout{f_pwr_off} : bytebool;
+    {f_force_reboot}lang_numb : byte;
+    f_force_off, engtrue_calend_layout{f_pwr_off} : bytebool;
     main_fixation : bytebool;
     main_doubleclick_action : Int64;
     flash_left, flash_top, flash_width, flash_height : SmallInt;
@@ -352,22 +354,45 @@ begin
 AppClose;
 end;
 
+function DetectLang : byte;
+var f, dot, at : Int64;
+tmp : msestring = '';
+l : msestring = '';
+begin
+l := GetEnvironmentVariable('LANG');
+dot := Pos('.',l);
+at := Pos('@',l);
+if at <> 0 then tmp := Copy(l, at, Length(l)-at+1);
+if dot <> 0 then l := Copy(l, 1, dot - 1) + tmp;
+for f := 0 to MAX_LANGS do if locales_s[f] = l then Exit(f);
+Exit(0);
+end;
+
+procedure tmainfo.ChangeLang;
+var f : Int64;
+begin
+lang := locales_s[tun.p^.lang_numb];
+if lang = 'ru_RU' then begin ruenv := true; tbutton2.left := tbutton2.left - 50; tbutton2.width := tbutton2.width + 50; for f := 1 to 12 do case f of 1: mon_names[f] := 'ЯНВАРЬ'; 2: mon_names[f] := 'ФЕВРАЛЬ'; 3: mon_names[f] := 'МАРТ'; 4: mon_names[f] := 'АПРЕЛЬ'; 5: mon_names[f] := 'МАЙ'; 6: mon_names[f] := 'ИЮНЬ'; 7 : mon_names[f] := 'ИЮЛЬ'; 8: mon_names[f] := 'АВГУСТ'; 9: mon_names[f] := 'СЕНТЯБРЬ'; 10: mon_names[f] := 'ОКТЯБРЬ'; 11: mon_names[f] := 'НОЯБРЬ'; 12 : mon_names[f] := 'ДЕКАБРЬ'; end; end else ruenv := false;
+lang := '/usr/share/doc/gorg64/' + lang + '.txt';
+LoadLng(lang);
+if str_editevents <> '' then mainfo.tpopupmenu1.menu.items[3].caption := str_editevents;
+if str_addevent <> '' then mainfo.tpopupmenu1.menu.items[4].caption := str_addevent;
+if str_notebook <> '' then mainfo.tpopupmenu1.menu.items[5].caption := str_notebook;
+if str_addpeople <> '' then mainfo.tpopupmenu1.menu.items[6].caption := str_addpeople;
+if str_addorganization <> '' then mainfo.tpopupmenu1.menu.items[7].caption := str_addorganization;
+if str_help <> '' then mainfo.tpopupmenu1.menu.items[8].caption := str_help;
+if str_settings <> '' then mainfo.tpopupmenu1.menu.items[9].caption := str_settings;
+if str_flash <> '' then mainfo.tpopupmenu1.menu.items[10].caption := str_flash;
+if str_yearlist <> '' then mainfo.tpopupmenu1.menu.items[11].caption := str_yearlist;
+if str_clockpanel <> '' then mainfo.tpopupmenu1.menu.items[12].caption := str_clockpanel;
+if str_quit <> '' then mainfo.tpopupmenu1.menu.items[13].caption := str_quit;
+end;
+
 procedure tmainfo.oncreate(Const Sender: TObject);
 var f : Int64;
 begin
 mse_radiuscorner := 30;
 //tbutton1.visible := false;
-lang := GetEnvironmentVariable('LANG');
-for f := 1 to Length(lang) do begin
-if lang[f] = '.' then begin
-lang := Copy(lang, 1, f-1);
-break;
-end;
-end;
-if lang = 'ru_RU' then begin ruenv := true; tbutton2.left := tbutton2.left - 50; tbutton2.width := tbutton2.width + 50; for f := 1 to 12 do case f of 1: mon_names[f] := 'ЯНВАРЬ'; 2: mon_names[f] := 'ФЕВРАЛЬ'; 3: mon_names[f] := 'МАРТ'; 4: mon_names[f] := 'АПРЕЛЬ'; 5: mon_names[f] := 'МАЙ'; 6: mon_names[f] := 'ИЮНЬ'; 7 : mon_names[f] := 'ИЮЛЬ'; 8: mon_names[f] := 'АВГУСТ'; 9: mon_names[f] := 'СЕНТЯБРЬ'; 10: mon_names[f] := 'ОКТЯБРЬ'; 11: mon_names[f] := 'НОЯБРЬ'; 12 : mon_names[f] := 'ДЕКАБРЬ'; end; end;
-lang := '/usr/share/doc/gorg64/' + lang + '.txt';
-//lang := './lang_s/ru_RU.txt';
-LoadLng(lang);
 homedir := GetEnvironmentVariable('HOME') + '/';
 workdir := homedir + workdir + '/';
 musicdir := workdir + musicdir + '/';
@@ -401,21 +426,10 @@ LoadClFile(rec_fn, rec_cl);
 LoadClFile(xmp_fn, xmp_cl);
 LoadClFile(mplayer_fn, mplayer_cl);
 
-if str_editevents <> '' then mainfo.tpopupmenu1.menu.items[3].caption := str_editevents;
-if str_addevent <> '' then mainfo.tpopupmenu1.menu.items[4].caption := str_addevent;
-if str_notebook <> '' then mainfo.tpopupmenu1.menu.items[5].caption := str_notebook;
-if str_addpeople <> '' then mainfo.tpopupmenu1.menu.items[6].caption := str_addpeople;
-if str_addorganization <> '' then mainfo.tpopupmenu1.menu.items[7].caption := str_addorganization;
-if str_help <> '' then mainfo.tpopupmenu1.menu.items[8].caption := str_help;
-if str_settings <> '' then mainfo.tpopupmenu1.menu.items[9].caption := str_settings;
-if str_flash <> '' then mainfo.tpopupmenu1.menu.items[10].caption := str_flash;
-if str_clockpanel <> '' then mainfo.tpopupmenu1.menu.items[11].caption := str_clockpanel;
-if str_yearlist <> '' then mainfo.tpopupmenu1.menu.items[12].caption := str_yearlist;
-if str_quit <> '' then mainfo.tpopupmenu1.menu.items[13].caption := str_quit;
-
-//fpSystem('cp '+gorgfile+ ' '+gorgfile+'.begin');
-
 Tun.Load;
+
+ChangeLang;
+
 DisplayMuteNoact;
 Tun.SetFixation(Tun.fixation);
 left := tun.p^.main_left; top := tun.p^.main_top;
@@ -865,6 +879,7 @@ with t do begin
  engtrue_hour_fmt    := false;
  engtrue_calend_fmt := Byte(PChar(nl_langinfo(_NL_TIME_FIRST_WEEKDAY))^) <> 2; // false;
  engtrue_calend_layout := false;
+ lang_numb := DetectLang;
  flash_accmulate := false;
  main_doubleclick_action := 0;
  am_pm[true] := am_hour_pm[true];

@@ -37,7 +37,7 @@ deb:
 	find ./usr/ -type f -exec chmod =00644 '{}' \;
 	find usr/ -type f -exec md5sum \{\} \; > md5sums
 	chmod =00644 md5sums usr/share/doc/gorg64/* usr/share/man/man1/*
-	chmod =00755 usr/bin/*
+	chmod =00755 usr/bin/* debian/post*
 	chmod =00644 ./debian/control
 	-rm -f control.tar.xz data.tar.zst data.tar.xz data.tar data.tar.bz2
 	cd debian && tar -c --owner=root --group=root -f ../control.tar postinst postrm control ../md5sums
