@@ -1,8 +1,8 @@
 object mainfo: tmainfo
   optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_subfocus, ow_mousewheel, ow_noscroll, ow_destroywidgets, ow_hinton]
   color = -2147483645
-  bounds_x = 311
-  bounds_y = 256
+  bounds_x = 303
+  bounds_y = 316
   bounds_cx = 750
   bounds_cy = 54
   container.optionsskin = [osk_noclientsize]
@@ -143,6 +143,7 @@ object mainfo: tmainfo
   }
   windowopacity = 1
   oncreate = oncreate
+  oneventloopstart = onloopev
   moduleclassname = 'tmainform'
   object tpaintbox1: tpaintbox
     optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_mousewheel, ow_noscroll, ow_destroywidgets]
@@ -219,7 +220,9 @@ object mainfo: tmainfo
     bounds_y = 7
     bounds_cx = 40
     bounds_cy = 40
-    state = [as_localcaption, as_localcolor, as_localonexecute]
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
+    imagelist = timagelist2
+    imagenr = 0
     onexecute = onbutton
   end
   object tthreadcomp3: tthreadcomp

@@ -98,6 +98,7 @@ type
    procedure onyearlist(const sender: TObject);
    procedure onbutton(const sender: TObject);
    procedure onpaintev(const sender: twidget; const acanvas: tcanvas);
+   procedure onloopev(const sender: TObject);
   end;
 
   TTW = packed record
@@ -927,6 +928,26 @@ begin
    acanvas.drawarc(mp(15, Height - 16), 15, pi, pi/2 , cl_gray );
    acanvas.drawarc(mp(width - 15,15), 15, 0, pi / 2, cl_gray );
    acanvas.drawarc(mp(width - 15, Height - 16), 15, 0, -pi/2 , cl_gray );   
+end;
+
+procedure tmainfo.onloopev(const sender: TObject);
+begin
+if tun.p^.main_doubleclick_action = 0 then
+mainfo.tbutton2.imagenr := 0 else
+if tun.p^.main_doubleclick_action = 1 then
+mainfo.tbutton2.imagenr := 5 else
+if tun.p^.main_doubleclick_action = 2 then
+mainfo.tbutton2.imagenr := 5 else
+if tun.p^.main_doubleclick_action = 3 then
+mainfo.tbutton2.imagenr := 6 else
+if tun.p^.main_doubleclick_action = 4 then
+mainfo.tbutton2.imagenr := 9 else
+if tun.p^.main_doubleclick_action = 5 then
+mainfo.tbutton2.imagenr := 4 else
+if tun.p^.main_doubleclick_action = 6 then
+mainfo.tbutton2.imagenr := 1 else
+if tun.p^.main_doubleclick_action = 7 then
+mainfo.tbutton2.imagenr := 2;
 end;
 
 initialization

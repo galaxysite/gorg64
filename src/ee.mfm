@@ -3,8 +3,8 @@ object eefo: teefo
   frame.localprops = []
   frame.localprops1 = []
   frame.template = tframecomp2
-  bounds_x = 206
-  bounds_y = 189
+  bounds_x = 137
+  bounds_y = 115
   bounds_cx = 1074
   bounds_cy = 673
   container.frame.localprops = []
@@ -123,6 +123,68 @@ object eefo: teefo
   onkeydown = keydown
   onkeyup = keyup
   moduleclassname = 'tmseform'
+  object tdropdownlistedit1: tdropdownlistedit
+    frame.caption = ' '#1057#1086#1086#1073#1097#1077#1085#1080#1077' | Messages'
+    frame.captiondist = 6
+    frame.font.height = 16
+    frame.font.name = 'stf_default'
+    frame.font.localprops = [flp_style, flp_height]
+    frame.localprops = []
+    frame.localprops1 = [frl1_captiondist]
+    frame.template = tframecomp2
+    frame.button.face.fade_pos.count = 2
+    frame.button.face.fade_pos.items = (
+      0
+      1
+    )
+    frame.button.face.fade_color.count = 2
+    frame.button.face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    frame.button.face.fade_direction = gd_down
+    frame.button.face.localprops = []
+    frame.button.frame.localprops = []
+    frame.button.frame.localprops1 = []
+    frame.button.frame.template = tframecomp2
+    frame.buttons.count = 1
+    frame.buttons.items = <    
+      item
+        face.fade_pos.count = 2
+        face.fade_pos.items = (
+          0
+          1
+        )
+        face.fade_color.count = 2
+        face.fade_color.items = (
+          -1610612730
+          12895487
+        )
+        face.fade_direction = gd_down
+        face.localprops = []
+        frame.localprops = []
+        frame.localprops1 = []
+        frame.template = tframecomp2
+      end>
+    frame.outerframe = (
+      0
+      27
+      0
+      0
+    )
+    bounds_x = 8
+    bounds_y = 593
+    bounds_cx = 795
+    bounds_cy = 65
+    anchors = [an_left, an_right, an_bottom]
+    ontextedited = ontextedited
+    dropdown.cols.count = 1
+    dropdown.cols.items = <    
+      item
+      end>
+    onafterclosedropdown = onafterclosedropdown
+    reffontheight = 32
+  end
   object tstringdisp2: tstringdisp
     color = 12763842
     frame.localprops = []
@@ -742,57 +804,6 @@ object eefo: teefo
     caption = '0'
     onexecute = m0
   end
-  object tdropdownlistedit1: tdropdownlistedit
-    frame.localprops = []
-    frame.localprops1 = []
-    frame.template = tframecomp2
-    frame.button.face.fade_pos.count = 2
-    frame.button.face.fade_pos.items = (
-      0
-      1
-    )
-    frame.button.face.fade_color.count = 2
-    frame.button.face.fade_color.items = (
-      -1610612730
-      12895487
-    )
-    frame.button.face.fade_direction = gd_down
-    frame.button.face.localprops = []
-    frame.button.frame.localprops = []
-    frame.button.frame.localprops1 = []
-    frame.button.frame.template = tframecomp2
-    frame.buttons.count = 1
-    frame.buttons.items = <    
-      item
-        face.fade_pos.count = 2
-        face.fade_pos.items = (
-          0
-          1
-        )
-        face.fade_color.count = 2
-        face.fade_color.items = (
-          -1610612730
-          12895487
-        )
-        face.fade_direction = gd_down
-        face.localprops = []
-        frame.localprops = []
-        frame.localprops1 = []
-        frame.template = tframecomp2
-      end>
-    bounds_x = 8
-    bounds_y = 620
-    bounds_cx = 797
-    bounds_cy = 38
-    anchors = [an_left, an_right, an_bottom]
-    ontextedited = ontextedited
-    dropdown.cols.count = 1
-    dropdown.cols.items = <    
-      item
-      end>
-    onafterclosedropdown = onafterclosedropdown
-    reffontheight = 32
-  end
   object trichbutton4: trichbutton
     frame.localprops = []
     frame.localprops1 = []
@@ -810,7 +821,7 @@ object eefo: teefo
     face.fade_direction = gd_down
     face.localprops = []
     taborder = 42
-    bounds_x = 96
+    bounds_x = 368
     bounds_y = 582
     bounds_cx = 34
     bounds_cy = 32
@@ -837,7 +848,7 @@ object eefo: teefo
     face.fade_direction = gd_down
     face.localprops = []
     taborder = 43
-    bounds_x = 56
+    bounds_x = 324
     bounds_y = 582
     bounds_cx = 34
     bounds_cy = 32
@@ -864,7 +875,7 @@ object eefo: teefo
     face.fade_direction = gd_down
     face.localprops = []
     taborder = 44
-    bounds_x = 16
+    bounds_x = 280
     bounds_y = 582
     bounds_cx = 34
     bounds_cy = 32
@@ -883,7 +894,7 @@ object eefo: teefo
     taborder = 45
     hint = #1059#1076#1072#1083#1080#1090#1100
     bounds_x = 280
-    bounds_y = 560
+    bounds_y = 550
     bounds_cx = 26
     bounds_cy = 26
     anchors = [an_left, an_bottom]
@@ -898,7 +909,7 @@ object eefo: teefo
     taborder = 46
     hint = #1042#1099#1082#1083#1102#1095#1080#1090#1100
     bounds_x = 344
-    bounds_y = 560
+    bounds_y = 550
     bounds_cx = 26
     bounds_cy = 26
     anchors = [an_left, an_bottom]
@@ -913,7 +924,7 @@ object eefo: teefo
     taborder = 47
     hint = #1058#1086#1083#1100#1082#1086' '#1089#1077#1081#1095#1072#1089
     bounds_x = 376
-    bounds_y = 560
+    bounds_y = 550
     bounds_cx = 26
     bounds_cy = 26
     anchors = [an_left, an_bottom]
@@ -928,7 +939,7 @@ object eefo: teefo
     taborder = 48
     hint = #1055#1086#1082#1072#1079#1072#1090#1100' '#1089#1086#1086#1073#1097#1077#1085#1080#1077
     bounds_x = 312
-    bounds_y = 560
+    bounds_y = 550
     bounds_cx = 26
     bounds_cy = 26
     anchors = [an_left, an_bottom]
@@ -1238,7 +1249,7 @@ object eefo: teefo
     face.localprops = []
     taborder = 67
     bounds_x = 742
-    bounds_y = 552
+    bounds_y = 550
     bounds_cx = 320
     bounds_cy = 44
     anchors = [an_right, an_bottom]
@@ -1886,7 +1897,7 @@ object eefo: teefo
     face.localprops = []
     taborder = 111
     bounds_x = 412
-    bounds_y = 552
+    bounds_y = 550
     bounds_cx = 320
     bounds_cy = 44
     anchors = [an_right, an_bottom]

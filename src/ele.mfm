@@ -1,16 +1,16 @@
 object elefo: telefo
   color = 15790320
-  bounds_x = 272
-  bounds_y = 235
-  bounds_cx = 843
-  bounds_cy = 566
+  bounds_x = 140
+  bounds_y = 126
+  bounds_cx = 1077
+  bounds_cy = 576
   container.frame.localprops = []
   container.frame.localprops1 = []
   container.bounds = (
     0
     0
-    843
-    566
+    1077
+    576
   )
   font.height = 20
   font.name = 'stf_default'
@@ -20,6 +20,7 @@ object elefo: telefo
   fontempty.name = 'stf_empty'
   fontempty.localprops = [flp_style, flp_height]
   options = [fo_freeonclose, fo_screencentered, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
+  caption = #1056#1077#1076#1072#1082#1090#1080#1088#1086#1074#1072#1090#1100' '#1089#1086#1073#1099#1090#1080#1077' | Edit event'
   icon.options = [bmo_masked, bmo_graymask]
   icon.origformat = 'png'
   icon.image = {
@@ -169,28 +170,158 @@ object elefo: telefo
     face.localprops = []
     face.template = mainfo.tfacecomp3
     bounds_x = 4
-    bounds_y = 48
-    bounds_cx = 834
-    bounds_cy = 515
+    bounds_y = 46
+    bounds_cx = 1068
+    bounds_cy = 520
     anchors = [an_left, an_top, an_right, an_bottom]
     font.height = 30
     font.name = 'stf_default'
     font.localprops = [flp_style, flp_height]
     optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
-    datacols.count = 1
+    datacols.count = 12
     datacols.colorselect = 16767393
     datacols.colorfocused = 16767393
-    datacols.width = 5000
-    datacols.options = [co_readonly, co_nofocus, co_savevalue, co_savestate, co_mousescrollrow]
+    datacols.width = 72
+    datacols.options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+    datacols.font.height = 16
+    datacols.font.name = 'stf_default'
+    datacols.font.localprops = [flp_height]
     datacols.items = <    
       item
         colorselect = 16767393
         colorfocused = 16767393
-        width = 5000
-        options = [co_readonly, co_nofocus, co_savevalue, co_savestate, co_mousescrollrow]
+        width = 32
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 220
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 105
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 56
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 208
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 220
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 220
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 220
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 75
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 32
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 220
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 220
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
+          ''
+        )
         valuefalse = '0'
         valuetrue = '1'
       end>
+    fixrows.linecolor = -2147483645
+    fixrows.linecolorfix = -2147483645
+    rowcount = 1
     gridframecolor = -2147483645
     datarowheight = 40
     oncellevent = oncelev
@@ -203,10 +334,10 @@ object elefo: telefo
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 1
-    bounds_x = 448
+    bounds_x = 544
     bounds_y = 4
     bounds_cx = 258
-    bounds_cy = 37
+    bounds_cy = 36
     state = [as_localcaption, as_localonexecute]
     caption = #1059#1076#1072#1083#1080#1090#1100' | Delete'
     onexecute = butex
@@ -218,7 +349,7 @@ object elefo: telefo
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 2
-    bounds_x = 88
+    bounds_x = 184
     bounds_y = 4
     bounds_cx = 282
     bounds_cy = 37
@@ -233,10 +364,10 @@ object elefo: telefo
     face.localprops = []
     face.template = mainfo.tfacecomp1
     taborder = 3
-    bounds_x = 776
-    bounds_y = 8
+    bounds_x = 1016
+    bounds_y = 4
     bounds_cx = 42
-    bounds_cy = 21
+    bounds_cy = 36
     state = [as_localimagelist, as_localimagenr, as_localonexecute]
     glyph = stg_dbcancel
     onexecute = bclose
