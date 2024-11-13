@@ -194,25 +194,6 @@ object elefo: telefo
         options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
         datalist.data = (
           ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
         )
         valuefalse = '0'
         valuetrue = '1'
@@ -220,28 +201,9 @@ object elefo: telefo
       item
         colorselect = 16767393
         colorfocused = 16767393
-        width = 166
+        width = 220
         options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
         datalist.data = (
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
           ''
         )
         valuefalse = '0'
@@ -254,25 +216,6 @@ object elefo: telefo
         options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
         datalist.data = (
           ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
         )
         valuefalse = '0'
         valuetrue = '1'
@@ -284,24 +227,16 @@ object elefo: telefo
         options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
         datalist.data = (
           ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 208
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
           ''
         )
         valuefalse = '0'
@@ -310,28 +245,9 @@ object elefo: telefo
       item
         colorselect = 16767393
         colorfocused = 16767393
-        width = 33
+        width = 220
         options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
         datalist.data = (
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
           ''
         )
         valuefalse = '0'
@@ -340,28 +256,9 @@ object elefo: telefo
       item
         colorselect = 16767393
         colorfocused = 16767393
-        width = 31
+        width = 220
         options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
         datalist.data = (
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
           ''
         )
         valuefalse = '0'
@@ -370,28 +267,9 @@ object elefo: telefo
       item
         colorselect = 16767393
         colorfocused = 16767393
-        width = 30
+        width = 220
         options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
         datalist.data = (
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
           ''
         )
         valuefalse = '0'
@@ -400,58 +278,9 @@ object elefo: telefo
       item
         colorselect = 16767393
         colorfocused = 16767393
-        width = 169
+        width = 75
         options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
         datalist.data = (
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-        )
-        valuefalse = '0'
-        valuetrue = '1'
-      end    
-      item
-        colorselect = 16767393
-        colorfocused = 16767393
-        width = 33
-        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
-        datalist.data = (
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
           ''
         )
         valuefalse = '0'
@@ -464,24 +293,16 @@ object elefo: telefo
         options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
         datalist.data = (
           ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
+        )
+        valuefalse = '0'
+        valuetrue = '1'
+      end    
+      item
+        colorselect = 16767393
+        colorfocused = 16767393
+        width = 220
+        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
+        datalist.data = (
           ''
         )
         valuefalse = '0'
@@ -490,202 +311,17 @@ object elefo: telefo
       item
         colorselect = 16767393
         colorfocused = 16767393
-        width = 167
+        width = 220
         options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
         datalist.data = (
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-        )
-        valuefalse = '0'
-        valuetrue = '1'
-      end    
-      item
-        colorselect = 16767393
-        colorfocused = 16767393
-        width = 178
-        options = [co_readonly, co_focusselect, co_rowselect, co_savevalue, co_savestate, co_mousescrollrow]
-        datalist.data = (
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
-          ''
           ''
         )
         valuefalse = '0'
         valuetrue = '1'
       end>
-    fixrows.count = 1
     fixrows.linecolor = -2147483645
     fixrows.linecolorfix = -2147483645
-    fixrows.items = <    
-      item
-        linecolor = -2147483645
-        linecolorfix = -2147483645
-        height = 40
-        captions.count = 12
-        captions.items = <        
-          item
-            caption = 'N'
-            font.height = 16
-            font.name = 'stf_default'
-            font.localprops = [flp_height]
-            frame.localprops = []
-            frame.localprops1 = []
-            frame.template = mainfo.tframecomp2
-            face.localprops = []
-            face.template = mainfo.tfacecomp3
-          end        
-          item
-            caption = #1057#1086#1086#1073#1097#1077#1085#1080#1077
-            font.height = 16
-            font.name = 'stf_default'
-            font.localprops = [flp_height]
-            frame.localprops = []
-            frame.localprops1 = []
-            frame.template = mainfo.tframecomp2
-            face.localprops = []
-            face.template = mainfo.tfacecomp3
-          end        
-          item
-            caption = #1046#1091#1088
-            font.height = 16
-            font.name = 'stf_default'
-            font.localprops = [flp_height]
-            frame.localprops = []
-            frame.localprops1 = []
-            frame.template = mainfo.tframecomp2
-            face.localprops = []
-            face.template = mainfo.tfacecomp3
-          end        
-          item
-            caption = #1061#1077#1091#1088#1077
-            font.height = 16
-            font.name = 'stf_default'
-            font.localprops = [flp_height]
-            frame.localprops = []
-            frame.localprops1 = []
-            frame.template = mainfo.tframecomp2
-            face.localprops = []
-            face.template = mainfo.tfacecomp3
-          end        
-          item
-            font.height = 16
-            font.name = 'stf_default'
-            font.localprops = [flp_height]
-            frame.localprops = []
-            frame.localprops1 = []
-            frame.template = mainfo.tframecomp2
-            face.localprops = []
-            face.template = mainfo.tfacecomp3
-          end        
-          item
-            font.height = 16
-            font.name = 'stf_default'
-            font.localprops = [flp_height]
-            frame.localprops = []
-            frame.localprops1 = []
-            frame.template = mainfo.tframecomp2
-            face.localprops = []
-            face.template = mainfo.tfacecomp3
-          end        
-          item
-            font.height = 16
-            font.name = 'stf_default'
-            font.localprops = [flp_height]
-            frame.localprops = []
-            frame.localprops1 = []
-            frame.template = mainfo.tframecomp2
-            face.localprops = []
-            face.template = mainfo.tfacecomp3
-          end        
-          item
-            caption = #1044#1053#1048' '#1053#1045#1044#1045#1051#1048
-            font.height = 16
-            font.name = 'stf_default'
-            font.localprops = [flp_height]
-            frame.localprops = []
-            frame.localprops1 = []
-            frame.template = mainfo.tframecomp2
-            face.localprops = []
-            face.template = mainfo.tfacecomp3
-          end        
-          item
-            font.height = 16
-            font.name = 'stf_default'
-            font.localprops = [flp_height]
-            frame.localprops = []
-            frame.localprops1 = []
-            frame.template = mainfo.tframecomp2
-            face.localprops = []
-            face.template = mainfo.tfacecomp3
-          end        
-          item
-            font.height = 16
-            font.name = 'stf_default'
-            font.localprops = [flp_height]
-            frame.localprops = []
-            frame.localprops1 = []
-            frame.template = mainfo.tframecomp2
-            face.localprops = []
-            face.template = mainfo.tfacecomp3
-          end        
-          item
-            caption = #1063#1072#1089#1099
-            font.height = 16
-            font.name = 'stf_default'
-            font.localprops = [flp_height]
-            frame.localprops = []
-            frame.localprops1 = []
-            frame.template = mainfo.tframecomp2
-            face.localprops = []
-            face.template = mainfo.tfacecomp3
-          end        
-          item
-            caption = #1044#1077#1081#1089#1090#1074#1080#1077
-            font.height = 16
-            font.name = 'stf_default'
-            font.localprops = [flp_height]
-            frame.localprops = []
-            frame.localprops1 = []
-            frame.template = mainfo.tframecomp2
-            face.localprops = []
-            face.template = mainfo.tfacecomp3
-          end>
-      end>
-    rowcount = 20
+    rowcount = 1
     gridframecolor = -2147483645
     datarowheight = 40
     oncellevent = oncelev
@@ -701,7 +337,7 @@ object elefo: telefo
     bounds_x = 544
     bounds_y = 4
     bounds_cx = 258
-    bounds_cy = 37
+    bounds_cy = 36
     state = [as_localcaption, as_localonexecute]
     caption = #1059#1076#1072#1083#1080#1090#1100' | Delete'
     onexecute = butex
@@ -729,9 +365,9 @@ object elefo: telefo
     face.template = mainfo.tfacecomp1
     taborder = 3
     bounds_x = 1016
-    bounds_y = 8
+    bounds_y = 4
     bounds_cx = 42
-    bounds_cy = 29
+    bounds_cy = 36
     state = [as_localimagelist, as_localimagenr, as_localonexecute]
     glyph = stg_dbcancel
     onexecute = bclose

@@ -112,6 +112,8 @@ procedure telefo.butex(const sender: TObject);
 var sel : Int64;
 begin
 sel := Focus; if sel > -1 then org.Delete(sel);
+tstringgrid1.invalidatewidget;
+tstringgrid1.setfocus;
 end;
 
 procedure telefo.oneditbut(const sender: TObject);
