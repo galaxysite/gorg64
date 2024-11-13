@@ -27,6 +27,7 @@ program gorg64_spktone;
 {$ASMMODE INTEL}
 {$CODEPAGE UTF8}
 {$RANGECHECKS ON}
+{$linklib c}
 uses spkunit,generator,sysutils,unix,baseunix,linux;
 var p1, p2 : string;
 pc, f,p2i :  Int64;

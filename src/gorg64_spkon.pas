@@ -24,6 +24,7 @@ program gorg64_spkon;
 }
 
 {$MODE OBJFPC}
+{$linklib c}
 uses spkunit,generator;
 begin
 gspkon;

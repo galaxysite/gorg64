@@ -24,6 +24,7 @@ program gorg64_spkoff;
 }
 
 {$MODE OBJFPC}
+{$linklib c}
 uses spkunit,generator;
 begin
 gspkoff;

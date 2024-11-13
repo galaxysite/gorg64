@@ -5,6 +5,7 @@ program gorg64_spkplay;
 {$LONGSTRINGS ON}
 {$SMARTLINK ON}
 {$ASMMODE INTEL}
+{$linklib c}
 
 {
     Program for playing melodys on PC-Speaker.

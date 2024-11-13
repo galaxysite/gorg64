@@ -27,6 +27,7 @@ program gorg64_runner;
 {$H+}
 //{$RANGECHECK ON}
 {$SMARTLINK ON}
+{$linklib c}
 
 uses unix,baseunix;
 

@@ -1,5 +1,6 @@
 {$H+}
 {$MODE OBJFPC}
+{$linklib c}
 
 {
     Extract version from archive.
