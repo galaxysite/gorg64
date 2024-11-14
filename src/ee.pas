@@ -164,8 +164,6 @@ type
    trichstockglyphbutton8: trichstockglyphbutton;
    tframecomp2: tframecomp;
    byear: tbutton;
-   tstringdisp1: tstringdisp;
-   tstringdisp2: tstringdisp;
    tfacecomp1: tfacecomp;
    procedure oncr(const sender: TObject);
    procedure play(const sender: TObject);
@@ -432,8 +430,11 @@ end;
 end;
 
 tfilelistview1.path := sounddir;
+tfilelistview1.frame.caption := sounddir;
 tfilelistview2.path := musicdir;
+tfilelistview2.frame.caption := musicdir;
 tfilelistview3.path := scriptdir;
+tfilelistview3.frame.caption := scriptdir;
 
 if eefoindex = -1 then gev.ForNew else gev := org.w[eefoindex];
 byear.caption := IntToStr(gev.year);
@@ -454,12 +455,27 @@ DisplayWD;
 tfilelistview1.selectednames := gev.sounds;
 tfilelistview2.selectednames := gev.musics;
 tfilelistview3.selectednames := gev.scripts;
-
 if str_event <> '' then Caption := str_event;
-if str_disable <> '' then beDisable.hint := str_disable;
-if str_deleteafteruse <> '' then tbooleanedit8.hint := str_deleteafteruse;
-if str_realtime <> '' then beRealTime.hint := str_realtime;
-if str_showmessage <> '' then tbooleanedit12.hint := str_showmessage;
+if str_disable <> '' then
+begin
+ beDisable.hint := str_disable;
+ beDisable.frame.caption := str_disable;
+end;
+if str_deleteafteruse <> '' then
+begin
+ tbooleanedit8.hint := str_deleteafteruse;
+ tbooleanedit8.frame.caption := str_deleteafteruse;
+end; 
+if str_realtime <> '' then
+begin
+ beRealTime.hint := str_realtime;
+ beRealTime.frame.caption := str_realtime;
+end;
+if str_showmessage <> '' then 
+begin
+ tbooleanedit12.hint := str_showmessage;
+ tbooleanedit12.frame.caption := str_showmessage;
+end;
 if str_clockpanel <> '' then begin tbutton3.Hint := str_clockpanel; tbutton3.caption := str_clockpanel; end;
 if str_shutdown <> '' then tbutton44.Hint := str_shutdown;
 if str_per[c_oneshot] <> '' then tpopupmenu4.menu.submenu[c_oneshot].Caption := str_per[c_oneshot];
@@ -544,8 +560,8 @@ tmp := dm(f);
 if gev.day = f then tmp.color := $EFEF00 else tmp.color := cl_white;
 
  {L} if tun.p^.engtrue_calend_layout then begin
-if col = 0 then tmp.left := offset * 50 + 270 + (f-1) * 50 else begin
-tmp.left := ret * 50 + 270;
+if col = 0 then tmp.left := (offset * 50 + 270 + (f-1) * 50) else begin
+tmp.left := (ret * 50 + 270);
 if ret < 6 then inc(ret) else ret := 0;
 end;
 tmp.top := 48 + 48 * col;
@@ -766,7 +782,7 @@ for f := 0 to High(s) do deletefile(sounddir + extractfilename(s[f]));
 tfilelistview1.path := sounddir;
 end;
 
-procedure teefo.bclockpanel(const sender: TObject);
+procedure teefo.bclockpanel(const sender: TObject); 
 begin
 if gev.clockpanel < 2 then inc(gev.clockpanel) else gev.clockpanel := 0;
 DisplayClockPanel;
