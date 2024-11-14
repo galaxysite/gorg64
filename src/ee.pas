@@ -364,7 +364,6 @@ procedure teefo.oncr(const sender: TObject);
 var f, ff : LongInt;
 s : msestringarty;
 a : array[0..6] of Int64;
-e : integer = 4;
 begin
 if ruenv then begin font.height := 34; tlabel1.font.height := 40; end;
 mo1.caption := '1 ' + mon_names[1];
@@ -397,19 +396,19 @@ if tun.p^.engtrue_calend_layout then begin
 	wd7.caption := wd7.caption[1]; wd7.width := md1.width; wd7.top := wd1.top;
 wd1.hint := wdn[1];wd2.hint := wdn[2];wd3.hint := wdn[3];wd4.hint := wdn[4];wd5.hint := wdn[5];wd6.hint := wdn[6];wd7.hint := wdn[7];
 	if tun.p^.engtrue_calend_fmt then begin
-wd1.left := wd1.left + wd1.width + e;
-wd2.left := wd1.left + wd1.width + e;
-wd3.left := wd2.left + wd1.width + e;
-wd4.left := wd3.left + wd1.width + e;
-wd5.left := wd4.left + wd1.width + e;
-wd6.left := wd5.left + wd1.width + e;
+wd1.left := wd1.left + wd1.width;
+wd2.left := wd1.left + wd1.width;
+wd3.left := wd2.left + wd1.width;
+wd4.left := wd3.left + wd1.width;
+wd5.left := wd4.left + wd1.width;
+wd6.left := wd5.left + wd1.width;
 	end else begin
-wd2.left := wd1.left + wd1.width + e;
-wd3.left := wd2.left + wd1.width + e;
-wd4.left := wd3.left + wd1.width + e;
-wd5.left := wd4.left + wd1.width + e;
-wd6.left := wd5.left + wd1.width + e;
-wd7.left := wd6.left + wd1.width + e;
+wd2.left := wd1.left + wd1.width;
+wd3.left := wd2.left + wd1.width;
+wd4.left := wd3.left + wd1.width;
+wd5.left := wd4.left + wd1.width;
+wd6.left := wd5.left + wd1.width;
+wd7.left := wd6.left + wd1.width;
 	end;
 end else begin
 if tun.p^.engtrue_calend_fmt then begin
@@ -531,7 +530,7 @@ DisplayDay;
 end;
 
 procedure teefo.DisplayDay;
-var offset, ret, col, f, e : Int64;
+var offset, ret, col, f : Int64;
 tmp : tbutton;
 function dm(i : LongInt) : tbutton;
 begin
@@ -561,8 +560,8 @@ tmp := dm(f);
 if gev.day = f then tmp.color := $EFEF00 else tmp.color := cl_white;
 
  {L} if tun.p^.engtrue_calend_layout then begin
-if col = 0 then tmp.left := e + (offset * 50 + 270 + (f-1) * 50) else begin
-tmp.left := e + (ret * 50 + 270);
+if col = 0 then tmp.left := (offset * 50 + 270 + (f-1) * 50) else begin
+tmp.left := (ret * 50 + 270);
 if ret < 6 then inc(ret) else ret := 0;
 end;
 tmp.top := 48 + 48 * col;
@@ -571,7 +570,7 @@ if col = 0 then tmp.top := offset * {24}48 + {32 +} (f-1) * {24}48 else begin
 tmp.top := ret * {24}48 {+ 32};
 if ret < 6 then inc(ret) else ret := 0;
 end;
-tmp.left := {144}372  + {32} 50 * col;
+tmp.left := {144}368  + {32} 50 * col;
  {L} end;
 
 if ((f+offset) mod 7) = 0 then inc(col);
