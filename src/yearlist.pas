@@ -31,7 +31,7 @@ onetime : boolean;
  
 implementation
 uses
- yearlist_mfm;
+ yearlist_mfm, lng;
 procedure tyearlistfo.keyup(const sender: twidget; var ainfo: keyeventinfoty);
 begin
 if ainfo.key = key_Escape then Close;
@@ -57,13 +57,21 @@ end;
 procedure tyearlistfo.onl(const sender: TObject);
   var
       f, ff, c : LongInt;
+      aDate : TDateTime;
+      aYear, aMonth, aDay : Word; 
+      day    : string;
 begin
 c := 0;
 {$WARNINGS OFF}
+DecodeDate(now, aYear, aMonth, aDay);
+caption := str_yearlist + ' ' + inttostr(aYear);
 for f := 1 to 12 do
-    for ff := 1 to md[f] do begin
-        tstringgrid1.fixcols[-1].captions[c] :=
-        {IntToStr(c+1) + '  ' +} IntToStr(ff) + ' ' + DefaultFormatSettings.ShortMonthNames[f] + ' (' + IntToStr(f) + ')';
+    for ff := 1 to md[f] do 
+     begin
+        adate :=  StrToDate(inttostr(ff) + '/'+  IntToStr(f) + '/'+ inttostr(aYear)); 
+        day := ShortDayNames[DayOfWeek(aDate)];
+        tstringgrid1.fixcols[-1].captions[c] := day + ' ' +
+        {IntToStr(c+1) + '  ' +} IntToStr(ff) + ' ' + DefaultFormatSettings.ShortMonthNames[f] + '(' + IntToStr(f) + ')';
         Inc(c);
     end;
 {$WARNINGS ON}
@@ -150,8 +158,9 @@ begin
 AssignFile(yearlistfp, yearlistfile);
 FileMode := 1;
 ReWrite(yearlistfp);
-for f := 0 to 364 do WriteLn(yearlistfp, tstringgrid1[0].items[f]);
-Write(yearlistfp, tstringgrid1[0].items[365]);
+for f := 0 to 365 do begin
+if f <> 365 then Writeln(yearlistfp, tstringgrid1[0].items[f]) else Write(yearlistfp, tstringgrid1[0].items[f]);
+end;
 CloseFile(yearlistfp);
 end;
 

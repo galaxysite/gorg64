@@ -1,6 +1,6 @@
 object yearlistfo: tyearlistfo
-  bounds_x = 241
-  bounds_y = 238
+  bounds_x = 252
+  bounds_y = 188
   bounds_cx = 777
   bounds_cy = 554
   container.frame.localprops = []
@@ -177,7 +177,7 @@ object yearlistfo: tyearlistfo
       item
         colorselect = 16769446
         colorfocused = 16769446
-        width = 674
+        width = 631
         datalist.data = (
           ''
           ''
@@ -555,7 +555,7 @@ object yearlistfo: tyearlistfo
         color = 15592941
         face.localprops = []
         face.template = mainfo.tfacecomp3
-        width = 80
+        width = 125
         captions.data = (
           ''
           ''
@@ -924,13 +924,16 @@ object yearlistfo: tyearlistfo
           ''
           ''
         )
+        font.height = 14
+        font.name = 'stf_default'
+        font.localprops = [flp_height]
       end>
     rowcount = 366
     rowcountmax = 366
     zebra_color = 14350303
     zebra_start = 1
     zebra_height = 1
-    datarowheight = 17
+    datarowheight = 23
     onlayoutchanged = olc
     reffontheight = 15
     object tbutton1: tbutton
@@ -940,7 +943,7 @@ object yearlistfo: tyearlistfo
       face.localprops = []
       face.template = mainfo.tfacecomp1
       bounds_x = 704
-      bounds_y = 1
+      bounds_y = 2
       bounds_cx = 50
       bounds_cy = 21
       anchors = [an_top, an_right]
