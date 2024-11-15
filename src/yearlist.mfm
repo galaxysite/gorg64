@@ -119,30 +119,12 @@ object yearlistfo: tyearlistfo
   moduleclassname = 'tmseform'
   object tstringgrid1: tstringgrid
     frame.levelo = 0
-    frame.sbvert.facebutton.fade_pos.count = 2
-    frame.sbvert.facebutton.fade_pos.items = (
-      0
-      1
-    )
-    frame.sbvert.facebutton.fade_color.count = 2
-    frame.sbvert.facebutton.fade_color.items = (
-      -1610612730
-      -1610612731
-    )
-    frame.sbvert.facebutton.fade_direction = gd_down
+    frame.sbvert.face.localprops = []
+    frame.sbvert.face.template = tfacecomp1
     frame.sbvert.facebutton.localprops = []
-    frame.sbvert.faceendbutton.fade_pos.count = 2
-    frame.sbvert.faceendbutton.fade_pos.items = (
-      0
-      1
-    )
-    frame.sbvert.faceendbutton.fade_color.count = 2
-    frame.sbvert.faceendbutton.fade_color.items = (
-      -1610612730
-      -1610612731
-    )
-    frame.sbvert.faceendbutton.fade_direction = gd_down
+    frame.sbvert.facebutton.template = mainfo.tfacecomp3
     frame.sbvert.faceendbutton.localprops = []
+    frame.sbvert.faceendbutton.template = mainfo.tfacecomp3
     frame.sbvert.framebutton.colorclient = -2147483645
     frame.sbvert.framebutton.colordkwidth = 0
     frame.sbvert.framebutton.colorhlwidth = 0
@@ -178,6 +160,9 @@ object yearlistfo: tyearlistfo
         colorselect = 16769446
         colorfocused = 16769446
         width = 631
+        font.height = 14
+        font.name = 'stf_default'
+        font.localprops = [flp_height]
         datalist.data = (
           ''
           ''
@@ -951,5 +936,19 @@ object yearlistfo: tyearlistfo
       caption = 'Now'
       onexecute = onnow
     end
+  end
+  object tfacecomp1: tfacecomp
+    template.fade_pos.count = 2
+    template.fade_pos.items = (
+      0
+      1
+    )
+    template.fade_color.count = 2
+    template.fade_color.items = (
+      15921906
+      11711154
+    )
+    left = 256
+    top = 56
   end
 end

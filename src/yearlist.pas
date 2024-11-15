@@ -9,6 +9,7 @@ type
  tyearlistfo = class(tmseform)
    tstringgrid1: tstringgrid;
    tbutton1: tbutton;
+   tfacecomp1: tfacecomp;
    procedure keyup(const sender: twidget; var ainfo: keyeventinfoty);
    procedure onclose(const sender: TObject);
    procedure olc(const sender: tcustomgrid);
