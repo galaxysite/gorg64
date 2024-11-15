@@ -1,8 +1,8 @@
 object mainfo: tmainfo
   optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_subfocus, ow_mousewheel, ow_noscroll, ow_destroywidgets, ow_hinton]
   color = -2147483645
-  bounds_x = 303
-  bounds_y = 316
+  bounds_x = 518
+  bounds_y = 275
   bounds_cx = 750
   bounds_cy = 54
   container.optionsskin = [osk_noclientsize]

@@ -330,6 +330,7 @@ type
    procedure onplusminutes(const sender: TObject);
    procedure onplusdays(const sender: TObject);
    procedure onyearclick(const sender: TObject);
+   procedure onloadlang();
    public
    listwd : array[0..6] of boolean;
  end;
@@ -359,13 +360,54 @@ case gev.shutdown of
 2 : if str_reboot <> '' then tbutton44.caption := str_reboot else tbutton44.caption := 'Перезагрузить | Reboot';
 end;
 end;
+
+procedure teefo.onloadlang();
+begin 
+if str_event <> '' then Caption := str_event;
+if str_disable <> '' then
+begin
+ beDisable.hint := str_disable;
+ beDisable.frame.caption := str_disable;
+end;
+if str_deleteafteruse <> '' then
+begin
+ tbooleanedit8.hint := str_deleteafteruse;
+ tbooleanedit8.frame.caption := str_deleteafteruse;
+end; 
+if str_realtime <> '' then
+begin
+ beRealTime.hint := str_realtime;
+ beRealTime.frame.caption := str_realtime;
+end;
+if str_showmessage <> '' then 
+begin
+ tbooleanedit12.hint := str_showmessage;
+ tbooleanedit12.frame.caption := str_showmessage;
+end;
+if str_clockpanel <> '' then begin tbutton3.Hint := str_clockpanel; tbutton3.caption := str_clockpanel; end;
+if str_shutdown <> '' then tbutton44.Hint := str_shutdown;
+if str_per[c_oneshot] <> '' then tpopupmenu4.menu.submenu[c_oneshot].Caption := str_per[c_oneshot];
+if str_per[c_hourly] <> '' then tpopupmenu4.menu.submenu[c_hourly].Caption := str_per[c_hourly];
+if str_per[c_daily] <> '' then tpopupmenu4.menu.submenu[c_daily].Caption := str_per[c_daily];
+if str_per[c_weekdays] <> '' then tpopupmenu4.menu.submenu[c_weekdays].Caption := str_per[c_weekdays];
+if str_per[c_dayofmonth] <> '' then tpopupmenu4.menu.submenu[c_dayofmonth].Caption := str_per[c_dayofmonth];
+if str_per[c_oneven] <> '' then tpopupmenu4.menu.submenu[c_oneven].Caption := str_per[c_oneven];
+if str_per[c_onuneven] <> '' then tpopupmenu4.menu.submenu[c_onuneven].Caption := str_per[c_onuneven];
+if str_per[c_annually] <> '' then tpopupmenu4.menu.submenu[c_annually].Caption := str_per[c_annually];
+if str_per[c_jubilee] <> '' then tpopupmenu4.menu.submenu[c_jubilee].Caption := str_per[c_jubilee];
+if str_per[c_days] <> '' then tpopupmenu4.menu.submenu[c_days].Caption := str_per[c_days];
+if str_per[c_hours] <> '' then tpopupmenu4.menu.submenu[c_hours].Caption := str_per[c_hours];
+if str_per[c_minutes] <> '' then tpopupmenu4.menu.submenu[c_minutes].Caption := str_per[c_minutes];
+if str_per[c_monthly] <> '' then tpopupmenu4.menu.submenu[c_monthly].Caption := str_per[c_monthly];
+if str_system <> '' then tbutton44.caption := str_system;
+end;  
  
 procedure teefo.oncr(const sender: TObject);
 var f, ff : LongInt;
 s : msestringarty;
 a : array[0..6] of Int64;
 begin
-if ruenv then begin font.height := 34; tlabel1.font.height := 40; end;
+if ruenv then begin font.height := 28; tlabel1.font.height := 28; end;
 mo1.caption := '1 ' + mon_names[1];
 mo2.caption := '2 ' + mon_names[2];
 mo3.caption := '3 ' + mon_names[3];
@@ -430,11 +472,18 @@ end;
 end;
 
 tfilelistview1.path := sounddir;
-tfilelistview1.frame.caption := sounddir;
-tfilelistview2.path := musicdir;
-tfilelistview2.frame.caption := musicdir;
+tfilelistview2.path :=  musicdir;
 tfilelistview3.path := scriptdir;
+
+{$ifdef ootb}
+tfilelistview1.frame.caption := './sound/';
+tfilelistview2.frame.caption := './music/';
+tfilelistview3.frame.caption := './script/' ;
+{$else}
+tfilelistview1.frame.caption := sounddir;
+tfilelistview2.frame.caption := musicdir;
 tfilelistview3.frame.caption := scriptdir;
+{$endif}
 
 if eefoindex = -1 then gev.ForNew else gev := org.w[eefoindex];
 byear.caption := IntToStr(gev.year);
@@ -455,43 +504,7 @@ DisplayWD;
 tfilelistview1.selectednames := gev.sounds;
 tfilelistview2.selectednames := gev.musics;
 tfilelistview3.selectednames := gev.scripts;
-if str_event <> '' then Caption := str_event;
-if str_disable <> '' then
-begin
- beDisable.hint := str_disable;
- beDisable.frame.caption := str_disable;
-end;
-if str_deleteafteruse <> '' then
-begin
- tbooleanedit8.hint := str_deleteafteruse;
- tbooleanedit8.frame.caption := str_deleteafteruse;
-end; 
-if str_realtime <> '' then
-begin
- beRealTime.hint := str_realtime;
- beRealTime.frame.caption := str_realtime;
-end;
-if str_showmessage <> '' then 
-begin
- tbooleanedit12.hint := str_showmessage;
- tbooleanedit12.frame.caption := str_showmessage;
-end;
-if str_clockpanel <> '' then begin tbutton3.Hint := str_clockpanel; tbutton3.caption := str_clockpanel; end;
-if str_shutdown <> '' then tbutton44.Hint := str_shutdown;
-if str_per[c_oneshot] <> '' then tpopupmenu4.menu.submenu[c_oneshot].Caption := str_per[c_oneshot];
-if str_per[c_hourly] <> '' then tpopupmenu4.menu.submenu[c_hourly].Caption := str_per[c_hourly];
-if str_per[c_daily] <> '' then tpopupmenu4.menu.submenu[c_daily].Caption := str_per[c_daily];
-if str_per[c_weekdays] <> '' then tpopupmenu4.menu.submenu[c_weekdays].Caption := str_per[c_weekdays];
-if str_per[c_dayofmonth] <> '' then tpopupmenu4.menu.submenu[c_dayofmonth].Caption := str_per[c_dayofmonth];
-if str_per[c_oneven] <> '' then tpopupmenu4.menu.submenu[c_oneven].Caption := str_per[c_oneven];
-if str_per[c_onuneven] <> '' then tpopupmenu4.menu.submenu[c_onuneven].Caption := str_per[c_onuneven];
-if str_per[c_annually] <> '' then tpopupmenu4.menu.submenu[c_annually].Caption := str_per[c_annually];
-if str_per[c_jubilee] <> '' then tpopupmenu4.menu.submenu[c_jubilee].Caption := str_per[c_jubilee];
-if str_per[c_days] <> '' then tpopupmenu4.menu.submenu[c_days].Caption := str_per[c_days];
-if str_per[c_hours] <> '' then tpopupmenu4.menu.submenu[c_hours].Caption := str_per[c_hours];
-if str_per[c_minutes] <> '' then tpopupmenu4.menu.submenu[c_minutes].Caption := str_per[c_minutes];
-if str_per[c_monthly] <> '' then tpopupmenu4.menu.submenu[c_monthly].Caption := str_per[c_monthly];
-if str_system <> '' then tbutton44.caption := str_system;
+onloadlang();
 end;
 
 procedure teefo.play(const sender: TObject);

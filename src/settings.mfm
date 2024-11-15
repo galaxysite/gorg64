@@ -1,7 +1,7 @@
 object settingsfo: tsettingsfo
   color = -1610612730
-  bounds_x = 222
-  bounds_y = 296
+  bounds_x = 227
+  bounds_y = 220
   bounds_cx = 868
   bounds_cy = 449
   container.frame.localprops = []
@@ -1080,26 +1080,69 @@ object settingsfo: tsettingsfo
         bounds_cy = 20
         onchange = wlr
       end
-      object tbutton7: tbutton
+      object tdropdownlistedit1: tdropdownlistedit
         frame.caption = #1071#1079#1099#1082' | Language'
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
+        frame.button.face.localprops = []
+        frame.button.face.template = mainfo.tfacecomp3
+        frame.button.frame.localprops = []
+        frame.button.frame.localprops1 = []
+        frame.button.frame.template = mainfo.tframecomp2
+        frame.buttons.count = 1
+        frame.buttons.items = <        
+          item
+            face.localprops = []
+            face.template = mainfo.tfacecomp3
+            frame.localprops = []
+            frame.localprops1 = []
+            frame.template = mainfo.tframecomp2
+          end>
         frame.outerframe = (
           0
           21
           0
           0
         )
-        face.localprops = []
-        face.template = mainfo.tfacecomp1
         taborder = 6
-        bounds_x = 536
-        bounds_y = 32
-        bounds_cx = 266
-        bounds_cy = 65
-        state = [as_localonexecute]
-        onexecute = onlangchange
+        bounds_x = 564
+        bounds_y = 24
+        bounds_cx = 236
+        bounds_cy = 67
+        font.height = 20
+        font.name = 'stf_default'
+        font.localprops = [flp_height]
+        value = 'English'
+        onsetvalue = onsetval
+        dropdown.cols.count = 2
+        dropdown.cols.width = 200
+        dropdown.cols.items = <        
+          item
+            width = 250
+            colorselect = 16769466
+            font.height = 20
+            font.localprops = [flp_height]
+            frametemplate = mainfo.tframecomp2
+            data = (
+              'English'
+              'French'
+              'Russian'
+              'Spanish'
+            )
+          end        
+          item
+            options = [co_readonly, co_invisible, co_mousemovefocus, co_focusselect, co_rowselect, co_fill]
+            width = 1
+            data = (
+              'en.txt'
+              'fr.txt'
+              'ru.txt'
+              'es.txt'
+            )
+          end>
+        dropdown.itemindex = 0
+        reffontheight = 24
       end
     end
     object ttabpage3: ttabpage
@@ -1488,8 +1531,8 @@ object settingsfo: tsettingsfo
     menu.font.height = 16
     menu.font.name = 'stf_menu'
     menu.font.localprops = [flp_style, flp_height]
-    left = 480
-    top = 48
+    left = 352
+    top = 72
   end
   object tpopupmenu2: tpopupmenu
     frametemplate = mainfo.tframecomp2
@@ -1499,7 +1542,7 @@ object settingsfo: tsettingsfo
     menu.font.height = 14
     menu.font.name = 'stf_menu'
     menu.font.localprops = [flp_height]
-    left = 472
-    top = 88
+    left = 352
+    top = 104
   end
 end

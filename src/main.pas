@@ -179,11 +179,17 @@ var
   homedir : msestring;
   lang : msestring;
   ruenv : bytebool = false;
+  {$ifdef ootb}
+  workdir : msestring = '';
+  bindir : msestring = 'bin';
+  {$else}
   workdir : msestring = '.gorg64';
+  {$endif}
   musicdir : msestring = 'music';
   sounddir : msestring = 'sound';
   flashdir : msestring = 'flash';
   flashfile : msestring = 'flash.txt';
+  langdir : msestring = 'lang_s';
   flashfp : Text;
   flashhotlistfile : msestring = 'flashhotlist.txt';
   flashhotlistfp : Text;
@@ -214,6 +220,7 @@ var
   xmp_fn : utf8string = 'xmp_commandline.txt';
   mplayer_cl : utf8string = '';
   mplayer_fn : utf8string = 'mplayer_commandline.txt';
+  tunfileok : boolean = false;
 
 procedure PlaySound(s : filenamearty);
 procedure StopSnd;
@@ -283,8 +290,13 @@ begin
 sf_queue.Zero;
 try
 case playsoundstate of
-//2 : fpSystem('killall gorg64_spkplay');
+
+{$ifdef ootb}
+2 : fpSystem( bindir + 'gorg64_spkplay --stop');
+{$else}
 2 : fpSystem('gorg64_spkplay --stop');
+{$endif}
+
 3 : fpSystem('killall -s KILL xmp');
 4 : fpSystem('killall -s KILL timidity');
 5 : fpSystem('killall -s KILL mplayer');
@@ -359,26 +371,87 @@ AppClose;
 end;
 
 function DetectLang : byte;
-var f, dot, at : Int64;
-tmp : msestring = '';
-l : msestring = '';
+var
+i,i2,i3 : integer;
+SR : TSearchRec;
+l, langsys, langdef : msestring;
 begin
 l := GetEnvironmentVariable('LANG');
-dot := Pos('.',l);
-at := Pos('@',l);
-if at <> 0 then tmp := Copy(l, at, Length(l)-at+1);
-if dot <> 0 then l := Copy(l, 1, dot - 1) + tmp;
-for f := 0 to MAX_LANGS do if locales_s[f] = l then Exit(f);
-Exit(0);
+l := system.copy(l,1,2);
+
+i := 0;
+i2 := 0;
+i3 := 0;
+
+if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
+   begin
+     repeat
+      if l = copy(SR.Name,1,2) then
+      begin
+      langsys := SR.Name;
+      i2 := i;
+      end;      
+      if 'en' = copy(SR.Name,1,2) then
+      begin
+      langdef := SR.Name;
+      i3 := i;
+      end; 
+      inc(i); 
+      until FindNext(SR) <> 0;
+    FindClose(SR);
+   end;   
+   
+   if langsys <> '' then result := i2
+   else result := i3;
+  
 end;
 
 procedure tmainfo.ChangeLang;
 var f : Int64;
+i : integer = 0;
+SR : TSearchRec;
 begin
-lang := locales_s[tun.LangNumb];
-if lang = 'ru_RU' then begin ruenv := true; tbutton2.left := tbutton2.left - 50; tbutton2.width := tbutton2.width + 50; for f := 1 to 12 do case f of 1: mon_names[f] := 'ЯНВАРЬ'; 2: mon_names[f] := 'ФЕВРАЛЬ'; 3: mon_names[f] := 'МАРТ'; 4: mon_names[f] := 'АПРЕЛЬ'; 5: mon_names[f] := 'МАЙ'; 6: mon_names[f] := 'ИЮНЬ'; 7 : mon_names[f] := 'ИЮЛЬ'; 8: mon_names[f] := 'АВГУСТ'; 9: mon_names[f] := 'СЕНТЯБРЬ'; 10: mon_names[f] := 'ОКТЯБРЬ'; 11: mon_names[f] := 'НОЯБРЬ'; 12 : mon_names[f] := 'ДЕКАБРЬ'; end; end else ruenv := false;
-lang := '/usr/share/doc/gorg64/' + lang + '.txt';
+ if tunfileok = false then
+ tun.LangNumb := DetectLang;
+ tunfileok := true;
+
+if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
+   begin
+     repeat
+      if i = tun.LangNumb then
+      lang := SR.Name;
+      inc(i); 
+      until FindNext(SR) <> 0;
+    FindClose(SR);
+   end;   
+   
+ tbutton2.left := 698;
+ tbutton2.width := 40;
+
+if  system.copy(lang,1,2) = 'ru' then begin
+ ruenv := true;
+ tbutton2.left := tbutton2.left - 50;
+ tbutton2.width := tbutton2.width + 50;
+ for f := 1 to 12 do 
+ case f of
+  1: mon_names[f] := 'ЯНВАРЬ';
+  2: mon_names[f] := 'ФЕВРАЛЬ';
+  3: mon_names[f] := 'МАРТ';
+  4: mon_names[f] := 'АПРЕЛЬ';
+  5: mon_names[f] := 'МАЙ';
+  6: mon_names[f] := 'ИЮНЬ';
+  7: mon_names[f] := 'ИЮЛЬ';
+  8: mon_names[f] := 'АВГУСТ';
+  9: mon_names[f] := 'СЕНТЯБРЬ';
+  10: mon_names[f] := 'ОКТЯБРЬ';
+  11: mon_names[f] := 'НОЯБРЬ';
+  12 : mon_names[f] := 'ДЕКАБРЬ';
+ end; 
+ end else ruenv := false;
+
+lang := langdir + lang;
 LoadLng(lang);
+
 if str_editevents <> '' then mainfo.tpopupmenu1.menu.items[3].caption := str_editevents;
 if str_addevent <> '' then mainfo.tpopupmenu1.menu.items[4].caption := str_addevent;
 if str_notebook <> '' then mainfo.tpopupmenu1.menu.items[5].caption := str_notebook;
@@ -395,18 +468,38 @@ end;
 procedure tmainfo.oncreate(Const Sender: TObject);
 var f : Int64;
 begin
+
 mse_radiuscorner := 30;
-//tbutton1.visible := false;
+{$ifdef ootb}
+homedir := ExtractFilePath(ParamStr(0)) + 'data/';
+workdir := ExtractFilePath(ParamStr(0))  + 'data/';
+musicdir := ExtractFilePath(ParamStr(0)) + 'music/';
+sounddir := ExtractFilePath(ParamStr(0)) + 'sound/';
+flashdir := ExtractFilePath(ParamStr(0)) + 'flash/';
+scriptdir := ExtractFilePath(ParamStr(0)) + 'script/';
+bindir := ExtractFilePath(ParamStr(0)) + 'bin/';
+langdir := ExtractFilePath(ParamStr(0)) + 'lang_s/';
+{$else}
 homedir := GetEnvironmentVariable('HOME') + '/';
 workdir := homedir + workdir + '/';
 musicdir := workdir + musicdir + '/';
 sounddir := workdir + sounddir + '/';
 flashdir := workdir + flashdir + '/';
 scriptdir := workdir + scriptdir + '/';
+langdir := '/usr/share/doc/gorg64/';
+{$endif}
+
 try
 MkDir(workdir);MkDir(musicdir);MkDir(sounddir);MkDir(flashdir);MkDir(scriptdir);
+{$ifdef ootb}
+MkDir(bindir);
+MkDir(langdir);
+if FileExists(ExtractFilePath(ParamStr(0)) + 'files.tar.xz') then
+fpSystem('tar -C ' + workdir + ' -xvJf ' + ExtractFilePath(ParamStr(0)) + 'files.tar.xz');
+{$else}
 if FileExists('/usr/share/doc/gorg64/files.tar.xz') then
 fpSystem('tar -C ' + workdir + ' -xvJf /usr/share/doc/gorg64/files.tar.xz');
+{$endif}
 except
 end;
 
@@ -430,13 +523,16 @@ LoadClFile(rec_fn, rec_cl);
 LoadClFile(xmp_fn, xmp_cl);
 LoadClFile(mplayer_fn, mplayer_cl);
 
+if fileexists(tunfile) then tunfileok := true;
+
 Tun.Load;
 
 ChangeLang;
 
 DisplayMuteNoact;
 Tun.SetFixation(Tun.fixation);
-left := tun.p^.main_left; top := tun.p^.main_top;
+left := tun.p^.main_left;
+top := tun.p^.main_top;
 
 //if tun.p^.clip_mon then clipboardcopymonitor := @clipmon;
 
@@ -529,7 +625,13 @@ if sf_queue.fvalid then begin
 ext := mselowercase(ExtractFileExt(sf_queue.fstr));
 if (ext = '.speaker') then begin
 playsoundstate := 2;
+
+{$ifdef ootb}
+fpSystem( bindir + 'gorg64_spkplay ' + musicdir + '"' +  sf_queue.fstr + '"');
+{$else}
 fpSystem('gorg64_spkplay ' + musicdir + '"' +  sf_queue.fstr + '"');
+{$endif}
+
 end else begin
  if (ext = '.mod') or (ext = '.xm') or (ext = '.it') or (ext = '.s3m') then begin
 playsoundstate := 3;
@@ -715,7 +817,11 @@ end;
 
 procedure tmainfo.ShowHelp;
 begin
+{$ifdef ootb}
+fpSystem(bindir + 'gorg64_runner xdg-open "man:gorg64 >/dev/null 2>/dev/null" 2>/dev/null');
+{$else}
 fpSystem('gorg64_runner xdg-open "man:gorg64 >/dev/null 2>/dev/null" 2>/dev/null');
+{$endif}
 end;
 
 procedure tmainfo.soundrec(const sender: tthreadcomp);
@@ -848,12 +954,12 @@ end;
 
 procedure TTun.SetLangNumb(Value : byte);
 begin
-if Value <= MAX_LANGS then p^.lang_numb := Value else p^.lang_numb := 0;
+if assigned(p) then if (Value <= MAX_LANGS) then p^.lang_numb := Value else p^.lang_numb := 0;
 end;
 
 function TTun.GetLangNumb : byte;
 begin
-if p^.lang_numb <= MAX_LANGS then Exit(p^.lang_numb) else Exit(0);
+if assigned(p) then if p^.lang_numb <= MAX_LANGS then Exit(p^.lang_numb) else Exit(0);
 end;
 
 function TTun.map : boolean;
@@ -872,11 +978,14 @@ function TTun.unmap : boolean;
 begin
 Exit(do_SysCall(11 {Unmap}, a,fs) <> 0);
 end;
+
 function TTun.Load : boolean;
 var
 fp : file of TTu;
+tbool : boolean = false;
 t : TTu;
 begin
+if fileexists(tunfile) then tbool := true;
 if map then begin
 	AssignFile(fp, fFileName);
 	FileMode := 2;
@@ -893,7 +1002,7 @@ with t do begin
  engtrue_hour_fmt    := false;
  engtrue_calend_fmt := Byte(PChar(nl_langinfo(_NL_TIME_FIRST_WEEKDAY))^) <> 2; // false;
  engtrue_calend_layout := false;
- LangNumb := DetectLang;
+ if not tbool then LangNumb := DetectLang;
  flash_accmulate := false;
  main_doubleclick_action := 0;
  am_pm[true] := am_hour_pm[true];

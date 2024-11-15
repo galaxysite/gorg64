@@ -3,17 +3,17 @@ object eefo: teefo
   frame.localprops = []
   frame.localprops1 = []
   frame.template = tframecomp2
-  bounds_x = 220
-  bounds_y = 254
+  bounds_x = 201
+  bounds_y = 185
   bounds_cx = 1043
-  bounds_cy = 566
+  bounds_cy = 575
   container.frame.localprops = []
   container.frame.localprops1 = []
   container.bounds = (
     4
     2
     1035
-    562
+    571
   )
   font.height = 26
   font.style = [fs_bold]
@@ -149,6 +149,10 @@ object eefo: teefo
     bounds_y = 516
     bounds_cx = 651
     bounds_cy = 38
+    font.height = 26
+    font.style = [fs_bold]
+    font.name = 'stf_default'
+    font.localprops = [flp_height]
     ontextedited = ontextedited
     dropdown.cols.count = 1
     dropdown.cols.font.height = 20
@@ -882,7 +886,7 @@ object eefo: teefo
     face.template = mainfo.tfacecomp1
     taborder = 45
     hint = #1059#1076#1072#1083#1080#1090#1100
-    bounds_x = 24
+    bounds_x = 8
     bounds_y = 394
     bounds_cx = 92
     bounds_cy = 20
@@ -907,7 +911,7 @@ object eefo: teefo
     face.template = mainfo.tfacecomp1
     taborder = 46
     hint = #1042#1099#1082#1083#1102#1095#1080#1090#1100
-    bounds_x = 24
+    bounds_x = 8
     bounds_y = 424
     bounds_cx = 113
     bounds_cy = 20
@@ -932,7 +936,7 @@ object eefo: teefo
     face.template = mainfo.tfacecomp1
     taborder = 47
     hint = #1058#1086#1083#1100#1082#1086' '#1089#1077#1081#1095#1072#1089
-    bounds_x = 24
+    bounds_x = 8
     bounds_y = 454
     bounds_cx = 83
     bounds_cy = 20
