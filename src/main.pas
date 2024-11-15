@@ -688,16 +688,24 @@ end;
 procedure tmainfo.DisplayMuteNoact;
 begin
 if tun.p^.fmute then begin
-  mainfo.tpopupmenu1.menu.items[0].caption := '[v] ' + str_mute;
-  mainfo.tpaintbox1.color := cl_yellow;
-   end else begin mainfo.tpopupmenu1.menu.items[0].caption := str_mute;
-     mainfo.tpaintbox1.color := cl_white;
+  tpopupmenu1.menu.items[0].caption := '[v] ' + str_mute;
+  tpaintbox1.color := cl_yellow;
+   end else begin
+     tpopupmenu1.menu.items[0].caption := str_mute;
+     tpaintbox1.color := cl_white;
    end;
 if tun.p^.fnoact then
-  mainfo.tpopupmenu1.menu.items[1].caption := '[v] ' + str_noact
-  else mainfo.tpopupmenu1.menu.items[1].caption := str_noact;
-
-invalidatewidget;
+  begin
+  tpopupmenu1.menu.items[1].caption := '[v] ' + str_noact;
+  tpaintbox1.color := cl_yellow;
+  end
+  else
+  begin
+  tpopupmenu1.menu.items[1].caption := str_noact;
+  if not tpaintbox1.color = cl_yellow then tpaintbox1.color := cl_white;
+  end;
+  
+  tpaintbox1.invalidatewidget;
 end;
 
 procedure tmainfo.ShowP(a : Int64);
