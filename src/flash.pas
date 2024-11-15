@@ -103,6 +103,11 @@ end;
 procedure tflashfo.viewfile(const sender: TObject);
 begin
 fpSystem('gorg64_runner leafpad ' + flashfile);
+{$ifdef ootb}
+fpSystem(bindir + 'gorg64_runner leafpad ' + flashfile);
+{$else}
+fpSystem('gorg64_runner leafpad ' + flashfile);
+{$endif}
 end;
 
 procedure tflashfo.save1(const sender: TObject);
@@ -198,7 +203,11 @@ end;
 
 procedure tflashfo.viewdir(const sender: TObject);
 begin
+{$ifdef ootb}
+fpSystem(bindir + 'gorg64_runner xdg-open ' + flashdir);
+{$else}
 fpSystem('gorg64_runner xdg-open ' + flashdir);
+{$endif}
 end;
 
 end.

@@ -98,9 +98,13 @@ var
     s  : msestring;
     be{, n} : boolean;
     f  : LongInt;
-fn : msestring = '.dr/status.sta';
-fp : TextFile;
-begin result := false;
+    fn : msestring = '.dr/status.sta';
+    fp : TextFile;
+begin 
+{$ifdef ootb}
+fn := ExtractFilePath(ParamStr(0)) + 'data/status.sta';
+{$endif}
+result := false;
 fn := homedir + fn;
 if not fileexists(fn) then exit;
 AssignFile(fp, fn);

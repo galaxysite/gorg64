@@ -6,8 +6,10 @@ unit lng;
 {$CODEPAGE UTF8}
 {$ASMMODE INTEL}
 
-
 interface
+
+uses
+sysutils;
 
 type
 ts2 = record
@@ -82,7 +84,9 @@ fp : Text;
 s : utf8string;
 t : ts2;
 begin
-Assign(fp, n);
+s := n;
+If not fileexists(s) then exit;
+Assign(fp, s);
 FileMode := 0;
 {$I-}
 ReSet(fp);

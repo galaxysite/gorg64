@@ -276,23 +276,44 @@ var fp : textfile;
 n, s : msestring; 
 begin
 n := '-l ' + surname.text + ' -f ' + namep.text + ' -m ' + patronym.text;
-popen (fp, '/usr/share/doc/gorg64/petrovich-ruby/bin/petrovich ' + n + ' -c genitive', 'r');
+{$ifdef ootb}
+popen (fp, scriptdir + ' petrovich ' + n + ' -c genitive', 'r');
 readln(fp, fullname1);
 tpopupmenu1.menu.submenu[0].Caption := fullname1;
 pclose(fp);
-popen (fp, '/usr/share/doc/gorg64/petrovich-ruby/bin/petrovich ' + n + ' -c dative', 'r');
+popen (fp, scriptdir + ' petrovich ' + n + ' -c dative', 'r');
 readln(fp, fullname2);
 tpopupmenu1.menu.submenu[1].Caption := fullname2;
 pclose(fp);
-popen (fp, '/usr/share/doc/gorg64/petrovich-ruby/bin/petrovich ' + n + ' -c accusative', 'r');
+popen (fp, scriptdir + ' petrovich ' + n + ' -c accusative', 'r');
 readln(fp, fullname3);
 tpopupmenu1.menu.submenu[2].Caption := fullname3;
 pclose(fp);
-popen (fp, '/usr/share/doc/gorg64/petrovich-ruby/bin/petrovich ' + n + ' -c instrumental', 'r');
+popen (fp, scriptdir + ' petrovich ' + n + ' -c instrumental', 'r');
 readln(fp, fullname4);
 tpopupmenu1.menu.submenu[3].Caption := fullname4;
 pclose(fp);
-popen (fp, '/usr/share/doc/gorg64/petrovich-ruby/bin/petrovich ' + n + ' -c prepositional', 'r');
+popen (fp, scriptdir + ' petrovich ' + n + ' -c prepositional', 'r');{$else}
+popen (fp, scriptdir + ' petrovich ' + n + ' -c genitive', 'r');
+readln(fp, fullname1);
+tpopupmenu1.menu.submenu[0].Caption := fullname1;
+pclose(fp);
+popen (fp, scriptdir + ' petrovich ' + n + ' -c dative', 'r');
+readln(fp, fullname2);
+tpopupmenu1.menu.submenu[1].Caption := fullname2;
+pclose(fp);
+popen (fp, scriptdir + ' petrovich ' + n + ' -c accusative', 'r');
+readln(fp, fullname3);
+tpopupmenu1.menu.submenu[2].Caption := fullname3;
+pclose(fp);
+popen (fp, scriptdir + ' petrovich ' + n + ' -c instrumental', 'r');
+readln(fp, fullname4);
+tpopupmenu1.menu.submenu[3].Caption := fullname4;
+pclose(fp);
+popen (fp, scriptdir + ' petrovich ' + n + ' -c prepositional', 'r');
+{$endif}
+
+
 readln(fp, fullname5);
 tpopupmenu1.menu.submenu[4].Caption := fullname5;
 pclose(fp);

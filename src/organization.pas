@@ -89,7 +89,7 @@ var
  photoview : boolean = false;
 implementation
 uses
- organization_mfm,notebook;
+ organization_mfm,notebook, main;
 procedure torganizationfo.onclose(const sender: TObject);
 begin
 FLoader.Free;
@@ -214,7 +214,11 @@ end;
 procedure torganizationfo.onexepl(const sender: tthreadcomp);
 begin
 //if fpfork = 0 then
+{$ifdef ootb}
+ fpSystem(bindir + 'gorg64_runner mplayer "' + video.value + '"');
+{$else}
  fpSystem('gorg64_runner mplayer "' + video.value + '"');
+{$endif}
 end;
 
 procedure torganizationfo.onphotochange(const sender: TObject);

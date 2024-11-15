@@ -80,7 +80,7 @@ type
    tbooleanedit5: tbooleanedit;
    timage4: timage;
    tpopupmenu2: tpopupmenu;
-   tbutton7: tbutton;
+   tdropdownlistedit1: tdropdownlistedit;
    procedure onwdbs(const sender: TObject);
    procedure oncreate(const sender: TObject);
    procedure onclose(const sender: TObject);
@@ -100,7 +100,6 @@ type
    procedure onshowclockpanel(const sender: TObject);
    procedure onexitprg(const sender: TObject);
    procedure DisplayDblA;
-   procedure DisplayLang;
    procedure dispvolume;
    procedure onaddevent(const sender: TObject);
    procedure onactionchange(const sender: TObject);
@@ -112,15 +111,15 @@ type
    procedure onspkon(const sender: TObject);
    procedure onspkoff(const sender: TObject);
    procedure wlr(const sender: TObject);
-   procedure onlangchange(const sender: TObject);
-   procedure onm2execute(const sender: TObject);
+   procedure onsetval(const sender: TObject; var avalue: msestring;
+                   var accept: Boolean);
  end;
 var
  settingsfo: tsettingsfo;
  efsettingsfo : boolean = false;
 implementation
 uses
- settings_mfm,main,clockpanel;
+ settings_mfm,main,clockpanel,ee;
  
 procedure tsettingsfo.DisplayDblA;
 begin
@@ -144,6 +143,8 @@ end;
 
 procedure tsettingsfo.oncreate(const sender: TObject);
 var f : Int64;
+i : integer = 0;
+SR      : TSearchRec;
 begin
 mplayercl.text := mplayer_cl;
 arecordcl.text := arecord_cl;
@@ -161,13 +162,31 @@ tbooleanedit3.value := tun.p^.small_screen;
 DisplayDblA;
 dispvolume;
 tlabel5.caption  := tlabel5.caption + ' A'  + inttostr(archive_version);
-tpopupmenu2.menu.submenu.count := MAX_LANGS + 1;
-for f := 0 to MAX_LANGS do begin
- tpopupmenu2.menu.submenu[f].Caption := locales_n[f];
- tpopupmenu2.menu.submenu[f].Tag := f;
- tpopupmenu2.menu.submenu[f].onexecute := @onm2execute;
-end;
-DisplayLang;
+
+if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
+   begin
+     repeat
+       inc(i);
+     until FindNext(SR) <> 0;
+     FindClose(SR);
+   end;
+
+tdropdownlistedit1.dropdown.cols[0].count := i;
+tdropdownlistedit1.dropdown.cols[1].count := i;
+i := 0;
+   
+if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
+   begin
+     repeat
+       tdropdownlistedit1.dropdown.cols[0][i] := system.copy(SR.Name,4,length(SR.Name)-7);
+       tdropdownlistedit1.dropdown.cols[1][i] := SR.Name;
+       inc(i);
+     until FindNext(SR) <> 0;
+    FindClose(SR);
+   end;  
+   
+tdropdownlistedit1.dropdown.ItemIndex := tun.LangNumb;
+
 end;
 
 procedure tsettingsfo.onclose(const sender: TObject);
@@ -327,24 +346,14 @@ begin
 tun.p^.engtrue_calend_layout := tbooleanedit5.value;
 end;
 
-procedure tsettingsfo.DisplayLang;
+procedure tsettingsfo.onsetval(const sender: TObject; var avalue: msestring;
+               var accept: Boolean);
 begin
-tbutton7.caption := locales_n[tun.LangNumb];
-end;
-
-procedure tsettingsfo.onlangchange(const sender: TObject);
-var
-po: pointty;
-begin
-po.x := tbutton7.left;
-po.y := tbutton7.top;
-tpopupmenu2.show(self, po);
-end;
-
-procedure tsettingsfo.onm2execute(const sender: TObject);
-begin
-tun.LangNumb := tmenuitem(sender).Tag;
-DisplayLang;
+tun.LangNumb := tdropdownlistedit1.dropdown.ItemIndex;
+mainfo.ChangeLang;
+if assigned(eefo) then eefo.onloadlang();
+application.processmessages;
+tdropdownlistedit1.invalidatewidget;
 end;
 
 end.
