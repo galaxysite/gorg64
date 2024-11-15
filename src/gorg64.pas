@@ -30,7 +30,7 @@ program gorg64;
 {$ASMMODE INTEL}
 uses
  cthreads,
- msegui, msegraphics, msegraphutils, main, xlib
+ msegui, msegraphics, msegraphutils, main, xlib, math
  ,unix,baseunix,linux,sysutils,urunu,x,keysym;
  
 Procedure DoSig(sig : cint);cdecl;
@@ -43,6 +43,10 @@ var
     oa,na : PSigActionRec;
  
 begin
+
+ SetExceptionMask(GetExceptionMask + [exZeroDivide] + [exInvalidOp] +
+    [exDenormalized] + [exOverflow] + [exUnderflow] + [exPrecision]);
+
    new(na);
    new(oa);
    na^.sa_Handler:=SigActionHandler(@DoSig);

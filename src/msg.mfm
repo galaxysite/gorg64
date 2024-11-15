@@ -1,7 +1,7 @@
 object msgfo: tmsgfo
   onpaint = onpaintev
-  bounds_x = 326
-  bounds_y = 301
+  bounds_x = 274
+  bounds_y = 154
   bounds_cx = 940
   bounds_cy = 518
   bounds_cxmax = 940

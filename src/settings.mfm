@@ -1117,6 +1117,9 @@ object settingsfo: tsettingsfo
         onsetvalue = onsetval
         dropdown.cols.count = 2
         dropdown.cols.width = 200
+        dropdown.cols.textflags = [tf_xcentered, tf_ycentered, tf_noselect]
+        dropdown.cols.font.height = 16
+        dropdown.cols.font.localprops = [flp_height]
         dropdown.cols.items = <        
           item
             width = 250
@@ -1134,6 +1137,7 @@ object settingsfo: tsettingsfo
           item
             options = [co_readonly, co_invisible, co_mousemovefocus, co_focusselect, co_rowselect, co_fill]
             width = 1
+            textflags = [tf_xcentered, tf_ycentered, tf_noselect]
             data = (
               'en.txt'
               'fr.txt'

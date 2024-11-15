@@ -38,15 +38,13 @@ uses
  msesimplewidgets, msewidgets, msebitmap,msegraphics,time,msemenus,
  msethreadcomp, msestrings, msetypes, mseact,unix,baseunix,linux,msetimer,
  msedock,msedragglob,msewidgetgrid,msesyntaxedit,x,xlib,keysym,queue,
- ttafunctions,syscall,lng,lnglist;
+ ttafunctions,syscall,lng,lnglist,math;
 
 procedure clipmon;
 
 type 
   tmainfo = class(tmainform)
     tbutton1: TButton;
-    tpaintbox1: tpaintbox;
-    tlabel2: tlabel;
    tthreadcomp3: tthreadcomp;
    tthreadcomp4: tthreadcomp;
    tthreadcomp5: tthreadcomp;
@@ -59,6 +57,13 @@ type
    tfacecomp2: tfacecomp;
    tfacecomp3: tfacecomp;
    timagelist2: timagelist;
+   tpaintbox1: tpaintbox;
+   tlabel2: tlabel;
+   tpaintbox3: tpaintbox;
+   tpaintbox2: tpaintbox;
+   tfacecomp4: tfacecomp;
+   tfacecomp5: tfacecomp;
+   tfacecomp6: tfacecomp;
     procedure onquit(Const Sender: TObject);
     procedure oncreate(Const Sender: TObject);
     procedure onmouseev(Const Sender: twidget; Var ainfo: mouseeventinfoty);
@@ -450,6 +455,7 @@ if  system.copy(lang,1,2) = 'ru' then begin
  end else ruenv := false;
 
 lang := langdir + lang;
+
 LoadLng(lang);
 
 if str_editevents <> '' then mainfo.tpopupmenu1.menu.items[3].caption := str_editevents;
@@ -460,14 +466,17 @@ if str_addorganization <> '' then mainfo.tpopupmenu1.menu.items[7].caption := st
 if str_help <> '' then mainfo.tpopupmenu1.menu.items[8].caption := str_help;
 if str_settings <> '' then mainfo.tpopupmenu1.menu.items[9].caption := str_settings;
 if str_flash <> '' then mainfo.tpopupmenu1.menu.items[10].caption := str_flash;
-if str_yearlist <> '' then mainfo.tpopupmenu1.menu.items[11].caption := str_yearlist;
-if str_clockpanel <> '' then mainfo.tpopupmenu1.menu.items[12].caption := str_clockpanel;
+if str_clockpanel <> '' then mainfo.tpopupmenu1.menu.items[11].caption := str_clockpanel;
+if str_yearlist <> '' then mainfo.tpopupmenu1.menu.items[12].caption := str_yearlist; 
 if str_quit <> '' then mainfo.tpopupmenu1.menu.items[13].caption := str_quit;
 end;
 
 procedure tmainfo.oncreate(Const Sender: TObject);
 var f : Int64;
 begin
+
+SetExceptionMask(GetExceptionMask + [exZeroDivide] + [exInvalidOp] +
+    [exDenormalized] + [exOverflow] + [exUnderflow] + [exPrecision]);
 
 mse_radiuscorner := 30;
 {$ifdef ootb}
@@ -575,18 +584,19 @@ procedure tmainfo.onmouseev(Const Sender: twidget; Var ainfo: mouseeventinfoty);
 begin
   if ainfo.eventkind = ek_buttonpress then
     begin
-if ss_double in ainfo.shiftstate then begin
-doubleclick_action;
-Exit;
-end;
+    if ss_double in ainfo.shiftstate then
+    begin
+    doubleclick_action;
+    Exit;
+    end;
       ispressed := True;
       oripoint  := ainfo.pos;
-      tpaintbox1.cursor := cr_pointinghand;
+      tpaintbox3.cursor := cr_pointinghand;
     end;
   if ainfo.eventkind = ek_buttonrelease then
     begin
       ispressed := False;
-      tpaintbox1.cursor := cr_default;
+      tpaintbox3.cursor := cr_default;
       if ainfo.button = mb_right then begin
       tpopupmenu1.Show(self, ainfo);
       end;
@@ -672,40 +682,45 @@ procedure TTun.SetMute(Value : bytebool);
 begin
 with p^ do begin
 fmute := value;
-if fnoact and (not fmute) then begin SetNoAct(false); exit; end;
+//if fnoact and (not fmute) then begin SetNoAct(false); exit; end;
 if fmute then StopSnd;
 end;
 mainfo.DisplayMuteNoact;
 end;
+
 procedure TTun.SetNoact(Value : bytebool);
 begin 
 with p^ do begin
 fnoact := value;
-SetMute(fnoact);
+//SetMute(fnoact);
 end;
 mainfo.DisplayMuteNoact;  
 end;
+
 procedure tmainfo.DisplayMuteNoact;
 begin
-if tun.p^.fmute then begin
+if tun.p^.fmute then
+  begin
   tpopupmenu1.menu.items[0].caption := '[v] ' + str_mute;
-  tpaintbox1.color := cl_yellow;
-   end else begin
-     tpopupmenu1.menu.items[0].caption := str_mute;
-     tpaintbox1.color := cl_white;
-   end;
+  tpaintbox1.face.template := tfacecomp4;
+  end else
+  begin
+  tpopupmenu1.menu.items[0].caption := str_mute;
+  tpaintbox1.face.template := tfacecomp6;
+  end;
+  
 if tun.p^.fnoact then
   begin
   tpopupmenu1.menu.items[1].caption := '[v] ' + str_noact;
-  tpaintbox1.color := cl_yellow;
-  end
-  else
+  tpaintbox2.face.template := tfacecomp5;
+  end else
   begin
   tpopupmenu1.menu.items[1].caption := str_noact;
-  if not tpaintbox1.color = cl_yellow then tpaintbox1.color := cl_white;
+  tpaintbox2.face.template := tfacecomp6;    
   end;
   
   tpaintbox1.invalidatewidget;
+  tpaintbox2.invalidatewidget;
 end;
 
 procedure tmainfo.ShowP(a : Int64);
