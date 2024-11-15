@@ -61,12 +61,18 @@ procedure tyearlistfo.onl(const sender: TObject);
       aDate : TDateTime;
       aYear, aMonth, aDay : Word; 
       day    : string;
+      OldShortDateFormat: string;
+      OldDateSeparator: char;
 begin
 c := 0;
 {$WARNINGS OFF}
-DecodeDate(now, aYear, aMonth, aDay);
-caption := str_yearlist + ' ' + inttostr(aYear);
-for f := 1 to 12 do
+  OldShortDateFormat := ShortDateFormat;
+  OldDateSeparator := DateSeparator;
+  ShortDateFormat := 'ddmmyyyy'; 
+  DateSeparator := '/'; 
+  DecodeDate(now, aYear, aMonth, aDay);
+  caption := str_yearlist + ' ' + inttostr(aYear);
+  for f := 1 to 12 do
     for ff := 1 to md[f] do 
      begin
         adate :=  StrToDate(inttostr(ff) + '/'+  IntToStr(f) + '/'+ inttostr(aYear)); 
@@ -75,6 +81,8 @@ for f := 1 to 12 do
         {IntToStr(c+1) + '  ' +} IntToStr(ff) + ' ' + DefaultFormatSettings.ShortMonthNames[f] + '(' + IntToStr(f) + ')';
         Inc(c);
     end;
+  ShortDateFormat := OldShortDateFormat;
+  DateSeparator := OldDateSeparator;
 {$WARNINGS ON}
 end;
 
