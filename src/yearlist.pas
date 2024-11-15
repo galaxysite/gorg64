@@ -150,9 +150,8 @@ begin
 AssignFile(yearlistfp, yearlistfile);
 FileMode := 1;
 ReWrite(yearlistfp);
-for f := 0 to 365 do begin
-if f <> 365 then Writeln(yearlistfp, tstringgrid1[0].items[f]) else Write(yearlistfp, tstringgrid1[0].items[f]);
-end;
+for f := 0 to 364 do WriteLn(yearlistfp, tstringgrid1[0].items[f]);
+Write(yearlistfp, tstringgrid1[0].items[365]);
 CloseFile(yearlistfp);
 end;
 
