@@ -350,6 +350,7 @@ procedure tsettingsfo.onsetval(const sender: TObject; var avalue: msestring;
                var accept: Boolean);
 begin
 tun.LangNumb := tdropdownlistedit1.dropdown.ItemIndex;
+application.processmessages;
 mainfo.ChangeLang;
 if assigned(eefo) then eefo.onloadlang();
 application.processmessages;

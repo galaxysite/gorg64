@@ -3,8 +3,8 @@ object eefo: teefo
   frame.localprops = []
   frame.localprops1 = []
   frame.template = tframecomp2
-  bounds_x = 201
-  bounds_y = 185
+  bounds_x = 489
+  bounds_y = 199
   bounds_cx = 1043
   bounds_cy = 575
   container.frame.localprops = []
@@ -208,7 +208,7 @@ object eefo: teefo
     font.style = [fs_bold]
     font.name = 'stf_default'
     font.localprops = [flp_style, flp_height]
-    colorselect = 16767651
+    colorselect = 15724288
     cellwidth = 250
     cellheight = 42
     cellframe.localprops = []
@@ -1126,7 +1126,7 @@ object eefo: teefo
     font.style = [fs_bold]
     font.name = 'stf_default'
     font.localprops = [flp_style, flp_height]
-    colorselect = 16767651
+    colorselect = 15724288
     cellwidth = 250
     cellheight = 42
     cellframe.localprops = []
@@ -1373,7 +1373,7 @@ object eefo: teefo
     font.style = [fs_bold]
     font.name = 'stf_default'
     font.localprops = [flp_style, flp_height]
-    colorselect = 16767651
+    colorselect = 15724288
     cellwidth = 250
     cellheight = 42
     cellframe.localprops = []

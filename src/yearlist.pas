@@ -9,6 +9,7 @@ type
  tyearlistfo = class(tmseform)
    tstringgrid1: tstringgrid;
    tbutton1: tbutton;
+   tfacecomp1: tfacecomp;
    procedure keyup(const sender: twidget; var ainfo: keyeventinfoty);
    procedure onclose(const sender: TObject);
    procedure olc(const sender: tcustomgrid);
@@ -31,7 +32,7 @@ onetime : boolean;
  
 implementation
 uses
- yearlist_mfm;
+ yearlist_mfm, lng;
 procedure tyearlistfo.keyup(const sender: twidget; var ainfo: keyeventinfoty);
 begin
 if ainfo.key = key_Escape then Close;
@@ -57,15 +58,31 @@ end;
 procedure tyearlistfo.onl(const sender: TObject);
   var
       f, ff, c : LongInt;
+      aDate : TDateTime;
+      aYear, aMonth, aDay : Word; 
+      day    : string;
+      OldShortDateFormat: string;
+      OldDateSeparator: char;
 begin
 c := 0;
 {$WARNINGS OFF}
-for f := 1 to 12 do
-    for ff := 1 to md[f] do begin
-        tstringgrid1.fixcols[-1].captions[c] :=
-        {IntToStr(c+1) + '  ' +} IntToStr(ff) + ' ' + DefaultFormatSettings.ShortMonthNames[f] + ' (' + IntToStr(f) + ')';
+  OldShortDateFormat := ShortDateFormat;
+  OldDateSeparator := DateSeparator;
+  ShortDateFormat := 'ddmmyyyy'; 
+  DateSeparator := '/'; 
+  DecodeDate(now, aYear, aMonth, aDay);
+  caption := str_yearlist + ' ' + inttostr(aYear);
+  for f := 1 to 12 do
+    for ff := 1 to md[f] do 
+     begin
+        adate :=  StrToDate(inttostr(ff) + '/'+  IntToStr(f) + '/'+ inttostr(aYear)); 
+        day := ShortDayNames[DayOfWeek(aDate)];
+        tstringgrid1.fixcols[-1].captions[c] := day + ' ' +
+        {IntToStr(c+1) + '  ' +} IntToStr(ff) + ' ' + DefaultFormatSettings.ShortMonthNames[f] + '(' + IntToStr(f) + ')';
         Inc(c);
     end;
+  ShortDateFormat := OldShortDateFormat;
+  DateSeparator := OldDateSeparator;
 {$WARNINGS ON}
 end;
 

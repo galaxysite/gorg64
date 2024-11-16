@@ -1,10 +1,10 @@
 object mainfo: tmainfo
   optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_subfocus, ow_mousewheel, ow_noscroll, ow_destroywidgets, ow_hinton]
   color = -2147483645
-  bounds_x = 518
-  bounds_y = 275
+  bounds_x = 338
+  bounds_y = 238
   bounds_cx = 750
-  bounds_cy = 54
+  bounds_cy = 56
   container.optionsskin = [osk_noclientsize]
   container.color = -2147483645
   container.frame.framei_left = 0
@@ -24,7 +24,7 @@ object mainfo: tmainfo
     0
     0
     750
-    54
+    56
   )
   optionswindow = [wo_noframe, wo_groupleader, wo_notaskbar, wo_alwaysontop, wo_rounded]
   caption = 'GORG64'
@@ -145,44 +145,63 @@ object mainfo: tmainfo
   oncreate = oncreate
   oneventloopstart = onloopev
   moduleclassname = 'tmainform'
-  object tpaintbox1: tpaintbox
-    optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_mousewheel, ow_noscroll, ow_destroywidgets]
+  object tpaintbox2: tpaintbox
+    optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_mousewheel, ow_destroywidgets]
     color = -1610612730
-    frame.framei_left = 4
-    frame.framei_right = 4
-    frame.frameimage_left = -4
-    frame.frameimage_top = -4
-    frame.frameimage_right = -4
-    frame.frameimage_bottom = -4
-    frame.optionsskin = [fso_flat]
     frame.localprops = []
     frame.localprops1 = []
+    face.localprops = []
+    face.template = tfacecomp6
+    taborder = 5
+    bounds_x = 0
+    bounds_y = 27
+    bounds_cx = 750
+    bounds_cy = 29
+  end
+  object tpaintbox1: tpaintbox
+    optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_mousewheel, ow_destroywidgets]
+    color = -1610612730
+    frame.localprops = []
+    frame.localprops1 = []
+    face.localprops = []
+    face.template = tfacecomp6
     taborder = 2
+    bounds_x = 0
+    bounds_y = 0
+    bounds_cx = 750
+    bounds_cy = 27
+  end
+  object tlabel2: tlabel
+    optionswidget1 = [ow1_fontglyphheight, ow1_autoscale, ow1_autoheight]
+    optionswidget = [ow_noscroll, ow_destroywidgets]
+    taborder = 3
+    enabled = False
+    bounds_x = 34
+    bounds_y = 4
+    bounds_cx = 656
+    bounds_cy = 45
+    caption = '--:--'
+    font.color = -1610612734
+    font.grayed_color = -1610612734
+    font.height = 38
+    font.style = [fs_bold]
+    font.name = 'stf_default'
+    font.localprops = [flp_color, flp_grayed_color, flp_style, flp_height]
+    textflags = [tf_xcentered, tf_ycentered]
+    reffontheight = 45
+  end
+  object tpaintbox3: tpaintbox
+    optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_mousewheel, ow_destroywidgets]
+    frame.localprops = []
+    frame.localprops1 = []
+    taborder = 4
     onpaint = onpaintev
     bounds_x = 0
     bounds_y = 0
     bounds_cx = 750
-    bounds_cy = 54
+    bounds_cy = 56
     anchors = []
     onmouseevent = onmouseev
-    object tlabel2: tlabel
-      optionswidget1 = [ow1_fontglyphheight, ow1_autoscale, ow1_autoheight]
-      optionswidget = [ow_noscroll, ow_destroywidgets]
-      enabled = False
-      bounds_x = 34
-      bounds_y = 3
-      bounds_cx = 656
-      bounds_cy = 45
-      caption = '--:--'
-      font.color = -1610612734
-      font.grayed_color = -1610612734
-      font.height = 38
-      font.style = [fs_bold]
-      font.name = 'stf_default'
-      font.localprops = [flp_color, flp_grayed_color, flp_style, flp_height]
-      textflags = [tf_xcentered, tf_ycentered]
-      reffontheight = 45
-    end
   end
   object tbutton1: tbutton
     color = 15263976
@@ -231,7 +250,7 @@ object mainfo: tmainfo
   end
   object tthreadcomp4: tthreadcomp
     onexecute = scriptrun
-    left = 344
+    left = 512
   end
   object tthreadcomp5: tthreadcomp
     onexecute = soundrec
@@ -1953,5 +1972,48 @@ object mainfo: tmainfo
       FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
       FFFFFFFFFFFFFFFF
     }
+  end
+  object tfacecomp4: tfacecomp
+    template.fade_pos.count = 2
+    template.fade_pos.items = (
+      0
+      1
+    )
+    template.fade_color.count = 2
+    template.fade_color.items = (
+      15724288
+      -1610612730
+    )
+    template.fade_direction = gd_down
+    left = 360
+  end
+  object tfacecomp5: tfacecomp
+    template.fade_pos.count = 2
+    template.fade_pos.items = (
+      0
+      1
+    )
+    template.fade_color.count = 2
+    template.fade_color.items = (
+      15724288
+      -1610612730
+    )
+    template.fade_direction = gd_up
+    left = 360
+    top = 24
+  end
+  object tfacecomp6: tfacecomp
+    template.fade_pos.count = 2
+    template.fade_pos.items = (
+      0
+      1
+    )
+    template.fade_color.count = 2
+    template.fade_color.items = (
+      -1610612730
+      -1610612730
+    )
+    template.fade_direction = gd_down
+    left = 416
   end
 end

@@ -1,6 +1,6 @@
 object yearlistfo: tyearlistfo
-  bounds_x = 241
-  bounds_y = 238
+  bounds_x = 252
+  bounds_y = 188
   bounds_cx = 777
   bounds_cy = 554
   container.frame.localprops = []
@@ -119,30 +119,12 @@ object yearlistfo: tyearlistfo
   moduleclassname = 'tmseform'
   object tstringgrid1: tstringgrid
     frame.levelo = 0
-    frame.sbvert.facebutton.fade_pos.count = 2
-    frame.sbvert.facebutton.fade_pos.items = (
-      0
-      1
-    )
-    frame.sbvert.facebutton.fade_color.count = 2
-    frame.sbvert.facebutton.fade_color.items = (
-      -1610612730
-      -1610612731
-    )
-    frame.sbvert.facebutton.fade_direction = gd_down
+    frame.sbvert.face.localprops = []
+    frame.sbvert.face.template = tfacecomp1
     frame.sbvert.facebutton.localprops = []
-    frame.sbvert.faceendbutton.fade_pos.count = 2
-    frame.sbvert.faceendbutton.fade_pos.items = (
-      0
-      1
-    )
-    frame.sbvert.faceendbutton.fade_color.count = 2
-    frame.sbvert.faceendbutton.fade_color.items = (
-      -1610612730
-      -1610612731
-    )
-    frame.sbvert.faceendbutton.fade_direction = gd_down
+    frame.sbvert.facebutton.template = mainfo.tfacecomp3
     frame.sbvert.faceendbutton.localprops = []
+    frame.sbvert.faceendbutton.template = mainfo.tfacecomp3
     frame.sbvert.framebutton.colorclient = -2147483645
     frame.sbvert.framebutton.colordkwidth = 0
     frame.sbvert.framebutton.colorhlwidth = 0
@@ -177,7 +159,10 @@ object yearlistfo: tyearlistfo
       item
         colorselect = 16769446
         colorfocused = 16769446
-        width = 674
+        width = 631
+        font.height = 14
+        font.name = 'stf_default'
+        font.localprops = [flp_height]
         datalist.data = (
           ''
           ''
@@ -555,7 +540,7 @@ object yearlistfo: tyearlistfo
         color = 15592941
         face.localprops = []
         face.template = mainfo.tfacecomp3
-        width = 80
+        width = 125
         captions.data = (
           ''
           ''
@@ -924,13 +909,16 @@ object yearlistfo: tyearlistfo
           ''
           ''
         )
+        font.height = 14
+        font.name = 'stf_default'
+        font.localprops = [flp_height]
       end>
     rowcount = 366
     rowcountmax = 366
     zebra_color = 14350303
     zebra_start = 1
     zebra_height = 1
-    datarowheight = 17
+    datarowheight = 23
     onlayoutchanged = olc
     reffontheight = 15
     object tbutton1: tbutton
@@ -940,7 +928,7 @@ object yearlistfo: tyearlistfo
       face.localprops = []
       face.template = mainfo.tfacecomp1
       bounds_x = 704
-      bounds_y = 1
+      bounds_y = 2
       bounds_cx = 50
       bounds_cy = 21
       anchors = [an_top, an_right]
@@ -948,5 +936,19 @@ object yearlistfo: tyearlistfo
       caption = 'Now'
       onexecute = onnow
     end
+  end
+  object tfacecomp1: tfacecomp
+    template.fade_pos.count = 2
+    template.fade_pos.items = (
+      0
+      1
+    )
+    template.fade_color.count = 2
+    template.fade_color.items = (
+      15921906
+      11711154
+    )
+    left = 256
+    top = 56
   end
 end

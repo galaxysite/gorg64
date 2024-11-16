@@ -28,7 +28,7 @@ uses
  msetypes,msekeyboard,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,
  msepointer,msemenus,msegui,msegraphics,msegraphutils,mseevent,mseclasses,
  msewidgets,mseforms,msedragglob,msegrids,msegridsglob,msesimplewidgets,
- msebitmap,mseimage,msetimer,algor, msedispwidgets, mserichstring;
+ msebitmap,mseimage,msetimer,algor, msedispwidgets, mserichstring, math;
 type
  tmsgfo = class(tmseform)
    tstringgrid1: tstringgrid;
@@ -110,13 +110,16 @@ i := system.pos('|',org.hst[f]);
 tstringgrid1.fixcols[-1].captions[f] := system.copy(org.hst[f], 1, i -1);
 tstringgrid1[0].items[f] := system.copy(org.hst[f], i + 1 , length(org.hst[f]));
 end;
+options := options - [fo_minimized];
+show;
 tstringgrid1.setfocus;
 tstringgrid1.invalidatewidget;
-
 end;
 
 procedure tmsgfo.oncreate(const sender: TObject);
 begin
+SetExceptionMask(GetExceptionMask + [exZeroDivide] + [exInvalidOp] +
+    [exDenormalized] + [exOverflow] + [exUnderflow] + [exPrecision]);
 list;
 end;
 
