@@ -1115,11 +1115,13 @@ object settingsfo: tsettingsfo
         font.localprops = [flp_height]
         value = 'English'
         onsetvalue = onsetval
+        dropdown.dropdownrowcount = 40
         dropdown.cols.count = 2
         dropdown.cols.width = 200
         dropdown.cols.textflags = [tf_xcentered, tf_ycentered, tf_noselect]
         dropdown.cols.font.height = 16
         dropdown.cols.font.localprops = [flp_height]
+        dropdown.cols.frametemplate = mainfo.tframecomp2
         dropdown.cols.items = <        
           item
             width = 250

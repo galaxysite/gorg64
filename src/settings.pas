@@ -32,7 +32,7 @@ uses
  msesimplewidgets,msedragglob,msescrollbar,msetabs,msegraphedits,mseificomp,
  mseificompglob,mseifiglob,msekeyboard,mseedit,msestatfile,msestream,sysutils,
  msebitmap,mseimage,unix,mseact,msedataedits,msedatanodes,msedropdownlist,
- msegrids,msegridsglob,mselistbrowser,baseunix,version,lnglist;
+ msegrids,msegridsglob,mselistbrowser,baseunix,version,lnglist,math;
 type
  tsettingsfo = class(tmseform)
    ttabwidget1: ttabwidget;
@@ -143,9 +143,11 @@ end;
 
 procedure tsettingsfo.oncreate(const sender: TObject);
 var f : Int64;
-i : integer = 0;
+i : longint = 0;
 SR      : TSearchRec;
 begin
+ SetExceptionMask(GetExceptionMask + [exZeroDivide] + [exInvalidOp] +
+    [exDenormalized] + [exOverflow] + [exUnderflow] + [exPrecision]);
 mplayercl.text := mplayer_cl;
 arecordcl.text := arecord_cl;
 reccl.text := rec_cl;
@@ -163,7 +165,7 @@ DisplayDblA;
 dispvolume;
 tlabel5.caption  := tlabel5.caption + ' A'  + inttostr(archive_version);
 
-if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
+if FindFirst(langdir + '*.txt', faAnyFile, SR) = 0 then
    begin
      repeat
        inc(i);
@@ -173,18 +175,20 @@ if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
 
 tdropdownlistedit1.dropdown.cols[0].count := i;
 tdropdownlistedit1.dropdown.cols[1].count := i;
+
 i := 0;
    
-if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
+if FindFirst(langdir + '*.txt', faAnyFile, SR) = 0 then
    begin
-     repeat
+       repeat
        tdropdownlistedit1.dropdown.cols[0][i] := system.copy(SR.Name,4,length(SR.Name)-7);
        tdropdownlistedit1.dropdown.cols[1][i] := SR.Name;
+       writeln(SR.Name);
        inc(i);
      until FindNext(SR) <> 0;
-    FindClose(SR);
-   end;  
-   
+       FindClose(SR);
+   end; 
+     
 tdropdownlistedit1.dropdown.ItemIndex := tun.LangNumb;
 
 end;
@@ -350,7 +354,6 @@ procedure tsettingsfo.onsetval(const sender: TObject; var avalue: msestring;
                var accept: Boolean);
 begin
 tun.LangNumb := tdropdownlistedit1.dropdown.ItemIndex;
-application.processmessages;
 mainfo.ChangeLang;
 if assigned(eefo) then eefo.onloadlang();
 application.processmessages;
