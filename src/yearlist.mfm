@@ -927,10 +927,10 @@ object yearlistfo: tyearlistfo
       frame.template = mainfo.tframecomp2
       face.localprops = []
       face.template = mainfo.tfacecomp1
-      bounds_x = 704
-      bounds_y = 2
-      bounds_cx = 50
-      bounds_cy = 21
+      bounds_x = 672
+      bounds_y = 1
+      bounds_cx = 82
+      bounds_cy = 23
       anchors = [an_top, an_right]
       state = [as_localcaption, as_localonexecute]
       caption = 'Now'
