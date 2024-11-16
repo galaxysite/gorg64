@@ -72,6 +72,8 @@ c := 0;
   DateSeparator := '/'; 
   DecodeDate(now, aYear, aMonth, aDay);
   caption := str_yearlist + ' ' + inttostr(aYear);
+  day := ShortDayNames[DayOfWeek(now)];
+  tbutton1.caption := day + ' ' + inttostr(aDay) + '/'+ inttostr(aMonth);
   for f := 1 to 12 do
     for ff := 1 to md[f] do 
      begin
