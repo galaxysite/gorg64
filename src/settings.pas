@@ -183,7 +183,6 @@ if FindFirst(langdir + '*.txt', faAnyFile, SR) = 0 then
        repeat
        tdropdownlistedit1.dropdown.cols[0][i] := system.copy(SR.Name,4,length(SR.Name)-7);
        tdropdownlistedit1.dropdown.cols[1][i] := SR.Name;
-       writeln(SR.Name);
        inc(i);
      until FindNext(SR) <> 0;
        FindClose(SR);
