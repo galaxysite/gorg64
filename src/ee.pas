@@ -362,8 +362,6 @@ end;
 end;
 
 procedure teefo.onloadlang();
-var
-f : integer;
 begin 
 if str_event <> '' then Caption := str_event;
 if str_disable <> '' then
