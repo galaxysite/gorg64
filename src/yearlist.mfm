@@ -919,6 +919,10 @@ object yearlistfo: tyearlistfo
       end>
     rowcount = 366
     rowcountmax = 366
+    rowcolors.count = 1
+    rowcolors.items = (
+      13954303
+    )
     zebra_color = 14350303
     zebra_start = 1
     zebra_height = 1

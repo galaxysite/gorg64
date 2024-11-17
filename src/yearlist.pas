@@ -79,6 +79,8 @@ c := 0;
      begin
         adate :=  StrToDate(inttostr(ff) + '/'+  IntToStr(f) + '/'+ inttostr(aYear)); 
         day := ShortDayNames[DayOfWeek(aDate)];
+        if DayOfWeek(aDate) = 2 then 
+        tstringgrid1.rowcolorstate[c]:= 0;
         tstringgrid1.fixcols[-1].captions[c] := day + ' ' +
         {IntToStr(c+1) + '  ' +} IntToStr(ff) + ' ' + DefaultFormatSettings.ShortMonthNames[f] + '(' + IntToStr(f) + ')';
         Inc(c);
