@@ -622,7 +622,6 @@ end;
 
 procedure tmainfo.menuexit(const sender: TObject);
 begin
-// if askyesno('        Выйти ? | Exit ?        ', 'GORG64') then
  AppClose;
 end;
 
@@ -633,7 +632,7 @@ end;
 
 procedure tmainfo.updatelang();
 begin
-mainfo.DisplayMuteNoact;
+DisplayMuteNoact;
 Tun.SetFixation(Tun.fixation);
 end;
 
