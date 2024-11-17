@@ -75,7 +75,6 @@ c := 0;
   day := ShortDayNames[DayOfWeek(now)];
   tbutton1.caption := day + ' ' + inttostr(aDay) + '/'+ inttostr(aMonth);
   for f := 1 to 12 do
-  begin
      for ff := 1 to md[f] do 
      begin
         if ff = 1 then tstringgrid1.rowcolorstate[c]:= 1;
@@ -87,7 +86,6 @@ c := 0;
         {IntToStr(c+1) + '  ' +} IntToStr(ff) + ' ' + DefaultFormatSettings.ShortMonthNames[f] + '(' + IntToStr(f) + ')';
         Inc(c);
     end;
-  end;  
   ShortDateFormat := OldShortDateFormat;
   DateSeparator := OldDateSeparator;
 {$WARNINGS ON}
