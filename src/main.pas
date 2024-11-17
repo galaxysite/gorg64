@@ -1053,6 +1053,7 @@ with t do begin
  engtrue_calend_layout := false;
  if not tbool then
  begin
+  fnoact := false;
   LangCode := DetectLang;
   main_left := 100;  
   main_top := 10;  
