@@ -21,7 +21,7 @@ ootb:
 	cp ./music/*.* ./gorg64/music/
 	cp ./sound/*.* ./gorg64/sound/
 	cp ./script/*.* ./gorg64/script/
-	tar -zcvf gorg64.tar.gz ./gorg64/
+	tar -zcvf gorg64_2.0.0-1_amd64.tar.gz ./gorg64/
 	-rm -f -r ./gorg64
 
 clean:
