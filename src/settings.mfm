@@ -1080,7 +1080,7 @@ object settingsfo: tsettingsfo
         bounds_cy = 20
         onchange = wlr
       end
-      object tdropdownlistedit1: tdropdownlistedit
+      object langdrop: tdropdownlistedit
         frame.caption = #1071#1079#1099#1082' | Language'
         frame.localprops = []
         frame.localprops1 = []

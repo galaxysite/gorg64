@@ -535,11 +535,15 @@ object yearlistfo: tyearlistfo
         valuetrue = '1'
       end>
     fixcols.count = 1
+    fixcols.linecolor = 9737364
+    fixcols.linecolorfix = 9737364
     fixcols.items = <    
       item
-        color = 15592941
+        color = -2147483645
         face.localprops = []
         face.template = mainfo.tfacecomp3
+        linecolor = 9737364
+        linecolorfix = 9737364
         width = 125
         captions.data = (
           ''
@@ -918,6 +922,7 @@ object yearlistfo: tyearlistfo
     zebra_color = 14350303
     zebra_start = 1
     zebra_height = 1
+    datarowlinecolorfix = -1879048168
     datarowheight = 23
     onlayoutchanged = olc
     reffontheight = 15
