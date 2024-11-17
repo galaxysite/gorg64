@@ -104,6 +104,7 @@ type
    procedure onbutton(const sender: TObject);
    procedure onpaintev(const sender: twidget; const acanvas: tcanvas);
    procedure onloopev(const sender: TObject);
+   procedure updatelang();
   end;
 
   TTW = packed record
@@ -628,6 +629,12 @@ end;
 procedure tmainfo.onmute(const sender: TObject);
 begin
 tun.mute := not tun.mute;
+end;
+
+procedure tmainfo.updatelang();
+begin
+mainfo.DisplayMuteNoact;
+Tun.SetFixation(Tun.fixation);
 end;
 
 procedure tmainfo.soundplay(const sender: tthreadcomp);

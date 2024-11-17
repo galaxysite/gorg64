@@ -353,6 +353,7 @@ procedure tsettingsfo.onsetval(const sender: TObject; var avalue: msestring;
 begin
 tun.LangCode := system.copy(langdrop.dropdown.cols[1][langdrop.dropdown.ItemIndex],1,2);
 mainfo.ChangeLang;
+mainfo.updatelang();
 if assigned(eefo) then eefo.onloadlang();
 application.processmessages;
 langdrop.invalidatewidget;
