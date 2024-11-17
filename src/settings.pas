@@ -32,7 +32,7 @@ uses
  msesimplewidgets,msedragglob,msescrollbar,msetabs,msegraphedits,mseificomp,
  mseificompglob,mseifiglob,msekeyboard,mseedit,msestatfile,msestream,sysutils,
  msebitmap,mseimage,unix,mseact,msedataedits,msedatanodes,msedropdownlist,
- msegrids,msegridsglob,mselistbrowser,baseunix,version,lnglist;
+ msegrids,msegridsglob,mselistbrowser,baseunix,version,lnglist,math;
 type
  tsettingsfo = class(tmseform)
    ttabwidget1: ttabwidget;
@@ -80,7 +80,7 @@ type
    tbooleanedit5: tbooleanedit;
    timage4: timage;
    tpopupmenu2: tpopupmenu;
-   tdropdownlistedit1: tdropdownlistedit;
+   langdrop: tdropdownlistedit;
    procedure onwdbs(const sender: TObject);
    procedure oncreate(const sender: TObject);
    procedure onclose(const sender: TObject);
@@ -143,9 +143,11 @@ end;
 
 procedure tsettingsfo.oncreate(const sender: TObject);
 var f : Int64;
-i : integer = 0;
+i : longint = 0;
 SR      : TSearchRec;
 begin
+ SetExceptionMask(GetExceptionMask + [exZeroDivide] + [exInvalidOp] +
+    [exDenormalized] + [exOverflow] + [exUnderflow] + [exPrecision]);
 mplayercl.text := mplayer_cl;
 arecordcl.text := arecord_cl;
 reccl.text := rec_cl;
@@ -163,7 +165,7 @@ DisplayDblA;
 dispvolume;
 tlabel5.caption  := tlabel5.caption + ' A'  + inttostr(archive_version);
 
-if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
+if FindFirst(langdir + '*.txt', faAnyFile, SR) = 0 then
    begin
      repeat
        inc(i);
@@ -171,22 +173,22 @@ if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
      FindClose(SR);
    end;
 
-tdropdownlistedit1.dropdown.cols[0].count := i;
-tdropdownlistedit1.dropdown.cols[1].count := i;
+langdrop.dropdown.cols[0].count := i;
+langdrop.dropdown.cols[1].count := i;
+
 i := 0;
    
-if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
+if FindFirst(langdir + '*.txt', faAnyFile, SR) = 0 then
    begin
-     repeat
-       tdropdownlistedit1.dropdown.cols[0][i] := system.copy(SR.Name,4,length(SR.Name)-7);
-       tdropdownlistedit1.dropdown.cols[1][i] := SR.Name;
+       repeat
+       langdrop.dropdown.cols[0][i] := system.copy(SR.Name,4,length(SR.Name)-7);
+       langdrop.dropdown.cols[1][i] := SR.Name;
+       if system.copy(SR.Name,1,2) = tun.LangCode then
+        langdrop.dropdown.ItemIndex := i;
        inc(i);
      until FindNext(SR) <> 0;
-    FindClose(SR);
-   end;  
-   
-tdropdownlistedit1.dropdown.ItemIndex := tun.LangNumb;
-
+       FindClose(SR);
+   end; 
 end;
 
 procedure tsettingsfo.onclose(const sender: TObject);
@@ -349,12 +351,12 @@ end;
 procedure tsettingsfo.onsetval(const sender: TObject; var avalue: msestring;
                var accept: Boolean);
 begin
-tun.LangNumb := tdropdownlistedit1.dropdown.ItemIndex;
-application.processmessages;
+tun.LangCode := system.copy(langdrop.dropdown.cols[1][langdrop.dropdown.ItemIndex],1,2);
 mainfo.ChangeLang;
+mainfo.updatelang();
 if assigned(eefo) then eefo.onloadlang();
 application.processmessages;
-tdropdownlistedit1.invalidatewidget;
+langdrop.invalidatewidget;
 end;
 
 end.

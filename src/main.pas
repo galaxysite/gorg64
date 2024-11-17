@@ -104,6 +104,7 @@ type
    procedure onbutton(const sender: TObject);
    procedure onpaintev(const sender: twidget; const acanvas: tcanvas);
    procedure onloopev(const sender: TObject);
+   procedure updatelang();
   end;
 
   TTW = packed record
@@ -127,6 +128,7 @@ TTu = packed record
     book_left, book_top, book_width, book_height : integer;
     book_maximize : bytebool;
     {f_force_reboot}lang_numb : byte;
+    lang_code : shortstring;
     f_force_off, engtrue_calend_layout{f_pwr_off} : bytebool;
     main_fixation : bytebool;
     main_doubleclick_action : Int64;
@@ -150,6 +152,8 @@ PTu = ^TTu;
 	procedure SetFixation(Value : bytebool);
 	procedure SetLangNumb(Value : byte);
 	function GetLangNumb : byte;
+	procedure SetLangCode(Value : shortstring);
+	function GetLangCode : shortstring;
 function r_m : bytebool;
 function r_n : bytebool;
 function r_f : bytebool;
@@ -162,6 +166,7 @@ function r_f : bytebool;
 	property NoAct : bytebool read r_n write SetNoAct;
 	property Fixation : bytebool read r_f write SetFixation;
 	property LangNumb : byte read GetLangNumb write SetLangNumb;
+	property LangCode : shortstring read GetLangCode write SetLangCode;	
     end;  
   
 var
@@ -375,7 +380,7 @@ begin
 AppClose;
 end;
 
-function DetectLang : byte;
+function DetectLang : shortstring;
 var
 i,i2,i3 : integer;
 SR : TSearchRec;
@@ -406,8 +411,8 @@ if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
     FindClose(SR);
    end;   
    
-   if langsys <> '' then result := i2
-   else result := i3;
+   if langsys <> '' then result := system.copy(langsys,1,2)
+   else result := system.copy(langdef,1,2);
   
 end;
 
@@ -417,13 +422,13 @@ i : integer = 0;
 SR : TSearchRec;
 begin
  if tunfileok = false then
- tun.LangNumb := DetectLang;
+ tun.LangCode := DetectLang;
  tunfileok := true;
 
 if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
    begin
      repeat
-      if i = tun.LangNumb then
+      if system.copy(SR.Name,1,2) = tun.LangCode then
       lang := SR.Name;
       inc(i); 
       until FindNext(SR) <> 0;
@@ -435,8 +440,8 @@ if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
 
 if  system.copy(lang,1,2) = 'ru' then begin
  ruenv := true;
- tbutton2.left := tbutton2.left - 50;
- tbutton2.width := tbutton2.width + 50;
+ tbutton2.left := tbutton2.left - 20;
+ tbutton2.width := tbutton2.width + 20;
  for f := 1 to 12 do 
  case f of
   1: mon_names[f] := 'ЯНВАРЬ';
@@ -452,7 +457,11 @@ if  system.copy(lang,1,2) = 'ru' then begin
   11: mon_names[f] := 'НОЯБРЬ';
   12 : mon_names[f] := 'ДЕКАБРЬ';
  end; 
- end else ruenv := false;
+ end else
+ begin
+  ruenv := false;
+  for f := 1 to 12 do mon_names[f] := DefaultFormatSettings.LongMonthNames[f];
+ end;
 
 lang := langdir + lang;
 
@@ -479,6 +488,7 @@ SetExceptionMask(GetExceptionMask + [exZeroDivide] + [exInvalidOp] +
     [exDenormalized] + [exOverflow] + [exUnderflow] + [exPrecision]);
 
 mse_radiuscorner := 30;
+
 {$ifdef ootb}
 homedir := ExtractFilePath(ParamStr(0)) + 'data/';
 workdir := ExtractFilePath(ParamStr(0))  + 'data/';
@@ -532,7 +542,8 @@ LoadClFile(rec_fn, rec_cl);
 LoadClFile(xmp_fn, xmp_cl);
 LoadClFile(mplayer_fn, mplayer_cl);
 
-if fileexists(tunfile) then tunfileok := true;
+if fileexists(tunfile) then
+ tunfileok := true;
 
 Tun.Load;
 
@@ -611,13 +622,18 @@ end;
 
 procedure tmainfo.menuexit(const sender: TObject);
 begin
-// if askyesno('        Выйти ? | Exit ?        ', 'GORG64') then
  AppClose;
 end;
 
 procedure tmainfo.onmute(const sender: TObject);
 begin
 tun.mute := not tun.mute;
+end;
+
+procedure tmainfo.updatelang();
+begin
+DisplayMuteNoact;
+Tun.SetFixation(Tun.fixation);
 end;
 
 procedure tmainfo.soundplay(const sender: tthreadcomp);
@@ -985,6 +1001,16 @@ begin
 if assigned(p) then if p^.lang_numb <= MAX_LANGS then Exit(p^.lang_numb) else Exit(0);
 end;
 
+procedure TTun.SetLangCode(Value : shortstring);
+begin
+if assigned(p) then p^.lang_code := Value;
+end;
+
+function TTun.GetLangCode : shortstring;
+begin
+if assigned(p) then result := p^.lang_code;
+end;
+
 function TTun.map : boolean;
 var h : Int64;
 begin
@@ -1025,7 +1051,13 @@ with t do begin
  engtrue_hour_fmt    := false;
  engtrue_calend_fmt := Byte(PChar(nl_langinfo(_NL_TIME_FIRST_WEEKDAY))^) <> 2; // false;
  engtrue_calend_layout := false;
- if not tbool then LangNumb := DetectLang;
+ if not tbool then
+ begin
+  fnoact := false;
+  LangCode := DetectLang;
+  main_left := 100;  
+  main_top := 10;  
+ end; 
  flash_accmulate := false;
  main_doubleclick_action := 0;
  am_pm[true] := am_hour_pm[true];

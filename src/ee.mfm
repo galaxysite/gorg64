@@ -3,8 +3,8 @@ object eefo: teefo
   frame.localprops = []
   frame.localprops1 = []
   frame.template = tframecomp2
-  bounds_x = 489
-  bounds_y = 199
+  bounds_x = 155
+  bounds_y = 135
   bounds_cx = 1043
   bounds_cy = 575
   container.frame.localprops = []
