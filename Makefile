@@ -3,6 +3,25 @@ PATH := $(PATH):/usr/local/sbin:/usr/sbin:/sbin
 gorg64:
 	cd src && $(MAKE)
 
+ootb:
+	-rm -f -r ./gorg64
+	-mkdir ./gorg64/
+	-mkdir ./gorg64/data/
+	-mkdir ./gorg64/bin/
+	-mkdir ./gorg64/music/
+	-mkdir ./gorg64/sound/
+	-mkdir ./gorg64/lang_s/
+	-mkdir ./gorg64/script/
+	cd src && $(MAKE) ootb
+	cd ../
+	cp ./src/gorg64 ./gorg64/
+	cp ./src/gorg64_spkplay ./src/gorg64_spktone ./src/gorg64_spkon ./src/gorg64_spkoff ./src/gorg64_runner ./gorg64/bin/
+	cp ./lang_s/*.txt ./gorg64/lang_s/
+	cp ./music/*.* ./gorg64/music/
+	cp ./sound/*.* ./gorg64/sound/
+	cp ./script/*.* ./gorg64/script/
+	tar -zcvf gorg64.tar.gz ./gorg64/
+
 clean:
 	cd src && $(MAKE) clean
 	-rm -f gorg64*.deb
