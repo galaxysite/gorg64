@@ -1,6 +1,6 @@
 object yearlistfo: tyearlistfo
-  bounds_x = 252
-  bounds_y = 188
+  bounds_x = 365
+  bounds_y = 294
   bounds_cx = 777
   bounds_cy = 554
   container.frame.localprops = []
@@ -919,11 +919,12 @@ object yearlistfo: tyearlistfo
       end>
     rowcount = 366
     rowcountmax = 366
-    rowcolors.count = 1
+    rowcolors.count = 2
     rowcolors.items = (
       13954303
+      16770026
     )
-    zebra_color = 14350303
+    zebra_color = 15333355
     zebra_start = 1
     zebra_height = 1
     datarowlinecolorfix = -1879048168
