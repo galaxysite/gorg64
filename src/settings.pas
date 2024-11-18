@@ -351,7 +351,7 @@ end;
 procedure tsettingsfo.onsetval(const sender: TObject; var avalue: msestring;
                var accept: Boolean);
 begin
-if fileexists(langdrop.dropdown.cols[1][langdrop.dropdown.ItemIndex])
+if fileexists(langdir + langdrop.dropdown.cols[1][langdrop.dropdown.ItemIndex])
 then 
 begin
   tun.LangCode := system.copy(langdrop.dropdown.cols[1][langdrop.dropdown.ItemIndex],1,2);
