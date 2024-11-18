@@ -29,7 +29,7 @@ program gorg64;
 {$SMARTLINK ON}
 {$ASMMODE INTEL}
 uses
- cthreads,
+ cmem, cthreads,
  msegui, msegraphics, msegraphutils, main, xlib, math
  ,unix,baseunix,linux,sysutils,urunu,x,keysym;
  
