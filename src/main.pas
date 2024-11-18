@@ -1054,7 +1054,7 @@ with t do begin
  if not tbool then
  begin
   fnoact := false;
-  LangCode := DetectLang;
+  lang_numb := DetectLang;
   main_left := 100;  
   main_top := 10;  
  end; 
