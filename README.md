@@ -15,9 +15,12 @@ For GNU/Linux 64 bit version.
 
 ![gorg64_lang](https://github.com/user-attachments/assets/c699ead5-ec7c-412b-8a6d-bdfab1df3c0d)
 
-![gorg64_flash](https://github.com/user-attachments/assets/0ad7951d-c969-4430-bf9e-8d455f397e2f)
+![gorg64_flash](https://github.com/user-attachments/assets/c48fb0d3-1042-4525-badd-1efa2db4cf25)
 
 ![gorg64_year](https://github.com/user-attachments/assets/521b5ccb-be8b-43e5-9033-cb7b38ffc3a3)
 
 
-GORG64 by Alexander.
+Copyright (C) 2024  Artyomov Alexander
+    http://self-made-free.ru/
+    <aralni@mail.ru>
+
