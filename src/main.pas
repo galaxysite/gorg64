@@ -127,7 +127,6 @@ TTu = packed record
     ee_maximize : bytebool;
     book_left, book_top, book_width, book_height : integer;
     book_maximize : bytebool;
-    {f_force_reboot}lang_numb : byte;
     lang_code : shortstring;
     f_force_off, engtrue_calend_layout{f_pwr_off} : bytebool;
     main_fixation : bytebool;
@@ -150,8 +149,6 @@ PTu = ^TTu;
 	procedure SetMute(Value : bytebool);
 	procedure SetNoAct(Value : bytebool);
 	procedure SetFixation(Value : bytebool);
-	procedure SetLangNumb(Value : byte);
-	function GetLangNumb : byte;
 	procedure SetLangCode(Value : shortstring);
 	function GetLangCode : shortstring;
 function r_m : bytebool;
@@ -165,7 +162,6 @@ function r_f : bytebool;
 	property Mute : bytebool read r_m write SetMute;
 	property NoAct : bytebool read r_n write SetNoAct;
 	property Fixation : bytebool read r_f write SetFixation;
-	property LangNumb : byte read GetLangNumb write SetLangNumb;
 	property LangCode : shortstring read GetLangCode write SetLangCode;	
     end;  
   
@@ -991,16 +987,6 @@ begin
 ShowYearList;
 end;
 
-procedure TTun.SetLangNumb(Value : byte);
-begin
-if assigned(p) then if (Value <= MAX_LANGS) then p^.lang_numb := Value else p^.lang_numb := 0;
-end;
-
-function TTun.GetLangNumb : byte;
-begin
-if assigned(p) then if p^.lang_numb <= MAX_LANGS then Exit(p^.lang_numb) else Exit(0);
-end;
-
 procedure TTun.SetLangCode(Value : shortstring);
 begin
 if assigned(p) then p^.lang_code := Value;
@@ -1051,10 +1037,10 @@ with t do begin
  engtrue_hour_fmt    := false;
  engtrue_calend_fmt := Byte(PChar(nl_langinfo(_NL_TIME_FIRST_WEEKDAY))^) <> 2; // false;
  engtrue_calend_layout := false;
+ lang_code := DetectLang;
  if not tbool then
  begin
   fnoact := false;
-  lang_numb := DetectLang;
   main_left := 100;  
   main_top := 10;  
  end; 
