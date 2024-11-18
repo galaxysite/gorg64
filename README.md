@@ -21,6 +21,8 @@ For GNU/Linux 64 bit version.
 
 
 Copyright (C) 2024  Artyomov Alexander
-    http://self-made-free.ru/
-    <aralni@mail.ru>
+
+http://soft.self-made-free.ru/
+
+<aralni@mail.ru>
 
