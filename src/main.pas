@@ -38,7 +38,7 @@ uses
  msesimplewidgets, msewidgets, msebitmap,msegraphics,time,msemenus,
  msethreadcomp, msestrings, msetypes, mseact,unix,baseunix,linux,msetimer,
  msedock,msedragglob,msewidgetgrid,msesyntaxedit,x,xlib,keysym,queue,
- ttafunctions,syscall,lng,lnglist,math;
+ ttafunctions,syscall,lng,math;
 
 procedure clipmon;
 

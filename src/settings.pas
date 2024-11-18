@@ -32,7 +32,7 @@ uses
  msesimplewidgets,msedragglob,msescrollbar,msetabs,msegraphedits,mseificomp,
  mseificompglob,mseifiglob,msekeyboard,mseedit,msestatfile,msestream,sysutils,
  msebitmap,mseimage,unix,mseact,msedataedits,msedatanodes,msedropdownlist,
- msegrids,msegridsglob,mselistbrowser,baseunix,version,lnglist,math;
+ msegrids,msegridsglob,mselistbrowser,baseunix,version,math;
 type
  tsettingsfo = class(tmseform)
    ttabwidget1: ttabwidget;
