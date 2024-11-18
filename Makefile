@@ -15,12 +15,14 @@ ootb:
 	cd src && $(MAKE) ootb
 	cd ../
 	cp ./src/gorg64 ./gorg64/
+	cp LICENSE ./gorg64/
 	cp ./src/gorg64_spkplay ./src/gorg64_spktone ./src/gorg64_spkon ./src/gorg64_spkoff ./src/gorg64_runner ./gorg64/bin/
 	cp ./lang_s/*.txt ./gorg64/lang_s/
 	cp ./music/*.* ./gorg64/music/
 	cp ./sound/*.* ./gorg64/sound/
 	cp ./script/*.* ./gorg64/script/
-	tar -zcvf gorg64.tar.gz ./gorg64/
+	tar -zcvf gorg64_2.0.0-1_amd64.tar.gz ./gorg64/
+	-rm -f -r ./gorg64
 
 clean:
 	cd src && $(MAKE) clean
