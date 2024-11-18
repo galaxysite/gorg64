@@ -58,6 +58,7 @@ end;
 procedure tyearlistfo.onl(const sender: TObject);
   var
       f, ff, c : LongInt;
+      d1 : byte;
       aDate : TDateTime;
       aYear, aMonth, aDay : Word; 
       day    : string;
@@ -66,6 +67,7 @@ procedure tyearlistfo.onl(const sender: TObject);
 begin
 c := 0;
 {$WARNINGS OFF}
+  if tun.p^.engtrue_calend_fmt then d1 := 1 else d1 := 2;
   OldShortDateFormat := ShortDateFormat;
   OldDateSeparator := DateSeparator;
   ShortDateFormat := 'ddmmyyyy'; 
@@ -79,7 +81,7 @@ c := 0;
      begin
         adate :=  StrToDate(inttostr(ff) + '/'+  IntToStr(f) + '/'+ inttostr(aYear)); 
         day := ShortDayNames[DayOfWeek(aDate)];
-        if DayOfWeek(aDate) = 1 then 
+        if DayOfWeek(aDate) = d1 then 
         tstringgrid1.rowcolorstate[c]:= 0;
         if ff = 1 then tstringgrid1.rowcolorstate[c]:= 1;
         tstringgrid1.fixcols[-1].captions[c] := day + ' ' +
