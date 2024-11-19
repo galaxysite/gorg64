@@ -7,7 +7,7 @@ The organizer includes a clock with an alarm, a scheduler, a notebook and a tool
 
 For GNU/Linux 64 bit version.
 
-![gorg64_alarm](https://github.com/user-attachments/assets/a27d1929-530a-4d3a-a6b6-57240b03a82a)
+![gorg64_alarm2](https://github.com/user-attachments/assets/ffe9e7de-cf7a-4af7-ab8e-0032ee6e22a6)
 
 ![gorg64_eveditor](https://github.com/user-attachments/assets/0827257f-175c-44d0-8c80-137004f8a033)
 
