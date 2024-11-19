@@ -44,6 +44,7 @@ type
    trichstockglyphbutton1: trichstockglyphbutton;
    trichstockglyphbutton3: trichstockglyphbutton;
    tpaintbox1: tpaintbox;
+   clocknum: tlabel;
    procedure ontimer(const sender: TObject);
    procedure bclose(const sender: TObject);
    procedure bok(const sender: TObject);
@@ -110,6 +111,8 @@ i := system.pos('|',org.hst[f]);
 tstringgrid1.fixcols[-1].captions[f] := system.copy(org.hst[f], 1, i -1);
 tstringgrid1[0].items[f] := system.copy(org.hst[f], i + 1 , length(org.hst[f]));
 end;
+i := system.pos(' ',tstringgrid1.fixcols[-1].captions[0]);
+clocknum.caption := system.copy(tstringgrid1.fixcols[-1].captions[0], i +1, 5);
 options := options - [fo_minimized];
 show;
 tstringgrid1.setfocus;
