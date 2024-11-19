@@ -7400,18 +7400,23 @@ object msgfo: tmsgfo
     }
     object clocknum: tlabel
       optionswidget1 = [ow1_fontglyphheight]
-      bounds_x = 64
-      bounds_y = 184
-      bounds_cx = 186
-      bounds_cy = 80
+      bounds_x = 8
+      bounds_y = 176
+      bounds_cx = 298
+      bounds_cy = 96
       caption = '88:88'
       font.color = -1610612729
-      font.height = 60
+      font.gloss_color = -1610612730
+      font.grayed_color = -1610612734
+      font.grayed_colorshadow = -1610612734
+      font.grayed_shiftx = 0
+      font.grayed_shifty = 0
+      font.height = 90
       font.style = [fs_bold]
       font.name = 'stf_default'
-      font.localprops = [flp_color, flp_style, flp_height]
+      font.localprops = [flp_color, flp_gloss_color, flp_grayed_color, flp_grayed_colorshadow, flp_grayed_shiftx, flp_grayed_shifty, flp_style, flp_height]
       textflags = [tf_xcentered, tf_ycentered]
-      reffontheight = 71
+      reffontheight = 106
     end
   end
   object tstringdisp1: tstringdisp
