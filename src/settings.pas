@@ -165,22 +165,13 @@ DisplayDblA;
 dispvolume;
 tlabel5.caption  := tlabel5.caption + ' A'  + inttostr(archive_version);
 
-if FindFirst(langdir + '*.txt', faAnyFile, SR) = 0 then
-   begin
-     repeat
-       inc(i);
-     until FindNext(SR) <> 0;
-     FindClose(SR);
-   end;
-
-langdrop.dropdown.cols[0].count := i;
-langdrop.dropdown.cols[1].count := i;
-
 i := 0;
    
 if FindFirst(langdir + '*.txt', faAnyFile, SR) = 0 then
    begin
        repeat
+       langdrop.dropdown.cols[0].count := i+1;
+       langdrop.dropdown.cols[1].count := i+1;
        langdrop.dropdown.cols[0][i] := system.copy(SR.Name,4,length(SR.Name)-7);
        langdrop.dropdown.cols[1][i] := SR.Name;
        if system.copy(SR.Name,1,2) = tun.LangCode then
