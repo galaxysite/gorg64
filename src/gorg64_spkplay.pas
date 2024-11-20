@@ -5,7 +5,6 @@ program gorg64_spkplay;
 {$LONGSTRINGS ON}
 {$SMARTLINK ON}
 {$ASMMODE INTEL}
-{$linklib c}
 
 {
     Program for playing melodys on PC-Speaker.
@@ -30,13 +29,16 @@ program gorg64_spkplay;
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 }
 
-uses sysutils,unix,baseunix,linux,spkunit,urunspk;
+uses sysutils,unix,baseunix,linux,spkunit,urunspk,alsa_sound;
 
 type
       TTW = packed record
        tone, duration : Word;
       end;
       PTW=^TTW;
+
+const
+	vol=30;
 
 var
 	f, ff : Int64;
@@ -72,7 +74,7 @@ end;
 Procedure DoSig(sig : cint);cdecl;
 begin
    writeln('Receiving signal: ',sig);
-   spkoff;
+   if portserr then ALSAsilence(0, false) else spkoff;
    halt(0);
 end;
 
@@ -99,8 +101,6 @@ Halt;
 end;
 
 fpSystem('renice -n -20 -p ' + inttostr(fpgetpid));
-
-if portserr then Halt;
 
    new(na);
    new(oa);
@@ -134,6 +134,34 @@ if portserr then Halt;
      halt(1);
      end;
 
+if portserr then begin WriteLn('Not access to PC-Speaker. Use ALSA.');
+
+if ParamCount = 0 then begin
+ALSAbeep(spkf(1000), 1000, vol, False, 0, true);
+Halt;
+end;
+
+for ff := 1 to ParamCount do begin
+if LoadFromFile(ParamStr(ff)) then begin
+ WriteLn('Err');
+ ALSAbeep(spkf(300), 1000, vol, False, 0, false);
+ Halt(2);
+end;
+WriteLn('* Playing file: ' + fFileName);
+
+for f := 0 to fs-1 do begin
+ if a[f].duration < 1 then continue;
+ if a[f].tone < 1 then begin
+   sleep(a[f].duration);
+ end else begin
+   ALSAbeep(spkf(a[f].tone), a[f].duration, vol, False, 0, false);
+ end;
+end;
+FreeMem(a);
+end;
+
+end else begin WriteLn('Use I/O ports');
+
 if ParamCount = 0 then begin
  spkon; spk(1000); sleep(1000); spkoff;
  Halt;
@@ -160,6 +188,8 @@ end;
 
 spkoff;
 FreeMem(a);
+end;
+
 end;
 
 end.
