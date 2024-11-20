@@ -1040,6 +1040,7 @@ with t do begin
  lang_code := DetectLang;
  if not tbool then
  begin
+  main_fixation := false;
   fnoact := false;
   main_left := 100;  
   main_top := 10;  
