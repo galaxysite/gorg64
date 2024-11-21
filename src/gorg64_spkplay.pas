@@ -134,8 +134,6 @@ fpSystem('renice -n -20 -p ' + inttostr(fpgetpid));
      halt(1);
      end;
 
-if not FileExists('/dev/input/by-path/platform-pcspkr-event-spkr') then begin writeln('May be running on notebook ? File platform-pcspkr-event-spkr not exists.'); portserr := true; end;
-
 if portserr then begin WriteLn('Not access to PC-Speaker. Use ALSA.');
 
 if ParamCount = 0 then begin
