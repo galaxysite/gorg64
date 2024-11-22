@@ -49,7 +49,6 @@ type
    trichbutton2: trichbutton;
    ttabpage4: ttabpage;
    tbooleanedit3: tbooleanedit;
-   tlabel6: tlabel;
    timage2: timage;
    timage3: timage;
    tbutton1: tbutton;
@@ -113,25 +112,26 @@ type
    procedure wlr(const sender: TObject);
    procedure onsetval(const sender: TObject; var avalue: msestring;
                    var accept: Boolean);
+   procedure onsetlang();                
  end;
 var
  settingsfo: tsettingsfo;
  efsettingsfo : boolean = false;
 implementation
 uses
- settings_mfm,main,clockpanel,ee;
+ settings_mfm,main,clockpanel,ee,lng;
  
 procedure tsettingsfo.DisplayDblA;
 begin
 case tun.p^.main_doubleclick_action of
-0: tbutton1.caption := 'Добавить событие | Add event';
-1: tbutton1.caption := 'Остановить воспроизведение | Stop playing';
-2: tbutton1.caption := 'Выключить / включить звук | On / Off sound';
-3: tbutton1.caption := 'Выключить / включить действия | On / Off actions';
-4: tbutton1.caption := 'Редактировать список событий | Edit event list';
-5: tbutton1.caption := 'Молния | Flash';
-6: tbutton1.caption := 'Показать панель часов | Show clock panel';
-7: tbutton1.caption := 'Выйти из программы | Exit';
+0: tbutton1.caption := str_addevent;
+1: tbutton1.caption := str_stopplaying;
+2: tbutton1.caption := str_mute;
+3: tbutton1.caption := str_noact;
+4: tbutton1.caption := str_editevents;
+5: tbutton1.caption := str_flash;
+6: tbutton1.caption := str_clockpanel;
+7: tbutton1.caption := str_quit;
 end;
 end; 
 
@@ -139,6 +139,45 @@ procedure tsettingsfo.onwdbs(const sender: TObject);
 begin
 tun.p^.engtrue_calend_fmt := tbooleanedit1.value;
 mainfo.Display; if efclockpanel then clockpanelfo.Display;
+end;
+
+procedure tsettingsfo.onsetlang();
+begin
+caption := str_settings;
+ttabpage1.caption := str_about;
+trichbutton1.caption := str_emailtoauthor;
+trichbutton1.captionrich := str_emailtoauthor;
+trichbutton2.caption := str_visithomepage;
+trichbutton2.captionrich := str_visithomepage;
+ttabpage2.caption := str_mainpanel;
+tbooleanedit1.frame.caption := str_firstweekdayissunday ;
+tbooleanedit2.frame.caption := str_12hoursformat;
+tedit1.frame.caption := str_am;
+tedit2.frame.caption := str_pm;
+tbutton1.frame.caption := str_doubleclickaction;
+tbooleanedit5.frame.caption := str_lefttorightweekdaysorder;
+langdrop.frame.caption := str_language;
+
+ttabpage3.caption := str_sound;
+tbooleanedit4.frame.caption := str_turnonvolumecontrolformplayer;
+tbutton2.caption := str_deletenotusedsoundfiles;
+tbutton3.caption := str_inhz;
+tbutton4.caption := str_inspeakerunits;
+tbutton5.caption := str_speakeroff;
+tbutton6.caption := str_speakeron;
+tlabel15.caption := str_soundgenerator;
+
+ttabpage4.caption := str_clockpanel;
+tbooleanedit3.frame.caption := str_smallscreen;
+tpopupmenu1.menu.submenu[0].caption := str_addevent;
+tpopupmenu1.menu.submenu[1].caption := str_stopplaying;
+tpopupmenu1.menu.submenu[2].caption := str_mute;
+tpopupmenu1.menu.submenu[3].caption := str_noact;
+tpopupmenu1.menu.submenu[4].caption := str_editevents;
+tpopupmenu1.menu.submenu[5].caption := str_flash;
+tpopupmenu1.menu.submenu[6].caption := str_clockpanel;
+tpopupmenu1.menu.submenu[7].caption := str_quit;
+
 end;
 
 procedure tsettingsfo.oncreate(const sender: TObject);
@@ -179,7 +218,10 @@ if FindFirst(langdir + '*.txt', faAnyFile, SR) = 0 then
        inc(i);
      until FindNext(SR) <> 0;
        FindClose(SR);
-   end; 
+   end;
+  
+onsetlang();   
+    
 end;
 
 procedure tsettingsfo.onclose(const sender: TObject);
@@ -293,8 +335,8 @@ procedure tsettingsfo.onactionchange(const sender: TObject);
 var
 po: pointty;
 begin
-po.x := tbutton1.left;
-po.y := tbutton1.top;
+po.x := tbutton1.left + (tbutton1.width div 2) - 30;
+po.y := tbutton1.top -10;
 tpopupmenu1.show(self, po);
 end;
 
@@ -352,6 +394,8 @@ begin
   if efEEfo then eefo.onloadlang();
   application.processmessages;
   langdrop.invalidatewidget;
+  onsetlang();
+  DisplayDblA;
 end;
 end;
 

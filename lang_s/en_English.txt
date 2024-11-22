@@ -58,3 +58,28 @@ p_september=September
 p_october=October
 p_november=November
 p_december=December
+about=About
+emailtoauthor=Email to author
+visithomepage=Visit homepage
+mainpanel=Main panel
+firstweekdayissunday=First weekday is sunday
+12hoursformat=12 hours format
+am=am
+pm=pm
+doubleclickaction=Double click action
+lefttorightweekdaysorder=Left to right weekdays order
+language=Language
+sound=Sound
+turnonvolumecontrolformplayer=Turn on volume control for Mplayer
+deletenotusedsoundfiles=Delete not used soundfiles
+inhz=In Hz
+inspeakerunits=In speaker units
+speakeroff=Speaker off
+speakeron=Speaker on
+soundgenerator=Sound generator
+smallscreen=Small screen
+stopplaying=Stop playing
+
+
+
+

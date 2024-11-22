@@ -64,6 +64,30 @@ str_october : utf8string = '';
 str_november : utf8string = '';
 str_december : utf8string = '';
 
+str_about : utf8string = '';
+str_emailtoauthor : utf8string = '';
+str_visithomepage : utf8string = '';
+str_mainpanel : utf8string = '';
+str_firstweekdayissunday : utf8string = '';
+str_12hoursformat : utf8string = '';
+str_am : utf8string = '';
+str_pm : utf8string = '';
+str_doubleclickaction : utf8string = '';
+str_lefttorightweekdaysorder : utf8string = '';
+str_language : utf8string = '';
+
+str_sound : utf8string = '';
+str_turnonvolumecontrolformplayer : utf8string = '';
+str_deletenotusedsoundfiles : utf8string = '';
+str_inhz : utf8string = '';
+str_inspeakerunits : utf8string = '';
+str_speakeroff : utf8string = '';
+str_speakeron : utf8string = '';
+str_soundgenerator : utf8string = '';
+
+str_smallscreen : utf8string = '';
+str_stopplaying : utf8string = '';
+
 c_oneshot = 0;
 c_hourly = 1;
 c_daily = 2;
@@ -177,6 +201,31 @@ if t.a = 'p_september' then str_september := t.v;
 if t.a = 'p_october' then str_october := t.v;
 if t.a = 'p_november' then str_november := t.v;
 if t.a = 'p_december' then str_december := t.v;
+
+
+if t.a = 'about' then str_about := t.v;
+if t.a = 'emailtoauthor' then str_emailtoauthor := t.v;
+if t.a = 'visithomepage' then str_visithomepage := t.v;
+if t.a = 'mainpanel' then str_mainpanel := t.v;
+if t.a = 'firstweekdayissunday' then str_firstweekdayissunday := t.v;
+if t.a = '12hoursformat' then str_12hoursformat := t.v;
+if t.a = 'am' then str_am := t.v;
+if t.a = 'pm' then str_pm := t.v;
+if t.a = 'doubleclickaction' then str_doubleclickaction := t.v;
+if t.a = 'lefttorightweekdaysorder' then str_lefttorightweekdaysorder := t.v;
+if t.a = 'language' then str_language := t.v;
+
+if t.a = 'sound' then str_sound := t.v;
+if t.a = 'turnonvolumecontrolformplayer' then str_turnonvolumecontrolformplayer := t.v;
+if t.a = 'deletenotusedsoundfiles' then str_deletenotusedsoundfiles := t.v;
+if t.a = 'inhz' then str_inhz := t.v;
+if t.a = 'inspeakerunits' then str_inspeakerunits := t.v;
+if t.a = 'speakeroff' then str_speakeroff := t.v;
+if t.a = 'speakeron' then str_speakeron := t.v;
+if t.a = 'soundgenerator' then str_soundgenerator := t.v;
+if t.a = 'smallscreen' then str_smallscreen := t.v;
+if t.a = 'stopplaying' then str_stopplaying := t.v;
+
 end; {wend}
 {$I-}
 Close(fp);
