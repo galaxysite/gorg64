@@ -1,7 +1,7 @@
 object organizationfo: torganizationfo
   color = 14737632
-  bounds_x = 311
-  bounds_y = 235
+  bounds_x = 454
+  bounds_y = 184
   bounds_cx = 751
   bounds_cy = 480
   container.frame.localprops = []

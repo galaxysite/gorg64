@@ -81,6 +81,7 @@ type
    procedure onnm3(const sender: TObject);
    procedure onnm4(const sender: TObject);
    procedure onnm5(const sender: TObject);
+   procedure onloadlang();
  end;
 var
  peoplefo: tpeoplefo;
@@ -88,11 +89,36 @@ var
 fullname1, fullname2, fullname3, fullname4, fullname5: msestring;
 implementation
 uses
- people_mfm,notebook,math,main;
+ people_mfm,notebook,math,main,lng;
 procedure tpeoplefo.onclose(const sender: TObject);
 begin
 FLoader.Free;
 efpeoplefo := false;
+end;
+
+procedure tpeoplefo.onloadlang();
+begin
+caption := str_people;
+group2.frame.caption := str_group;
+displayas.frame.caption := str_displayas;
+namep.frame.caption := str_name;
+alias.frame.caption := str_alias;
+email.frame.caption := str_email;
+site.frame.caption := str_site;
+phone.frame.caption := str_phone;
+address.frame.caption := str_address;
+map.frame.caption := str_map;
+postalindex.frame.caption := str_postalindex;
+freearea.frame.caption := str_freearea;
+surname.frame.caption := str_surname;
+patronym.frame.caption := str_patronym;
+birthday.frame.caption := str_birthday;
+deathday.frame.caption := str_deadday;
+photo.frame.caption := str_photo;
+video.frame.caption := str_video;
+gender.frame.caption := str_gender;
+workarea.frame.caption := str_workarea;
+dir.frame.caption := str_dir;
 end;
 
 procedure tpeoplefo.oncreate(const sender: TObject);
@@ -151,6 +177,7 @@ group2.dropdown.cols := group.dropdown.cols;
 group3.dropdown.cols := group.dropdown.cols;
 gender.dropdown.cols.rowcount := Length(ugen);
 for f := 0 to High(ugen) do gender.dropdown.cols[0].items[f] := ugen[f];
+onloadlang();
 end;
 
 procedure tpeoplefo.ok;

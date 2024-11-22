@@ -79,7 +79,27 @@ speakeron=Speaker on
 soundgenerator=Sound generator
 smallscreen=Small screen
 stopplaying=Stop playing
-
-
-
-
+n_people=People
+n_organizations=Organizations
+n_group=Group
+n_displayas=Display as
+n_name=Name
+n_alias=Alias
+n_email=Email
+n_site=Site
+n_phone=Phone
+n_address=Address
+n_map=Map
+n_postalindex=Postal index
+n_freearea=Free area
+n_surname=Surname
+n_patronym =Patronym
+n_birthday=Birthday
+n_deadday=Deadday
+n_photo=Photo
+n_video=Video
+n_gender=Gender
+n_workarea=Work area
+n_dir=Directory
+n_account=Account
+n_hoursofoperation=Hours of operation

@@ -67,6 +67,7 @@ type
    procedure onexepl(const sender: tthreadcomp);
    procedure onphotochange(const sender: TObject);
    procedure onexeph(const sender: tthreadcomp);
+   procedure onloadlang();
  end;
 var
  organizationfo: torganizationfo;
@@ -74,11 +75,31 @@ var
  photoview : boolean = false;
 implementation
 uses
- organization_mfm,notebook, main;
+ organization_mfm,notebook, main, lng;
 procedure torganizationfo.onclose(const sender: TObject);
 begin
 FLoader.Free;
 eforganizationfo := false;
+end;
+
+procedure torganizationfo.onloadlang();
+begin
+caption := str_organizations;
+freearea1.frame.caption := str_group;
+displayas.frame.caption := str_displayas;
+nameo.frame.caption := str_name;
+email.frame.caption := str_email;
+site.frame.caption := str_site;
+phone.frame.caption := str_phone;
+address.frame.caption := str_address;
+map.frame.caption := str_map;
+postalindex.frame.caption := str_postalindex;
+freearea.frame.caption := str_freearea;
+account.frame.caption := str_account;
+hoursofoperation.frame.caption := str_hoursofoperation;
+photo.frame.caption := str_photo;
+video.frame.caption := str_video;
+dir.frame.caption := str_dir;
 end;
 
 procedure torganizationfo.oncreate(const sender: TObject);
@@ -132,6 +153,7 @@ end;
 group1.dropdown.cols := group.dropdown.cols;
 group2.dropdown.cols := group.dropdown.cols;
 group3.dropdown.cols := group.dropdown.cols;
+onloadlang();
 end;
 
 procedure torganizationfo.keyup(const sender: twidget;

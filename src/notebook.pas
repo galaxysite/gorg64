@@ -40,6 +40,7 @@ type
    procedure onemail(const sender: TObject);
    procedure ontel(const sender: TObject);
    procedure oncelev(const sender: TObject; var info: celleventinfoty);
+   procedure onloadlang();
  end;
  
  tnbcommon = object
@@ -112,7 +113,7 @@ procedure LoadUnique;
  
 implementation
 uses
- notebook_mfm,main;
+ notebook_mfm,main, lng;
  
 procedure LoadUnique;
  procedure SetUniq(var a : taos; const s : msestring);
@@ -359,6 +360,14 @@ end;
 procedure tnotebookfo.oncreate(const sender: TObject);
 begin
 Display;
+onloadlang();
+end;
+
+procedure tnotebookfo.onloadlang();
+begin
+caption := str_notebook;
+ttabpage1.caption := str_people;
+ttabpage2.caption := str_organizations;
 end;
 
 procedure tnotebookfo.Display;

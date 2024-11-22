@@ -88,6 +88,32 @@ str_soundgenerator : utf8string = '';
 str_smallscreen : utf8string = '';
 str_stopplaying : utf8string = '';
 
+str_people : utf8string = '';
+str_organizations : utf8string = '';
+
+str_group : utf8string = '';
+str_displayas : utf8string = '';
+str_name : utf8string = '';
+str_alias : utf8string = '';
+str_email : utf8string = '';
+str_site : utf8string = '';
+str_phone : utf8string = '';
+str_address : utf8string = '';
+str_map : utf8string = '';
+str_postalindex : utf8string = '';
+str_freearea : utf8string = '';
+str_surname : utf8string = '';
+str_patronym : utf8string = '';
+str_birthday : utf8string = '';
+str_deadday : utf8string = '';
+str_photo : utf8string = '';
+str_video : utf8string = '';
+str_gender : utf8string = '';
+str_workarea : utf8string = '';
+str_dir : utf8string = '';
+str_account : utf8string = '';
+str_hoursofoperation : utf8string = '';
+
 c_oneshot = 0;
 c_hourly = 1;
 c_daily = 2;
@@ -225,6 +251,32 @@ if t.a = 'speakeron' then str_speakeron := t.v;
 if t.a = 'soundgenerator' then str_soundgenerator := t.v;
 if t.a = 'smallscreen' then str_smallscreen := t.v;
 if t.a = 'stopplaying' then str_stopplaying := t.v;
+
+if t.a = 'n_people' then str_people := t.v;
+if t.a = 'n_organizations' then str_organizations := t.v;
+
+if t.a = 'n_group' then str_group := t.v;
+if t.a = 'n_displayas' then str_displayas := t.v;
+if t.a = 'n_name' then str_name := t.v;
+if t.a = 'n_alias' then str_alias := t.v;
+if t.a = 'n_email' then str_email := t.v;
+if t.a = 'n_site' then str_site := t.v;
+if t.a = 'n_phone' then str_phone := t.v;
+if t.a = 'n_address' then str_address := t.v;
+if t.a = 'n_map' then str_map := t.v;
+if t.a = 'n_postalindex' then str_postalindex := t.v;
+if t.a = 'n_freearea' then str_freearea := t.v;
+if t.a = 'n_surname' then str_surname := t.v;
+if t.a = 'n_patronym ' then str_patronym := t.v;
+if t.a = 'n_birthday' then str_birthday := t.v;
+if t.a = 'n_deadday' then str_deadday := t.v;
+if t.a = 'n_photo' then str_photo := t.v;
+if t.a = 'n_video' then str_video := t.v;
+if t.a = 'n_gender' then str_gender := t.v;
+if t.a = 'n_workarea' then str_workarea := t.v;
+if t.a = 'n_dir' then str_dir := t.v;
+if t.a = 'n_account' then str_account := t.v;
+if t.a = 'n_hoursofoperation' then str_hoursofoperation := t.v;
 
 end; {wend}
 {$I-}
