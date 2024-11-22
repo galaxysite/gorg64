@@ -414,15 +414,6 @@ mo10.caption := '10 ' + mon_names[10];
 mo11.caption := '11 ' + mon_names[11];
 mo12.caption := '12 ' + mon_names[12];
 
-end;  
- 
-procedure teefo.oncr(const sender: TObject);
-var f, ff : LongInt;
-s : msestringarty;
-a : array[0..6] of Int64;
-begin
-if ruenv then begin font.height := 28; tlabel1.font.height := 28; end;
-
 wd1.caption := wdn2[1];
 wd2.caption := wdn2[2];
 wd3.caption := wdn2[3];
@@ -430,6 +421,16 @@ wd4.caption := wdn2[4];
 wd5.caption := wdn2[5];
 wd6.caption := wdn2[6];
 wd7.caption := wdn2[7];
+
+end;  
+ 
+procedure teefo.oncr(const sender: TObject);
+var f, ff : LongInt;
+s : msestringarty;
+a : array[0..6] of Int64;
+begin
+
+if ruenv then begin font.height := 28; tlabel1.font.height := 28; end;
 
 if tun.p^.engtrue_calend_layout then begin
 	wd1.caption := wd1.caption[1]; wd1.width := md1.width;

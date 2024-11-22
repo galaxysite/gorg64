@@ -42,6 +42,28 @@ str_addpeople : utf8string = '';
 str_notebook : utf8string = '';
 str_editevents : utf8string = '';
 str_addevent : utf8string = '';
+
+str_sunday : utf8string = '';
+str_monday : utf8string = '';
+str_tuesday : utf8string = '';
+str_wednesday : utf8string = '';
+str_thursday : utf8string = '';
+str_friday : utf8string = '';
+str_saturday : utf8string = '';
+
+str_january : utf8string = '';
+str_february : utf8string = '';
+str_march : utf8string = '';
+str_april : utf8string = '';
+str_may : utf8string = '';
+str_june : utf8string = '';
+str_july : utf8string = '';
+str_august : utf8string = '';
+str_september : utf8string = '';
+str_october : utf8string = '';
+str_november : utf8string = '';
+str_december : utf8string = '';
+
 c_oneshot = 0;
 c_hourly = 1;
 c_daily = 2;
@@ -134,6 +156,27 @@ if t.a = 'p_days' then str_per[c_days] := t.v;
 if t.a = 'p_hours' then str_per[c_hours] := t.v;
 if t.a = 'p_minutes' then str_per[c_minutes] := t.v;
 if t.a = 'p_monthly' then str_per[c_monthly] := t.v;
+
+if t.a = 'p_sunday' then str_sunday := t.v;
+if t.a = 'p_monday' then str_monday := t.v;
+if t.a = 'p_tuesday' then str_tuesday := t.v;
+if t.a = 'p_wednesday' then str_wednesday := t.v;
+if t.a = 'p_thursday' then str_thursday := t.v;
+if t.a = 'p_friday' then str_friday := t.v;
+if t.a = 'p_saturday' then str_saturday := t.v;
+
+if t.a = 'p_january' then str_january := t.v;
+if t.a = 'p_february' then str_february := t.v;
+if t.a = 'p_march' then str_march := t.v;
+if t.a = 'p_april' then str_april := t.v;
+if t.a = 'p_may' then str_may := t.v;
+if t.a = 'p_june' then str_june := t.v;
+if t.a = 'p_july' then str_july := t.v;
+if t.a = 'p_august' then str_august := t.v;
+if t.a = 'p_september' then str_september := t.v;
+if t.a = 'p_october' then str_october := t.v;
+if t.a = 'p_november' then str_november := t.v;
+if t.a = 'p_december' then str_december := t.v;
 end; {wend}
 {$I-}
 Close(fp);

@@ -32,7 +32,7 @@ onetime : boolean;
  
 implementation
 uses
- yearlist_mfm, lng;
+ yearlist_mfm, lng, time;
 procedure tyearlistfo.keyup(const sender: twidget; var ainfo: keyeventinfoty);
 begin
 if ainfo.key = key_Escape then Close;
@@ -74,18 +74,21 @@ c := 0;
   DateSeparator := '/'; 
   DecodeDate(now, aYear, aMonth, aDay);
   caption := str_yearlist + ' ' + inttostr(aYear);
-  day := ShortDayNames[DayOfWeek(now)];
+  if DayOfWeek(now) = 1  then day := wdn2[7] else
+   day := wdn2[DayOfWeek(now)-1];
+   
   tbutton1.caption := day + ' ' + inttostr(aDay) + '/'+ inttostr(aMonth);
   for f := 1 to 12 do
      for ff := 1 to md[f] do 
      begin
         adate :=  StrToDate(inttostr(ff) + '/'+  IntToStr(f) + '/'+ inttostr(aYear)); 
-        day := ShortDayNames[DayOfWeek(aDate)];
+        if DayOfWeek(aDate) = 1  then day := wdn2[7] else
+        day := wdn2[DayOfWeek(aDate)-1];  
         if DayOfWeek(aDate) = d1 then 
         tstringgrid1.rowcolorstate[c]:= 0;
         if ff = 1 then tstringgrid1.rowcolorstate[c]:= 1;
         tstringgrid1.fixcols[-1].captions[c] := day + ' ' +
-        {IntToStr(c+1) + '  ' +} IntToStr(ff) + ' ' + DefaultFormatSettings.ShortMonthNames[f] + '(' + IntToStr(f) + ')';
+        {IntToStr(c+1) + '  ' +} IntToStr(ff) + ' ' + mon_names3[f] + '(' + IntToStr(f) + ')';
         Inc(c);
     end;
   ShortDateFormat := OldShortDateFormat;
