@@ -267,7 +267,7 @@ if t.a = 'n_map' then str_map := t.v;
 if t.a = 'n_postalindex' then str_postalindex := t.v;
 if t.a = 'n_freearea' then str_freearea := t.v;
 if t.a = 'n_surname' then str_surname := t.v;
-if t.a = 'n_patronym ' then str_patronym := t.v;
+if t.a = 'n_patronym' then str_patronym := t.v;
 if t.a = 'n_birthday' then str_birthday := t.v;
 if t.a = 'n_deadday' then str_deadday := t.v;
 if t.a = 'n_photo' then str_photo := t.v;

@@ -1,7 +1,7 @@
 object peoplefo: tpeoplefo
   color = 14935011
-  bounds_x = 291
-  bounds_y = 285
+  bounds_x = 463
+  bounds_y = 204
   bounds_cx = 843
   bounds_cy = 451
   container.frame.localprops = []
