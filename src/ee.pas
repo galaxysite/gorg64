@@ -421,6 +421,22 @@ var f, ff : LongInt;
 s : msestringarty;
 a : array[0..6] of Int64;
 begin
+ for f := 1 to 12 do 
+ case f of
+  1: mon_names[f] := str_january;
+  2: mon_names[f] := str_february;
+  3: mon_names[f] := str_march;
+  4: mon_names[f] := str_april;
+  5: mon_names[f] := str_may;
+  6: mon_names[f] := str_june;
+  7: mon_names[f] := str_july;
+  8: mon_names[f] := str_august;
+  9: mon_names[f] := str_september;
+  10: mon_names[f] := str_october;
+  11: mon_names[f] := str_november;
+  12 : mon_names[f] := str_december;
+  end;
+
 if ruenv then begin font.height := 28; tlabel1.font.height := 28; end;
 
 wd1.caption := wdn2[1];

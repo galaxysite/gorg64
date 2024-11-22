@@ -38,7 +38,7 @@ uses
  msesimplewidgets, msewidgets, msebitmap,msegraphics,time,msemenus,
  msethreadcomp, msestrings, msetypes, mseact,unix,baseunix,linux,msetimer,
  msedock,msedragglob,msewidgetgrid,msesyntaxedit,x,xlib,keysym,queue,
- ttafunctions,syscall,lng,math;
+ ttafunctions,syscall,lng,math,lazutf8;
 
 procedure clipmon;
 
@@ -434,34 +434,81 @@ if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
  tbutton2.left := 698;
  tbutton2.width := 40;
 
-if  system.copy(lang,1,2) = 'ru' then begin
+ if system.copy(lang,1,2) = 'ru' then 
+ begin
  ruenv := true;
  tbutton2.left := tbutton2.left - 20;
  tbutton2.width := tbutton2.width + 20;
- for f := 1 to 12 do 
- case f of
-  1: mon_names[f] := 'ЯНВАРЬ';
-  2: mon_names[f] := 'ФЕВРАЛЬ';
-  3: mon_names[f] := 'МАРТ';
-  4: mon_names[f] := 'АПРЕЛЬ';
-  5: mon_names[f] := 'МАЙ';
-  6: mon_names[f] := 'ИЮНЬ';
-  7: mon_names[f] := 'ИЮЛЬ';
-  8: mon_names[f] := 'АВГУСТ';
-  9: mon_names[f] := 'СЕНТЯБРЬ';
-  10: mon_names[f] := 'ОКТЯБРЬ';
-  11: mon_names[f] := 'НОЯБРЬ';
-  12 : mon_names[f] := 'ДЕКАБРЬ';
- end; 
- end else
- begin
-  ruenv := false;
-  for f := 1 to 12 do mon_names[f] := DefaultFormatSettings.LongMonthNames[f];
- end;
+ end else ruenv := false;
 
 lang := langdir + lang;
 
 LoadLng(lang);
+
+ for f := 1 to 12 do 
+ begin
+ case f of
+  1: mon_names[f] := str_january;
+  2: mon_names[f] := str_february;
+  3: mon_names[f] := str_march;
+  4: mon_names[f] := str_april;
+  5: mon_names[f] := str_may;
+  6: mon_names[f] := str_june;
+  7: mon_names[f] := str_july;
+  8: mon_names[f] := str_august;
+  9: mon_names[f] := str_september;
+  10: mon_names[f] := str_october;
+  11: mon_names[f] := str_november;
+  12 : mon_names[f] := str_december;  
+ end;
+//  writeln(mon_names[f]);
+  end;
+  
+ for f := 1 to 12 do 
+ begin
+ case f of
+  1: mon_names3[f] := lowercase(utf8copy(str_january,1,3));
+  2: mon_names3[f] := lowercase(utf8copy(str_february,1,3));
+  3: mon_names3[f] := lowercase(utf8copy(str_march,1,3));
+  4: mon_names3[f] := lowercase(utf8copy(str_april,1,3));
+  5: mon_names3[f] := lowercase(utf8copy(str_may,1,3));
+  6: mon_names3[f] := lowercase(utf8copy(str_june,1,3));
+  7: mon_names3[f] := lowercase(utf8copy(str_july,1,3));
+  8: if tun.LangCode = 'fr' then mon_names3[f] := 'jul'
+     else mon_names3[f] := lowercase(utf8copy(str_august,1,3));
+  9: mon_names3[f] := lowercase(utf8copy(str_september,1,3));
+  10: mon_names3[f] := lowercase(utf8copy(str_october,1,3));
+  11: mon_names3[f] := lowercase(utf8copy(str_november,1,3)); 
+  12 : mon_names3[f] := lowercase(utf8copy(str_december,1,3));
+end;  
+// writeln(mon_names3[f]);
+end;
+  
+wdn2[7] := utf8copy(str_sunday,1,3);
+wdn[7] := str_sunday;
+
+for f := 2 to 7 do 
+begin
+ case f of
+  2: wdn2[f-1] := lowercase(utf8copy(str_monday,1,3));
+  3: wdn2[f-1] := lowercase(utf8copy(str_tuesday,1,3));
+  4: wdn2[f-1] := lowercase(utf8copy(str_wednesday,1,3));
+  5: wdn2[f-1] := lowercase(utf8copy(str_thursday,1,3));
+  6: wdn2[f-1] := lowercase(utf8copy(str_friday,1,3));
+  7: wdn2[f-1] := lowercase(utf8copy(str_saturday,1,3));
+end;
+// writeln(wdn2[f-1]);
+end;
+
+for f := 2 to 7 do 
+ case f of
+  2: wdn[f-1] := str_monday;
+  3: wdn[f-1] := str_tuesday;
+  4: wdn[f-1] := str_wednesday;
+  5: wdn[f-1] := str_thursday;
+  6: wdn[f-1] := str_friday;
+  7: wdn[f-1] := str_saturday;
+end;
 
 if str_editevents <> '' then mainfo.tpopupmenu1.menu.items[3].caption := str_editevents;
 if str_addevent <> '' then mainfo.tpopupmenu1.menu.items[4].caption := str_addevent;
@@ -569,8 +616,9 @@ end;
 
 procedure tmainfo.Display;
 begin
-mainfo.tlabel2.Caption := IntToHour(hour) + ':' + IntToFix2Str(minute) + ' ' + mon_names3[month] + IntToMonth(year,month) + ' ' +
-wdn2[WeekdayRu(year, month, day)] + ' ' + IntToStr(day) + ' ' + IntToStr(year) + ' [' + IntToStr(org.orgtodaycount) + ']';
+tlabel2.Caption := IntToHour(hour) + ':' + IntToFix2Str(minute) + ' ' + mon_names3[month] + IntToMonth(year,month) + ' '
+ + wdn2[WeekdayRu(year, month, day)] + ' ' + IntToStr(day) + ' ' + IntToStr(year)
+ + ' [' + IntToStr(org.orgtodaycount) + ']';
 end;
 
 procedure tmainfo.doubleclick_action;

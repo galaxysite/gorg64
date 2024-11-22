@@ -348,7 +348,8 @@ begin
   tun.LangCode := system.copy(langdrop.dropdown.cols[1][langdrop.dropdown.ItemIndex],1,2);
   mainfo.ChangeLang;
   mainfo.updatelang();
-  if assigned(eefo) then eefo.onloadlang();
+  mainfo.Display;
+  if efEEfo then eefo.onloadlang();
   application.processmessages;
   langdrop.invalidatewidget;
 end;
