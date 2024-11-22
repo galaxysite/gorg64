@@ -22,7 +22,7 @@ ootb:
 	cp ./music/*.* ./gorg64/music/
 	cp ./sound/*.* ./gorg64/sound/
 	cp ./script/*.* ./gorg64/script/
-	tar -zcvf gorg64_2.0.0-1_amd64.tar.gz ./gorg64/
+	tar -zcvf gorg64_2.0.0-2_amd64.tar.gz ./gorg64/
 	-rm -f -r ./gorg64
 
 clean:
@@ -40,7 +40,7 @@ archive:
 	./ver ar
 
 install:
-	dpkg -i gorg64_2.0.0-1_amd64.deb
+	dpkg -i gorg64_2.0.0-2_amd64.deb
 
 deb:
 	-rm -r -f usr
@@ -67,8 +67,8 @@ deb:
 	tar -c --owner=root --group=root -f data.tar usr
 	xz -e data.tar
 	-rm -r -f usr
-	-rm -f gorg64_2.0.0-1_amd64.deb
+	-rm -f gorg64_*_amd64.deb
 	mv control.tar.xz data.tar.xz ./debian/
-	cd debian && ar q ../gorg64_2.0.0-1_amd64.deb debian-binary control.tar.xz data.tar.xz
+	cd debian && ar q ../gorg64_2.0.0-2_amd64.deb debian-binary control.tar.xz data.tar.xz
 	-rm -f ./debian/control.tar.xz ./debian/data.tar.xz data.tar md5sums
-	-lintian --tag-display-limit 0 gorg64_2.0.0-1_amd64.deb
+	-lintian --tag-display-limit 0 gorg64_2.0.0-2_amd64.deb && alien -r gorg64_2.0.0-2_amd64.deb
