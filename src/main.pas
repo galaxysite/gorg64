@@ -473,9 +473,9 @@ LoadLng(lang);
   4: mon_names3[f] := lowercase(utf8copy(str_april,1,3));
   5: mon_names3[f] := lowercase(utf8copy(str_may,1,3));
   6: mon_names3[f] := lowercase(utf8copy(str_june,1,3));
-  7: mon_names3[f] := lowercase(utf8copy(str_july,1,3));
-  8: if tun.LangCode = 'fr' then mon_names3[f] := 'jul'
-     else mon_names3[f] := lowercase(utf8copy(str_august,1,3));
+  7:  if tun.LangCode = 'fr' then mon_names3[f] := 'jul' else 
+      mon_names3[f] := lowercase(utf8copy(str_july,1,3));
+  8: mon_names3[f] := lowercase(utf8copy(str_august,1,3));
   9: mon_names3[f] := lowercase(utf8copy(str_september,1,3));
   10: mon_names3[f] := lowercase(utf8copy(str_october,1,3));
   11: mon_names3[f] := lowercase(utf8copy(str_november,1,3)); 
@@ -484,7 +484,7 @@ end;
 // writeln(mon_names3[f]);
 end;
   
-wdn2[7] := utf8copy(str_sunday,1,3);
+wdn2[7] := lowercase(utf8copy(str_sunday,1,3));
 wdn[7] := str_sunday;
 
 for f := 2 to 7 do 

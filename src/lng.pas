@@ -105,7 +105,6 @@ var
 fp : Text;
 s : utf8string;
 t : ts2;
-f : integer;
 begin
 s := n;
 If not fileexists(s) then exit;
@@ -178,9 +177,6 @@ if t.a = 'p_september' then str_september := t.v;
 if t.a = 'p_october' then str_october := t.v;
 if t.a = 'p_november' then str_november := t.v;
 if t.a = 'p_december' then str_december := t.v;
-
-
-
 end; {wend}
 {$I-}
 Close(fp);
