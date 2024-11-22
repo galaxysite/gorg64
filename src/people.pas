@@ -17,7 +17,6 @@ type
    email: tedit;
    email1: tedit;
    trichstockglyphbutton1: trichstockglyphbutton;
-   trichstockglyphbutton2: trichstockglyphbutton;
    email2: tedit;
    email3: tedit;
    site: tedit;
@@ -64,6 +63,7 @@ type
    trichstockglyphbutton3: trichstockglyphbutton;
    tbutton1: tbutton;
    tpopupmenu1: tpopupmenu;
+   trichstockglyphbutton4: trichstockglyphbutton;
    procedure LoadImage(const AFileName: msestring);
    procedure onclose(const sender: TObject);
    procedure oncreate(const sender: TObject);

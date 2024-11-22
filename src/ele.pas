@@ -33,7 +33,7 @@ type
    tstringgrid1: tstringgrid;
    tbutton1: tbutton;
    tbutton2: tbutton;
-   trichstockglyphbutton1: trichstockglyphbutton;
+   trichstockglyphbutton4: trichstockglyphbutton;
    procedure onclose(const sender: TObject);
    procedure oncreate(const sender: TObject);
    procedure butex(const sender: TObject);

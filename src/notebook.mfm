@@ -1,16 +1,18 @@
 object notebookfo: tnotebookfo
-  color = 14277081
+  color = -2147483645
   bounds_x = 369
   bounds_y = 188
   bounds_cx = 779
-  bounds_cy = 528
+  bounds_cy = 521
   container.frame.localprops = []
   container.frame.localprops1 = []
+  container.face.localprops = []
+  container.face.template = mainfo.tfacecomp3
   container.bounds = (
     0
     0
     779
-    528
+    521
   )
   font.height = 20
   font.name = 'stf_default'
@@ -126,9 +128,9 @@ object notebookfo: tnotebookfo
   moduleclassname = 'tmseform'
   object ttabwidget1: ttabwidget
     bounds_x = 8
-    bounds_y = 88
+    bounds_y = 80
     bounds_cx = 768
-    bounds_cy = 436
+    bounds_cy = 437
     anchors = [an_left, an_top, an_right, an_bottom]
     taborder = 1
     activepageindex = 0
@@ -147,40 +149,78 @@ object notebookfo: tnotebookfo
       bounds_x = 0
       bounds_y = 31
       bounds_cx = 768
-      bounds_cy = 405
+      bounds_cy = 406
       anchors = [an_left, an_top, an_right, an_bottom]
       caption = #1051#1102#1076#1080' | Peoples'
       faceactivetab = mainfo.tfacecomp2
       object tstringgrid1: tstringgrid
+        frame.sbvert.width = 20
+        frame.sbvert.face.localprops = []
+        frame.sbvert.face.template = mainfo.tfacecomp3
+        frame.sbvert.facebutton.localprops = []
+        frame.sbvert.facebutton.template = mainfo.tfacecomp3
+        frame.sbvert.faceendbutton.localprops = []
+        frame.sbvert.faceendbutton.template = mainfo.tfacecomp3
+        frame.sbvert.framebutton.localprops = []
+        frame.sbvert.framebutton.localprops1 = []
+        frame.sbvert.framebutton.template = mainfo.tframecomp2
+        frame.sbvert.frameendbutton1.localprops = []
+        frame.sbvert.frameendbutton1.localprops1 = []
+        frame.sbvert.frameendbutton1.template = mainfo.tframecomp2
+        frame.sbvert.frameendbutton2.localprops = []
+        frame.sbvert.frameendbutton2.localprops1 = []
+        frame.sbvert.frameendbutton2.template = mainfo.tframecomp2
+        frame.sbhorz.width = 20
+        frame.sbhorz.face.localprops = []
+        frame.sbhorz.face.template = mainfo.tfacecomp3
+        frame.sbhorz.facebutton.localprops = []
+        frame.sbhorz.facebutton.template = mainfo.tfacecomp3
+        frame.sbhorz.faceendbutton.localprops = []
+        frame.sbhorz.faceendbutton.template = mainfo.tfacecomp3
+        frame.sbhorz.framebutton.localprops = []
+        frame.sbhorz.framebutton.localprops1 = []
+        frame.sbhorz.framebutton.template = mainfo.tframecomp2
+        frame.sbhorz.frameendbutton1.localprops = []
+        frame.sbhorz.frameendbutton1.localprops1 = []
+        frame.sbhorz.frameendbutton1.template = mainfo.tframecomp2
+        frame.sbhorz.frameendbutton2.localprops = []
+        frame.sbhorz.frameendbutton2.localprops1 = []
+        frame.sbhorz.frameendbutton2.template = mainfo.tframecomp2
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
         face.localprops = []
         face.template = mainfo.tfacecomp3
-        bounds_x = 0
+        bounds_x = 4
         bounds_y = 4
         bounds_cx = 760
-        bounds_cy = 393
+        bounds_cy = 394
         anchors = [an_left, an_top, an_right, an_bottom]
         optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
         datacols.count = 1
+        datacols.linecolor = -2147483645
+        datacols.linecolorfix = -2147483645
         datacols.colorselect = 16768150
         datacols.colorfocused = 16768150
-        datacols.width = 984
+        datacols.width = 730
         datacols.options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
         datacols.items = <        
           item
             frame.localprops = []
             frame.localprops1 = []
             frame.template = mainfo.tframecomp2
+            linecolor = -2147483645
+            linecolorfix = -2147483645
             colorselect = 16768150
             colorfocused = 16768150
-            width = 984
+            width = 730
             options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
             valuefalse = '0'
             valuetrue = '1'
           end>
         gridframecolor = -2147483645
+        datarowlinecolorfix = -2147483645
+        datarowlinecolor = -2147483645
         datarowheight = 26
         oncellevent = oncelev
         reffontheight = 24
@@ -193,26 +233,58 @@ object notebookfo: tnotebookfo
       bounds_x = 0
       bounds_y = 31
       bounds_cx = 768
-      bounds_cy = 405
+      bounds_cy = 406
       anchors = [an_left, an_top, an_right, an_bottom]
       caption = #1054#1088#1075#1072#1085#1080#1079#1072#1094#1080#1080' | Organizations'
       faceactivetab = mainfo.tfacecomp2
       object tstringgrid2: tstringgrid
+        frame.sbvert.width = 20
+        frame.sbvert.face.localprops = []
+        frame.sbvert.face.template = mainfo.tfacecomp3
+        frame.sbvert.facebutton.localprops = []
+        frame.sbvert.facebutton.template = mainfo.tfacecomp3
+        frame.sbvert.faceendbutton.localprops = []
+        frame.sbvert.faceendbutton.template = mainfo.tfacecomp3
+        frame.sbvert.framebutton.localprops = []
+        frame.sbvert.framebutton.localprops1 = []
+        frame.sbvert.framebutton.template = mainfo.tframecomp2
+        frame.sbvert.frameendbutton1.localprops = []
+        frame.sbvert.frameendbutton1.localprops1 = []
+        frame.sbvert.frameendbutton1.template = mainfo.tframecomp2
+        frame.sbvert.frameendbutton2.localprops = []
+        frame.sbvert.frameendbutton2.localprops1 = []
+        frame.sbvert.frameendbutton2.template = mainfo.tframecomp2
+        frame.sbhorz.width = 20
+        frame.sbhorz.face.localprops = []
+        frame.sbhorz.face.template = mainfo.tfacecomp3
+        frame.sbhorz.facebutton.localprops = []
+        frame.sbhorz.facebutton.template = mainfo.tfacecomp3
+        frame.sbhorz.faceendbutton.localprops = []
+        frame.sbhorz.faceendbutton.template = mainfo.tfacecomp3
+        frame.sbhorz.framebutton.localprops = []
+        frame.sbhorz.framebutton.localprops1 = []
+        frame.sbhorz.framebutton.template = mainfo.tframecomp2
+        frame.sbhorz.frameendbutton1.localprops = []
+        frame.sbhorz.frameendbutton1.localprops1 = []
+        frame.sbhorz.frameendbutton1.template = mainfo.tframecomp2
+        frame.sbhorz.frameendbutton2.localprops = []
+        frame.sbhorz.frameendbutton2.localprops1 = []
+        frame.sbhorz.frameendbutton2.template = mainfo.tframecomp2
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
         face.localprops = []
         face.template = mainfo.tfacecomp3
-        bounds_x = 0
+        bounds_x = 4
         bounds_y = 4
         bounds_cx = 760
-        bounds_cy = 393
+        bounds_cy = 394
         anchors = [an_left, an_top, an_right, an_bottom]
         optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
         datacols.count = 1
         datacols.colorselect = 16767651
         datacols.colorfocused = 16767651
-        datacols.width = 984
+        datacols.width = 730
         datacols.options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
         datacols.items = <        
           item
@@ -223,12 +295,14 @@ object notebookfo: tnotebookfo
             linecolorfix = -2147483645
             colorselect = 16767651
             colorfocused = 16767651
-            width = 984
+            width = 730
             options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
             valuefalse = '0'
             valuetrue = '1'
           end>
         gridframecolor = -2147483645
+        datarowlinecolorfix = -2147483645
+        datarowlinecolor = -2147483645
         datarowheight = 26
         oncellevent = oncelev
         reffontheight = 24
@@ -236,6 +310,7 @@ object notebookfo: tnotebookfo
     end
   end
   object trichbutton1: trichbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -245,13 +320,14 @@ object notebookfo: tnotebookfo
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
-    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagelist = timagelist1
     imagenr = 3
     onexecute = onadd
     richcaption = ''
   end
   object trichbutton2: trichbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -262,7 +338,7 @@ object notebookfo: tnotebookfo
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
-    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagepos = ip_lefttop
     imagelist = timagelist1
     imagenr = 0
@@ -270,6 +346,7 @@ object notebookfo: tnotebookfo
     richcaption = ''
   end
   object trichbutton3: trichbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -280,13 +357,14 @@ object notebookfo: tnotebookfo
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
-    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagelist = timagelist1
     imagenr = 1
     onexecute = onopensite
     richcaption = ''
   end
   object trichbutton4: trichbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -297,13 +375,14 @@ object notebookfo: tnotebookfo
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
-    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagelist = timagelist1
     imagenr = 4
     onexecute = onemail
     richcaption = ''
   end
   object trichbutton5: trichbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -314,13 +393,14 @@ object notebookfo: tnotebookfo
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
-    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagelist = timagelist1
     imagenr = 2
     onexecute = onopenmap
     richcaption = ''
   end
   object trichbutton6: trichbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -331,13 +411,14 @@ object notebookfo: tnotebookfo
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
-    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagelist = timagelist1
     imagenr = 5
     onexecute = onedit
     richcaption = ''
   end
   object trichbutton7: trichbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -348,12 +429,13 @@ object notebookfo: tnotebookfo
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
-    state = [as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagelist = timagelist1
     imagenr = 6
     onexecute = ontel
   end
   object trichstockglyphbutton1: trichstockglyphbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -486,7 +568,7 @@ object notebookfo: tnotebookfo
     bounds_cx = 42
     bounds_cy = 45
     anchors = [an_top, an_right]
-    state = [as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     onexecute = oncl
   end
   object timagelist1: timagelist
