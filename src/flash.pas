@@ -26,15 +26,14 @@ unit flash;
 }
 interface
 uses
- unix,baseunix,msetypes,msekeyboard,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,
- msemenus,msegui,msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,
- mseforms,msedragglob,mseedit,mseeditglob,msegrids,msegridsglob,mserichstring,
- msestatfile,msestream,msetextedit,sysutils,msesimplewidgets,mseact,
- msedataedits,msedropdownlist,mseificomp,mseificompglob,mseifiglob,
- msegraphedits,msescrollbar,msesyntaxedit,mseimage,msewidgetgrid;
+ unix,baseunix,msetypes,msekeyboard,mseglob,mseguiglob,mseguiintf,
+ mseapplication,msestat,msemenus,msegui,msegraphics,msegraphutils,mseevent,
+ mseclasses,msewidgets,mseforms,msedragglob,mseedit,mseeditglob,msegrids,
+ msegridsglob,mserichstring,msestatfile,msestream,msetextedit,sysutils,
+ msesimplewidgets,mseact,msedataedits,msedropdownlist,mseificomp,mseificompglob,
+ mseifiglob,msegraphedits,msescrollbar,msesyntaxedit,mseimage,msewidgetgrid;
 type
  tflashfo = class(tmseform)
-   trichbutton1: trichbutton;
    tbutton1: tbutton;
    tbutton2: tbutton;
    tbutton3: tbutton;
@@ -46,6 +45,7 @@ type
    twidgetgrid1: twidgetgrid;
    ttextedit2: ttextedit;
    be_clip_mon: tbooleanedit;
+   trichbutton1: tbutton;
    procedure oncreate(const sender: TObject);
    procedure onclose(const sender: TObject);
    procedure keyup(const sender: twidget; var ainfo: keyeventinfoty);
@@ -61,6 +61,7 @@ type
    procedure viewdir(const sender: TObject);
    procedure onlisten(const sender: TObject);
    procedure keydown(const sender: twidget; var ainfo: keyeventinfoty);
+   procedure onloadlang();
  end;
 var
  flashfo: tflashfo;
@@ -68,7 +69,19 @@ var
  str_divider : msestring = #10#10;  
 implementation
 uses
- flash_mfm, main;
+ flash_mfm, main, lng;
+ 
+procedure tflashfo.onloadlang(); 
+begin
+caption := str_flash;
+trichbutton1.caption := str_saveinentryfile + ' [F5]';
+tbutton1.caption := str_save ;
+tbutton2.caption := str_viewfile + ' [F3]';
+tbutton3.caption := str_viewdir;
+tbutton5.caption := str_quit + ' [Esc]';
+tbooleanedit1.frame.caption := str_accumulate + ' [F4]';
+be_clip_mon.frame.caption := str_listen;
+end;
  
 procedure tflashfo.oncreate(const sender: TObject);
 begin
@@ -76,6 +89,7 @@ tbooleanedit1.value := tun.p^.flash_accmulate;
 be_clip_mon.value := tun.p^.clip_mon;
 SetStrDivider;
 LoadHotlist;
+onloadlang();
 end;
 
 procedure tflashfo.onclose(const sender: TObject);

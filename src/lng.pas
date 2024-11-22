@@ -114,6 +114,16 @@ str_dir : utf8string = '';
 str_account : utf8string = '';
 str_hoursofoperation : utf8string = '';
 
+str_edit : utf8string = '';
+str_delete : utf8string = '';
+
+str_saveinentryfile : utf8string = '';
+str_save : utf8string = '';
+str_viewfile : utf8string = '';
+str_viewdir : utf8string = '';
+str_accumulate : utf8string = '';
+str_listen : utf8string = '';
+
 c_oneshot = 0;
 c_hourly = 1;
 c_daily = 2;
@@ -277,6 +287,16 @@ if t.a = 'n_workarea' then str_workarea := t.v;
 if t.a = 'n_dir' then str_dir := t.v;
 if t.a = 'n_account' then str_account := t.v;
 if t.a = 'n_hoursofoperation' then str_hoursofoperation := t.v;
+
+if t.a = 'e_edit' then str_edit := t.v;
+if t.a = 'e_delete' then str_delete := t.v;
+
+if t.a = 'f_saveinentryfile' then str_saveinentryfile := t.v;
+if t.a = 'f_save' then str_save := t.v;
+if t.a = 'f_viewfile' then str_viewfile := t.v;
+if t.a = 'f_viewdir' then str_viewdir := t.v;
+if t.a = 'f_accumulate' then str_accumulate := t.v;
+if t.a = 'f_listen' then str_listen := t.v;
 
 end; {wend}
 {$I-}

@@ -119,7 +119,7 @@ var
  efsettingsfo : boolean = false;
 implementation
 uses
- settings_mfm,main,clockpanel,ee,lng,people,organization,notebook;
+ settings_mfm,main,clockpanel,ee,lng,people,organization,notebook,flash;
  
 procedure tsettingsfo.DisplayDblA;
 begin
@@ -395,6 +395,7 @@ begin
   if efpeoplefo then peoplefo.onloadlang();
   if eforganizationfo then organizationfo.onloadlang();
   if efnotebookfo then notebookfo.onloadlang();
+  if efFlash then flashfo.onloadlang();
   application.processmessages;
   langdrop.invalidatewidget;
   onsetlang();
