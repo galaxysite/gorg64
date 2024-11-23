@@ -419,10 +419,10 @@ foc := Focus;
 if foc > -1 then
 case ttabwidget1.activepageindex of
 0: begin
-peoples.Delete(Foc);
+peoples.Delete(strtoint(tstringgrid1[1].items[tstringgrid1.focusedcell.row]));
 end;
 1: begin
-organizations.Delete(Foc);
+organizations.Delete(strtoint(tstringgrid2[1].items[tstringgrid2.focusedcell.row]));
 end;
 end;
 end;
