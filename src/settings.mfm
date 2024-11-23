@@ -1123,6 +1123,7 @@ object settingsfo: tsettingsfo
         font.localprops = [flp_height]
         value = 'English'
         onsetvalue = onsetval
+        dropdown.options = [deo_keydropdown, deo_sorted]
         dropdown.dropdownrowcount = 40
         dropdown.cols.count = 2
         dropdown.cols.width = 200
@@ -1157,6 +1158,37 @@ object settingsfo: tsettingsfo
           end>
         dropdown.itemindex = 0
         reffontheight = 24
+      end
+    end
+    object ttabpage4: ttabpage
+      frame.localprops = []
+      frame.localprops1 = []
+      taborder = 4
+      bounds_x = 4
+      bounds_y = 27
+      bounds_cx = 842
+      bounds_cy = 405
+      anchors = [an_left, an_top, an_right, an_bottom]
+      caption = #1055#1072#1085#1077#1083#1100' '#1095#1072#1089#1086#1074' | Clock panel'
+      facetab = mainfo.tfacecomp3
+      faceactivetab = mainfo.tfacecomp2
+      object tbooleanedit3: tbooleanedit
+        frame.caption = #1052#1072#1083#1099#1081' '#1101#1082#1088#1072#1085' | Small screen'
+        frame.captiondist = 2
+        frame.localprops = []
+        frame.localprops1 = [frl1_captiondist]
+        frame.template = mainfo.tframecomp2
+        frame.outerframe = (
+          0
+          3
+          221
+          4
+        )
+        bounds_x = 56
+        bounds_y = 41
+        bounds_cx = 234
+        bounds_cy = 20
+        onchange = onsmallscreen
       end
     end
     object ttabpage3: ttabpage
@@ -1437,37 +1469,6 @@ object settingsfo: tsettingsfo
         bounds_y = 125
         value = True
         group = 1
-      end
-    end
-    object ttabpage4: ttabpage
-      frame.localprops = []
-      frame.localprops1 = []
-      taborder = 4
-      bounds_x = 4
-      bounds_y = 27
-      bounds_cx = 842
-      bounds_cy = 405
-      anchors = [an_left, an_top, an_right, an_bottom]
-      caption = #1055#1072#1085#1077#1083#1100' '#1095#1072#1089#1086#1074' | Clock panel'
-      facetab = mainfo.tfacecomp3
-      faceactivetab = mainfo.tfacecomp2
-      object tbooleanedit3: tbooleanedit
-        frame.caption = #1052#1072#1083#1099#1081' '#1101#1082#1088#1072#1085' | Small screen'
-        frame.captiondist = 2
-        frame.localprops = []
-        frame.localprops1 = [frl1_captiondist]
-        frame.template = mainfo.tframecomp2
-        frame.outerframe = (
-          0
-          3
-          221
-          4
-        )
-        bounds_x = 56
-        bounds_y = 41
-        bounds_cx = 234
-        bounds_cy = 20
-        onchange = onsmallscreen
       end
     end
   end

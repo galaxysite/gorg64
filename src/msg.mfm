@@ -142,7 +142,6 @@ object msgfo: tmsgfo
   oncreate = oncreate
   onclose = onclose
   onkeyup = keyup
-  onresize = onresize
   moduleclassname = 'tmseform'
   object tstringgrid1: tstringgrid
     color = -2147483645
@@ -7431,7 +7430,6 @@ object msgfo: tmsgfo
     bounds_cx = 940
     bounds_cy = 34
     anchors = [an_top]
-    text = #1057#1086#1086#1073#1097#1077#1085#1080#1103' '#1073#1091#1076#1080#1083#1100#1085#1080#1082#1072' | Alarm messages'
     font.height = 20
     font.name = 'stf_default'
     font.localprops = [flp_height]
