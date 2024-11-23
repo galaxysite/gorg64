@@ -5,7 +5,7 @@ interface
 uses
  msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
  msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,mseforms,msedragglob,
- msescrollbar,msetabs,msegrids,msegridsglob,msesimplewidgets,msekeyboard,
+ msescrollbar,msetabs,msegrids,msegridsglob,msesimplewidgets,msekeyboard,sysutils,
  msebitmap,unix;
 type
  tnotebookfo = class(tmseform)
@@ -361,6 +361,7 @@ procedure tnotebookfo.oncreate(const sender: TObject);
 begin
 Display;
 onloadlang();
+//tstringgrid1.optionsgrid :=  tstringgrid1.optionsgrid + [og_sorted];
 end;
 
 procedure tnotebookfo.onloadlang();
@@ -373,14 +374,21 @@ end;
 procedure tnotebookfo.Display;
 var f : int64;
 begin
+tstringgrid1.optionsgrid :=  tstringgrid1.optionsgrid - [og_sorted];
 tstringgrid1.rowcount := Length(peoples.a);
 for f := 0 to High(peoples.a) do begin
 tstringgrid1[0].items[f] := peoples.a[f].displayas;
+tstringgrid1[1].items[f] := inttostr(f);
 end;
+tstringgrid1.optionsgrid :=  tstringgrid1.optionsgrid + [og_sorted];
+
+tstringgrid2.optionsgrid :=  tstringgrid2.optionsgrid - [og_sorted];
 tstringgrid2.rowcount := Length(organizations.a);
 for f := 0 to High(organizations.a) do begin
 tstringgrid2[0].items[f] := organizations.a[f].displayas;
+tstringgrid2[1].items[f] := inttostr(f);
 end;
+tstringgrid2.optionsgrid :=  tstringgrid2.optionsgrid + [og_sorted];
 end;
 
 procedure tpeoples.Delete(n : Int64);
@@ -447,10 +455,10 @@ foc := Focus;
 if foc > -1 then
 case ttabwidget1.activepageindex of
 0: begin
-mainfo.ShowP(foc);
+mainfo.ShowP(strtoint(tstringgrid1[1].items[tstringgrid1.focusedcell.row]));
 end;
 1: begin
-mainfo.ShowO(foc);
+mainfo.ShowO(strtoint(tstringgrid2[1].items[tstringgrid2.focusedcell.row]));
 end;
 end;
 end;
