@@ -111,3 +111,6 @@ f_viewfile=View file
 f_viewdir=View directory
 f_accumulate=Accumulate
 f_listen=Listen
+a_alarmmessage=Alarm message
+e_eventlist=Event list
+s_mainformheight=Main form height

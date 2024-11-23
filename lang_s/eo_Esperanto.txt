@@ -111,3 +111,6 @@ f_viewfile=Vidi dosieron
 f_viewdir=Vidi dosierujon
 f_accumulate=Akumuli
 f_listen=Auxskultu
+a_alarmmessage=Alarmmesaĝo
+e_eventlist=Listo de eventoj
+s_mainformheight=Alteco de ĉefa formo

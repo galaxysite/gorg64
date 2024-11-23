@@ -111,3 +111,6 @@ f_viewfile=Ver archivo
 f_viewdir=Ver directorio
 f_accumulate=Acumular
 f_listen=Escuchar
+a_alarmmessage=Mensaje de alarma
+e_eventlist=Lista de eventos
+s_mainformheight=Altura del formulario principal

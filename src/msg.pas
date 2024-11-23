@@ -56,6 +56,7 @@ type
    procedure onminimize(const sender: TObject);
    procedure onmouseev(const sender: twidget; var ainfo: mouseeventinfoty);
    procedure onpaintev(const sender: twidget; const acanvas: tcanvas);
+   procedure onloadlang();
    end;
 var
  msgfo: tmsgfo;
@@ -63,11 +64,16 @@ var
  
 implementation
 uses
- msg_mfm,main;
+ msg_mfm,main,lng;
 
 var
  ispressed : boolean = false;
  oripoint: pointty; 
+ 
+procedure tmsgfo.onloadlang();
+begin
+tstringdisp1.text := str_alarmmessage;
+end; 
  
 procedure tmsgfo.ontimer(const sender: TObject);
 begin
@@ -122,6 +128,7 @@ procedure tmsgfo.oncreate(const sender: TObject);
 begin
 SetExceptionMask(GetExceptionMask + [exZeroDivide] + [exInvalidOp] +
     [exDenormalized] + [exOverflow] + [exUnderflow] + [exPrecision]);
+onloadlang();    
 list;
 end;
 

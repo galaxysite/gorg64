@@ -23,7 +23,7 @@ uses
  
 procedure tdayelfo.onloadlang();
 begin
-caption := str_event;
+caption := str_eventlist;
 end; 
  
 procedure tdayelfo.Display;

@@ -122,7 +122,7 @@ var
  efsettingsfo : boolean = false;
 implementation
 uses
- settings_mfm,main,clockpanel,ee,lng,people,organization,notebook,flash, dayel;
+ settings_mfm,main,clockpanel,ee,lng,people,organization,notebook,flash, dayel, msg;
  
 procedure tsettingsfo.DisplayDblA;
 begin
@@ -160,6 +160,7 @@ tedit2.frame.caption := str_pm;
 tbutton1.frame.caption := str_doubleclickaction;
 tbooleanedit5.frame.caption := str_lefttorightweekdaysorder;
 langdrop.frame.caption := str_language;
+mainfoheight.frame.caption := str_mainformheight;
 
 ttabpage3.caption := str_sound;
 tbooleanedit4.frame.caption := str_turnonvolumecontrolformplayer;
@@ -400,6 +401,7 @@ begin
   if efnotebookfo then notebookfo.onloadlang();
   if efFlash then flashfo.onloadlang();
   if efdayelfo then dayelfo.onloadlang();
+  if efmsgfo then msgfo.onloadlang();
   application.processmessages;
   langdrop.invalidatewidget;
   onsetlang();

@@ -1175,12 +1175,16 @@ object settingsfo: tsettingsfo
         bounds_x = 604
         bounds_y = 119
         bounds_cx = 164
-        bounds_cy = 47
+        bounds_cy = 52
+        font.height = 20
+        font.name = 'stf_default'
+        font.localprops = [flp_height]
         onsetvalue = onsetheight
         value = 56
         valuedefault = 56
         valuemin = 24
-        reffontheight = 19
+        valuemax = 10000
+        reffontheight = 24
       end
     end
     object ttabpage4: ttabpage

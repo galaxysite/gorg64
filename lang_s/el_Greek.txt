@@ -111,3 +111,6 @@ f_viewfile=Προβολή αρχείου
 f_viewdir=Προβολή καταλόγου
 f_accumulate=Συσσωρεύω
 f_listen=Ακούστε
+a_alarmmessage=Μήνυμα συναγερμού
+e_eventlist=Λίστα συμβάντων
+s_mainformheight=Ύψος κύριας φόρμας

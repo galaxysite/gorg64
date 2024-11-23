@@ -111,3 +111,6 @@ f_viewfile=عرض الملف
 f_viewdir=عرض الدليل
 f_accumulate=تجميع
 f_listen=استماع
+a_alarmmessage=رسالة التنبيه
+e_eventlist=قائمة الأحداث
+s_mainformheight=ارتفاع النموذج الرئيسي

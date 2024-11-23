@@ -111,3 +111,6 @@ f_viewfile=Просмотреть файл
 f_viewdir=Просмотреть каталог
 f_accumulate=Накопить
 f_listen=Прослушать
+a_alarmmessage=Тревожное сообщение
+e_eventlist=Список событий
+s_mainformheight=Высота основной формы

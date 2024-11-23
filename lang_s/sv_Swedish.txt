@@ -111,3 +111,6 @@ f_viewfile=Visa fil
 f_viewdir=Visa katalog
 f_accumulate=Ackumulera
 f_listen=Lyssna
+a_alarmmessage=Larmmeddelande
+e_eventlist=Händelselista
+s_mainformheight=Huvudformulärets höjd

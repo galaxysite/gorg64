@@ -124,6 +124,10 @@ str_viewdir : utf8string = '';
 str_accumulate : utf8string = '';
 str_listen : utf8string = '';
 
+str_mainformheight : utf8string = ''; 
+str_alarmmessage : utf8string = '';
+str_eventlist : utf8string = '';  
+
 c_oneshot = 0;
 c_hourly = 1;
 c_daily = 2;
@@ -261,6 +265,7 @@ if t.a = 'speakeron' then str_speakeron := t.v;
 if t.a = 'soundgenerator' then str_soundgenerator := t.v;
 if t.a = 'smallscreen' then str_smallscreen := t.v;
 if t.a = 'stopplaying' then str_stopplaying := t.v;
+if t.a = 's_mainformheight' then str_mainformheight := t.v;
 
 if t.a = 'n_people' then str_people := t.v;
 if t.a = 'n_organizations' then str_organizations := t.v;
@@ -298,6 +303,8 @@ if t.a = 'f_viewdir' then str_viewdir := t.v;
 if t.a = 'f_accumulate' then str_accumulate := t.v;
 if t.a = 'f_listen' then str_listen := t.v;
 
+if t.a = 'a_alarmmessage' then str_alarmmessage := t.v;
+if t.a = 'e_eventlist' then  str_eventlist := t.v; 
 end; {wend}
 {$I-}
 Close(fp);

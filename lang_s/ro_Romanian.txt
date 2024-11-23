@@ -111,3 +111,6 @@ f_viewfile=Vizualizare fişier
 f_viewdir=Vizualizare director
 f_accumulate=Acumulare
 f_listen=Ascultă
+a_alarmmessage=Mesaj de alarma
+e_eventlist=Lista de evenimente
+s_mainformheight=Inaltimea formularului principal

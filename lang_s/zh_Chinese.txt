@@ -111,3 +111,6 @@ f_viewfile=查看文件
 f_viewdir=查看目录
 f_accumulate=累积
 f_listen=监听
+a_alarmmessage=报警信息
+e_eventlist=事件列表
+s_mainformheight=主窗体高度
