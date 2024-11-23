@@ -1,22 +1,21 @@
 object inputboxfo: tinputboxfo
   color = 15790320
-  bounds_x = 307
-  bounds_y = 108
-  bounds_cx = 798
+  bounds_x = 324
+  bounds_y = 129
+  bounds_cx = 796
   bounds_cy = 663
   container.frame.localprops = []
   container.frame.localprops1 = []
   container.bounds = (
     0
     0
-    798
+    796
     663
   )
   font.height = 22
   font.name = 'stf_default'
   font.localprops = [flp_height]
   options = [fo_freeonclose, fo_transientforcentered, fo_createmodal, fo_autoreadstat, fo_autowritestat, fo_savepos, fo_savezorder, fo_savestate]
-  caption = #1042#1074#1086#1076' | Input'
   icon.options = [bmo_masked, bmo_graymask]
   icon.origformat = 'png'
   icon.image = {
@@ -106,44 +105,11 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     bounds_x = 8
     bounds_y = 8
-    bounds_cx = 780
+    bounds_cx = 778
     bounds_cy = 33
     anchors = [an_left, an_top, an_right]
     optionsedit = [oe_closequery, oe_checkmrcancel, oe_eatreturn, oe_exitoncursor, oe_nofirstarrownavig, oe_focusrectonreadonly]
     reffontheight = 27
-  end
-  object trichbutton1: trichbutton
-    frame.localprops = []
-    frame.localprops1 = []
-    frame.template = tframecomp2
-    face.localprops = []
-    face.template = mainfo.tfacecomp1
-    taborder = 1
-    bounds_x = 568
-    bounds_y = 56
-    bounds_cx = 218
-    bounds_cy = 29
-    anchors = [an_top, an_right]
-    state = [as_localcaption, as_localonexecute]
-    caption = 'Ok'
-    onexecute = onok
-    richcaption = 'Ok'
-  end
-  object trichbutton2: trichbutton
-    frame.localprops = []
-    frame.localprops1 = []
-    frame.template = tframecomp2
-    face.localprops = []
-    face.template = mainfo.tfacecomp1
-    taborder = 2
-    bounds_x = 8
-    bounds_y = 56
-    bounds_cx = 218
-    bounds_cy = 29
-    state = [as_localcaption, as_localonexecute]
-    caption = #1054#1090#1084#1077#1085#1072' | Cancel'
-    onexecute = oncancel
-    richcaption = #1054#1090#1084#1077#1085#1072' | Cancel'
   end
   object trichbutton3: trichbutton
     frame.localprops = []
@@ -151,7 +117,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 3
+    taborder = 1
     bounds_x = 8
     bounds_y = 104
     bounds_cx = 50
@@ -167,7 +133,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 4
+    taborder = 2
     bounds_x = 64
     bounds_y = 104
     bounds_cx = 50
@@ -183,7 +149,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 5
+    taborder = 3
     bounds_x = 120
     bounds_y = 104
     bounds_cx = 50
@@ -199,7 +165,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 6
+    taborder = 4
     bounds_x = 176
     bounds_y = 104
     bounds_cx = 50
@@ -215,7 +181,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 7
+    taborder = 5
     bounds_x = 232
     bounds_y = 104
     bounds_cx = 50
@@ -231,7 +197,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 8
+    taborder = 6
     bounds_x = 288
     bounds_y = 104
     bounds_cx = 50
@@ -247,7 +213,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 9
+    taborder = 7
     bounds_x = 344
     bounds_y = 104
     bounds_cx = 50
@@ -263,7 +229,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 10
+    taborder = 8
     bounds_x = 400
     bounds_y = 104
     bounds_cx = 50
@@ -279,7 +245,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 11
+    taborder = 9
     bounds_x = 456
     bounds_y = 104
     bounds_cx = 50
@@ -295,7 +261,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 12
+    taborder = 10
     bounds_x = 512
     bounds_y = 104
     bounds_cx = 50
@@ -311,7 +277,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 13
+    taborder = 11
     bounds_x = 568
     bounds_y = 104
     bounds_cx = 50
@@ -327,7 +293,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 14
+    taborder = 12
     bounds_x = 624
     bounds_y = 104
     bounds_cx = 50
@@ -343,7 +309,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 15
+    taborder = 13
     bounds_x = 680
     bounds_y = 104
     bounds_cx = 50
@@ -359,7 +325,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 16
+    taborder = 14
     bounds_x = 736
     bounds_y = 104
     bounds_cx = 50
@@ -375,7 +341,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 17
+    taborder = 15
     bounds_x = 704
     bounds_y = 208
     bounds_cx = 82
@@ -390,7 +356,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 18
+    taborder = 16
     bounds_x = 8
     bounds_y = 144
     bounds_cx = 50
@@ -406,7 +372,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 19
+    taborder = 17
     bounds_x = 64
     bounds_y = 144
     bounds_cx = 50
@@ -422,7 +388,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 20
+    taborder = 18
     bounds_x = 120
     bounds_y = 144
     bounds_cx = 50
@@ -438,7 +404,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 21
+    taborder = 19
     bounds_x = 176
     bounds_y = 144
     bounds_cx = 50
@@ -454,7 +420,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 22
+    taborder = 20
     bounds_x = 232
     bounds_y = 144
     bounds_cx = 50
@@ -470,7 +436,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 23
+    taborder = 21
     bounds_x = 288
     bounds_y = 144
     bounds_cx = 50
@@ -486,7 +452,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 24
+    taborder = 22
     bounds_x = 344
     bounds_y = 144
     bounds_cx = 50
@@ -502,7 +468,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 25
+    taborder = 23
     hint = '&'
     bounds_x = 400
     bounds_y = 144
@@ -537,7 +503,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 26
+    taborder = 24
     bounds_x = 456
     bounds_y = 144
     bounds_cx = 50
@@ -553,7 +519,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 27
+    taborder = 25
     bounds_x = 512
     bounds_y = 144
     bounds_cx = 50
@@ -569,7 +535,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 28
+    taborder = 26
     bounds_x = 568
     bounds_y = 144
     bounds_cx = 50
@@ -585,7 +551,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 29
+    taborder = 27
     bounds_x = 624
     bounds_y = 144
     bounds_cx = 50
@@ -601,7 +567,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 30
+    taborder = 28
     bounds_x = 680
     bounds_y = 144
     bounds_cx = 50
@@ -617,7 +583,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 31
+    taborder = 29
     bounds_x = 736
     bounds_y = 144
     bounds_cx = 50
@@ -633,7 +599,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 32
+    taborder = 30
     bounds_x = 8
     bounds_y = 184
     bounds_cx = 50
@@ -649,7 +615,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 33
+    taborder = 31
     bounds_x = 64
     bounds_y = 184
     bounds_cx = 50
@@ -665,7 +631,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 34
+    taborder = 32
     bounds_x = 120
     bounds_y = 184
     bounds_cx = 50
@@ -681,7 +647,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 35
+    taborder = 33
     bounds_x = 176
     bounds_y = 184
     bounds_cx = 50
@@ -697,7 +663,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 36
+    taborder = 34
     bounds_x = 232
     bounds_y = 184
     bounds_cx = 50
@@ -713,7 +679,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 37
+    taborder = 35
     bounds_x = 288
     bounds_y = 184
     bounds_cx = 50
@@ -729,7 +695,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 38
+    taborder = 36
     bounds_x = 344
     bounds_y = 184
     bounds_cx = 50
@@ -745,7 +711,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 39
+    taborder = 37
     bounds_x = 400
     bounds_y = 184
     bounds_cx = 50
@@ -761,7 +727,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 40
+    taborder = 38
     bounds_x = 456
     bounds_y = 184
     bounds_cx = 50
@@ -777,7 +743,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 41
+    taborder = 39
     bounds_x = 512
     bounds_y = 184
     bounds_cx = 50
@@ -793,7 +759,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 42
+    taborder = 40
     bounds_x = 568
     bounds_y = 184
     bounds_cx = 50
@@ -809,7 +775,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 43
+    taborder = 41
     bounds_x = 624
     bounds_y = 184
     bounds_cx = 50
@@ -825,7 +791,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 44
+    taborder = 42
     bounds_x = 8
     bounds_y = 224
     bounds_cx = 50
@@ -841,7 +807,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 45
+    taborder = 43
     bounds_x = 64
     bounds_y = 224
     bounds_cx = 50
@@ -857,7 +823,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 46
+    taborder = 44
     bounds_x = 120
     bounds_y = 224
     bounds_cx = 50
@@ -873,7 +839,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 47
+    taborder = 45
     bounds_x = 176
     bounds_y = 224
     bounds_cx = 50
@@ -889,7 +855,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 48
+    taborder = 46
     bounds_x = 232
     bounds_y = 224
     bounds_cx = 50
@@ -905,7 +871,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 49
+    taborder = 47
     bounds_x = 288
     bounds_y = 224
     bounds_cx = 50
@@ -921,7 +887,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 50
+    taborder = 48
     bounds_x = 344
     bounds_y = 224
     bounds_cx = 50
@@ -937,7 +903,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 51
+    taborder = 49
     bounds_x = 400
     bounds_y = 224
     bounds_cx = 50
@@ -953,7 +919,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 52
+    taborder = 50
     bounds_x = 456
     bounds_y = 224
     bounds_cx = 50
@@ -969,7 +935,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 53
+    taborder = 51
     bounds_x = 512
     bounds_y = 224
     bounds_cx = 50
@@ -985,7 +951,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 54
+    taborder = 52
     bounds_x = 568
     bounds_y = 224
     bounds_cx = 50
@@ -1001,7 +967,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 55
+    taborder = 53
     bounds_x = 624
     bounds_y = 224
     bounds_cx = 50
@@ -1017,7 +983,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 56
+    taborder = 54
     bounds_x = 8
     bounds_y = 264
     bounds_cx = 50
@@ -1033,7 +999,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 57
+    taborder = 55
     bounds_x = 64
     bounds_y = 264
     bounds_cx = 50
@@ -1049,7 +1015,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 58
+    taborder = 56
     bounds_x = 120
     bounds_y = 264
     bounds_cx = 50
@@ -1065,7 +1031,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 59
+    taborder = 57
     bounds_x = 176
     bounds_y = 264
     bounds_cx = 50
@@ -1081,7 +1047,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 60
+    taborder = 58
     bounds_x = 232
     bounds_y = 264
     bounds_cx = 50
@@ -1097,7 +1063,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 61
+    taborder = 59
     bounds_x = 288
     bounds_y = 264
     bounds_cx = 50
@@ -1113,7 +1079,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 62
+    taborder = 60
     bounds_x = 344
     bounds_y = 264
     bounds_cx = 50
@@ -1129,7 +1095,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 63
+    taborder = 61
     bounds_x = 400
     bounds_y = 264
     bounds_cx = 50
@@ -1145,7 +1111,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 64
+    taborder = 62
     bounds_x = 456
     bounds_y = 264
     bounds_cx = 50
@@ -1161,7 +1127,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 65
+    taborder = 63
     bounds_x = 512
     bounds_y = 264
     bounds_cx = 50
@@ -1177,7 +1143,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 66
+    taborder = 64
     bounds_x = 568
     bounds_y = 264
     bounds_cx = 50
@@ -1193,7 +1159,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 67
+    taborder = 65
     bounds_x = 624
     bounds_y = 264
     bounds_cx = 50
@@ -1209,7 +1175,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 68
+    taborder = 66
     bounds_x = 680
     bounds_y = 264
     bounds_cx = 50
@@ -1225,7 +1191,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 69
+    taborder = 67
     bounds_x = 736
     bounds_y = 264
     bounds_cx = 50
@@ -1241,7 +1207,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 70
+    taborder = 68
     bounds_x = 8
     bounds_y = 304
     bounds_cx = 50
@@ -1257,7 +1223,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 71
+    taborder = 69
     bounds_x = 64
     bounds_y = 304
     bounds_cx = 50
@@ -1273,7 +1239,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 72
+    taborder = 70
     bounds_x = 120
     bounds_y = 304
     bounds_cx = 50
@@ -1289,7 +1255,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 73
+    taborder = 71
     bounds_x = 176
     bounds_y = 304
     bounds_cx = 50
@@ -1305,7 +1271,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 74
+    taborder = 72
     bounds_x = 232
     bounds_y = 304
     bounds_cx = 50
@@ -1321,7 +1287,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 75
+    taborder = 73
     bounds_x = 288
     bounds_y = 304
     bounds_cx = 50
@@ -1337,7 +1303,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 76
+    taborder = 74
     bounds_x = 344
     bounds_y = 304
     bounds_cx = 50
@@ -1353,7 +1319,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 77
+    taborder = 75
     bounds_x = 400
     bounds_y = 304
     bounds_cx = 50
@@ -1369,7 +1335,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 78
+    taborder = 76
     bounds_x = 456
     bounds_y = 304
     bounds_cx = 50
@@ -1385,7 +1351,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 79
+    taborder = 77
     bounds_x = 512
     bounds_y = 304
     bounds_cx = 50
@@ -1401,7 +1367,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 80
+    taborder = 78
     bounds_x = 568
     bounds_y = 304
     bounds_cx = 50
@@ -1417,7 +1383,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 81
+    taborder = 79
     bounds_x = 624
     bounds_y = 304
     bounds_cx = 50
@@ -1433,7 +1399,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 82
+    taborder = 80
     bounds_x = 8
     bounds_y = 344
     bounds_cx = 50
@@ -1449,7 +1415,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 83
+    taborder = 81
     bounds_x = 64
     bounds_y = 344
     bounds_cx = 50
@@ -1465,7 +1431,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 84
+    taborder = 82
     bounds_x = 120
     bounds_y = 344
     bounds_cx = 50
@@ -1481,7 +1447,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 85
+    taborder = 83
     bounds_x = 176
     bounds_y = 344
     bounds_cx = 50
@@ -1497,7 +1463,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 86
+    taborder = 84
     bounds_x = 232
     bounds_y = 344
     bounds_cx = 50
@@ -1513,7 +1479,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 87
+    taborder = 85
     bounds_x = 288
     bounds_y = 344
     bounds_cx = 50
@@ -1529,7 +1495,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 88
+    taborder = 86
     bounds_x = 344
     bounds_y = 344
     bounds_cx = 50
@@ -1545,7 +1511,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 89
+    taborder = 87
     bounds_x = 400
     bounds_y = 344
     bounds_cx = 50
@@ -1561,7 +1527,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 90
+    taborder = 88
     bounds_x = 456
     bounds_y = 344
     bounds_cx = 50
@@ -1577,7 +1543,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 91
+    taborder = 89
     bounds_x = 512
     bounds_y = 344
     bounds_cx = 50
@@ -1593,7 +1559,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 92
+    taborder = 90
     bounds_x = 568
     bounds_y = 344
     bounds_cx = 50
@@ -1609,7 +1575,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 93
+    taborder = 91
     bounds_x = 8
     bounds_y = 384
     bounds_cx = 50
@@ -1625,7 +1591,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 94
+    taborder = 92
     bounds_x = 64
     bounds_y = 384
     bounds_cx = 50
@@ -1641,7 +1607,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 95
+    taborder = 93
     bounds_x = 120
     bounds_y = 384
     bounds_cx = 50
@@ -1657,7 +1623,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 96
+    taborder = 94
     bounds_x = 176
     bounds_y = 384
     bounds_cx = 50
@@ -1673,7 +1639,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 97
+    taborder = 95
     bounds_x = 232
     bounds_y = 384
     bounds_cx = 50
@@ -1689,7 +1655,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 98
+    taborder = 96
     bounds_x = 288
     bounds_y = 384
     bounds_cx = 50
@@ -1705,7 +1671,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 99
+    taborder = 97
     bounds_x = 344
     bounds_y = 384
     bounds_cx = 50
@@ -1721,7 +1687,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 100
+    taborder = 98
     bounds_x = 400
     bounds_y = 384
     bounds_cx = 50
@@ -1737,7 +1703,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 101
+    taborder = 99
     bounds_x = 456
     bounds_y = 384
     bounds_cx = 50
@@ -1753,7 +1719,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 102
+    taborder = 100
     bounds_x = 512
     bounds_y = 384
     bounds_cx = 50
@@ -1769,7 +1735,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 103
+    taborder = 101
     bounds_x = 568
     bounds_y = 384
     bounds_cx = 50
@@ -1785,7 +1751,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 104
+    taborder = 102
     bounds_x = 8
     bounds_y = 424
     bounds_cx = 50
@@ -1801,7 +1767,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 105
+    taborder = 103
     bounds_x = 64
     bounds_y = 424
     bounds_cx = 50
@@ -1817,7 +1783,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 106
+    taborder = 104
     bounds_x = 120
     bounds_y = 424
     bounds_cx = 50
@@ -1833,7 +1799,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 107
+    taborder = 105
     bounds_x = 176
     bounds_y = 424
     bounds_cx = 50
@@ -1849,7 +1815,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 108
+    taborder = 106
     bounds_x = 232
     bounds_y = 424
     bounds_cx = 50
@@ -1865,7 +1831,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 109
+    taborder = 107
     bounds_x = 288
     bounds_y = 424
     bounds_cx = 50
@@ -1881,7 +1847,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 110
+    taborder = 108
     bounds_x = 344
     bounds_y = 424
     bounds_cx = 50
@@ -1897,7 +1863,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 111
+    taborder = 109
     bounds_x = 400
     bounds_y = 424
     bounds_cx = 50
@@ -1913,7 +1879,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 112
+    taborder = 110
     bounds_x = 456
     bounds_y = 424
     bounds_cx = 50
@@ -1929,7 +1895,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 113
+    taborder = 111
     bounds_x = 512
     bounds_y = 424
     bounds_cx = 50
@@ -1945,7 +1911,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 114
+    taborder = 112
     bounds_x = 568
     bounds_y = 424
     bounds_cx = 50
@@ -1961,7 +1927,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 115
+    taborder = 113
     bounds_x = 8
     bounds_y = 464
     bounds_cx = 50
@@ -1977,7 +1943,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 116
+    taborder = 114
     bounds_x = 64
     bounds_y = 464
     bounds_cx = 50
@@ -1993,7 +1959,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 117
+    taborder = 115
     bounds_x = 120
     bounds_y = 464
     bounds_cx = 50
@@ -2009,7 +1975,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 118
+    taborder = 116
     bounds_x = 176
     bounds_y = 464
     bounds_cx = 50
@@ -2025,7 +1991,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 119
+    taborder = 117
     bounds_x = 232
     bounds_y = 464
     bounds_cx = 50
@@ -2041,7 +2007,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 120
+    taborder = 118
     bounds_x = 288
     bounds_y = 464
     bounds_cx = 50
@@ -2057,7 +2023,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 121
+    taborder = 119
     bounds_x = 344
     bounds_y = 464
     bounds_cx = 50
@@ -2073,7 +2039,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 122
+    taborder = 120
     bounds_x = 400
     bounds_y = 464
     bounds_cx = 50
@@ -2089,7 +2055,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 123
+    taborder = 121
     bounds_x = 456
     bounds_y = 464
     bounds_cx = 50
@@ -2105,7 +2071,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 124
+    taborder = 122
     bounds_x = 512
     bounds_y = 464
     bounds_cx = 50
@@ -2121,7 +2087,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 125
+    taborder = 123
     bounds_x = 568
     bounds_y = 464
     bounds_cx = 50
@@ -2137,7 +2103,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 126
+    taborder = 124
     bounds_x = 8
     bounds_y = 504
     bounds_cx = 50
@@ -2153,7 +2119,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 127
+    taborder = 125
     bounds_x = 64
     bounds_y = 504
     bounds_cx = 50
@@ -2169,7 +2135,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 128
+    taborder = 126
     bounds_x = 120
     bounds_y = 504
     bounds_cx = 50
@@ -2185,7 +2151,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 129
+    taborder = 127
     bounds_x = 176
     bounds_y = 504
     bounds_cx = 50
@@ -2201,7 +2167,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 130
+    taborder = 128
     bounds_x = 232
     bounds_y = 504
     bounds_cx = 50
@@ -2217,7 +2183,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 131
+    taborder = 129
     bounds_x = 288
     bounds_y = 504
     bounds_cx = 50
@@ -2233,7 +2199,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 132
+    taborder = 130
     bounds_x = 344
     bounds_y = 504
     bounds_cx = 50
@@ -2249,7 +2215,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 133
+    taborder = 131
     bounds_x = 400
     bounds_y = 504
     bounds_cx = 50
@@ -2265,7 +2231,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 134
+    taborder = 132
     bounds_x = 456
     bounds_y = 504
     bounds_cx = 50
@@ -2281,7 +2247,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 135
+    taborder = 133
     bounds_x = 512
     bounds_y = 504
     bounds_cx = 50
@@ -2297,7 +2263,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 136
+    taborder = 134
     bounds_x = 8
     bounds_y = 544
     bounds_cx = 50
@@ -2313,7 +2279,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 137
+    taborder = 135
     bounds_x = 64
     bounds_y = 544
     bounds_cx = 50
@@ -2329,7 +2295,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 138
+    taborder = 136
     bounds_x = 120
     bounds_y = 544
     bounds_cx = 50
@@ -2345,7 +2311,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 139
+    taborder = 137
     bounds_x = 176
     bounds_y = 544
     bounds_cx = 50
@@ -2361,7 +2327,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 140
+    taborder = 138
     bounds_x = 232
     bounds_y = 544
     bounds_cx = 50
@@ -2377,7 +2343,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 141
+    taborder = 139
     bounds_x = 288
     bounds_y = 544
     bounds_cx = 50
@@ -2393,7 +2359,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 142
+    taborder = 140
     bounds_x = 344
     bounds_y = 544
     bounds_cx = 50
@@ -2409,7 +2375,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 143
+    taborder = 141
     bounds_x = 400
     bounds_y = 544
     bounds_cx = 50
@@ -2425,7 +2391,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 144
+    taborder = 142
     bounds_x = 456
     bounds_y = 544
     bounds_cx = 50
@@ -2441,7 +2407,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 145
+    taborder = 143
     bounds_x = 512
     bounds_y = 544
     bounds_cx = 50
@@ -2457,7 +2423,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 146
+    taborder = 144
     bounds_x = 8
     bounds_y = 584
     bounds_cx = 50
@@ -2473,7 +2439,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 147
+    taborder = 145
     bounds_x = 64
     bounds_y = 584
     bounds_cx = 50
@@ -2489,7 +2455,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 148
+    taborder = 146
     bounds_x = 120
     bounds_y = 584
     bounds_cx = 50
@@ -2505,7 +2471,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 149
+    taborder = 147
     bounds_x = 176
     bounds_y = 584
     bounds_cx = 50
@@ -2521,7 +2487,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 150
+    taborder = 148
     bounds_x = 232
     bounds_y = 584
     bounds_cx = 50
@@ -2537,7 +2503,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 151
+    taborder = 149
     bounds_x = 288
     bounds_y = 584
     bounds_cx = 50
@@ -2553,7 +2519,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 152
+    taborder = 150
     bounds_x = 344
     bounds_y = 584
     bounds_cx = 50
@@ -2569,7 +2535,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 153
+    taborder = 151
     bounds_x = 400
     bounds_y = 584
     bounds_cx = 50
@@ -2585,7 +2551,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 154
+    taborder = 152
     bounds_x = 456
     bounds_y = 584
     bounds_cx = 50
@@ -2601,7 +2567,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 155
+    taborder = 153
     bounds_x = 8
     bounds_y = 624
     bounds_cx = 50
@@ -2617,7 +2583,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 156
+    taborder = 154
     bounds_x = 64
     bounds_y = 624
     bounds_cx = 50
@@ -2633,7 +2599,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 157
+    taborder = 155
     bounds_x = 120
     bounds_y = 624
     bounds_cx = 50
@@ -2648,7 +2614,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 158
+    taborder = 156
     bounds_x = 176
     bounds_y = 624
     bounds_cx = 50
@@ -2664,7 +2630,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 159
+    taborder = 157
     bounds_x = 232
     bounds_y = 624
     bounds_cx = 50
@@ -2680,7 +2646,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 160
+    taborder = 158
     bounds_x = 288
     bounds_y = 624
     bounds_cx = 50
@@ -2696,7 +2662,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 161
+    taborder = 159
     bounds_x = 344
     bounds_y = 624
     bounds_cx = 50
@@ -2712,7 +2678,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 162
+    taborder = 160
     bounds_x = 400
     bounds_y = 624
     bounds_cx = 50
@@ -2728,7 +2694,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 163
+    taborder = 161
     bounds_x = 456
     bounds_y = 624
     bounds_cx = 50
@@ -2744,7 +2710,7 @@ object inputboxfo: tinputboxfo
     frame.template = tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 164
+    taborder = 162
     bounds_x = 520
     bounds_y = 624
     bounds_cx = 266
@@ -2758,7 +2724,7 @@ object inputboxfo: tinputboxfo
     color = -2147483645
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 165
+    taborder = 163
     enabled = False
     bounds_x = 416
     bounds_y = 147
@@ -2766,6 +2732,166 @@ object inputboxfo: tinputboxfo
     bounds_cy = 27
     caption = '&&'
     reffontheight = 27
+  end
+  object trichstockglyphbutton3: trichstockglyphbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.fade_pos.count = 2
+    face.fade_pos.items = (
+      0
+      1
+    )
+    face.fade_color.count = 2
+    face.fade_color.items = (
+      -1610612730
+      12895487
+    )
+    face.fade_direction = gd_down
+    face.localprops = []
+    taborder = 164
+    bounds_x = 588
+    bounds_y = 52
+    bounds_cx = 128
+    bounds_cy = 34
+    state = [as_localimagelist, as_localimagenr, as_localonexecute]
+    glyph = stg_dbpost
+    onexecute = onok
+  end
+  object trichstockglyphbutton2: trichstockglyphbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = tframecomp2
+    face.image.options = [bmo_masked, bmo_graymask]
+    face.image.origformat = 'png'
+    face.image.alignment = [al_xcentered, al_top]
+    face.image.image = {
+      000000001200000020000000200000003C0A0000000000000000000000000000
+      000000000000000000000000000000000000000000000042F8F9F801EEEFEE0A
+      F0F1F001F3F4F301FFFFFF0100000011C8C9C9017E7F7F017F828201777A7901
+      757877017476750171757401707372016F7271016E7170016D6F6F016E706F01
+      707272017F8281019C9F9F01A3A6A501A7A9A801A7A9A901A4A7A6019FA2A101
+      92959401C1C2C2010000000AD4D4D401A4A4A4019A9A9A018787870181818101
+      7B7B7B01747474016F6E6E016A6969016565650162626201616061016A696901
+      9C9C9C01F5F6F601F7F7F701F7F8F803F6F7F701CBCDCD01A0A2A1010000000A
+      D4D4D401A6A7A7019E9E9E018D8D8D01868686017F7F7F017979790174747401
+      6E6E6E01696969016868680273737301A5A6A601F7F7F701F8F9F901FAFAFA01
+      F9FAFA02F7F8F801D0D2D201A7A9A9010000000AD4D4D401ABABAB01A5A5A501
+      939393018B8B8B01858585017E7E7E017979790174747401707070016D6D6D02
+      79797901ABABAB01F7F8F801F9FAFA01FBFBFB02FAFBFB01F8F9F901D3D5D501
+      AAACAB010000000AD4D4D401AFB0AF01ACACAC0199999901929292018B8B8B01
+      848484017F7F7F017A7A7A0175757501727272027E7E7E01ADAEAE01F7F8F801
+      FAFAFA01FBFCFC02FAFBFB01F8F9F901D4D5D501ABADAC010000000AD4D4D401
+      B0B1B001B0B0B0019E9E9E0198989801929292018B8B8B018585850180808001
+      7C7C7C01787878017777770182828201B0B0B001F7F8F801FAFAFA01FBFCFC01
+      FCFCFC01FAFBFB01F8F8F801D4D6D601ABADAD01E9E9F801DADAEF01C7C7EB01
+      00000007D4D4D401B1B1B101B0B0B001A0A0A0019B9B9B019797970191919101
+      8C8C8C0186868601808080017D7D7D017B7B7B0186868601B1B2B201F7F8F801
+      FAFAFA01FBFCFC01FCFCFC01FAFBFB01F8F8F801D4D6D601A7A9A801D0D0EA01
+      6060C4015656C50100000007D4D4D401B1B2B101B1B1B101A1A1A1019D9D9D01
+      98989801939393018E8E8E018989890185858501818181018080800189898901
+      B4B5B501F8F8F801FAFAFA01FBFCFC01FCFCFC01FAFBFB01F8F8F801D3D5D501
+      BDBED2016161C8019595E4015757C50100000007D4D4D401B1B2B101B3B3B301
+      A3A3A3019F9F9F0199999901949494018F8F8F018B8B8B018686860182828202
+      8B8B8B01B5B5B501F8F8F801FBFBFB01FBFCFC01FCFDFD01FAFBFB01F8F9F801
+      BDBFD1015D5DC5019393E8018D8DE3015757C5014949BF014B4BC0014646BF01
+      4848C101DFDFF30100000002D4D4D401B2B3B201B4B4B401A4A4A401A0A0A001
+      9A9A9A0196969601919191018C8C8C018888880185858501A7A7A701A2A2A201
+      B7B7B701F8F8F801FBFBFB01FBFCFC01FCFDFD01FAFBFB01D1D1E6014F4FC401
+      8080E4016565E0018989E3015858C7016262CD025F5FCC014C4CC301CECEED01
+      00000002D4D4D401B2B3B201B5B5B501A5A5A501A1A1A1019C9C9C0197979701
+      939393018E8E8E01888888018585850181818101B4B4B401C6C6C601F8F8F801
+      FBFBFB01FBFCFC02D8D9EC014949C5017676E2015353DD015656DD016969E003
+      6666E0016666DF016161D001C9C9EB0100000002D4D4D401B2B3B201B5B5B501
+      A7A7A701A2A2A2019E9E9E0199999901949494018F8F8F018A8A8A0185858501
+      8E8E8E01BBBBBB01B6B6B601F8F8F801FBFBFB01FCFDFD01D1D2E8014142C301
+      6161DD014343D9014545DA014848DA014A4ADB014B4BDB014949DB014646DA01
+      4949DA015757CE01C9C9EB0100000002D4D4D401B2B3B201B5B5B501A8A8A801
+      A4A4A4019F9F9F019A9A9A0195959501909090018B8B8B018C8C8C01BCBCBC01
+      9D9D9D01B5B6B601F8F9F901FAFAFA01D4D4EA01292ABF015757DB013232D601
+      3535D7013939D7013C3CD8013B3BD8013A3AD7013838D7013737D7013E3ED801
+      4F4FCD01C9C9EB0100000002D4D4D401B2B3B201B6B6B601AAAAAA01A5A5A501
+      A0A0A0019B9B9B0196969601929292018E8E8E01A9A9A901999999018E8E8E01
+      BABABA01F8F9F901F7F7F9017171C0013838CD012D2DD5012323D3012828D401
+      2424D3011B1BD0011010CE010808CD010707CD010A0ACD011E1ECF013939C801
+      C9C9EB0100000002D4D4D401B2B3B201B6B6B601AAAAAA01A6A6A601A1A1A101
+      9D9D9D0198989801939393018E8E8E018989890294949401BBBCBC01F8F9F901
+      FBFBFA01F0F1F8017070C2012C2CCD011919D0010000CC070E0ECD012727C501
+      C9C9EB0100000002D4D4D401B1B2B201B6B6B601ABABAB01A8A8A801A3A3A301
+      9E9E9E019A9A9A01949494018F8F8F018B8B8B0296969601BCBDBD01F8F9F901
+      FAFAFA01F4F5F501E0E1E7015C5CB9012828CB011313CF010000CC020101CC01
+      0202CC030E0ECD012424C401C7C7E90100000002D4D4D401B1B2B201B6B6B601
+      ABABAB01A9A9A901A5A5A5019F9F9F019A9A9A0196969601919191018D8D8D02
+      98989801BDBDBD01F7F8F801F8F8F801EEEFEF01E5E5E501D2D2D9016666B701
+      2525CA011717D0010303CD012727D2012222CD012323CD012525CD012727CE01
+      1C1CBF01C2C2E50100000002D4D4D401B2B3B201B6B6B601ABABAB02A6A6A601
+      A1A1A1019C9C9C0197979701939393018F8F8F01909090019B9B9B01B9BABA01
+      E8E9E901F3F4F401EDEDED01E4E5E501DADADA01C6C7CD015252AD012323CA01
+      1616D0012323C8014949B0014242B3013A3AB5013D3DB8013B3BBA01E0E0F001
+      00000002D4D4D401B3B3B301B6B6B601ABABAB02A7A7A701A2A2A2019D9D9D01
+      99999901969696019494940196969601A2A2A201B5B5B501CBCBCB01E6E7E701
+      EFF0F001E8E9E901DEDFDF01D4D5D501ADAFB5014848A7012020C7012525C701
+      7272BD01FFFFE20100000006D4D4D401B3B4B301B6B6B601ABABAB02A8A8A801
+      A4A4A401A0A0A0019D9D9D019B9B9B019D9D9D01A2A2A201A5A5A501AEAFAF01
+      C8C8C801E3E4E401F1F2F201EEEFEE01E6E7E601DDDEDE01BCBEBE01BABAC201
+      7C7CC2010B0BBA016767C20100000007D4D4D401B3B5B401B6B6B601ABABAB02
+      AAAAAA01A7A7A701A4A4A401A3A3A301A6A6A601A5A6A6019A9B9B01AEB0AF01
+      C7C9C801DDDFDE01E8EAE901EBEDEC02E9EBEB01E5E8E701C7CAC9019EA09F01
+      D9D9EB017373C0017B7BCE0100000007D4D4D401B4B5B401B6B6B601ABABAB01
+      ACACAC02AAAAAA01B1B1B101A5A6A6019B9D9C01A6A8A701C0C3C101D3D6D501
+      DEE0DF01E2E5E301E2E5E401E3E6E501E2E5E401E1E4E301DFE2E101C5C9C701
+      9DA09F0100000002EBEBF80100000007D4D4D401B5B6B501B6B6B601ACACAC01
+      AEAEAE01B3B3B301B4B5B50198999901A2A5A401BDC0BF01CDD1D001D6DAD801
+      D9DCDB01D9DDDB01DADDDC03D9DDDB01D9DCDB01D6DAD801BFC3C301999B9A01
+      0000000AD4D4D401B5B7B601B6B6B602BABABA01A0A2A101A2A7A501B7BCBA01
+      C5CAC901CACFCE01CDD2D001CDD2D101CDD3D106CDD2D101CBD0CF01BBBFBE01
+      959796010000000AD3D3D301B5B6B601C2C3C201AFB2B101A1A6A401B3B9B801
+      BDC3C101C1C7C501C2C8C601C3C8C701C3C9C708C3C8C701C1C8C601B7BCBB01
+      909392010000000ADFE0E001919492019FA3A001A1A5A201A5A9A601A8ACA901
+      A9ACAA01A9ADAA0D9A9E9C01A6A8A7010000000ACFCDCD01D1D2D201BABCBB01
+      BBBDBC01BCBEBD10C8CAC9010000004A00040000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000001A484848484848484848
+      48392A0200000000000000000000000000000000001FF9FAFAFAFAFAFAFAFAFA
+      FAF9F7F3F3F3F3F3F3F35400000000000000000000D3FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5800000000000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5800000000000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5800000000000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5800000000000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5805BE9C00000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF54B8FFA700000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFE5FFFFA700000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFA804050505010000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF730000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFDD3CDCDCDA80000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFB904000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFC1FFFFA700000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF584DF1A500000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5800003D00000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5800000000000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5800000000000000000000D2FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF580000000000000000000062FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFE5400000000000000000000017E7C7C7C7C7C7C7C7C7C
+      7C7C7C7C7C7C7C7C7C6A00000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000
+    }
+    face.localprops = [fal_image]
+    face.template = mainfo.tfacecomp3
+    taborder = 165
+    bounds_x = 733
+    bounds_y = 52
+    bounds_cx = 48
+    bounds_cy = 34
+    state = [as_localimagelist, as_localimagenr, as_localonexecute]
+    onexecute = oncancel
   end
   object tframecomp2: tframecomp
     template.framei_left = 4

@@ -12,13 +12,19 @@ type
    procedure oncreate(const sender: TObject);
    procedure keyup(const sender: twidget; var ainfo: keyeventinfoty);
    procedure onclose(const sender: TObject);
+   procedure onloadlang();
  end;
 var
  dayelfo: tdayelfo;
  efdayelfo : boolean = false;
 implementation
 uses
- dayel_mfm, ee, algor;
+ dayel_mfm, ee, algor, lng;
+ 
+procedure tdayelfo.onloadlang();
+begin
+caption := str_event;
+end; 
  
 procedure tdayelfo.Display;
 var
@@ -58,6 +64,7 @@ end;
 procedure tdayelfo.oncreate(const sender: TObject);
 begin
 Display;
+onloadlang();
 end;
 
 procedure tdayelfo.keyup(const sender: twidget; var ainfo: keyeventinfoty);

@@ -9,8 +9,6 @@ uses
 type
  tinputboxfo = class(tmseform)
    ttextedit1: ttextedit;
-   trichbutton1: trichbutton;
-   trichbutton2: trichbutton;
    trichbutton3: trichbutton;
    trichbutton4: trichbutton;
    trichbutton5: trichbutton;
@@ -175,6 +173,8 @@ type
    trichbutton163: trichbutton;
    tlabel1: tlabel;
    tframecomp2: tframecomp;
+   trichstockglyphbutton3: trichstockglyphbutton;
+   trichstockglyphbutton2: trichstockglyphbutton;
    procedure ok;
    procedure onok(const sender: TObject);
    procedure oncancel(const sender: TObject);

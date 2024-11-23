@@ -5,14 +5,14 @@ object eefo: teefo
   frame.template = tframecomp2
   bounds_x = 155
   bounds_y = 135
-  bounds_cx = 1043
+  bounds_cx = 1045
   bounds_cy = 575
   container.frame.localprops = []
   container.frame.localprops1 = []
   container.bounds = (
     4
     2
-    1035
+    1037
     571
   )
   font.height = 26
@@ -227,8 +227,8 @@ object eefo: teefo
     frame.localprops1 = []
     frame.template = tframecomp2
     taborder = 2
-    bounds_x = 776
-    bounds_y = 374
+    bounds_x = 680
+    bounds_y = 302
     bounds_cx = 124
     bounds_cy = 44
     caption = '88:88'
