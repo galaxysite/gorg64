@@ -5,8 +5,9 @@ interface
 uses
  msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
  msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,mseforms,msedragglob,
- msescrollbar,msetabs,msegrids,msegridsglob,msesimplewidgets,msekeyboard,sysutils,
- msebitmap,unix;
+ msescrollbar,msetabs,msegrids,msegridsglob,msesimplewidgets,msekeyboard,
+ sysutils,msebitmap,unix, msedispwidgets, mserichstring, mseedit, msestatfile,lazutf8,
+ msestream;
 type
  tnotebookfo = class(tmseform)
    ttabwidget1: ttabwidget;
@@ -23,6 +24,11 @@ type
    trichbutton7: trichbutton;
    timagelist1: timagelist;
    trichstockglyphbutton1: trichstockglyphbutton;
+   trichbutton8: trichbutton;
+   panelsearch: tstringdisp;
+   tedit1: tedit;
+   trichstockglyphbutton2: trichstockglyphbutton;
+   trichstockglyphbutton3: trichstockglyphbutton;
    procedure onclose(const sender: TObject);
    procedure keyup(const sender: twidget; var ainfo: keyeventinfoty);
    function Focus : Int64;
@@ -41,6 +47,9 @@ type
    procedure ontel(const sender: TObject);
    procedure oncelev(const sender: TObject; var info: celleventinfoty);
    procedure onloadlang();
+   procedure search(const sender: TObject);
+   procedure onsearch(const sender: TObject);
+   procedure exitsearch(const sender: TObject);
  end;
  
  tnbcommon = object
@@ -537,6 +546,48 @@ procedure tnotebookfo.oncelev(const sender: TObject; var info: celleventinfoty);
 begin
  if (info.eventkind = cek_buttonrelease) and
      (ss_double in info.mouseeventinfopo^.shiftstate) then edit;
+end;
+
+procedure tnotebookfo.search(const sender: TObject);
+begin
+panelsearch.visible := true;
+tedit1.setfocus;
+end;
+
+procedure tnotebookfo.onsearch(const sender: TObject);
+var 
+x : integer;
+g : gridcoordty;
+begin
+case ttabwidget1.activepageindex of
+0: begin
+for x:= 0 to tstringgrid1.rowcount - 1 do
+if utf8pos(tedit1.text,tstringgrid1[0].items[x]) > 0 
+then 
+begin
+ g.col := 0;
+ g.row := x;
+ tstringgrid1.focuscell(g); 
+ exit;
+end; 
+end;
+1: begin
+for x:= 0 to tstringgrid2.rowcount - 1 do
+if utf8pos(tedit1.text,tstringgrid2[0].items[x]) > 0 
+then 
+begin
+ g.col := 0;
+ g.row := x;
+ tstringgrid2.focuscell(g); 
+ exit;
+end; 
+end;
+end;
+end;
+
+procedure tnotebookfo.exitsearch(const sender: TObject);
+begin
+panelsearch.visible := false;
 end;
 
 procedure tnbcommon.ReSet;
