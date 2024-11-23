@@ -27,7 +27,7 @@ ootb:
 
 clean:
 	cd src && $(MAKE) clean
-	-rm -f gorg64*.deb
+	-rm -f gorg64*.deb gorg64*.rpm
 	-rm -r -f ./usr
 
 source:
@@ -71,4 +71,4 @@ deb:
 	mv control.tar.xz data.tar.xz ./debian/
 	cd debian && ar q ../gorg64_2.0.0-2_amd64.deb debian-binary control.tar.xz data.tar.xz
 	-rm -f ./debian/control.tar.xz ./debian/data.tar.xz data.tar md5sums
-	-lintian --tag-display-limit 0 gorg64_2.0.0-2_amd64.deb && alien -r gorg64_2.0.0-2_amd64.deb
+	-lintian --tag-display-limit 0 gorg64_2.0.0-2_amd64.deb && alien --scripts -r gorg64_2.0.0-2_amd64.deb
