@@ -479,10 +479,10 @@ foc := Focus;
 if foc > -1 then
 case ttabwidget1.activepageindex of
 0: begin
- peoples.a[foc].OpenMap(0);
+ peoples.a[strtoint(tstringgrid1[1].items[tstringgrid1.focusedcell.row])].OpenMap(0);
 end;
 1: begin
- organizations.a[foc].OpenMap(0);
+ organizations.a[strtoint(tstringgrid2[1].items[tstringgrid2.focusedcell.row])].OpenMap(0);
 end;
 end;
 end;
@@ -494,10 +494,10 @@ foc := Focus;
 if foc > -1 then
 case ttabwidget1.activepageindex of
 0: begin
- peoples.a[foc].OpenSite(0);
+ peoples.a[strtoint(tstringgrid1[1].items[tstringgrid1.focusedcell.row])].OpenSite(0);
 end;
 1: begin
- organizations.a[foc].OpenSite(0);
+ organizations.a[strtoint(tstringgrid2[1].items[tstringgrid2.focusedcell.row])].OpenSite(0);
 end;
 end;
 end;
@@ -509,10 +509,10 @@ foc := Focus;
 if foc > -1 then
 case ttabwidget1.activepageindex of
 0: begin
- peoples.a[foc].WriteEmail(0);
+  peoples.a[strtoint(tstringgrid1[1].items[tstringgrid1.focusedcell.row])].WriteEmail(0);
 end;
 1: begin
- organizations.a[foc].WriteEmail(0);
+ organizations.a[strtoint(tstringgrid2[1].items[tstringgrid2.focusedcell.row])].WriteEmail(0);
 end;
 end;
 end;
@@ -524,10 +524,11 @@ foc := Focus;
 if foc > -1 then
 case ttabwidget1.activepageindex of
 0: begin
- peoples.a[foc].Tel(0);
+ peoples.a[strtoint(tstringgrid1[1].items[tstringgrid1.focusedcell.row])].Tel(0);
 end;
 1: begin
  organizations.a[foc].Tel(0);
+ organizations.a[strtoint(tstringgrid2[1].items[tstringgrid2.focusedcell.row])].Tel(0);
 end;
 end;
 end;
@@ -555,6 +556,7 @@ dir := '';
 freearea := ''; freearea1 := ''; freearea2 := ''; freearea3 := '';
 group := ''; group1 := ''; group2 := ''; group3 := '';
 end;
+
 procedure tpeople.ReSet;
 begin
 inherited;
