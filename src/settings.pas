@@ -223,6 +223,8 @@ if FindFirst(langdir + '*.txt', faAnyFile, SR) = 0 then
      until FindNext(SR) <> 0;
        FindClose(SR);
    end;
+   
+ mainfoheight.value :=  tun.p^.main_height;
   
 onsetlang();   
     

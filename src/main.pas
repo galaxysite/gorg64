@@ -610,8 +610,8 @@ mainfo.tthreadcomp3.run;
 Org := TOrg.Create(True);
 Org.Start;
 
-if (tun.p^.main_height > 23) and (tun.p^.main_height < 300) then
-onsetheight(tun.p^.main_height);
+if (tun.p^.main_height > 23) and (tun.p^.main_height < 10000) then
+onsetheight(tun.p^.main_height) else tun.p^.main_height := 56;
 
 end;
 

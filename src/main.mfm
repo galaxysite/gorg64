@@ -1,6 +1,7 @@
 object mainfo: tmainfo
   optionswidget = [ow_mousefocus, ow_tabfocus, ow_arrowfocus, ow_subfocus, ow_mousewheel, ow_noscroll, ow_destroywidgets, ow_hinton]
   color = -2147483645
+  visible = False
   bounds_x = 338
   bounds_y = 238
   bounds_cx = 750
@@ -183,11 +184,14 @@ object mainfo: tmainfo
     anchors = [an_left]
     caption = '--:--'
     font.color = -1610612734
+    font.gloss_color = 14737632
     font.grayed_color = -1610612734
+    font.grayed_colorshadow = 14606046
     font.height = 38
     font.style = [fs_bold]
     font.name = 'stf_default'
-    font.localprops = [flp_color, flp_grayed_color, flp_style, flp_height]
+    font.options = [foo_antialiased]
+    font.localprops = [flp_color, flp_gloss_color, flp_grayed_color, flp_grayed_colorshadow, flp_style, flp_height, flp_options]
     textflags = [tf_xcentered, tf_ycentered]
     reffontheight = 45
   end
