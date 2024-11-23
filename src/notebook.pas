@@ -5,7 +5,7 @@ interface
 uses
  msetypes,mseglob,mseguiglob,mseguiintf,mseapplication,msestat,msemenus,msegui,
  msegraphics,msegraphutils,mseevent,mseclasses,msewidgets,mseforms,msedragglob,
- msescrollbar,msetabs,msegrids,msegridsglob,msesimplewidgets,msekeyboard,
+ msescrollbar,msetabs,msegrids,msegridsglob,msesimplewidgets,msekeyboard,sysutils,
  msebitmap,unix;
 type
  tnotebookfo = class(tmseform)
@@ -40,6 +40,7 @@ type
    procedure onemail(const sender: TObject);
    procedure ontel(const sender: TObject);
    procedure oncelev(const sender: TObject; var info: celleventinfoty);
+   procedure onloadlang();
  end;
  
  tnbcommon = object
@@ -112,7 +113,7 @@ procedure LoadUnique;
  
 implementation
 uses
- notebook_mfm,main;
+ notebook_mfm,main, lng;
  
 procedure LoadUnique;
  procedure SetUniq(var a : taos; const s : msestring);
@@ -359,19 +360,35 @@ end;
 procedure tnotebookfo.oncreate(const sender: TObject);
 begin
 Display;
+onloadlang();
+//tstringgrid1.optionsgrid :=  tstringgrid1.optionsgrid + [og_sorted];
+end;
+
+procedure tnotebookfo.onloadlang();
+begin
+caption := str_notebook;
+ttabpage1.caption := str_people;
+ttabpage2.caption := str_organizations;
 end;
 
 procedure tnotebookfo.Display;
 var f : int64;
 begin
+tstringgrid1.optionsgrid :=  tstringgrid1.optionsgrid - [og_sorted];
 tstringgrid1.rowcount := Length(peoples.a);
 for f := 0 to High(peoples.a) do begin
 tstringgrid1[0].items[f] := peoples.a[f].displayas;
+tstringgrid1[1].items[f] := inttostr(f);
 end;
+tstringgrid1.optionsgrid :=  tstringgrid1.optionsgrid + [og_sorted];
+
+tstringgrid2.optionsgrid :=  tstringgrid2.optionsgrid - [og_sorted];
 tstringgrid2.rowcount := Length(organizations.a);
 for f := 0 to High(organizations.a) do begin
 tstringgrid2[0].items[f] := organizations.a[f].displayas;
+tstringgrid2[1].items[f] := inttostr(f);
 end;
+tstringgrid2.optionsgrid :=  tstringgrid2.optionsgrid + [og_sorted];
 end;
 
 procedure tpeoples.Delete(n : Int64);
@@ -402,10 +419,10 @@ foc := Focus;
 if foc > -1 then
 case ttabwidget1.activepageindex of
 0: begin
-peoples.Delete(Foc);
+peoples.Delete(strtoint(tstringgrid1[1].items[tstringgrid1.focusedcell.row]));
 end;
 1: begin
-organizations.Delete(Foc);
+organizations.Delete(strtoint(tstringgrid2[1].items[tstringgrid2.focusedcell.row]));
 end;
 end;
 end;
@@ -438,10 +455,10 @@ foc := Focus;
 if foc > -1 then
 case ttabwidget1.activepageindex of
 0: begin
-mainfo.ShowP(foc);
+mainfo.ShowP(strtoint(tstringgrid1[1].items[tstringgrid1.focusedcell.row]));
 end;
 1: begin
-mainfo.ShowO(foc);
+mainfo.ShowO(strtoint(tstringgrid2[1].items[tstringgrid2.focusedcell.row]));
 end;
 end;
 end;
@@ -462,10 +479,10 @@ foc := Focus;
 if foc > -1 then
 case ttabwidget1.activepageindex of
 0: begin
- peoples.a[foc].OpenMap(0);
+ peoples.a[strtoint(tstringgrid1[1].items[tstringgrid1.focusedcell.row])].OpenMap(0);
 end;
 1: begin
- organizations.a[foc].OpenMap(0);
+ organizations.a[strtoint(tstringgrid2[1].items[tstringgrid2.focusedcell.row])].OpenMap(0);
 end;
 end;
 end;
@@ -477,10 +494,10 @@ foc := Focus;
 if foc > -1 then
 case ttabwidget1.activepageindex of
 0: begin
- peoples.a[foc].OpenSite(0);
+ peoples.a[strtoint(tstringgrid1[1].items[tstringgrid1.focusedcell.row])].OpenSite(0);
 end;
 1: begin
- organizations.a[foc].OpenSite(0);
+ organizations.a[strtoint(tstringgrid2[1].items[tstringgrid2.focusedcell.row])].OpenSite(0);
 end;
 end;
 end;
@@ -492,10 +509,10 @@ foc := Focus;
 if foc > -1 then
 case ttabwidget1.activepageindex of
 0: begin
- peoples.a[foc].WriteEmail(0);
+  peoples.a[strtoint(tstringgrid1[1].items[tstringgrid1.focusedcell.row])].WriteEmail(0);
 end;
 1: begin
- organizations.a[foc].WriteEmail(0);
+ organizations.a[strtoint(tstringgrid2[1].items[tstringgrid2.focusedcell.row])].WriteEmail(0);
 end;
 end;
 end;
@@ -507,10 +524,11 @@ foc := Focus;
 if foc > -1 then
 case ttabwidget1.activepageindex of
 0: begin
- peoples.a[foc].Tel(0);
+ peoples.a[strtoint(tstringgrid1[1].items[tstringgrid1.focusedcell.row])].Tel(0);
 end;
 1: begin
  organizations.a[foc].Tel(0);
+ organizations.a[strtoint(tstringgrid2[1].items[tstringgrid2.focusedcell.row])].Tel(0);
 end;
 end;
 end;
@@ -538,6 +556,7 @@ dir := '';
 freearea := ''; freearea1 := ''; freearea2 := ''; freearea3 := '';
 group := ''; group1 := ''; group2 := ''; group3 := '';
 end;
+
 procedure tpeople.ReSet;
 begin
 inherited;

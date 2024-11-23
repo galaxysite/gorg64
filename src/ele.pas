@@ -33,7 +33,7 @@ type
    tstringgrid1: tstringgrid;
    tbutton1: tbutton;
    tbutton2: tbutton;
-   trichstockglyphbutton1: trichstockglyphbutton;
+   trichstockglyphbutton4: trichstockglyphbutton;
    procedure onclose(const sender: TObject);
    procedure oncreate(const sender: TObject);
    procedure butex(const sender: TObject);
@@ -41,6 +41,7 @@ type
    procedure keyup(const sender: twidget; var ainfo: keyeventinfoty);
    procedure bclose(const sender: TObject);
    procedure oncelev(const sender: TObject; var info: celleventinfoty);
+   procedure onloadlang();
  public
    procedure Display;
    function Focus : Int64;
@@ -50,10 +51,17 @@ var
  efelefo : boolean = false;
 implementation
 uses
- ele_mfm,main;
+ ele_mfm,main, lng;
 procedure telefo.onclose(const sender: TObject);
 begin
 efelefo := false;
+end;
+
+procedure telefo.onloadlang();
+begin
+caption := str_editevents;
+tbutton1.caption := str_delete;
+tbutton2.caption := str_edit;
 end;
 
 procedure telefo.Display;
@@ -89,6 +97,7 @@ end;
 procedure telefo.oncreate(const sender: TObject);
 begin
 Display;
+onloadlang();
 end;
 
 function telefo.Focus : Int64;

@@ -1,7 +1,7 @@
 object flashfo: tflashfo
   color = 13948116
-  bounds_x = 122
-  bounds_y = 112
+  bounds_x = 310
+  bounds_y = 124
   bounds_cx = 841
   bounds_cy = 485
   container.frame.localprops = []
@@ -93,29 +93,13 @@ object flashfo: tflashfo
   onkeydown = keydown
   onkeyup = keyup
   moduleclassname = 'tmseform'
-  object trichbutton1: trichbutton
-    frame.localprops = []
-    frame.localprops1 = []
-    frame.template = mainfo.tframecomp2
-    face.localprops = []
-    face.template = mainfo.tfacecomp1
-    taborder = 1
-    bounds_x = 8
-    bounds_y = 8
-    bounds_cx = 418
-    bounds_cy = 29
-    state = [as_localcaption, as_localonexecute]
-    caption = #1042' '#1086#1073#1097#1080#1081' '#1092#1072#1081#1083' | Save in entry file [F5]'
-    onexecute = save1
-    richcaption = #1042' '#1086#1073#1097#1080#1081' '#1092#1072#1081#1083' | Save in entry file [F5]'
-  end
   object tbutton1: tbutton
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 2
+    taborder = 1
     bounds_x = 8
     bounds_y = 40
     bounds_cx = 418
@@ -130,7 +114,7 @@ object flashfo: tflashfo
     frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 3
+    taborder = 2
     bounds_x = 8
     bounds_y = 72
     bounds_cx = 418
@@ -145,7 +129,7 @@ object flashfo: tflashfo
     frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 4
+    taborder = 3
     bounds_x = 8
     bounds_y = 104
     bounds_cx = 418
@@ -160,7 +144,7 @@ object flashfo: tflashfo
     frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 5
+    taborder = 4
     bounds_x = 8
     bounds_y = 144
     bounds_cx = 418
@@ -182,7 +166,7 @@ object flashfo: tflashfo
       295
       6
     )
-    taborder = 6
+    taborder = 5
     bounds_x = 16
     bounds_y = 223
     bounds_cx = 308
@@ -224,7 +208,7 @@ object flashfo: tflashfo
     frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp1
-    taborder = 7
+    taborder = 6
     bounds_x = 392
     bounds_y = 184
     bounds_cx = 34
@@ -237,7 +221,7 @@ object flashfo: tflashfo
     color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
-    taborder = 8
+    taborder = 7
     bounds_x = 96
     bounds_y = 288
     bounds_cx = 202
@@ -2980,7 +2964,7 @@ object flashfo: tflashfo
     frame.template = mainfo.tframecomp2
     face.localprops = []
     face.template = mainfo.tfacecomp3
-    taborder = 9
+    taborder = 8
     bounds_x = 435
     bounds_y = 8
     bounds_cx = 397
@@ -3037,11 +3021,26 @@ object flashfo: tflashfo
       203
       6
     )
-    taborder = 10
+    taborder = 9
     bounds_x = 16
     bounds_y = 255
     bounds_cx = 216
     bounds_cy = 24
     onchange = onlisten
+  end
+  object trichbutton1: tbutton
+    frame.localprops = []
+    frame.localprops1 = []
+    frame.template = mainfo.tframecomp2
+    face.localprops = []
+    face.template = mainfo.tfacecomp1
+    taborder = 10
+    bounds_x = 8
+    bounds_y = 8
+    bounds_cx = 418
+    bounds_cy = 29
+    state = [as_localcaption, as_localonexecute]
+    caption = #1042' '#1086#1073#1097#1080#1081' '#1092#1072#1081#1083' | Save in entry file [F5]'
+    onexecute = save1
   end
 end

@@ -1,16 +1,18 @@
 object notebookfo: tnotebookfo
-  color = 14277081
-  bounds_x = 228
-  bounds_y = 114
-  bounds_cx = 1012
-  bounds_cy = 528
+  color = -2147483645
+  bounds_x = 369
+  bounds_y = 188
+  bounds_cx = 779
+  bounds_cy = 521
   container.frame.localprops = []
   container.frame.localprops1 = []
+  container.face.localprops = []
+  container.face.template = mainfo.tfacecomp3
   container.bounds = (
     0
     0
-    1012
-    528
+    779
+    521
   )
   font.height = 20
   font.name = 'stf_default'
@@ -126,9 +128,9 @@ object notebookfo: tnotebookfo
   moduleclassname = 'tmseform'
   object ttabwidget1: ttabwidget
     bounds_x = 8
-    bounds_y = 88
-    bounds_cx = 1001
-    bounds_cy = 436
+    bounds_y = 80
+    bounds_cx = 768
+    bounds_cy = 437
     anchors = [an_left, an_top, an_right, an_bottom]
     taborder = 1
     activepageindex = 0
@@ -146,41 +148,91 @@ object notebookfo: tnotebookfo
       taborder = 1
       bounds_x = 0
       bounds_y = 31
-      bounds_cx = 1001
-      bounds_cy = 405
+      bounds_cx = 768
+      bounds_cy = 406
       anchors = [an_left, an_top, an_right, an_bottom]
       caption = #1051#1102#1076#1080' | Peoples'
       faceactivetab = mainfo.tfacecomp2
       object tstringgrid1: tstringgrid
+        frame.sbvert.width = 20
+        frame.sbvert.face.localprops = []
+        frame.sbvert.face.template = mainfo.tfacecomp3
+        frame.sbvert.facebutton.localprops = []
+        frame.sbvert.facebutton.template = mainfo.tfacecomp3
+        frame.sbvert.faceendbutton.localprops = []
+        frame.sbvert.faceendbutton.template = mainfo.tfacecomp3
+        frame.sbvert.framebutton.localprops = []
+        frame.sbvert.framebutton.localprops1 = []
+        frame.sbvert.framebutton.template = mainfo.tframecomp2
+        frame.sbvert.frameendbutton1.localprops = []
+        frame.sbvert.frameendbutton1.localprops1 = []
+        frame.sbvert.frameendbutton1.template = mainfo.tframecomp2
+        frame.sbvert.frameendbutton2.localprops = []
+        frame.sbvert.frameendbutton2.localprops1 = []
+        frame.sbvert.frameendbutton2.template = mainfo.tframecomp2
+        frame.sbhorz.width = 20
+        frame.sbhorz.face.localprops = []
+        frame.sbhorz.face.template = mainfo.tfacecomp3
+        frame.sbhorz.facebutton.localprops = []
+        frame.sbhorz.facebutton.template = mainfo.tfacecomp3
+        frame.sbhorz.faceendbutton.localprops = []
+        frame.sbhorz.faceendbutton.template = mainfo.tfacecomp3
+        frame.sbhorz.framebutton.localprops = []
+        frame.sbhorz.framebutton.localprops1 = []
+        frame.sbhorz.framebutton.template = mainfo.tframecomp2
+        frame.sbhorz.frameendbutton1.localprops = []
+        frame.sbhorz.frameendbutton1.localprops1 = []
+        frame.sbhorz.frameendbutton1.template = mainfo.tframecomp2
+        frame.sbhorz.frameendbutton2.localprops = []
+        frame.sbhorz.frameendbutton2.localprops1 = []
+        frame.sbhorz.frameendbutton2.template = mainfo.tframecomp2
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
         face.localprops = []
         face.template = mainfo.tfacecomp3
-        bounds_x = 0
+        bounds_x = 4
         bounds_y = 4
-        bounds_cx = 993
-        bounds_cy = 393
+        bounds_cx = 760
+        bounds_cy = 394
         anchors = [an_left, an_top, an_right, an_bottom]
         optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
-        datacols.count = 1
+        datacols.count = 2
+        datacols.linecolor = -2147483645
+        datacols.linecolorfix = -2147483645
         datacols.colorselect = 16768150
         datacols.colorfocused = 16768150
-        datacols.width = 984
+        datacols.width = 730
+        datacols.sortcol = 0
+        datacols.sortcoldefault = 0
         datacols.options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
         datacols.items = <        
           item
             frame.localprops = []
             frame.localprops1 = []
             frame.template = mainfo.tframecomp2
+            linecolor = -2147483645
+            linecolorfix = -2147483645
             colorselect = 16768150
             colorfocused = 16768150
-            width = 984
+            width = 730
             options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
+            valuefalse = '0'
+            valuetrue = '1'
+          end        
+          item
+            linecolor = -2147483645
+            linecolorfix = -2147483645
+            colorselect = 16768150
+            colorfocused = 16768150
+            width = 1
+            options = [co_readonly, co_invisible, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
             valuefalse = '0'
             valuetrue = '1'
           end>
         gridframecolor = -2147483645
+        datarowlinecolorfix = -2147483645
+        datarowlinecolor = -2147483645
         datarowheight = 26
         oncellevent = oncelev
         reffontheight = 24
@@ -192,27 +244,59 @@ object notebookfo: tnotebookfo
       taborder = 2
       bounds_x = 0
       bounds_y = 31
-      bounds_cx = 1001
-      bounds_cy = 405
+      bounds_cx = 768
+      bounds_cy = 406
       anchors = [an_left, an_top, an_right, an_bottom]
       caption = #1054#1088#1075#1072#1085#1080#1079#1072#1094#1080#1080' | Organizations'
       faceactivetab = mainfo.tfacecomp2
       object tstringgrid2: tstringgrid
+        frame.sbvert.width = 20
+        frame.sbvert.face.localprops = []
+        frame.sbvert.face.template = mainfo.tfacecomp3
+        frame.sbvert.facebutton.localprops = []
+        frame.sbvert.facebutton.template = mainfo.tfacecomp3
+        frame.sbvert.faceendbutton.localprops = []
+        frame.sbvert.faceendbutton.template = mainfo.tfacecomp3
+        frame.sbvert.framebutton.localprops = []
+        frame.sbvert.framebutton.localprops1 = []
+        frame.sbvert.framebutton.template = mainfo.tframecomp2
+        frame.sbvert.frameendbutton1.localprops = []
+        frame.sbvert.frameendbutton1.localprops1 = []
+        frame.sbvert.frameendbutton1.template = mainfo.tframecomp2
+        frame.sbvert.frameendbutton2.localprops = []
+        frame.sbvert.frameendbutton2.localprops1 = []
+        frame.sbvert.frameendbutton2.template = mainfo.tframecomp2
+        frame.sbhorz.width = 20
+        frame.sbhorz.face.localprops = []
+        frame.sbhorz.face.template = mainfo.tfacecomp3
+        frame.sbhorz.facebutton.localprops = []
+        frame.sbhorz.facebutton.template = mainfo.tfacecomp3
+        frame.sbhorz.faceendbutton.localprops = []
+        frame.sbhorz.faceendbutton.template = mainfo.tfacecomp3
+        frame.sbhorz.framebutton.localprops = []
+        frame.sbhorz.framebutton.localprops1 = []
+        frame.sbhorz.framebutton.template = mainfo.tframecomp2
+        frame.sbhorz.frameendbutton1.localprops = []
+        frame.sbhorz.frameendbutton1.localprops1 = []
+        frame.sbhorz.frameendbutton1.template = mainfo.tframecomp2
+        frame.sbhorz.frameendbutton2.localprops = []
+        frame.sbhorz.frameendbutton2.localprops1 = []
+        frame.sbhorz.frameendbutton2.template = mainfo.tframecomp2
         frame.localprops = []
         frame.localprops1 = []
         frame.template = mainfo.tframecomp2
         face.localprops = []
         face.template = mainfo.tfacecomp3
-        bounds_x = 0
+        bounds_x = 4
         bounds_y = 4
-        bounds_cx = 993
-        bounds_cy = 393
+        bounds_cx = 760
+        bounds_cy = 394
         anchors = [an_left, an_top, an_right, an_bottom]
         optionsgrid = [og_rowinserting, og_rowdeleting, og_focuscellonenter, og_autofirstrow, og_autoappend, og_colchangeontabkey, og_wrapcol, og_autopopup, og_mousescrollcol]
-        datacols.count = 1
+        datacols.count = 2
         datacols.colorselect = 16767651
         datacols.colorfocused = 16767651
-        datacols.width = 984
+        datacols.width = 730
         datacols.options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
         datacols.items = <        
           item
@@ -223,12 +307,22 @@ object notebookfo: tnotebookfo
             linecolorfix = -2147483645
             colorselect = 16767651
             colorfocused = 16767651
-            width = 984
+            width = 730
             options = [co_readonly, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
+            valuefalse = '0'
+            valuetrue = '1'
+          end        
+          item
+            colorselect = 16767651
+            colorfocused = 16767651
+            width = 1
+            options = [co_readonly, co_invisible, co_focusselect, co_savevalue, co_savestate, co_mousescrollrow]
             valuefalse = '0'
             valuetrue = '1'
           end>
         gridframecolor = -2147483645
+        datarowlinecolorfix = -2147483645
+        datarowlinecolor = -2147483645
         datarowheight = 26
         oncellevent = oncelev
         reffontheight = 24
@@ -236,6 +330,7 @@ object notebookfo: tnotebookfo
     end
   end
   object trichbutton1: trichbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -245,13 +340,14 @@ object notebookfo: tnotebookfo
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
-    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagelist = timagelist1
     imagenr = 3
     onexecute = onadd
     richcaption = ''
   end
   object trichbutton2: trichbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -262,7 +358,7 @@ object notebookfo: tnotebookfo
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
-    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagepos = ip_lefttop
     imagelist = timagelist1
     imagenr = 0
@@ -270,6 +366,7 @@ object notebookfo: tnotebookfo
     richcaption = ''
   end
   object trichbutton3: trichbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -280,13 +377,14 @@ object notebookfo: tnotebookfo
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
-    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagelist = timagelist1
     imagenr = 1
     onexecute = onopensite
     richcaption = ''
   end
   object trichbutton4: trichbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -297,13 +395,14 @@ object notebookfo: tnotebookfo
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
-    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagelist = timagelist1
     imagenr = 4
     onexecute = onemail
     richcaption = ''
   end
   object trichbutton5: trichbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -314,13 +413,14 @@ object notebookfo: tnotebookfo
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
-    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagelist = timagelist1
     imagenr = 2
     onexecute = onopenmap
     richcaption = ''
   end
   object trichbutton6: trichbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -331,13 +431,14 @@ object notebookfo: tnotebookfo
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
-    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localcaption, as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagelist = timagelist1
     imagenr = 5
     onexecute = onedit
     richcaption = ''
   end
   object trichbutton7: trichbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
@@ -348,25 +449,146 @@ object notebookfo: tnotebookfo
     bounds_y = 8
     bounds_cx = 74
     bounds_cy = 69
-    state = [as_localimagelist, as_localimagenr, as_localonexecute]
+    state = [as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     imagelist = timagelist1
     imagenr = 6
     onexecute = ontel
   end
   object trichstockglyphbutton1: trichstockglyphbutton
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = mainfo.tframecomp2
-    face.localprops = []
+    face.image.options = [bmo_masked, bmo_graymask]
+    face.image.origformat = 'png'
+    face.image.alignment = [al_xcentered, al_ycentered]
+    face.image.image = {
+      000000001200000020000000200000003C0A0000000000000000000000000000
+      000000000000000000000000000000000000000000000042F8F9F801EEEFEE0A
+      F0F1F001F3F4F301FFFFFF0100000011C8C9C9017E7F7F017F828201777A7901
+      757877017476750171757401707372016F7271016E7170016D6F6F016E706F01
+      707272017F8281019C9F9F01A3A6A501A7A9A801A7A9A901A4A7A6019FA2A101
+      92959401C1C2C2010000000AD4D4D401A4A4A4019A9A9A018787870181818101
+      7B7B7B01747474016F6E6E016A6969016565650162626201616061016A696901
+      9C9C9C01F5F6F601F7F7F701F7F8F803F6F7F701CBCDCD01A0A2A1010000000A
+      D4D4D401A6A7A7019E9E9E018D8D8D01868686017F7F7F017979790174747401
+      6E6E6E01696969016868680273737301A5A6A601F7F7F701F8F9F901FAFAFA01
+      F9FAFA02F7F8F801D0D2D201A7A9A9010000000AD4D4D401ABABAB01A5A5A501
+      939393018B8B8B01858585017E7E7E017979790174747401707070016D6D6D02
+      79797901ABABAB01F7F8F801F9FAFA01FBFBFB02FAFBFB01F8F9F901D3D5D501
+      AAACAB010000000AD4D4D401AFB0AF01ACACAC0199999901929292018B8B8B01
+      848484017F7F7F017A7A7A0175757501727272027E7E7E01ADAEAE01F7F8F801
+      FAFAFA01FBFCFC02FAFBFB01F8F9F901D4D5D501ABADAC010000000AD4D4D401
+      B0B1B001B0B0B0019E9E9E0198989801929292018B8B8B018585850180808001
+      7C7C7C01787878017777770182828201B0B0B001F7F8F801FAFAFA01FBFCFC01
+      FCFCFC01FAFBFB01F8F8F801D4D6D601ABADAD01E9E9F801DADAEF01C7C7EB01
+      00000007D4D4D401B1B1B101B0B0B001A0A0A0019B9B9B019797970191919101
+      8C8C8C0186868601808080017D7D7D017B7B7B0186868601B1B2B201F7F8F801
+      FAFAFA01FBFCFC01FCFCFC01FAFBFB01F8F8F801D4D6D601A7A9A801D0D0EA01
+      6060C4015656C50100000007D4D4D401B1B2B101B1B1B101A1A1A1019D9D9D01
+      98989801939393018E8E8E018989890185858501818181018080800189898901
+      B4B5B501F8F8F801FAFAFA01FBFCFC01FCFCFC01FAFBFB01F8F8F801D3D5D501
+      BDBED2016161C8019595E4015757C50100000007D4D4D401B1B2B101B3B3B301
+      A3A3A3019F9F9F0199999901949494018F8F8F018B8B8B018686860182828202
+      8B8B8B01B5B5B501F8F8F801FBFBFB01FBFCFC01FCFDFD01FAFBFB01F8F9F801
+      BDBFD1015D5DC5019393E8018D8DE3015757C5014949BF014B4BC0014646BF01
+      4848C101DFDFF30100000002D4D4D401B2B3B201B4B4B401A4A4A401A0A0A001
+      9A9A9A0196969601919191018C8C8C018888880185858501A7A7A701A2A2A201
+      B7B7B701F8F8F801FBFBFB01FBFCFC01FCFDFD01FAFBFB01D1D1E6014F4FC401
+      8080E4016565E0018989E3015858C7016262CD025F5FCC014C4CC301CECEED01
+      00000002D4D4D401B2B3B201B5B5B501A5A5A501A1A1A1019C9C9C0197979701
+      939393018E8E8E01888888018585850181818101B4B4B401C6C6C601F8F8F801
+      FBFBFB01FBFCFC02D8D9EC014949C5017676E2015353DD015656DD016969E003
+      6666E0016666DF016161D001C9C9EB0100000002D4D4D401B2B3B201B5B5B501
+      A7A7A701A2A2A2019E9E9E0199999901949494018F8F8F018A8A8A0185858501
+      8E8E8E01BBBBBB01B6B6B601F8F8F801FBFBFB01FCFDFD01D1D2E8014142C301
+      6161DD014343D9014545DA014848DA014A4ADB014B4BDB014949DB014646DA01
+      4949DA015757CE01C9C9EB0100000002D4D4D401B2B3B201B5B5B501A8A8A801
+      A4A4A4019F9F9F019A9A9A0195959501909090018B8B8B018C8C8C01BCBCBC01
+      9D9D9D01B5B6B601F8F9F901FAFAFA01D4D4EA01292ABF015757DB013232D601
+      3535D7013939D7013C3CD8013B3BD8013A3AD7013838D7013737D7013E3ED801
+      4F4FCD01C9C9EB0100000002D4D4D401B2B3B201B6B6B601AAAAAA01A5A5A501
+      A0A0A0019B9B9B0196969601929292018E8E8E01A9A9A901999999018E8E8E01
+      BABABA01F8F9F901F7F7F9017171C0013838CD012D2DD5012323D3012828D401
+      2424D3011B1BD0011010CE010808CD010707CD010A0ACD011E1ECF013939C801
+      C9C9EB0100000002D4D4D401B2B3B201B6B6B601AAAAAA01A6A6A601A1A1A101
+      9D9D9D0198989801939393018E8E8E018989890294949401BBBCBC01F8F9F901
+      FBFBFA01F0F1F8017070C2012C2CCD011919D0010000CC070E0ECD012727C501
+      C9C9EB0100000002D4D4D401B1B2B201B6B6B601ABABAB01A8A8A801A3A3A301
+      9E9E9E019A9A9A01949494018F8F8F018B8B8B0296969601BCBDBD01F8F9F901
+      FAFAFA01F4F5F501E0E1E7015C5CB9012828CB011313CF010000CC020101CC01
+      0202CC030E0ECD012424C401C7C7E90100000002D4D4D401B1B2B201B6B6B601
+      ABABAB01A9A9A901A5A5A5019F9F9F019A9A9A0196969601919191018D8D8D02
+      98989801BDBDBD01F7F8F801F8F8F801EEEFEF01E5E5E501D2D2D9016666B701
+      2525CA011717D0010303CD012727D2012222CD012323CD012525CD012727CE01
+      1C1CBF01C2C2E50100000002D4D4D401B2B3B201B6B6B601ABABAB02A6A6A601
+      A1A1A1019C9C9C0197979701939393018F8F8F01909090019B9B9B01B9BABA01
+      E8E9E901F3F4F401EDEDED01E4E5E501DADADA01C6C7CD015252AD012323CA01
+      1616D0012323C8014949B0014242B3013A3AB5013D3DB8013B3BBA01E0E0F001
+      00000002D4D4D401B3B3B301B6B6B601ABABAB02A7A7A701A2A2A2019D9D9D01
+      99999901969696019494940196969601A2A2A201B5B5B501CBCBCB01E6E7E701
+      EFF0F001E8E9E901DEDFDF01D4D5D501ADAFB5014848A7012020C7012525C701
+      7272BD01FFFFE20100000006D4D4D401B3B4B301B6B6B601ABABAB02A8A8A801
+      A4A4A401A0A0A0019D9D9D019B9B9B019D9D9D01A2A2A201A5A5A501AEAFAF01
+      C8C8C801E3E4E401F1F2F201EEEFEE01E6E7E601DDDEDE01BCBEBE01BABAC201
+      7C7CC2010B0BBA016767C20100000007D4D4D401B3B5B401B6B6B601ABABAB02
+      AAAAAA01A7A7A701A4A4A401A3A3A301A6A6A601A5A6A6019A9B9B01AEB0AF01
+      C7C9C801DDDFDE01E8EAE901EBEDEC02E9EBEB01E5E8E701C7CAC9019EA09F01
+      D9D9EB017373C0017B7BCE0100000007D4D4D401B4B5B401B6B6B601ABABAB01
+      ACACAC02AAAAAA01B1B1B101A5A6A6019B9D9C01A6A8A701C0C3C101D3D6D501
+      DEE0DF01E2E5E301E2E5E401E3E6E501E2E5E401E1E4E301DFE2E101C5C9C701
+      9DA09F0100000002EBEBF80100000007D4D4D401B5B6B501B6B6B601ACACAC01
+      AEAEAE01B3B3B301B4B5B50198999901A2A5A401BDC0BF01CDD1D001D6DAD801
+      D9DCDB01D9DDDB01DADDDC03D9DDDB01D9DCDB01D6DAD801BFC3C301999B9A01
+      0000000AD4D4D401B5B7B601B6B6B602BABABA01A0A2A101A2A7A501B7BCBA01
+      C5CAC901CACFCE01CDD2D001CDD2D101CDD3D106CDD2D101CBD0CF01BBBFBE01
+      959796010000000AD3D3D301B5B6B601C2C3C201AFB2B101A1A6A401B3B9B801
+      BDC3C101C1C7C501C2C8C601C3C8C701C3C9C708C3C8C701C1C8C601B7BCBB01
+      909392010000000ADFE0E001919492019FA3A001A1A5A201A5A9A601A8ACA901
+      A9ACAA01A9ADAA0D9A9E9C01A6A8A7010000000ACFCDCD01D1D2D201BABCBB01
+      BBBDBC01BCBEBD10C8CAC9010000004A00040000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      000000000000000000000000000000000000000000001A484848484848484848
+      48392A0200000000000000000000000000000000001FF9FAFAFAFAFAFAFAFAFA
+      FAF9F7F3F3F3F3F3F3F35400000000000000000000D3FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5800000000000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5800000000000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5800000000000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5800000000000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5805BE9C00000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF54B8FFA700000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFE5FFFFA700000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFA804050505010000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF730000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFD00000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFFDD3CDCDCDA80000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFFFFFFB904000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFC1FFFFA700000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF584DF1A500000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5800003D00000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5800000000000000000000D0FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF5800000000000000000000D2FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFF580000000000000000000062FFFFFFFFFFFFFFFFFFFF
+      FFFFFFFFFFFFFFFFFFFE5400000000000000000000017E7C7C7C7C7C7C7C7C7C
+      7C7C7C7C7C7C7C7C7C6A00000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000
+    }
+    face.localprops = [fal_image]
     face.template = mainfo.tfacecomp1
     taborder = 8
-    bounds_x = 951
-    bounds_y = 8
-    bounds_cx = 50
-    bounds_cy = 21
+    bounds_x = 726
+    bounds_y = 16
+    bounds_cx = 42
+    bounds_cy = 45
     anchors = [an_top, an_right]
-    state = [as_localimagelist, as_localimagenr, as_localonexecute]
-    glyph = stg_dbcancel
+    state = [as_localimagelist, as_localimagenr, as_localcolor, as_localonexecute]
     onexecute = oncl
   end
   object timagelist1: timagelist

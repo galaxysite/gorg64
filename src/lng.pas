@@ -64,6 +64,66 @@ str_october : utf8string = '';
 str_november : utf8string = '';
 str_december : utf8string = '';
 
+str_about : utf8string = '';
+str_emailtoauthor : utf8string = '';
+str_visithomepage : utf8string = '';
+str_mainpanel : utf8string = '';
+str_firstweekdayissunday : utf8string = '';
+str_12hoursformat : utf8string = '';
+str_am : utf8string = '';
+str_pm : utf8string = '';
+str_doubleclickaction : utf8string = '';
+str_lefttorightweekdaysorder : utf8string = '';
+str_language : utf8string = '';
+
+str_sound : utf8string = '';
+str_turnonvolumecontrolformplayer : utf8string = '';
+str_deletenotusedsoundfiles : utf8string = '';
+str_inhz : utf8string = '';
+str_inspeakerunits : utf8string = '';
+str_speakeroff : utf8string = '';
+str_speakeron : utf8string = '';
+str_soundgenerator : utf8string = '';
+
+str_smallscreen : utf8string = '';
+str_stopplaying : utf8string = '';
+
+str_people : utf8string = '';
+str_organizations : utf8string = '';
+
+str_group : utf8string = '';
+str_displayas : utf8string = '';
+str_name : utf8string = '';
+str_alias : utf8string = '';
+str_email : utf8string = '';
+str_site : utf8string = '';
+str_phone : utf8string = '';
+str_address : utf8string = '';
+str_map : utf8string = '';
+str_postalindex : utf8string = '';
+str_freearea : utf8string = '';
+str_surname : utf8string = '';
+str_patronym : utf8string = '';
+str_birthday : utf8string = '';
+str_deadday : utf8string = '';
+str_photo : utf8string = '';
+str_video : utf8string = '';
+str_gender : utf8string = '';
+str_workarea : utf8string = '';
+str_dir : utf8string = '';
+str_account : utf8string = '';
+str_hoursofoperation : utf8string = '';
+
+str_edit : utf8string = '';
+str_delete : utf8string = '';
+
+str_saveinentryfile : utf8string = '';
+str_save : utf8string = '';
+str_viewfile : utf8string = '';
+str_viewdir : utf8string = '';
+str_accumulate : utf8string = '';
+str_listen : utf8string = '';
+
 c_oneshot = 0;
 c_hourly = 1;
 c_daily = 2;
@@ -177,6 +237,67 @@ if t.a = 'p_september' then str_september := t.v;
 if t.a = 'p_october' then str_october := t.v;
 if t.a = 'p_november' then str_november := t.v;
 if t.a = 'p_december' then str_december := t.v;
+
+
+if t.a = 'about' then str_about := t.v;
+if t.a = 'emailtoauthor' then str_emailtoauthor := t.v;
+if t.a = 'visithomepage' then str_visithomepage := t.v;
+if t.a = 'mainpanel' then str_mainpanel := t.v;
+if t.a = 'firstweekdayissunday' then str_firstweekdayissunday := t.v;
+if t.a = '12hoursformat' then str_12hoursformat := t.v;
+if t.a = 'am' then str_am := t.v;
+if t.a = 'pm' then str_pm := t.v;
+if t.a = 'doubleclickaction' then str_doubleclickaction := t.v;
+if t.a = 'lefttorightweekdaysorder' then str_lefttorightweekdaysorder := t.v;
+if t.a = 'language' then str_language := t.v;
+
+if t.a = 'sound' then str_sound := t.v;
+if t.a = 'turnonvolumecontrolformplayer' then str_turnonvolumecontrolformplayer := t.v;
+if t.a = 'deletenotusedsoundfiles' then str_deletenotusedsoundfiles := t.v;
+if t.a = 'inhz' then str_inhz := t.v;
+if t.a = 'inspeakerunits' then str_inspeakerunits := t.v;
+if t.a = 'speakeroff' then str_speakeroff := t.v;
+if t.a = 'speakeron' then str_speakeron := t.v;
+if t.a = 'soundgenerator' then str_soundgenerator := t.v;
+if t.a = 'smallscreen' then str_smallscreen := t.v;
+if t.a = 'stopplaying' then str_stopplaying := t.v;
+
+if t.a = 'n_people' then str_people := t.v;
+if t.a = 'n_organizations' then str_organizations := t.v;
+
+if t.a = 'n_group' then str_group := t.v;
+if t.a = 'n_displayas' then str_displayas := t.v;
+if t.a = 'n_name' then str_name := t.v;
+if t.a = 'n_alias' then str_alias := t.v;
+if t.a = 'n_email' then str_email := t.v;
+if t.a = 'n_site' then str_site := t.v;
+if t.a = 'n_phone' then str_phone := t.v;
+if t.a = 'n_address' then str_address := t.v;
+if t.a = 'n_map' then str_map := t.v;
+if t.a = 'n_postalindex' then str_postalindex := t.v;
+if t.a = 'n_freearea' then str_freearea := t.v;
+if t.a = 'n_surname' then str_surname := t.v;
+if t.a = 'n_patronym' then str_patronym := t.v;
+if t.a = 'n_birthday' then str_birthday := t.v;
+if t.a = 'n_deadday' then str_deadday := t.v;
+if t.a = 'n_photo' then str_photo := t.v;
+if t.a = 'n_video' then str_video := t.v;
+if t.a = 'n_gender' then str_gender := t.v;
+if t.a = 'n_workarea' then str_workarea := t.v;
+if t.a = 'n_dir' then str_dir := t.v;
+if t.a = 'n_account' then str_account := t.v;
+if t.a = 'n_hoursofoperation' then str_hoursofoperation := t.v;
+
+if t.a = 'e_edit' then str_edit := t.v;
+if t.a = 'e_delete' then str_delete := t.v;
+
+if t.a = 'f_saveinentryfile' then str_saveinentryfile := t.v;
+if t.a = 'f_save' then str_save := t.v;
+if t.a = 'f_viewfile' then str_viewfile := t.v;
+if t.a = 'f_viewdir' then str_viewdir := t.v;
+if t.a = 'f_accumulate' then str_accumulate := t.v;
+if t.a = 'f_listen' then str_listen := t.v;
+
 end; {wend}
 {$I-}
 Close(fp);

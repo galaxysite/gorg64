@@ -437,8 +437,8 @@ if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
  if system.copy(lang,1,2) = 'ru' then 
  begin
  ruenv := true;
- tbutton2.left := tbutton2.left - 20;
- tbutton2.width := tbutton2.width + 20;
+ //tbutton2.left := tbutton2.left - 20;
+ //tbutton2.width := tbutton2.width + 20;
  end else ruenv := false;
 
 lang := langdir + lang;
