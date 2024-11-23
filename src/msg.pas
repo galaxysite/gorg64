@@ -52,7 +52,6 @@ type
    procedure oncreate(const sender: TObject);
    procedure list;
    procedure onclose(const sender: TObject);
-   procedure onresize(const sender: TObject);
    procedure Ok;
    procedure onminimize(const sender: TObject);
    procedure onmouseev(const sender: twidget; var ainfo: mouseeventinfoty);
@@ -129,11 +128,6 @@ end;
 procedure tmsgfo.onclose(const sender: TObject);
 begin
 efmsgfo := false;
-end;
-
-procedure tmsgfo.onresize(const sender: TObject);
-begin
-//tstringgrid1[0].width := tstringgrid1.width - 30;
 end;
 
 procedure tmsgfo.onminimize(const sender: TObject);
