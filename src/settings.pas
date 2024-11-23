@@ -80,6 +80,7 @@ type
    timage4: timage;
    tpopupmenu2: tpopupmenu;
    langdrop: tdropdownlistedit;
+   mainfoheight: tintegeredit;
    procedure onwdbs(const sender: TObject);
    procedure oncreate(const sender: TObject);
    procedure onclose(const sender: TObject);
@@ -113,6 +114,8 @@ type
    procedure onsetval(const sender: TObject; var avalue: msestring;
                    var accept: Boolean);
    procedure onsetlang();                
+   procedure onsetheight(const sender: TObject; var avalue: Integer;
+                   var accept: Boolean);
  end;
 var
  settingsfo: tsettingsfo;
@@ -402,6 +405,13 @@ begin
   onsetlang();
   DisplayDblA;
 end;
+end;
+
+procedure tsettingsfo.onsetheight(const sender: TObject; var avalue: Integer;
+               var accept: Boolean);
+begin
+mainfo.onsetheight(avalue);
+tun.p^.main_height := avalue;
 end;
 
 end.

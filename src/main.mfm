@@ -172,14 +172,15 @@ object mainfo: tmainfo
     bounds_cy = 27
   end
   object tlabel2: tlabel
-    optionswidget1 = [ow1_fontglyphheight, ow1_autoscale, ow1_autoheight]
+    optionswidget1 = [ow1_fontglyphheight]
     optionswidget = [ow_noscroll, ow_destroywidgets]
     taborder = 3
     enabled = False
-    bounds_x = 34
-    bounds_y = 4
-    bounds_cx = 656
-    bounds_cy = 45
+    bounds_x = 28
+    bounds_y = 0
+    bounds_cx = 664
+    bounds_cy = 56
+    anchors = [an_left]
     caption = '--:--'
     font.color = -1610612734
     font.grayed_color = -1610612734
@@ -219,10 +220,11 @@ object mainfo: tmainfo
     onexecute = onquit
   end
   object tbutton2: tbutton
-    color = -1610612715
+    color = -2147483645
     frame.localprops = []
     frame.localprops1 = []
     frame.template = tframecomp2
+    face.image.alignment = [al_xcentered, al_ycentered, al_stretchx, al_stretchy]
     face.fade_pos.count = 2
     face.fade_pos.items = (
       0
@@ -234,8 +236,8 @@ object mainfo: tmainfo
       6384639
     )
     face.fade_direction = gd_down
-    face.localprops = [fal_fadirection]
-    bounds_x = 698
+    face.localprops = [fal_fadirection, fal_image]
+    bounds_x = 700
     bounds_y = 7
     bounds_cx = 40
     bounds_cy = 40
