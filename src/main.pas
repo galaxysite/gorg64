@@ -105,6 +105,7 @@ type
    procedure onpaintev(const sender: twidget; const acanvas: tcanvas);
    procedure onloopev(const sender: TObject);
    procedure updatelang();
+   procedure onsetheight(avalue: Integer);
   end;
 
   TTW = packed record
@@ -122,7 +123,7 @@ TTu = packed record
     engtrue_hour_fmt    : bytebool;
     engtrue_calend_fmt  : bytebool;
     flash_accmulate     : bytebool;
-    main_left, main_top : integer;
+    main_left, main_top, main_height : integer;
     ee_left, ee_top, ee_width, ee_height : integer;
     ee_maximize : bytebool;
     book_left, book_top, book_width, book_height : integer;
@@ -594,6 +595,7 @@ ChangeLang;
 
 DisplayMuteNoact;
 Tun.SetFixation(Tun.fixation);
+
 left := tun.p^.main_left;
 top := tun.p^.main_top;
 
@@ -607,6 +609,10 @@ mainfo.tthreadcomp3.run;
 
 Org := TOrg.Create(True);
 Org.Start;
+
+if (tun.p^.main_height > 23) and (tun.p^.main_height < 10000) then
+onsetheight(tun.p^.main_height) else tun.p^.main_height := 56;
+
 end;
 
 function inttomonth(y : Int64; m : TMonth) : string;
@@ -1091,7 +1097,8 @@ with t do begin
   main_fixation := false;
   fnoact := false;
   main_left := 100;  
-  main_top := 10;  
+  main_top := 10; 
+  main_height := 56;  
  end; 
  flash_accmulate := false;
  main_doubleclick_action := 0;
@@ -1119,14 +1126,44 @@ begin
 doubleclick_action;
 end;
 
-procedure tmainfo.onpaintev(const sender: twidget; const acanvas: tcanvas);
+
+procedure tmainfo.onsetheight(avalue: Integer);
+var
+ratio : double;
 begin
+ratio := avalue/56 ; 
+height := avalue;
+width := round(750 * ratio);
+tlabel2.font.height := round(38 * ratio);
+if round(38 * ratio) > 22 then tlabel2.font.style := [fs_bold]
+else tlabel2.font.style := [];
+tlabel2.width := round(656 * ratio);
+tpaintbox1.height:= avalue div 2;
+tpaintbox2.height:= avalue div 2;
+tpaintbox1.width:= round(750 * ratio);
+tpaintbox2.width:= round(750 * ratio);tpaintbox2.top:= avalue div 2;
+tbutton1.top := (avalue - tbutton1.height) div 2;  
+tbutton2.height := round(40 * ratio);
+tbutton2.width := round(40 * ratio);
+tbutton2.top := (avalue - tbutton2.height) div 2;  
+tbutton2.left := round(700 * ratio);
+mse_radiuscorner := round(30 * ratio);
+Window.RecreateWindow;
+
+end;
+
+
+procedure tmainfo.onpaintev(const sender: twidget; const acanvas: tcanvas);
+var
+rad : integer;
+begin
+   rad := mse_radiuscorner div 2;
    acanvas.linewidth:= 1;
    acanvas.drawrect(mr(0,0,Width-1,Height-1),cl_gray);
-   acanvas.drawarc(mp(15,15), 15,  pi, -pi/2, cl_gray);
-   acanvas.drawarc(mp(15, Height - 16), 15, pi, pi/2 , cl_gray );
-   acanvas.drawarc(mp(width - 15,15), 15, 0, pi / 2, cl_gray );
-   acanvas.drawarc(mp(width - 15, Height - 16), 15, 0, -pi/2 , cl_gray );   
+   acanvas.drawarc(mp(rad,rad), rad,  pi, -pi/2, cl_gray);
+   acanvas.drawarc(mp(rad, Height - rad -1), rad, pi, pi/2 , cl_gray );
+   acanvas.drawarc(mp(width - rad,rad), rad, 0, pi / 2, cl_gray );
+   acanvas.drawarc(mp(width - rad, Height - rad -1), rad, 0, -pi/2 , cl_gray );   
 end;
 
 procedure tmainfo.onloopev(const sender: TObject);

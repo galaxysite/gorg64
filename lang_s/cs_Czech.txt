@@ -111,3 +111,6 @@ f_viewfile=Zobrazit soubor
 f_viewdir=Zobrazit adresář
 f_accumulate=Akumulovat
 f_listen=Poslouchejte
+a_alarmmessage=Poplachová zpráva
+e_eventlist=Seznam událostí
+s_mainformheight=Výška hlavního formuláře

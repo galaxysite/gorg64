@@ -80,6 +80,7 @@ type
    timage4: timage;
    tpopupmenu2: tpopupmenu;
    langdrop: tdropdownlistedit;
+   mainfoheight: tintegeredit;
    procedure onwdbs(const sender: TObject);
    procedure oncreate(const sender: TObject);
    procedure onclose(const sender: TObject);
@@ -113,13 +114,15 @@ type
    procedure onsetval(const sender: TObject; var avalue: msestring;
                    var accept: Boolean);
    procedure onsetlang();                
+   procedure onsetheight(const sender: TObject; var avalue: Integer;
+                   var accept: Boolean);
  end;
 var
  settingsfo: tsettingsfo;
  efsettingsfo : boolean = false;
 implementation
 uses
- settings_mfm,main,clockpanel,ee,lng,people,organization,notebook,flash, dayel;
+ settings_mfm,main,clockpanel,ee,lng,people,organization,notebook,flash, dayel, msg;
  
 procedure tsettingsfo.DisplayDblA;
 begin
@@ -157,6 +160,7 @@ tedit2.frame.caption := str_pm;
 tbutton1.frame.caption := str_doubleclickaction;
 tbooleanedit5.frame.caption := str_lefttorightweekdaysorder;
 langdrop.frame.caption := str_language;
+mainfoheight.frame.caption := str_mainformheight;
 
 ttabpage3.caption := str_sound;
 tbooleanedit4.frame.caption := str_turnonvolumecontrolformplayer;
@@ -219,6 +223,8 @@ if FindFirst(langdir + '*.txt', faAnyFile, SR) = 0 then
      until FindNext(SR) <> 0;
        FindClose(SR);
    end;
+   
+ mainfoheight.value :=  tun.p^.main_height;
   
 onsetlang();   
     
@@ -397,11 +403,19 @@ begin
   if efnotebookfo then notebookfo.onloadlang();
   if efFlash then flashfo.onloadlang();
   if efdayelfo then dayelfo.onloadlang();
+  if efmsgfo then msgfo.onloadlang();
   application.processmessages;
   langdrop.invalidatewidget;
   onsetlang();
   DisplayDblA;
 end;
+end;
+
+procedure tsettingsfo.onsetheight(const sender: TObject; var avalue: Integer;
+               var accept: Boolean);
+begin
+mainfo.onsetheight(avalue);
+tun.p^.main_height := avalue;
 end;
 
 end.

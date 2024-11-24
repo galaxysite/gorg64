@@ -111,3 +111,6 @@ f_viewfile=Datei anzeigen
 f_viewdir=Verzeichnis anzeigen
 f_accumulate=Akkumulieren
 f_listen=Abhören
+a_alarmmessage=Alarmmeldung
+e_eventlist=Ereignisliste
+s_mainformheight=Hauptformularhöhe

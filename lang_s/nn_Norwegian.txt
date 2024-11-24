@@ -111,3 +111,6 @@ f_viewfile=Vis fil
 f_viewdir=Vis katalog
 f_accumulate=Akkumulere
 f_listen=Lytt
+a_alarmmessage=Alarmmelding
+e_eventlist=Hendelsesliste
+s_mainformheight=Hovedskjemahøyde

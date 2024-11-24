@@ -111,3 +111,6 @@ f_viewfile=Fájl megtekintése
 f_viewdir=Könyvtár megtekintése
 f_accumulate=Felhalmoz
 f_listen=Figyelj
+a_alarmmessage=Riasztási üzenet
+e_eventlist=Eseménylista
+s_mainformheight=Fő űrlap magassága

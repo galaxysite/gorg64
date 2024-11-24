@@ -111,3 +111,6 @@ f_viewfile=Bestand bekijken
 f_viewdir=Directory bekijken
 f_accumulate=Accumuleren
 f_listen=Luisteren
+a_alarmmessage=Alarmbericht
+e_eventlist=Gebeurtenislijst
+s_mainformheight=Hoofdformulierhoogte

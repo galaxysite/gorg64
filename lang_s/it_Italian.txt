@@ -111,3 +111,6 @@ f_viewfile=Visualizza file
 f_viewdir=Visualizza directory
 f_accumulate=Accumula
 f_listen=Ascolta
+a_alarmmessage=Messaggio di allarme
+e_eventlist=Elenco eventi
+s_mainformheight=Altezza modulo principale

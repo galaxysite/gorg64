@@ -1,7 +1,7 @@
 object dayelfo: tdayelfo
   color = -1610612731
-  bounds_x = 74
-  bounds_y = 94
+  bounds_x = 398
+  bounds_y = 80
   bounds_cx = 1083
   bounds_cy = 670
   container.frame.localprops = []
