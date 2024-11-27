@@ -431,16 +431,9 @@ if FindFirst(langdir + '*.txt', faArchive, SR) = 0 then
       until FindNext(SR) <> 0;
     FindClose(SR);
    end;   
-   
- tbutton2.left := 698;
- tbutton2.width := 40;
-
+ 
  if system.copy(lang,1,2) = 'ru' then 
- begin
- ruenv := true;
- //tbutton2.left := tbutton2.left - 20;
- //tbutton2.width := tbutton2.width + 20;
- end else ruenv := false;
+ ruenv := true else ruenv := false;
 
 lang := langdir + lang;
 

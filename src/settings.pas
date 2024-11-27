@@ -408,6 +408,7 @@ begin
   langdrop.invalidatewidget;
   onsetlang();
   DisplayDblA;
+  //mainfo.onsetheight(tun.p^.main_height);
 end;
 end;
 
