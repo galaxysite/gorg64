@@ -17,4 +17,7 @@ mv fpc-ootb-324-x86_64-linux_glibc225 ootb
 echo "- Remove .zip"
 rm -f fpc-ootb-324-x86_64-linux_glibc225.zip
 echo "Ok. OOTB Ready to use."
+echo "But need rerun make for apply PATH variable."
 popd
+
+exit 1
