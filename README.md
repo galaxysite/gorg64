@@ -27,4 +27,3 @@ http://soft.self-made-free.ru/
 Reserved GIT repository: https://gitflic.ru/project/alexander2023/gorg64
 
 <aralni@mail.ru>
-
