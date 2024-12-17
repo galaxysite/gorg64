@@ -24,6 +24,7 @@ Copyright (C) 2024  Artyomov Alexander
 
 http://soft.self-made-free.ru/
 
+New place (after January 04, 2025) : https://codeberg.org/Alexander2024/gorg64
 Reserved GIT repository: https://gitflic.ru/project/alexander2023/gorg64
 
 <aralni@mail.ru>
