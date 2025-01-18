@@ -116,7 +116,6 @@ end;
 
 procedure tflashfo.viewfile(const sender: TObject);
 begin
-fpSystem('gorg64_runner leafpad ' + flashfile);
 {$ifdef ootb}
 fpSystem(bindir + 'gorg64_runner leafpad ' + flashfile);
 {$else}
